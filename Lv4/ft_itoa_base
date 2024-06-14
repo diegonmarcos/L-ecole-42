@@ -1,0 +1,31 @@
+/* ft_itoa_base */
+
+#include <stdlib.h>
+
+char *ft_itoa_base(int value, int base)
+{
+    if (base < 2 || base > 16)
+        return (NULL);
+    int len = value < 0 ? 2 : 1;
+    int temp = value;
+    while (temp /= base)
+        len++;
+    char *str = (char *)malloc(sizeof(char) * (len + 1));
+    if (!str)
+        return (NULL);
+    str[len] = '\0';
+    if (value < 0)
+    {
+        str[0] = '-';
+        value = -value;
+    }
+    while (value > 0)
+    {
+        int remainder = value % base;
+        str[--len] = remainder < 10 ? remainder + '0' : remainder - 10 + 'a';
+        value /= base;
+    }
+    if (len == 1 && str[0] == '-')
+        str[0] = '0';
+    return (str);
+}
