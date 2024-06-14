@@ -1,0 +1,38 @@
+/* tab_mult */
+#include <unistd.h>
+
+void ft_putnbr(int nb)
+{
+    if (nb > 9)
+        ft_putnbr(nb / 10);
+    char c = (nb % 10) + 48;
+    write(1, &c, 1);
+}
+
+int main(int argc, char **argv)
+{
+    int i = 0;
+    if (argc == 2)
+    {
+        while (argv[1][i])
+        {
+            if (argv[1][i] >= '0' && argv[1][i] <= '9')
+            {
+                int num = argv[1][i] - '0';
+                int j = 1;
+                while (j <= 9)
+                {
+                    ft_putnbr(j);
+                    write(1, " x ", 3);
+                    ft_putnbr(num);
+                    write(1, " = ", 3);
+                    ft_putnbr(j * num);
+                    write(1, "\n", 1);
+                    j++;
+                }
+            }
+            i++;
+        }
+    }
+    return (0);
+}

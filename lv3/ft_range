@@ -1,0 +1,26 @@
+/* ft_range */
+
+#include <stdlib.h>
+
+int *ft_range(int start, int end)
+{
+    int range_size = end - start + 1; // Calculate the size of the range
+    int *range = (int *)malloc(sizeof(int) * range_size);
+    int i = 0;
+
+    if (range == NULL) // Check for memory allocation failure
+        return (NULL);
+
+    if (start <= end)
+    {
+        while (start <= end)
+            range[i++] = start++;
+    }
+    else
+    {
+        while (start >= end)
+            range[i++] = start--;
+    }
+
+    return (range);
+}
