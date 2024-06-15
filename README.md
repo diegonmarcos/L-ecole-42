@@ -63,11 +63,62 @@
 ---
 
 
-
-
 Let's code!
 
+```C
+#include "libft.h"
+char	*ft_strdup(const char *s1)
+{
+	char	*str;
+	size_t	len;
 
+	len = ft_strlen(s1) + 1;
+	str = (char *)malloc(sizeof(char) * len);
+	if (str == NULL)
+		return (NULL);
+	ft_strlcpy(str, s1, len);
+	return (str);
+}
+```
+
+```C
+#include <stdio.h>
+#include "libft.h"   
+
+int main() {
+    // Test Cases
+    char *original_str1 = "Hello, world!";
+    char *original_str2 = ""; 
+    char *original_str3 = NULL; 
+
+    // Duplicate Strings
+    char *dup_str1 = ft_strdup(original_str1);
+    char *dup_str2 = ft_strdup(original_str2);
+    char *dup_str3 = ft_strdup(original_str3);
+
+    // Test and Print Results
+    if (dup_str1 != NULL) {
+        printf("Original: %s\n", original_str1);
+        printf("Duplicate: %s\n", dup_str1);
+        // Verify the contents - manually check if strings are equal
+        if (ft_strcmp(dup_str1, original_str1) == 0) { // Assuming ft_strcmp is part of libft
+            printf("Test 1 Passed: Duplicated strings match.\n");
+        } else {
+            printf("Test 1 Failed: Duplicated strings do not match.\n");
+        }
+        free(dup_str1); 
+    } else {
+        printf("Test 1 Failed: Memory allocation failed for dup_str1.\n");
+    }
+
+    // Similar tests for dup_str2 and dup_str3
+
+    return 0;
+```
+
+
+---
+#Table of Content
 ```
 L'ecole42/
 ├── What
@@ -86,13 +137,5 @@ L'ecole42/
 └── Why?
     ├── make sense?
     └── why not?
-```
-
-
-```C
-int main void{
-    return 0;
-}
-
 ```
 
