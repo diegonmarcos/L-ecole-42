@@ -1,8 +1,8 @@
 ![](42.svg) L'eco 42![42](42.svg)L'ecole 42![42](42.svg)L'ecole 42![42](42.svg)L'ecole 42![42](42.svg)L'eco![42](42.svg)  
 ---
 --- 
-![](peng.jpg)
-![](up2u.png)
+![](coding.webp)![](peng.jpg)![](coding.webp)
+
 ---     
 
 
@@ -13,6 +13,7 @@
   - ### The Piscine: Sink or Swim 🏊‍♀️
      Admission starts with the "Piscine" (French for swimming pool). It's a month-long coding immersion experience designed to test your grit, problem-solving, and ability to learn independently.  It's tough, but those who make it through emerge as resilient coders.
 
+![](up2u.png)
 ---
 
 
