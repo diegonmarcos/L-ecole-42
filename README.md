@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="style.css">
+
 
 
 # 42: The Code Odyssey 🚀
@@ -8,10 +8,10 @@ Welcome to my 42 journey! This ain't your average school. We're diving deep into
 ### About 42: Where the Wild Things Code 🌐
 
 42 is a global network of tuition-free coding schools.  Think of it as a coding bootcamp on steroids – intense, hands-on, and focused on real-world skills. There are no teachers, no lectures... just you, your peers, and a mountain of challenges.\
-[Learn more on the official 42 website](https://42.fr/en)  
+`[Learn more on the official 42 website](https://42.fr/en)  `
 
-I am in <span class="highl">Spain</span> <span class="highl;">BORN TO CODE!</span>
-
+![Shallow Backup GIF Demo](skills.gif)
+>Skills to be developed
 
 
 ### The Piscine: Sink or Swim 🏊‍♀️
