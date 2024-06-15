@@ -1,5 +1,8 @@
-
-
+![](42.svg) L'eco 42![42](42.svg)L'ecole 42![42](42.svg)L'ecole 42![42](42.svg)L'ecole 42![42](42.svg)L'eco![42](42.svg)  
+---
+---  
+---     
+![](42.svg)
 
 - # 42: The Code Odyssey 🚀
     Welcome to my 42 journey! This ain't your average school. We're diving deep into code, collaboration, and peer-driven learning.
