@@ -1,3 +1,6 @@
+<link rel="stylesheet" href="style.css">
+
+
 # 42: The Code Odyssey 🚀
 
 Welcome to my 42 journey! This ain't your average school. We're diving deep into code, collaboration, and peer-driven learning.
