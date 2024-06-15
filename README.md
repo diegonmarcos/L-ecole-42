@@ -8,10 +8,9 @@ Welcome to my 42 journey! This ain't your average school. We're diving deep into
 ### About 42: Where the Wild Things Code 🌐
 
 42 is a global network of tuition-free coding schools.  Think of it as a coding bootcamp on steroids – intense, hands-on, and focused on real-world skills. There are no teachers, no lectures... just you, your peers, and a mountain of challenges.\
-`[Learn more on the official 42 website](https://42.fr/en)  `
+>Learn more on the official [42 website](https://42.fr/en)  
 
-![Shallow Backup GIF Demo](skills.gif)
->Skills to be developed
+
 
 
 ### The Piscine: Sink or Swim 🏊‍♀️
@@ -27,7 +26,7 @@ The 42 Curriculum: Your Code Adventure 🗺️
 Here's the breakdown of your epic coding journey:
 
 ### Common Core: 18 Months 🏗️
-This is where you build your foundation with C and C++, tackling projects that cover:
+This is where you build your foundation with C and C++, tackling projects that cover:  
 
 * **Algorithms & Data Structures**: The building blocks of efficient code.
 * **Unix & Systems Programming**: Understanding the inner workings of your computer.
@@ -36,6 +35,11 @@ This is where you build your foundation with C and C++, tackling projects that c
 * **Networking & Web Development:**  From sockets to building web apps.
 * **Databases & Graphical Programming:** Storing and visualizing data.
 
+
+  ![GIF](skills.gif)
+>Skills to be developed.
+
+  
 ### Professional Experience: 4-6 Months 💼
 A internship that solidifies your skills and builds your network.
 
