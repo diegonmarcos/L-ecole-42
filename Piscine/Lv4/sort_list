@@ -1,0 +1,29 @@
+/* sort_list */
+#include "list.h" // Assuming you have the t_list structure definition
+#include <stdlib.h>
+
+t_list *sort_list(t_list *lst, int (*cmp)(int, int))
+{
+    t_list *current = lst;
+    int swapped;
+
+    if (!lst)
+        return (NULL);
+    do
+    {
+        swapped = 0;
+        while (current->next)
+        {
+            if ((*cmp)(current->data, current->next->data) > 0)
+            {
+                void *temp = current->data;
+                current->data = current->next->data;
+                current->next->data = temp;
+                swapped = 1;
+            }
+            current = current->next;
+        }
+        current = lst;
+    } while (swapped);
+    return (lst);
+}
