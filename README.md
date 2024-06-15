@@ -68,4 +68,31 @@
 Let's code!
 
 
+```
+L'ecole42/
+├── What
+│   ├── really
+│   │   └── no way
+│   ├── this?
+│   │   └── ...
+│   └── with this?
+│       └── ...
+├── Where?
+│   ├── this place
+│   ├── this things
+│   ├── oooh
+│   │   └── in it?
+│   └── ok
+└── Why?
+    ├── make sense?
+    └── why not?
+```
+
+
+```C
+int main void{
+    return 0;
+}
+
+```
 
