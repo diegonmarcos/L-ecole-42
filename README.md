@@ -4,7 +4,12 @@ Welcome to my 42 journey! This ain't your average school. We're diving deep into
 
 ### About 42: Where the Wild Things Code 🌐
 
-42 is a global network of tuition-free coding schools.  Think of it as a coding bootcamp on steroids – intense, hands-on, and focused on real-world skills. There are no teachers, no lectures... just you, your peers, and a mountain of challenges.
+42 is a global network of tuition-free coding schools.  Think of it as a coding bootcamp on steroids – intense, hands-on, and focused on real-world skills. There are no teachers, no lectures... just you, your peers, and a mountain of challenges.\
+[Learn more on the official 42 website](https://42.fr/en)  
+
+I am in <span class="highl">Spain</span> <span class="highl;">BORN TO CODE!</span>
+
+
 
 ### The Piscine: Sink or Swim 🏊‍♀️
 
@@ -12,7 +17,7 @@ Admission starts with the "Piscine" (French for swimming pool). It's a month-lon
 
 ---
 
-## The 42 Curriculum: Your Code Adventure 🗺️
+## The 42 Curriculum: Your Code Adventure 🗺️ - 
 
 Once you've survived the Piscine, the real adventure begins! The curriculum is split into two main phases:
 The 42 Curriculum: Your Code Adventure 🗺️
@@ -51,3 +56,6 @@ Launch your career with a final internship that solidifies your skills and build
 
 
 Let's code!
+
+
+
