@@ -2,9 +2,9 @@
 ---
 ---  
 ---     
-![](42.svg)
 
-- # 42: The Code Odyssey 🚀
+
+- # ![](42.svg): The Code Odyssey 🚀
     Welcome to my 42 journey! This ain't your average school. We're diving deep into code, collaboration, and peer-driven learning.
   - ### About 42: Where the Wild Things Code 🌐
     42 is a global network of tuition-free coding schools.  Think of it as a coding bootcamp on steroids – intense, hands-on, and focused on real-world skills. There are no teachers, no lectures... just you, your peers, and a mountain of challenges.Learn more on the official [42 website](https://42.fr/en).
@@ -15,7 +15,7 @@
 
 
 ---
-- ## The 42 Curriculum: Your Code Adventure 🗺️ - 
+- ## The ![](42.svg) Curriculum: Your Code Adventure 🗺️ - 
   Once you've survived the Piscine, the real adventure begins! The curriculum is split into phases:
 
 - ### Common Core: 18 Months 🏗️
