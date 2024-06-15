@@ -1,12 +1,12 @@
-![](42.svg) L'eco 42![42](42.svg)L'ecole 42![42](42.svg)L'ecole 42![42](42.svg)L'ecole 42![42](42.svg)L'eco42![42](42.svg)  
+![](zimg/42.svg) L'eco 42![42](zimg/42.svg)L'ecole 42![42](zimg/42.svg)L'ecole 42![42](zimg/42.svg)L'ecole 42![42](zimg/42.svg)L'eco42![42](zimg/42.svg)  
 ---
 --- 
-...................................... ![](peng.jpg).................................
+...................................... ![](zimg/peng.jpg).................................
 
 ---     
 
 
-- # ![](42.svg): The Code Odyssey 🚀
+- # ![](zimg/42.svg): The Code Odyssey 🚀
     Welcome to my 42 journey! This ain't your average school. We're diving deep into code, collaboration, and peer-driven learning.
   - ### About 42: Where the Wild Things Code 🌐
     42 is a global network of tuition-free coding schools.  Think of it as a coding bootcamp on steroids – intense, hands-on, and focused on real-world skills. There are no teachers, no lectures... just you, your peers, and a mountain of challenges.Learn more on the official [42 website](https://42.fr/en).
@@ -18,7 +18,7 @@
 
 
 ---
-- ## The ![](42.svg) Curriculum: Your Code Adventure 🗺️ - 
+- ## The ![](zimg/42.svg) Curriculum: Your Code Adventure 🗺️ - 
   Once you've survived the Piscine, the real adventure begins! The curriculum is split into phases:
 
 - ### Common Core: 18 Months 🏗️
@@ -46,7 +46,7 @@
   - `Transcendence`
   - `CPP05-09 / Webserv_or_IRC / Inception`  
 
-  ![GIF](skills.gif)
+  ![GIF](zimg/skills.gif)
 >Skills to be developed.
 
   
