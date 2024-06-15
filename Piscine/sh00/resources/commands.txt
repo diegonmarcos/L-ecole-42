@@ -1,0 +1,41 @@
+Exercise, status, ajustado, obs
+
+ex00
+touch <filename> : create file
+  -t change modification date
+cat 
+  >> <filename> :create
+  > <file> :writedown
+
+nano <filename>
+
+mv <filename> <direction>
+
+ls
+  -l :deatils
+  -1R :tree
+
+ex01
+tar 
+  -cf <filename> :compress   
+  -xpf <filename> :extract
+  -tvf <file> :see file
+
+ex02
+Ln -s <file1> <linkname> : symlink
+ln <file1> <file2> : hardlink
+
+
+ex03
+
+ex04
+
+ex05
+
+ex06
+
+ex07
+
+ex08
+
+ex09

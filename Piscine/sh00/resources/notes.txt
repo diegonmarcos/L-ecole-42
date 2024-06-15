@@ -1,0 +1,24 @@
+Exercise, status, ajustado, obs
+
+ex00, nok, ajus, obs
+
+ex01, ok, , obs
+
+ex02, nok, ajuus, obs
+
+ex03, ok, , obs
+
+ex04, ok, , obs
+
+ex05, ok, , obs
+
+ex06, nok, adj, obs
+
+ex07, ok, command, obs
+
+ex08, nok, adj, obs
+
+ex09, nok, command, obs
+
+git ls-files -i --exclude-standard
+
