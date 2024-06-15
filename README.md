@@ -1,5 +1,3 @@
-Absolutely! Here's a Markdown intro page tailored for your GitHub 42 project, balancing clarity and 42's unique style:
-
 # 42: The Code Odyssey 🚀
 
 Welcome to my 42 journey! This ain't your average school. We're diving deep into code, collaboration, and peer-driven learning.
