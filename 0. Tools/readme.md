@@ -1,4 +1,4 @@
-.vimrc
+# .vimrc
 ```
 set number
 " set relativenumber
@@ -15,7 +15,7 @@ https://ohmyz.sh/
 ` sh -c "&(curl -fssL https://raw.githubusercontent.com/ohmyzsh/ohmyz sh/master/tools/install.sh)" `
 
 
-.vimrc - complete
+# .vimrc - complete
 ```
 " Configuración básica
 set nocompatible           " Desactiva el modo compatible con vi
@@ -173,7 +173,7 @@ nnoremap <silent> e :botright terminal<CR>
 ```
   
 
-#FRANCINETTE (PACO)  
+# FRANCINETTE (PACO)  
 `bash -c "$(curl -fsSL https://raw.github.com/xicodomingues/francinette/master/bin/install.sh)"`
 
 ```sh
@@ -190,7 +190,7 @@ Git push
 ```
 
 
-.gitignore
+# .gitignore
 ```
 # Compiled source #
 ###################
