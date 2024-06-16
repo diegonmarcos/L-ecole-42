@@ -10,7 +10,8 @@ set noswapfile
 vnoremap <C-c> "+y
 ```  
 
-#Shell Script - Oh my zsh  
+#Shell Script - Oh my zsh   
+https://ohmyz.sh/   
 ` sh -c "&(curl -fssL https://raw.githubusercontent.com/ohmyzsh/ohmyz sh/master/tools/install.sh)" `
 
 
