@@ -16,7 +16,7 @@ libft/
 ├── ft_isdigit.c  
 ├── ft_isalnum.c  
 ├── ...              // All other ft_*.c files  
-└── README.md       // (Optional) Project description and instructions  
+└── README.md       // Project description and instructions  
 
 
 Part I  
