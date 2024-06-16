@@ -12,12 +12,12 @@ It will contain a lot of general purpose functions your programs will rely upon.
 libft/  
 ├── Makefile  
 ├── libft.h              // Header file with function prototypes  
-├── ....
+├── ....  
 ├── ft_isalpha.c  
 ├── ft_isdigit.c  
 ├── ft_isalnum.c
-├── ...
-├── ...                // All other ft_*.c files  
+├── ...  
+├── ...                // All other ft_*.c files    
 └── README.md         // Project description and instructions  
 
 
