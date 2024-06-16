@@ -11,7 +11,7 @@
 | Circle 2 | M.1         | get_next_line / Born2BeRoot / ft_printf                    | 02/08/2024 | 41  | 🔒     |
 | Circle 3 | M.2         | push_swap / pipex OR minitalk / fdf OR so_long OR fract-ol | 10/09/2024 | 39  | 🔒     |
 | Circle 3 | Exam Rank 2 | Libft                                                      | 15/09/2024 | 5   | 🔒     |
-| Circle 4 | M.3         | Minishell / Philosophers                                   | 05/11/2024 | 56  | 💀     |
+| Circle 4 | M.3         | Mini👹shell / Philosophers                                   | 05/11/2024 | 56  | 💀     |
 | Circle 4 | Exam Rank 3 | get_next_line / Born2BeRoot / ft_printf                    | 10/11/2024 | 5   | 🔒     |
 | Circle 5 | M.4         | CPP00-04 / Cub3D OR MiniRT / NetPractice                   | 28/01/2025 | 84  | 🔒     |
 | Circle 5 | Exam Rank 4 | Minishell (pipex OR minitalk) / Philosophers               | 02/02/2025 | 5   | 🔒     |
