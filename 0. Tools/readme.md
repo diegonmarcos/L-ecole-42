@@ -1,4 +1,5 @@
 .vimrc
+```
 set number
 " set relativenumber
 set ruler
@@ -7,9 +8,9 @@ set noswapfile
 
 " control+c = "+y
 vnoremap <C-c> "+y
+```
 
-
-#FRANCINETTE(PACO)
+#FRANCINETTE (PACO)  
 `bash -c "$(curl -fsSL https://raw.github.com/xicodomingues/francinette/master/bin/install.sh)"`
 
 ```sh
