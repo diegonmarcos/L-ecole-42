@@ -1,6 +1,6 @@
 ## Essential Coding Tools for the 42 Curriculum
 
-To excel in the 42 coding curriculum, familiarize yourself with these powerful tools across various categories:
+To excel in the 42 coding curriculum
 
 ### Shell Enhancements
 
