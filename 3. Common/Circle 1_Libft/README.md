@@ -1,6 +1,6 @@
 Libft
 
-Your very my own library
+My very own first library
 
 Summary:
 
