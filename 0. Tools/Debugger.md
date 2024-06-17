@@ -78,11 +78,11 @@ v                # View all local variables (useful after hitting a breakpoint)
 Let me know if you'd like any further refinements or have more questions!  
   
   
-##Vimspector  
+## Vimspector  
 un sistema de depuración gráfico multi-idioma para Vim1. Vimspector está probado principalmente para C++, Python y TCL, pero en teoría soporta cualquier lenguaje que Visual Studio Code soporte1.
 
 Para comenzar a depurar con Vimspector, necesitarás instalar el plugin y configurar un archivo .vimspector.json para tu proyecto. La página de GitHub de Vimspector ofrece una guía detallada y ejemplos de cómo configurar y utilizar el plugin para la depuración1.  
 
-##TermDebug. 
+## TermDebug. 
  que funciona tanto con Vim como con Neovim y es bastante útil para la depuración de C y C++2. También puedes compilar tu código C con símbolos de depuración usando la bandera -g para facilitar el proceso3.
 
