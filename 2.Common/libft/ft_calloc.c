@@ -11,14 +11,20 @@
 /* ************************************************************************** */
 #include "libft.h"
 #include <stdlib.h>
+#include <limits.h>  // For SIZE_MAX
 
-void	*ft_calloc(size_t count, size_t size)
+void *ft_calloc(size_t count, size_t size)
 {
-	void	*ptr;
+    void *ptr;
 
-	ptr = malloc(count * size);
-	if (!ptr)
-		return (NULL);
-	ft_bzero(ptr, count * size);
-	return (ptr);
+    if (count > 0 && SIZE_MAX / count < size)
+        return (NULL);  
+
+    size_t total_size = count * size;
+    ptr = malloc(total_size);
+
+    if (ptr)
+        ft_bzero(ptr, total_size); 
+
+    return (ptr);
 }

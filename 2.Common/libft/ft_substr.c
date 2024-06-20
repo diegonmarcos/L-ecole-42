@@ -9,22 +9,30 @@
 /*   Updated: 2024/06/15 20:04:46 by dnepomuc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdlib.h>
 #include "libft.h"
+#include <stdlib.h>
 
-char	*ft_substr(const char *s, unsigned int start, size_t len)
+char    *ft_substr(const char *s, unsigned int start, size_t len)
 {
-	char	*ret;
+    char    *ret;
+    size_t  s_len;
 
-	if (!s)
-		return (0);
-	if (ft_strlen(s) < start)
-		len = 0;
-	if (ft_strlen(s + start) < len)
-		len = ft_strlen(s + start);
-	ret = malloc(sizeof(char) * (len + 1));
-	if (!ret)
-		return (0);
-	ft_strlcpy(ret, s + start, len + 1);
-	return (ret);
+    if (!s)
+        return (NULL);  // Use NULL instead of 0
+
+    s_len = ft_strlen(s); // Calculate strlen only once
+    if (s_len < start)
+        return (NULL);   // Use NULL instead of 0
+
+    // Use the calculated s_len here
+    if (s_len - start < len)  
+        len = s_len - start;  
+
+    ret = malloc(sizeof(char) * (len + 1));
+    if (!ret)
+        return (NULL);  // Use NULL instead of 0
+
+    ft_strlcpy(ret, s + start, len + 1);
+    return (ret);
 }
+
