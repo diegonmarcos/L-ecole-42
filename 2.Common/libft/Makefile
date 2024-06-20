@@ -37,7 +37,7 @@ ft_putchar_fd.c\
 ft_putstr_fd.c\
 ft_putendl_fd.c\
 ft_putnbr_fd.c\
-ft_lstnew.c\
+#ft_lstnew.c\
 ft_lstadd_front.c\
 ft_lstsize.c\
 ft_lstlast.c\
@@ -47,11 +47,14 @@ ft_lstclear.c\
 ft_lstiter.c\
 ft_lstmap.c\
 
-
-
-
-
 OBJS = $(SRCS:.c=.o)
+
+# Bonus Objects
+BONUS_OBJS = ft_lstnew.o ft_lstadd_front.o ft_lstsize.o ft_lstlast.o ft_lstadd_back.o ft_lstdelone.o ft_lstclear.o ft_lstiter.o ft_lstmap.o
+
+# Bonus Rule
+bonus: $(OBJS) $(BONUS_OBJS)
+	ar rcs $(NAME) $(OBJS) $(BONUS_OBJS)
 
 all: $(NAME)
 
