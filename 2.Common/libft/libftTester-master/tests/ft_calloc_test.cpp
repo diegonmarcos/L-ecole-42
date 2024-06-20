@@ -10,6 +10,10 @@ extern "C"
 #include "leaks.hpp"
 #include <string.h>
 #include <limits.h>
+#include <stdint.h>   // For C99 or later standards
+// or
+#include <limits.h>  // For C89/C90 standard
+
 
 int iTest = 1;
 int main(void)

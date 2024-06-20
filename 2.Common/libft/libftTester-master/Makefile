@@ -10,7 +10,7 @@ MANDATORY		= memset bzero memcpy memmove memchr memcmp strlen isalpha isdigit is
 BONUS			= lstnew lstadd_front lstsize lstlast lstadd_back lstdelone lstclear lstiter lstmap
 VSOPEN			= $(addprefix vs, $(MANDATORY)) $(addprefix vs, $(BONUS))
 
-$(info LIBFT_PATH is $(LIBFT_PATH))
+# $(info LIBFT_PATH is $(LIBFT_PATH))
 
 CC		= clang++
 CFLAGS	= -g3 -ldl -gdwarf-4 -std=c++11 -I utils/ -I$(LIBFT_PATH) 
