@@ -1,0 +1,45 @@
+\chapter{libft\+Tester (2019+)}
+\hypertarget{md_libftTester-master_2README}{}\label{md_libftTester-master_2README}\index{libftTester (2019+)@{libftTester (2019+)}}
+\label{md_libftTester-master_2README_autotoc_md7}%
+\Hypertarget{md_libftTester-master_2README_autotoc_md7}%
+Tester for the libft project of 42 school (with personalized leaks checking on mac, using valgrind on linux) ~\newline
+ Clone this tester in your libft repository, or somewhere else and customize the path to your libft project by changing the LIBFT\+\_\+\+PATH variable inside the Makefile. ~\newline
+
+
+ ~\newline
+\hypertarget{md_libftTester-master_2README_autotoc_md8}{}\doxysection{\texorpdfstring{Commands}{Commands}}\label{md_libftTester-master_2README_autotoc_md8}
+make m = launch mandatory tests ~\newline
+ make b = launch bonus tests ~\newline
+ make a = launch mandatory tests + bonus tests ~\newline
+ make \mbox{[}function name\mbox{]} = launch associated test ex\+: {\ttfamily make calloc} ~\newline
+
+
+make dockerm = launch mandatory tests in linux container ~\newline
+ make dockerb = launch bonus tests in linux container ~\newline
+ make dockera = launch mandatory tests + bonus tests in linux container ~\newline
+ make docker \mbox{[}function name\mbox{]} = launch associated test in linux container ex\+: {\ttfamily make dockercalloc} ~\newline
+ Thanks to gurival-\/ for the docker idea (\href{https://github.com/grouville/valgrind_42}{\texttt{ https\+://github.\+com/grouville/valgrind\+\_\+42}}) ~\newline
+
+
+make vs \mbox{[}function name\mbox{]} = open the corresponding tests in vscode ex\+: {\ttfamily make vscalloc} ~\newline
+\hypertarget{md_libftTester-master_2README_autotoc_md9}{}\doxysection{\texorpdfstring{Setup docker in goinfre for 42 mac}{Setup docker in goinfre for 42 mac}}\label{md_libftTester-master_2README_autotoc_md9}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{rm\ -\/rf\ \string~/Library/Containers/com.docker.docker\ \ }
+\DoxyCodeLine{rm\ -\/rf\ \string~/.docker\ \ }
+\DoxyCodeLine{rm\ -\/rf\ /goinfre/\$\{USER\}/docker\ /goinfre/\$\{USER\}/agent\ \ }
+\DoxyCodeLine{mkdir\ -\/p\ /goinfre/\$\{USER\}/docker\ /goinfre/\$\{USER\}/agent\ \ }
+\DoxyCodeLine{ln\ -\/s\ /goinfre/\$\{USER\}/agent\ \string~/Library/Containers/com.docker.docker\ \ }
+\DoxyCodeLine{ln\ -\/s\ /goinfre/\$\{USER\}/docker\ \string~/.docker\ }
+
+\end{DoxyCode}
+\hypertarget{md_libftTester-master_2README_autotoc_md10}{}\doxysection{\texorpdfstring{Outputs}{Outputs}}\label{md_libftTester-master_2README_autotoc_md10}
+ ~\newline
+  ~\newline
+  ~\newline
+
+
+MOK / MKO = test about your malloc size (this shouldn\textquotesingle{}t be tested by moulinette) ~\newline
+\hypertarget{md_libftTester-master_2README_autotoc_md11}{}\doxysection{\texorpdfstring{Report bugs / Improvement}{Report bugs / Improvement}}\label{md_libftTester-master_2README_autotoc_md11}
+Contact me on slack or discord \+: jgambard ~\newline
+ 

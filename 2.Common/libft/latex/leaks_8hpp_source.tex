@@ -1,0 +1,36 @@
+\doxysection{leaks.\+hpp}
+\hypertarget{leaks_8hpp_source}{}\label{leaks_8hpp_source}\index{libftTester-\/master/utils/leaks.hpp@{libftTester-\/master/utils/leaks.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ LEAK\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#\ define\ LEAK\_HPP}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#\ include\ <stdlib.h>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#\ include\ <vector>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#\ include\ <iostream>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#\ include\ <sstream>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#\ include\ <unistd.h>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#\ include\ <stdlib.h>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#\ include\ <dlfcn.h>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#\ include\ <algorithm>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#\ include\ "{}color.hpp"{}}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{using\ }std::endl;}
+\DoxyCodeLine{00015\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{structptr}{ptr}}}
+\DoxyCodeLine{00016\ \{}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keywordtype}{void}\ *\ p;}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{size\_t}\ size;}
+\DoxyCodeLine{00019\ \ \ \ \ \mbox{\hyperlink{structptr}{ptr}}(\textcolor{keywordtype}{void}\ *\ \_p\ =\ 0,\ \textcolor{keywordtype}{size\_t}\ \_size\ =\ 0)\ :\ p(\_p),\ size(\_size)\ \{\}}
+\DoxyCodeLine{00020\ \};}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{keywordtype}{bool}\ operator==(\mbox{\hyperlink{structptr}{ptr}}\ \textcolor{keyword}{const}\ \&\ p1,\ \mbox{\hyperlink{structptr}{ptr}}\ \textcolor{keyword}{const}\ \&\ p2);}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{extern}\ std::vector<ptr>\ mallocList;}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keywordtype}{void}\ mallocListAdd(\textcolor{keywordtype}{void}\ *\ p,\ \textcolor{keywordtype}{size\_t}\ size);}
+\DoxyCodeLine{00027\ \textcolor{keywordtype}{void}\ mallocListRemove(\textcolor{keywordtype}{void}\ *\ p);}
+\DoxyCodeLine{00028\ \textcolor{keywordtype}{void}\ showLeaks(\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

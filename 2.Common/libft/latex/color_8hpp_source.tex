@@ -1,0 +1,68 @@
+\doxysection{color.\+hpp}
+\hypertarget{color_8hpp_source}{}\label{color_8hpp_source}\index{libftTester-\/master/utils/color.hpp@{libftTester-\/master/utils/color.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ COLOR\_HPP}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#\ define\ COLOR\_HPP}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#\ include\ <iostream>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#\ define\ ENDL\ RESET\_ALL\ <<\ std::endl}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{keyword}{enum}\ Color}
+\DoxyCodeLine{00007\ \{}
+\DoxyCodeLine{00008\ \ \ \ \ RESET\_ALL\ \ \ \ \ \ \ \ \ \ \ =\ 0,}
+\DoxyCodeLine{00009\ \ \ \ \ RESET\_BOLD\ \ \ \ \ \ \ \ \ \ =\ 21,}
+\DoxyCodeLine{00010\ \ \ \ \ RESET\_DIM\ \ \ \ \ \ \ \ \ \ \ =\ 22,}
+\DoxyCodeLine{00011\ \ \ \ \ RESET\_UNDERLINED\ \ \ \ =\ 24,}
+\DoxyCodeLine{00012\ \ \ \ \ RESET\_BLINK\ \ \ \ \ \ \ \ \ =\ 25,}
+\DoxyCodeLine{00013\ \ \ \ \ RESET\_REVERSED\ \ \ \ \ \ =\ 27,}
+\DoxyCodeLine{00014\ \ \ \ \ RESET\_HIDDEN\ \ \ \ \ \ \ \ =\ 28,}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ BOLD\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ =\ 1,}
+\DoxyCodeLine{00017\ \ \ \ \ DIM\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ =\ 2,}
+\DoxyCodeLine{00018\ \ \ \ \ UNDERLINED\ \ \ \ \ \ \ \ \ \ =\ 4,}
+\DoxyCodeLine{00019\ \ \ \ \ BLINK\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ =\ 5,}
+\DoxyCodeLine{00020\ \ \ \ \ REVERSED\ \ \ \ \ \ \ \ \ \ \ \ =\ 7,}
+\DoxyCodeLine{00021\ \ \ \ \ HIDDEN\ \ \ \ \ \ \ \ \ \ \ \ \ \ =\ 8,}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \ \ \ \ FG\_DEFAULT\ \ \ \ \ \ \ \ \ \ =\ 39,}
+\DoxyCodeLine{00024\ \ \ \ \ FG\_BLACK\ \ \ \ \ \ \ \ \ \ \ \ =\ 30,}
+\DoxyCodeLine{00025\ \ \ \ \ FG\_RED\ \ \ \ \ \ \ \ \ \ \ \ \ \ =\ 31,}
+\DoxyCodeLine{00026\ \ \ \ \ FG\_GREEN\ \ \ \ \ \ \ \ \ \ \ \ =\ 32,}
+\DoxyCodeLine{00027\ \ \ \ \ FG\_YELLOW\ \ \ \ \ \ \ \ \ \ \ =\ 33,}
+\DoxyCodeLine{00028\ \ \ \ \ FG\_BLUE\ \ \ \ \ \ \ \ \ \ \ \ \ =\ 34,}
+\DoxyCodeLine{00029\ \ \ \ \ FG\_MAGENTA\ \ \ \ \ \ \ \ \ \ =\ 35,}
+\DoxyCodeLine{00030\ \ \ \ \ FG\_CYAN\ \ \ \ \ \ \ \ \ \ \ \ \ =\ 36,}
+\DoxyCodeLine{00031\ \ \ \ \ FG\_LGRAY\ \ \ \ \ \ \ \ \ \ \ \ =\ 37,}
+\DoxyCodeLine{00032\ \ \ \ \ FG\_DGRAY\ \ \ \ \ \ \ \ \ \ \ \ =\ 90,}
+\DoxyCodeLine{00033\ \ \ \ \ FG\_LRED\ \ \ \ \ \ \ \ \ \ \ \ \ =\ 91,}
+\DoxyCodeLine{00034\ \ \ \ \ FG\_LGREEN\ \ \ \ \ \ \ \ \ \ \ =\ 92,}
+\DoxyCodeLine{00035\ \ \ \ \ FG\_LYELLOW\ \ \ \ \ \ \ \ \ \ =\ 93,}
+\DoxyCodeLine{00036\ \ \ \ \ FG\_LBLUE\ \ \ \ \ \ \ \ \ \ \ \ =\ 94,}
+\DoxyCodeLine{00037\ \ \ \ \ FG\_LMAGENTA\ \ \ \ \ \ \ \ \ =\ 95,}
+\DoxyCodeLine{00038\ \ \ \ \ FG\_LCYAN\ \ \ \ \ \ \ \ \ \ \ \ =\ 96,}
+\DoxyCodeLine{00039\ \ \ \ \ FG\_WHITE\ \ \ \ \ \ \ \ \ \ \ \ =\ 97,}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00041\ \ \ \ \ BG\_DEFAULT\ \ \ \ \ \ \ \ \ \ =\ 49,}
+\DoxyCodeLine{00042\ \ \ \ \ BG\_BLACK\ \ \ \ \ \ \ \ \ \ \ \ =\ 40,}
+\DoxyCodeLine{00043\ \ \ \ \ BG\_RED\ \ \ \ \ \ \ \ \ \ \ \ \ \ =\ 41,}
+\DoxyCodeLine{00044\ \ \ \ \ BG\_GREEN\ \ \ \ \ \ \ \ \ \ \ \ =\ 42,}
+\DoxyCodeLine{00045\ \ \ \ \ BG\_YELLOW\ \ \ \ \ \ \ \ \ \ \ =\ 43,}
+\DoxyCodeLine{00046\ \ \ \ \ BG\_BLUE\ \ \ \ \ \ \ \ \ \ \ \ \ =\ 44,}
+\DoxyCodeLine{00047\ \ \ \ \ BG\_MAGENTA\ \ \ \ \ \ \ \ \ \ =\ 45,}
+\DoxyCodeLine{00048\ \ \ \ \ BG\_CYAN\ \ \ \ \ \ \ \ \ \ \ \ \ =\ 46,}
+\DoxyCodeLine{00049\ \ \ \ \ BG\_LGRAY\ \ \ \ \ \ \ \ \ \ \ \ =\ 47,}
+\DoxyCodeLine{00050\ \ \ \ \ BG\_DGRAY\ \ \ \ \ \ \ \ \ \ \ \ =\ 100,}
+\DoxyCodeLine{00051\ \ \ \ \ BG\_LRED\ \ \ \ \ \ \ \ \ \ \ \ \ =\ 101,}
+\DoxyCodeLine{00052\ \ \ \ \ BG\_LGREEN\ \ \ \ \ \ \ \ \ \ \ =\ 102,}
+\DoxyCodeLine{00053\ \ \ \ \ BG\_LYELLOW\ \ \ \ \ \ \ \ \ \ =\ 103,}
+\DoxyCodeLine{00054\ \ \ \ \ BG\_LBLUE\ \ \ \ \ \ \ \ \ \ \ \ =\ 104,}
+\DoxyCodeLine{00055\ \ \ \ \ BG\_LMAGENTA\ \ \ \ \ \ \ \ \ =\ 105,}
+\DoxyCodeLine{00056\ \ \ \ \ BG\_LCYAN\ \ \ \ \ \ \ \ \ \ \ \ =\ 106,}
+\DoxyCodeLine{00057\ \ \ \ \ BG\_WHITE\ \ \ \ \ \ \ \ \ \ \ \ =\ 107}
+\DoxyCodeLine{00058\ \};}
+\DoxyCodeLine{00059\ }
+\DoxyCodeLine{00060\ std::ostream\ \&\ operator<<(std::ostream\ \&\ os,\ Color\ c);}
+\DoxyCodeLine{00061\ }
+\DoxyCodeLine{00062\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
