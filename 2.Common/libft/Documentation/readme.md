@@ -1,3 +1,22 @@
+# Struct
+```
+libft/  
+├── Makefile  
+├── docs/html              // Documentation Doxygen  
+├── libftTester-master    // Tester  
+├── libft.h              // Header file with function prototypes  
+├── ...  
+├── ft_isalpha.c        // C files  
+├── ft_isdigit.c  
+├── ft_isalnum.c  
+├── ...  
+├── ft_isalpha.md        // Documentation - markdown files  
+├── ft_isdigit.md   
+├── ft_isalnum.md  
+├── ...                // All other ft_*.c files    
+└── README.md         // Project description and instructions  
+```
+
 # Functions
 - **Character & String Manipulation:**
     * Character Classification:
