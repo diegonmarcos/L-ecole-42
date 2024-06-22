@@ -1,7 +1,38 @@
-PROJECT_NAME           = "Libft"
-PROJECT_NUMBER         = "1.0"
-INPUT                  = .
-RECURSIVE              = YES
-FILE_PATTERNS          = *.c *.h
-OUTPUT_DIRECTORY       = docs
-GENERATE_LATEX         = NO
+# General Doxygen Settings
+PROJECT_NAME           = "libft" 
+OUTPUT_DIRECTORY       = "docs"  # Where Doxygen will generate your docs
+OPTIMIZE_OUTPUT_FOR_C  = YES
+RECURSIVE              = YES    # To scan subdirectories for code files
+
+# Input Files (Critically important!)
+INPUT                  = src/ Makefile   # Path to your code and Makefile
+
+# File Extensions to consider
+FILE_PATTERNS          = *.c *.h *.md Makefile
+
+# Markdown Handling
+USE_MDFILE_AS_MAINPAGE = README.md  # If you have a main project README
+MARKDOWN_SUPPORT       = YES
+
+# Additional Settings for Extracting Markdown
+EXTRACT_ALL            = YES         # Extract all documentation
+EXTRACT_PRIVATE        = YES         # If you want private members documented
+EXTRACT_PACKAGE        = YES         # If you use packages
+EXTRACT_STATIC         = YES         # For static members
+
+# For Makefile Documentation
+# (You'll need the extension for Makefile comments, e.g., #)
+EXTENSION_MAPPING      = Makefile=C 
+
+# Output Formats
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO  # If you don't need LaTeX output
+
+# HTML-Specific Settings (Customize as needed)
+HTML_OUTPUT            = html
+HTML_FILE_EXTENSION    = .html
+HTML_HEADER            = header.html   # Optional custom header
+HTML_FOOTER            = footer.html   # Optional custom footer
+
+# Other Options (Explore further based on your needs)
+# ... (e.g., image paths, code syntax highlighting, etc.)
