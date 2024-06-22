@@ -19,7 +19,7 @@ libft/
 ├── ft_isdigit.c  
 ├── ft_isalnum.c  
 ├── ...  
-├── ft_isalpha.md        // markdown files  
+├── ft_isalpha.md        // Documentation - markdown files  
 ├── ft_isdigit.md   
 ├── ft_isalnum.md  
 ├── ...                // All other ft_*.c files    
