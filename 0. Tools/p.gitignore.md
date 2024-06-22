@@ -6,8 +6,23 @@
 *.class
 *.dll
 *.exe
-*.o
 *.so
+
+# Executables
+*.out
+*.exe
+*.exe.stackdump
+*.dSYM
+*/main
+*/fdf
+*/fractol
+*/rtv1
+*/rt
+
+# object files, link files and libraries
+*.o
+*.d
+*.a
 
 # Packages #
 ############
@@ -21,6 +36,11 @@
 *.rar
 *.tar
 *.zip
+
+Project subjects, corrections and other stuff
+correc.*
+*.pdf
+*.gif
 
 # Logs and databases #
 ######################
@@ -37,4 +57,6 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+
 ```
