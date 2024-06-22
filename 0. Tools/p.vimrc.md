@@ -10,7 +10,13 @@ set noswapfile
 vnoremap <C-c> "+y
 ```
 
-# .vimrc - complete
+# .vimrc - complete 1
+```
+a
+```
+
+
+# .vimrc - complete 2
 ```
 " Configuración básica
 set nocompatible           " Desactiva el modo compatible con vi
