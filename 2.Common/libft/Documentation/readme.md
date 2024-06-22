@@ -2,7 +2,7 @@
 
 This project is about coding a C library.
 
-It will contain a lot of general purpose functions your programs will rely upon.
+It will contain a lot of general purpose functions your programs will rely upon.  
 **Character Classification:**  
 ft_isalpha, ft_isdigit ft_isalnum ft_isascii ft_isprint  
 **String Operations:**  
