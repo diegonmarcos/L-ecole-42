@@ -24,7 +24,7 @@ ft_lstnew ft_lstadd_front ft_lstsize ft_lstlast ft_lstadd_back ft_lstdelone ft_l
 ```
 libft/  
 ├── Makefile  
-├── docs/html              // Documentation Doxygen  
+├── docs/index.html              // Documentation Doxygen  
 ├── libftTester-master    // Tester  
 ├── libft.h              // Header file with function prototypes  
 ├── ...  

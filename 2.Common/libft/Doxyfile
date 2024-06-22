@@ -6,9 +6,14 @@ RECURSIVE              = YES    # To scan subdirectories for code files
 
 # Input Files (Critically important!)
 INPUT                  = src/ Makefile   # Path to your code and Makefile
+INPUT                  = .   # Path to your code and Makefile
 
 # File Extensions to consider
 FILE_PATTERNS          = *.c *.h *.md Makefile
+
+# Exclusions
+EXCLUDE                = ./libftTester-master/	# Exclude the "test_files" folder
+EXCLUDE_PATTERNS       = */temp/*		# Exclude any "temp" subfolders
 
 # Markdown Handling
 USE_MDFILE_AS_MAINPAGE = README.md  # If you have a main project README
@@ -31,8 +36,8 @@ GENERATE_LATEX         = NO  # If you don't need LaTeX output
 # HTML-Specific Settings (Customize as needed)
 HTML_OUTPUT            = html
 HTML_FILE_EXTENSION    = .html
-HTML_HEADER            = header.html   # Optional custom header
-HTML_FOOTER            = footer.html   # Optional custom footer
+#HTML_HEADER            = header.html   # Optional custom header
+#HTML_FOOTER            = footer.html   # Optional custom footer
 
 # Other Options (Explore further based on your needs)
 # ... (e.g., image paths, code syntax highlighting, etc.)
