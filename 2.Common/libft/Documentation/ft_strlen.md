@@ -49,3 +49,34 @@ int main() {
 - **Efficiency:** The provided implementation is simple and clear. In performance-critical situations, there might be more optimized algorithms to calculate string length.
 
 Let me know if you'd like a more detailed discussion on any of these aspects!
+
+
+# ft_strlen - **Synopsis:** - `size_t ft_strlen(const char *str);`
+
+**Brief:**  
+Calculates the length of the string pointed to by `str`, excluding the terminating null byte (`'\0'`).
+
+**File:** `ft_strlen.c` / **Date:** 2024-06-22  
+**Author:** Diego N. Marcos <dnepomuc@student.42barcelona.com>
+
+**Library:**
+
+
+
+**Description:**  
+This function iterates through the characters of the string `str`, incrementing a counter until it encounters the null terminator (`'\0'`). The final value of the counter represents the length of the string (the number of characters before the null terminator).
+
+**Input Values:**
+* `str`: A pointer to the null-terminated byte string to be measured.
+
+**Return Value:**
+* The number of bytes in the string pointed to by `str`.
+
+**Note:**
+- The function does not include the terminating null byte in the length calculation.
+- If `str` is `NULL`, the behavior is undefined. Ensure that the pointer is valid before calling the function.
+
+**Example:**
+```c
+char *str = "Hello, world!";
+size_t length = ft_strlen(str); // length will be 13
