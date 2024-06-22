@@ -1,6 +1,6 @@
-#42 Header
+# 42 Header
 
-```
+```sh
 let s:asciiart = [
       \"        :::      ::::::::",
       \"      :+:      :+:    :+:",
