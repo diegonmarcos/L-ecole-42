@@ -1,14 +1,13 @@
 # .gitignore
 ```
 # Compiled source #
-
 *.com
 *.class
 *.dll
 *.exe
 *.so
 
-# Executables
+# Executables #
 *.out
 *.exe
 *.exe.stackdump
@@ -19,13 +18,12 @@
 */rtv1
 */rt
 
-# object files, link files and libraries
+# object files, link files and libraries #
 *.o
 *.d
 *.a
 
 # Packages #
-
 # it's better to unpack these files and commit the raw source
 # git has its own built in compression methods
 *.7z
@@ -37,19 +35,17 @@
 *.tar
 *.zip
 
-Project subjects, corrections and other stuff
+# Project subjects, corrections and other stuff#
 correc.*
 *.pdf
 *.gif
 
 # Logs and databases #
-
 *.log
 *.sql
 *.sqlite
 
 # OS generated files #
-
 .DS_Store
 .DS_Store?
 ._*
