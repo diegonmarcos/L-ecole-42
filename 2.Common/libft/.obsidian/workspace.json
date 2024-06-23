@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ft_bzero.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ft_bzero.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ft_bzero.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ft_bzero.md"
+                "file": "README.md"
               }
             }
           }
@@ -148,14 +148,15 @@
   },
   "active": "ff8162e897dc5d08",
   "lastOpenFiles": [
-    "ft_atoi.md",
+    "ft_strnstr.md",
+    "README.md",
     "ft_bzero.md",
+    "ft_atoi.md",
     "ft_toupper.md",
     "ft_tolower.md",
     "ft_substr.md",
     "ft_strtrim.md",
     "ft_strrchr.md",
-    "ft_strnstr.md",
     "ft_strncmp.md",
     "ft_strmapi.md",
     "ft_strlen.md",
@@ -173,7 +174,6 @@
     "ft_memset.md",
     "ft_memmove.md",
     "ft_memcpy.md",
-    "ft_memcmp.md",
     "docs/html/tab_a.png"
   ]
 }

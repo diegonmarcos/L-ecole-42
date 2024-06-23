@@ -94,6 +94,65 @@ libft/
         * [ft_lstmap](ft_lstmap.md)
 
 
+## Libft (custom)
+
+| Function    | Description                                                            |
+| :---------- | :--------------------------------------------------------------------- |
+| ft_lst*     | Linked list manipulation functions.                                    |
+| ft_split    | Split a string into an array of strings based on a delimiter.          |
+| ft_striteri | Apply a function to each character of a string.                        |
+| ft_strjoin  | Concatenate two strings.                                               |
+| ft_strmapi  | Apply a function to each character of a string to create a new string. |
+| ft_strtrim  | Trim leading and trailing whitespace from a string.                    |
+| ft_substr   | Create a substring from a given string.                                |
+
+## ctype.h
+
+|Function|Description|
+|:--|:--|
+|ft_isalnum|Check if a character is alphanumeric.|
+|ft_isalpha|Check if a character is alphabetic.|
+|ft_isascii|Check if a character is an ASCII character.|
+|ft_isdigit|Check if a character is a digit.|
+|ft_isprint|Check if a character is printable.|
+|ft_tolower|Convert an uppercase letter to lowercase.|
+|ft_toupper|Convert a lowercase letter to uppercase.|
+
+## stdlib.h
+
+|Function|Description|
+|:--|:--|
+|ft_atoi|Convert a string to an integer.|
+|ft_calloc|Allocate and zero-initialize array.|
+|ft_itoa|Convert an integer to a string.|
+
+## string.h
+
+|Function|Description|
+|:--|:--|
+|ft_bzero|Zero a byte string.|
+|ft_memchr|Locate character in block of memory.|
+|ft_memcmp|Compare two blocks of memory.|
+|ft_memcpy|Copy block of memory.|
+|ft_memmove|Move block of memory.|
+|ft_memset|Fill block of memory with a byte.|
+|ft_strchr|Locate first occurrence of character in string.|
+|ft_strdup|Duplicate a string.|
+|ft_strlcat|Concatenate strings with length restrictions.|
+|ft_strlcpy|Copy strings with length restrictions.|
+|ft_strlen|Calculate the length of a string.|
+|ft_strncmp|Compare two strings up to a certain number of characters.|
+|ft_strnstr|Locate a substring within a string up to a certain number of characters.|
+|ft_strrchr|Locate last occurrence of character in string.|
+
+## unistd.h
+
+|Function|Description|
+|:--|:--|
+|ft_putchar_fd|Output a character to a file descriptor.|
+|ft_putendl_fd|Output a string to a file descriptor, followed by a newline.|
+|ft_putnbr_fd|Output an integer to a file descriptor.|
+
 ---  
 **Part I**  
 ft_isalpha  
