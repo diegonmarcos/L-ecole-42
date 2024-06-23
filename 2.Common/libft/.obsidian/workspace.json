@@ -148,6 +148,7 @@
   },
   "active": "ff8162e897dc5d08",
   "lastOpenFiles": [
+    "francinette",
     "ft_isascii.md",
     "README.md",
     "ft_strnstr.md",
@@ -173,7 +174,6 @@
     "ft_putendl_fd.md",
     "ft_putchar_fd.md",
     "ft_memset.md",
-    "ft_memmove.md",
     "docs/html/tab_a.png"
   ]
 }

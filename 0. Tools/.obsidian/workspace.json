@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "CodeQuality.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "CodeQuality.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "CodeQuality.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "CodeQuality.md"
               }
             }
           }
@@ -148,8 +148,8 @@
   },
   "active": "347f4b6e3c976c49",
   "lastOpenFiles": [
-    "p.gitignore.md",
     "README.md",
+    "p.gitignore.md",
     "p.vimrc_42Header.md",
     "vimrc_42header.md",
     "p.vimrc.md",
