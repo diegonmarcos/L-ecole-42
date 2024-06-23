@@ -66,7 +66,7 @@ libft/
 |[ft_strnstr](ft_strnstr.md)|Locate a substring within a string up to a certain number of characters.|
 |[ft_strdup](ft_strdup.md)|Duplicate a string.|
 
-- ### String Manipulation (Advanced) (Custom: `libft.h`)
+- ### String Manipulation (Custom: `libft.h`)
 
 | Function                                                    | Description                                                            |
 | :---------------------------------------------------------- | :--------------------------------------------------------------------- |
