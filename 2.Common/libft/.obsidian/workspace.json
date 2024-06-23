@@ -148,8 +148,9 @@
   },
   "active": "ff8162e897dc5d08",
   "lastOpenFiles": [
-    "ft_strnstr.md",
+    "ft_isascii.md",
     "README.md",
+    "ft_strnstr.md",
     "ft_bzero.md",
     "ft_atoi.md",
     "ft_toupper.md",
@@ -173,7 +174,6 @@
     "ft_putchar_fd.md",
     "ft_memset.md",
     "ft_memmove.md",
-    "ft_memcpy.md",
     "docs/html/tab_a.png"
   ]
 }

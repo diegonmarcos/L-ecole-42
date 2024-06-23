@@ -40,60 +40,89 @@ libft/
 ```
 
 # Functions
-- **Character & String Manipulation:**
-    * Character Classification:
-        * [ft_isalpha](ft_isalpha.md)
-        * [ft_isdigit](ft_isdigit.md)
-        * [ft_isalnum](ft_isalnum.md)
-        * [ft_isascii](ft_isascii.md)
-        * [ft_isprint](ft_isprint.md)
-    * String Operations:
-        * [ft_strlen](ft_strlen.md)
-        * [ft_strlcat](ft_strlcat.md)
-        * [ft_toupper](ft_toupper.md)
-        * [ft_tolower](ft_tolower.md)
-        * [ft_strchr](ft_strchr.md)
-        * [ft_strrchr](ft_strrchr.md)
-        * [ft_strncmp](ft_strncmp.md)
-        * [ft_strnstr](ft_strnstr.md)
-        * [ft_strdup](ft_strdup.md)
-    * String Manipulation (Advanced):
-        * [ft_substr](ft_substr.md)
-        * [ft_strjoin](ft_strjoin.md)
-        * [ft_strtrim](ft_strtrim.md)
-        * [ft_split](ft_split.md)
-        * [ft_itoa](ft_itoa.md)
-        * [ft_strmapi](ft_strmapi.md)
-        * [ft_striteri](ft_striteri.md)
+## Character & String Manipulation
 
-- **Others :**
-    * Memory Manipulation:
-        * [ft_memset](ft_memset.md)
-        * [ft_bzero](ft_bzero.md)
-        * [ft_memcpy](ft_memcpy.md)
-        * [ft_memmove](ft_memmove.md)
-        * [ft_memchr](ft_memchr.md)
-        * [ft_memcmp](ft_memcmp.md)
-        * [ft_calloc](ft_calloc.md)
-    * Conversions 
-        * [ft_atoi](ft_atoi.md)
-    * I/O File Descriptors
-        * [ft_putchar_fd](ft_putchar_fd.md)
-        * [ft_putstr_fd](ft_putstr_fd.md)
-        * [ft_putendl_fd](ft_putendl_fd.md)
-        * [ft_putnbr_fd](ft_putnbr_fd.md)
-    * Linked List Operations
-        * [ft_lstnew](ft_lstnew.md)
-        * [ft_lstadd_front](ft_lstadd_front.md)
-        * [ft_lstsize](ft_lstsize.md)
-        * [ft_lstlast](ft_lstlast.md)
-        * [ft_lstadd_back](ft_lstadd_back.md)
-        * [ft_lstdelone](ft_lstdelone.md)
-        * [ft_lstclear](ft_lstclear.md)
-        * [ft_lstiter](ft_lstiter.md)
-        * [ft_lstmap](ft_lstmap.md)
+- ### Character Classification (`ctype.h`)
 
+| Function                    | Description                                 |
+| :-------------------------- | :------------------------------------------ |
+| [ft_isalnum](ft_isalnum.md) | Check if a character is alphanumeric.       |
+| [ft_isalpha](ft_isalpha.md) | Check if a character is alphabetic.         |
+| [ft_isascii](ft_isascii.md) | Check if a character is an ASCII character. |
+| [ft_isdigit](ft_isdigit.md) | Check if a character is a digit.            |
+| [ft_isprint](ft_isprint.md) | Check if a character is printable.          |
+| [ft_tolower](ft_tolower.md) | Convert an uppercase letter to lowercase.   |
+| [ft_toupper](ft_toupper.md) | Convert a lowercase letter to uppercase.    |
 
+- ### String Operations (`string.h`)
+
+|Function|Description|
+|:--|:--|
+|[ft_strlen](ft_strlen.md)|Calculate the length of a string.|
+|[ft_strlcat](ft_strlcat.md)|Concatenate strings with length restrictions.|
+|[ft_strchr](ft_strchr.md)|Locate first occurrence of character in string.|
+|[ft_strrchr](ft_strrchr.md)|Locate last occurrence of character in string.|
+|[ft_strncmp](ft_strncmp.md)|Compare two strings up to a certain number of characters.|
+|[ft_strnstr](ft_strnstr.md)|Locate a substring within a string up to a certain number of characters.|
+|[ft_strdup](ft_strdup.md)|Duplicate a string.|
+
+- ### String Manipulation (Advanced) (Custom: `libft.h`)
+
+| Function                                                    | Description                                                            |
+| :---------------------------------------------------------- | :--------------------------------------------------------------------- |
+| [ft_substr](ft_substr.md)     | Create a substring from a given string.                                |
+| [ft_strjoin](ft_strjoin.md)   | Concatenate two strings.                                               |
+| [ft_strtrim](ft_strtrim.md)   | Trim leading and trailing whitespace from a string.                    |
+| [ft_split](ft_split.md)       | Split a string into an array of strings based on a delimiter.          |
+| [ft_itoa](ft_itoa.md)         | Convert an integer to a string.                                        |
+| [ft_strmapi](ft_strmapi.md)   | Apply a function to each character of a string to create a new string. |
+| [ft_striteri](ft_striteri.md) | Apply a function to each character of a string.                        |
+
+## Other Functions
+
+- ### Memory Manipulation (`string.h`, `stdlib.h`)
+
+|Function|Description|
+|:--|:--|
+|[ft_memset](ft_memset.md)|Fill block of memory with a byte.|
+|[ft_bzero](ft_bzero.md)|Zero a byte string.|
+|[ft_memcpy](ft_memcpy.md)|Copy block of memory.|
+|[ft_memmove](ft_memmove.md)|Move block of memory.|
+|[ft_memchr](ft_memchr.md)|Locate character in block of memory.|
+|[ft_memcmp](ft_memcmp.md)|Compare two blocks of memory.|
+|[ft_calloc](ft_calloc.md)|Allocate and zero-initialize array.|
+
+- ### Conversions (`stdlib.h`)
+
+|Function|Description|
+|:--|:--|
+|[ft_atoi](ft_atoi.md)|Convert a string to an integer.|
+
+- ### I/O File Descriptors (`unistd.h`)
+
+|Function|Description|
+|:--|:--|
+|[ft_putchar_fd](ft_putchar_fd.md)|Output a character to a file descriptor.|
+|[ft_putstr_fd](ft_putstr_fd.md)|Output a string to a file descriptor.|
+|[ft_putendl_fd](ft_putendl_fd.md)|Output a string to a file descriptor, followed by a newline.|
+|[ft_putnbr_fd](ft_putnbr_fd.md)|Output an integer to a file descriptor.|
+
+- ### Linked List Operations (Custom: `libft.h`)
+
+| Function                              | Description                                                                        |
+| :------------------------------------ | :--------------------------------------------------------------------------------- |
+| [ft_lstnew](ft_lstnew.md)             | Create a new list element.                                                         |
+| [ft_lstadd_front](ft_lstadd_front.md) | Add a new element at the beginning of a list.                                      |
+| [ft_lstsize](ft_lstsize.md)           | Count the number of elements in a list.                                            |
+| [ft_lstlast](ft_lstlast.md)           | Find the last element of a list.                                                   |
+| [ft_lstadd_back](ft_lstadd_back.md)   | Add a new element at the end of a list.                                            |
+| [ft_lstdelone](ft_lstdelone.md)       | Delete a list element.                                                             |
+| [ft_lstclear](ft_lstclear.md)         | Delete all elements of a list.                                                     |
+| [ft_lstiter](ft_lstiter.md)           | Apply a function to each element of a list.                                        |
+| [ft_lstmap](ft_lstmap.md)             | Apply a function to each element of a list and create a new list from the results. |
+
+---
+# Functions (by header)
 ## Libft (custom)
 
 | Function    | Description                                                            |
@@ -154,6 +183,9 @@ libft/
 |ft_putnbr_fd|Output an integer to a file descriptor.|
 
 ---  
+|                                                                                    |
+
+---
 **Part I**  
 ft_isalpha  
 ft_isdigit  
