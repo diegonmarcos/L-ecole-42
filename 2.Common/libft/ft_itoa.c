@@ -24,9 +24,9 @@
 #include "libft.h"
 #include <stdlib.h>
 
-int		digit_counter(int n)
+int	digit_counter(int n)
 {
-	int i;
+	int	i;
 	int	copy;
 
 	i = 0;
@@ -48,9 +48,9 @@ int		digit_counter(int n)
 	return (i);
 }
 
-int		exp_counter(int n)
+int	exp_counter(int n)
 {
-	int exp;
+	int	exp;
 	int	digits;
 
 	if (n == 0)

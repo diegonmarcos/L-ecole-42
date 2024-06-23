@@ -13,18 +13,14 @@
 #include <stdlib.h>
 #include <stdint.h>  // For SIZE_MAX
 
-void *ft_calloc(size_t count, size_t size)
+void    *ft_calloc(size_t count, size_t size)
 {
     void *ptr;
 
     if (count > 0 && SIZE_MAX / count < size)
         return (NULL);  
-
     size_t total_size = count * size;
     ptr = malloc(total_size);
-
     if (ptr)
         ft_bzero(ptr, total_size); 
-
     return (ptr);
-}
