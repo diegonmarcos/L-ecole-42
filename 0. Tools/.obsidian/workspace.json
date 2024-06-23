@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "113c16e90b070f55",
+        "id": "f68549b6773964ea",
         "type": "tabs",
         "children": [
           {
-            "id": "347f4b6e3c976c49",
+            "id": "e59029c0eed0ea40",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "CodeQuality.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "CodeQuality.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "CodeQuality.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "CodeQuality.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,16 +138,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "347f4b6e3c976c49",
+  "active": "e59029c0eed0ea40",
   "lastOpenFiles": [
+    "Shell.md",
+    "VSCode.md",
     "README.md",
+    "CodeQuality.md",
     "p.gitignore.md",
     "p.vimrc_42Header.md",
     "vimrc_42header.md",
     "p.vimrc.md",
-    "CodeQuality.md",
     "Scripts.md",
-    "Shell.md",
     "Debugger.md"
   ]
 }
