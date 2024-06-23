@@ -1,4 +1,4 @@
-# ft_lstmap - **Synopsis:** - `t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));`
+# ft_lstmap - `t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));`
 
 **Brief:**
 Iterates a list applying the function ’f’ to each node’s content and creating a new list resulting of the successive applications of the function ’f’.

@@ -1,4 +1,4 @@
-# ft_striteri - **Synopsis:** - `void ft_striteri(char *s, void (*f)(unsigned int, char *));`
+# ft_striteri - `void ft_striteri(char *s, void (*f)(unsigned int, char *));`
 
 **Brief:**
 Applies the function `f` to each character of the string `s`, and passing its index as first argument.

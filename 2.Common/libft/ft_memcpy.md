@@ -1,4 +1,4 @@
-# ft_memcpy - **Synopsis:** - `void *ft_memcpy(void *dst, const void *src, size_t n);`
+# ft_memcpy - `void *ft_memcpy(void *dst, const void *src, size_t n);`
 
 **Brief:**
 Copies `n` bytes from memory area `src` to memory area `dst`.

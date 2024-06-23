@@ -1,4 +1,4 @@
-# ft_strrchr - **Synopsis:** - `char *ft_strrchr(const char *s, int c);`
+# ft_strrchr - `char *ft_strrchr(const char *s, int c);`
 
 **Brief:**  
 Locates the last occurrence of character `c` (converted to a `char`) in the string pointed to by `s`.

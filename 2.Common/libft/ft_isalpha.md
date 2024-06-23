@@ -1,4 +1,4 @@
-# ft_isalpha - **Synopsis:** - `int ft_isalpha(int c);`
+# ft_isalpha - `int ft_isalpha(int c);`
 
 **Brief:**
 Checks if a character is alphabetic.

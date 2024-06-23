@@ -1,4 +1,4 @@
-# ft_lstlast - **Synopsis:** - `t_list *ft_lstlast(t_list *lst);`
+# ft_lstlast - `t_list *ft_lstlast(t_list *lst);`
 
 **Brief:**
 Returns the last node of the linked list.

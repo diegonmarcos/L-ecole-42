@@ -1,4 +1,4 @@
-# ft_lstiter - **Synopsis:** - `void ft_lstiter(t_list *lst, void (*f)(void *));`
+# ft_lstiter - `void ft_lstiter(t_list *lst, void (*f)(void *));`
 
 **Brief:**
 Iterates the list `lst` and applies the function `f` to the content of each node.

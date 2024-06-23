@@ -1,4 +1,4 @@
-# ft_isascii - **Synopsis:** - `int ft_isascii(int c);`
+# ft_isascii - `int ft_isascii(int c);`
 
 **Brief:**
 Checks if a character is a 7-bit ASCII character (0 - 127).

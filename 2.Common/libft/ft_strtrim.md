@@ -1,4 +1,4 @@
-# ft_strtrim - **Synopsis:** - `char *ft_strtrim(char const *s1, char const *set);`
+# ft_strtrim - `char *ft_strtrim(char const *s1, char const *set);`
 
 **Brief:**  
 Trims the characters in `set` from the beginning and end of `s1`.

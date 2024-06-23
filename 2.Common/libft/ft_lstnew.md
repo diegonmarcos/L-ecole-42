@@ -1,4 +1,4 @@
-# ft_lstnew - **Synopsis:** - `t_list *ft_lstnew(void *content);`
+# ft_lstnew - `t_list *ft_lstnew(void *content);`
 
 **Brief:**
 Creates a new node for a linked list.

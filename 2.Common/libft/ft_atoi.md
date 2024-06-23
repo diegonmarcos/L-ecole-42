@@ -1,4 +1,4 @@
-# ft_atoi - **Synopsis:**  - `int ft_atoi(const char *str);`
+# ft_atoi -  - `int ft_atoi(const char *str);`
 
 **Brief:**
 Converts the initial portion of the string pointed to by `str` to an `int` representation.

@@ -1,4 +1,4 @@
-# ft_substr - **Synopsis:** - `char *ft_substr(char const *s, unsigned int start, size_t len);`
+# ft_substr - `char *ft_substr(char const *s, unsigned int start, size_t len);`
 
 **Brief:**  
 Returns a substring from the string `s`.

@@ -1,4 +1,4 @@
-# ft_strlcat - **Synopsis:** - `size_t ft_strlcat(char *dst, const char *src, size_t dstsize);`
+# ft_strlcat - `size_t ft_strlcat(char *dst, const char *src, size_t dstsize);`
 
 **Brief:**  
 Appends the string `src` to the end of `dst`, up to `dstsize` - 1 total bytes.

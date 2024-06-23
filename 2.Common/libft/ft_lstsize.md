@@ -1,4 +1,4 @@
-# ft_lstsize - **Synopsis:** - `int	ft_lstsize(t_list *lst);`
+# ft_lstsize - `int	ft_lstsize(t_list *lst);`
 
 **Brief:**  
 Counts the number of nodes in a linked list.

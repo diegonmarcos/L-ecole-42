@@ -1,4 +1,4 @@
-# ft_putendl_fd - **Synopsis:** - `void ft_putendl_fd(char *s, int fd);`
+# ft_putendl_fd - `void ft_putendl_fd(char *s, int fd);`
 
 **Brief:**
 Outputs the string `s` to the given file descriptor, followed by a newline.

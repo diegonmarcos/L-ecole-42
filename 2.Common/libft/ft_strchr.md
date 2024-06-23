@@ -1,4 +1,4 @@
-# ft_strchr - **Synopsis:** - `char *ft_strchr(const char *s, int c);`
+# ft_strchr - `char *ft_strchr(const char *s, int c);`
 
 **Brief:**
 Locates the first occurrence of character `c` (converted to a `char`) in the string pointed to by `s`.

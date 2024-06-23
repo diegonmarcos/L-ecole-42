@@ -51,7 +51,7 @@ int main() {
 Let me know if you'd like a more detailed discussion on any of these aspects!
 
 
-# ft_strlen - **Synopsis:** - `size_t ft_strlen(const char *str);`
+# ft_strlen - `size_t ft_strlen(const char *str);`
 
 **Brief:**  
 Calculates the length of the string pointed to by `str`, excluding the terminating null byte (`'\0'`).

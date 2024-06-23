@@ -1,4 +1,4 @@
-# ft_tolower - **Synopsis:** - `int ft_tolower(int c);`
+# ft_tolower - `int ft_tolower(int c);`
 
 **Brief:**  
 Converts an uppercase letter to its lowercase equivalent.

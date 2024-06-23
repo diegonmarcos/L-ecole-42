@@ -1,4 +1,4 @@
-# ft_isprint - **Synopsis:** - `int ft_isprint(int c);`
+# ft_isprint - `int ft_isprint(int c);`
 
 **Brief:**
 Checks if a character is printable.

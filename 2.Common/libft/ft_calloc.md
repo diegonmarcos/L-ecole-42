@@ -1,4 +1,4 @@
-# ft_calloc - **Synopsis:** - `void *ft_calloc(size_t count, size_t size);`
+# ft_calloc - `void *ft_calloc(size_t count, size_t size);`
 
 **Brief:**
 Allocates memory for an array of `count` elements, each of size `size` bytes, and initializes all bytes to zero.

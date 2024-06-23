@@ -1,4 +1,4 @@
-# ft_lstclear - **Synopsis:** - `void ft_lstclear(t_list **lst, void (*del)(void *));`
+# ft_lstclear - `void ft_lstclear(t_list **lst, void (*del)(void *));`
 
 **Brief:**
 Deletes and frees all elements of a linked list.

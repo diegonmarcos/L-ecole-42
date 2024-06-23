@@ -1,4 +1,4 @@
-# ft_strlcpy - **Synopsis:** - `size_t ft_strlcpy(char *dst, const char *src, size_t dstsize);`
+# ft_strlcpy - `size_t ft_strlcpy(char *dst, const char *src, size_t dstsize);`
 
 **Brief:**  
 Copies up to `dstsize` - 1 characters from the string `src` to `dst`, NUL-terminating the result if `dstsize` is not 0.

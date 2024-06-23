@@ -1,4 +1,4 @@
-# ft_strnstr - **Synopsis:** - `char *ft_strnstr(const char *haystack, const char *needle, size_t len);`
+# ft_strnstr - `char *ft_strnstr(const char *haystack, const char *needle, size_t len);`
 
 **Brief:**  
 Locates the first occurrence of the null-terminated string `needle` in the string `haystack`, where not more than `len` characters are searched.

@@ -1,4 +1,4 @@
-# ft_memset - **Synopsis:** - `void *ft_memset(void *b, int c, size_t len);`
+# ft_memset - `void *ft_memset(void *b, int c, size_t len);`
 
 **Brief:**  
 Fills the first `len` bytes of the memory area pointed to by `b` with the constant byte `c`.

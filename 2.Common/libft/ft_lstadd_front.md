@@ -1,4 +1,4 @@
-# ft_lstadd_front - **Synopsis:** - `void ft_lstadd_front(t_list **lst, t_list *new);`
+# ft_lstadd_front - `void ft_lstadd_front(t_list **lst, t_list *new);`
 
 **Brief:**
 Adds a new node to the beginning of a linked list.

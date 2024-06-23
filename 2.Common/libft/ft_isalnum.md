@@ -1,4 +1,4 @@
-# ft_isalnum - **Synopsis:** - `int ft_isalnum(int c);`
+# ft_isalnum - `int ft_isalnum(int c);`
 
 **Brief:**
 Checks if a character is alphanumeric (either alphabetic or numeric).

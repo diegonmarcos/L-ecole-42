@@ -1,4 +1,4 @@
-# ft_split - **Synopsis:** - `char **ft_split(char const *s, char c);`
+# ft_split - `char **ft_split(char const *s, char c);`
 
 **Brief:**
 Splits a string into an array of strings based on a delimiter character.

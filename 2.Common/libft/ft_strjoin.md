@@ -1,4 +1,4 @@
-# ft_strjoin - **Synopsis:** - `char *ft_strjoin(char const *s1, char const *s2);`
+# ft_strjoin - `char *ft_strjoin(char const *s1, char const *s2);`
 
 **Brief:**  
 Concatenates two strings (`s1` and `s2`) into a new string.

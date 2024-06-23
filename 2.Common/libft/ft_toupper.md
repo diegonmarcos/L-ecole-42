@@ -1,4 +1,4 @@
-# ft_toupper - **Synopsis:** - `int ft_toupper(int c);`
+# ft_toupper - `int ft_toupper(int c);`
 
 **Brief:**  
 Converts a lowercase letter to its uppercase equivalent.

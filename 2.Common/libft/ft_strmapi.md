@@ -1,4 +1,4 @@
-# ft_strmapi - **Synopsis:** - `char *ft_strmapi(char const *s, char (*f)(unsigned int, char));`
+# ft_strmapi - `char *ft_strmapi(char const *s, char (*f)(unsigned int, char));`
 
 **Brief:**  
 Creates a new string resulting from applying a function `f` to each character of a string `s`.

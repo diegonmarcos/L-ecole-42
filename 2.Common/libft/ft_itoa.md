@@ -1,4 +1,4 @@
-# ft_itoa - **Synopsis:** - `char *ft_itoa(int n);`
+# ft_itoa - `char *ft_itoa(int n);`
 
 **Brief:**
 Converts an integer to a string representation.

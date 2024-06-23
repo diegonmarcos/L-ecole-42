@@ -1,4 +1,4 @@
-# ft_strdup - **Synopsis:** - `char *ft_strdup(const char *s1);`
+# ft_strdup - `char *ft_strdup(const char *s1);`
 
 **Brief:**
 Creates a duplicate of the string `s1`.

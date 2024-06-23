@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "ft_toupper.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "ft_toupper.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "ft_toupper.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "ft_toupper.md"
               }
             }
           }
@@ -148,9 +148,32 @@
   },
   "active": "ff8162e897dc5d08",
   "lastOpenFiles": [
-    "ft_isalpha.md",
-    "README.md",
     "ft_tolower.md",
+    "ft_substr.md",
+    "ft_strtrim.md",
+    "ft_strrchr.md",
+    "ft_strnstr.md",
+    "ft_strncmp.md",
+    "ft_strmapi.md",
+    "ft_strlen.md",
+    "ft_strlcpy.md",
+    "ft_strlcat.md",
+    "ft_strjoin.md",
+    "ft_striteri.md",
+    "ft_strdup.md",
+    "ft_strchr.md",
+    "ft_split.md",
+    "ft_putstr_fd.md",
+    "ft_putnbr_fd.md",
+    "ft_putendl_fd.md",
+    "ft_putchar_fd.md",
+    "ft_memset.md",
+    "ft_memmove.md",
+    "ft_memcpy.md",
+    "ft_memcmp.md",
+    "ft_memchr.md",
+    "ft_lstsize.md",
+    "ft_lstnew.md",
     "docs/html/tab_a.png"
   ]
 }

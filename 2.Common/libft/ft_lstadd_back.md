@@ -1,4 +1,4 @@
-# ft_lstadd_back - **Synopsis:** - `void ft_lstadd_back(t_list **lst, t_list *new);`
+# ft_lstadd_back - `void ft_lstadd_back(t_list **lst, t_list *new);`
 
 **Brief:**
 Adds a new node to the end of a linked list.

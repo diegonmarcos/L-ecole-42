@@ -1,4 +1,4 @@
-# ft_memmove - **Synopsis:** - `void *ft_memmove(void *dst, const void *src, size_t len);`
+# ft_memmove - `void *ft_memmove(void *dst, const void *src, size_t len);`
 
 **Brief:**  
 Copies `len` bytes from memory area `src` to memory area `dst`. The memory areas may overlap.

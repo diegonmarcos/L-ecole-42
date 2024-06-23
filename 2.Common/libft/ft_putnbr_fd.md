@@ -1,4 +1,4 @@
-# ft_putnbr_fd - **Synopsis:** - `void ft_putnbr_fd(int n, int fd);`
+# ft_putnbr_fd - `void ft_putnbr_fd(int n, int fd);`
 
 **Brief:**  
 Outputs the integer `n` to the given file descriptor.

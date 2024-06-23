@@ -1,4 +1,4 @@
-# ft_putstr_fd - **Synopsis:** - `void ft_putstr_fd(char *s, int fd);`
+# ft_putstr_fd - `void ft_putstr_fd(char *s, int fd);`
 
 **Brief:**
 Outputs the string 's' to the given file descriptor.

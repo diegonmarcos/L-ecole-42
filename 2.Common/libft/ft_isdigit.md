@@ -1,4 +1,4 @@
-# ft_isdigit - **Synopsis:** - `int ft_isdigit(int c);`
+# ft_isdigit - `int ft_isdigit(int c);`
 
 **Brief:**
 Checks if a character is a decimal digit (0 through 9).

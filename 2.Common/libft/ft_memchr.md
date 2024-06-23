@@ -1,4 +1,4 @@
-# ft_memchr - **Synopsis:** - `void *ft_memchr(const void *s, int c, size_t n);`
+# ft_memchr - `void *ft_memchr(const void *s, int c, size_t n);`
 
 **Brief:**  
 Searches for the first occurrence of a byte (interpreted as unsigned char) in a block of memory.
