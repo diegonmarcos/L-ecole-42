@@ -6,8 +6,8 @@ Searches for the first occurrence of a byte (interpreted as unsigned char) in a 
 **File:** `ft_memchr.c` / **Date:** 2024-06-22  
 **Author:** Diego N. Marcos <dnepomuc@student.42barcelona.com>
 
-**Library:**  
-* Standard C Library
+**Library/Header:**  
+* `string.h `
 
 **Description:**
 The `ft_memchr()` function scans the initial `n` bytes of the memory area pointed to by `s` for the first instance of `c`. Both `c` and the bytes of the memory area pointed to by `s` are interpreted as `unsigned char`.

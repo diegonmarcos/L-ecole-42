@@ -6,7 +6,7 @@ Takes as a parameter a node and frees the memory of the node’s content using t
 **File:** `ft_lstdelone.c` / **Date:** 2024-06-22  
 **Author:** Diego N. Marcos <dnepomuc@student.42barcelona.com>
 
-**Library:**
+**Library/Header:**
 
 
 

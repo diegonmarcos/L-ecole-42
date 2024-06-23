@@ -7,7 +7,7 @@ Erases the data in the `n` bytes of the memory starting at the location pointed 
 **Author:** Diego N. Marcos <dnepomuc@student.42barcelona.com>
 
 **Library:**
-* libft
+* `strings.h `
 
 **Description:**
 The `ft_bzero()` function erases the data in the `n` bytes of the memory starting at the location pointed to by `s`, by writing zeros (`'\0'`) to that area.

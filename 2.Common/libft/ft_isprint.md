@@ -6,9 +6,8 @@ Checks if a character is printable.
 **File:** `ft_isprint.c` / **Date:** 2024-06-22  
 **Author:** Diego N. Marcos <dnepomuc@student.42barcelona.com>
 
-**Library:**
-
-
+**Library/Header:**
+- `ctype.h`
 
 **Description:**  
 This function tests whether a character is a printable character (i.e., both visible and not a space).

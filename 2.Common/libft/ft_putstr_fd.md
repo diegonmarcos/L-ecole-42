@@ -6,8 +6,8 @@ Outputs the string 's' to the given file descriptor.
 **File:** `ft_putstr_fd.c` / **Date:** 2024-06-22  
 **Author:** Diego N. Marcos <dnepomuc@student.42barcelona.com>
 
-**Library:**
-* libft
+**Library/Header:**
+* `unistd.h`
 
 **Description:**
 The `ft_putstr_fd()` function writes the string `s` to the file descriptor `fd`. It iterates over each character of the string and writes it to the specified file descriptor using the `write()` system call.

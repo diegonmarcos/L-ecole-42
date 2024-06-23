@@ -59,8 +59,8 @@ Calculates the length of the string pointed to by `str`, excluding the terminati
 **File:** `ft_strlen.c` / **Date:** 2024-06-22  
 **Author:** Diego N. Marcos <dnepomuc@student.42barcelona.com>
 
-**Library:**
-
+**Library/Header:**
+- `string.h`
 
 
 **Description:**  

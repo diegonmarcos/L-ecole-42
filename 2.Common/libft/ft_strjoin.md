@@ -6,7 +6,7 @@ Concatenates two strings (`s1` and `s2`) into a new string.
 **File:** `ft_strjoin.c` / **Date:** 2024-06-22  
 **Author:** Diego N. Marcos <dnepomuc@student.42barcelona.com>
 
-**Library:**
+**Library/Header:**
 
 
 

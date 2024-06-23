@@ -7,6 +7,7 @@ Converts an integer to a string representation.
 **Author:** Diego N. Marcos <dnepomuc@student.42barcelona.com>
 
 **Library:**
+- `stdlib.h`, `string.h`
 
 **Description:**  
 This function converts an integer `n` into its corresponding string representation. It handles both positive and negative numbers. The resulting string is dynamically allocated using `malloc` and must be freed by the user when no longer needed.

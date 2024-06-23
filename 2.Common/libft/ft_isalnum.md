@@ -6,8 +6,8 @@ Checks if a character is alphanumeric (either alphabetic or numeric).
 **File:** `ft_isalnum.c` / **Date:** 2024-06-22
 **Author:** Diego N. Marcos <dnepomuc@student.42barcelona.com>
 
-**Library:**
-* libft
+**Library/Header:**
+* ctype.h
 
 **Description:**
 The `ft_isalnum()` function checks if the character passed as an argument (`c`) is alphanumeric, meaning it is either an alphabetic character (A-Z, a-z) or a numeric digit (0-9). It internally uses the `ft_isalpha()` and `ft_isdigit()` functions from the libft library to perform this check.

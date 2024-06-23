@@ -6,8 +6,8 @@ Checks if a character is alphabetic.
 **File:** `ft_isalpha.c` / **Date:** 2024-06-22
 **Author:** Diego N. Marcos <dnepomuc@student.42barcelona.com>
 
-**Library:**
-* libft
+**Library/Header:**
+* ctype.h
 
 **Description:**
 The `ft_isalpha()` function checks whether the passed character `c` is an alphabetic character as classified by the current locale. In the standard "C" locale, `ft_isalpha()` returns true only for the characters for which `isupper(3)` or `islower(3)` is true.  

@@ -6,8 +6,8 @@ Copies up to `dstsize` - 1 characters from the string `src` to `dst`, NUL-termin
 **File:** `ft_strlcpy.c` / **Date:** 2024-06-22  
 **Author:** Diego N. Marcos <dnepomuc@student.42barcelona.com>
 
-**Library:**  
-* Standard C Library
+**Library/Header:**  
+* `string.h`
 
 **Description:**
 The `ft_strlcpy()` function copies up to `dstsize - 1` characters from the string `src` to `dst`, NUL-terminating the result if `dstsize` is not 0.  It is designed to be a safer, more consistent, and less error-prone replacement for the standard `strncpy()` function.

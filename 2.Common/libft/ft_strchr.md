@@ -6,8 +6,8 @@ Locates the first occurrence of character `c` (converted to a `char`) in the str
 **File:** `ft_strchr.c` / **Date:** 2024-06-22  
 **Author:** Diego N. Marcos <dnepomuc@student.42barcelona.com>
 
-**Library:**
-* Standard C Library
+**Library/Header:**
+* `string.h`
 
 **Description:**
 The `ft_strchr()` function locates the first occurrence of the character `c` (converted to a `char`) in the string pointed to by `s`. The terminating null character is considered to be part of the string; therefore, if `c` is `\0`, the function locates the terminating `\0`.

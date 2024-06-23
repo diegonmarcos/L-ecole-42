@@ -6,7 +6,7 @@ Applies the function `f` to each character of the string `s`, and passing its in
 **File:** `ft_striteri.c` / **Date:** 2024-06-22  
 **Author:** Diego N. Marcos <dnepomuc@student.42barcelona.com>
 
-**Library:**
+**Library/Header:**
 * libft
 
 **Description:**

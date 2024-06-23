@@ -6,7 +6,7 @@ Adds a new node to the beginning of a linked list.
 **File:** `ft_lstadd_front.c` / **Date:** 2024-06-22  
 **Author:** Diego N. Marcos <dnepomuc@student.42barcelona.com>
 
-**Library:**
+**Library/Header:**
 
 
 

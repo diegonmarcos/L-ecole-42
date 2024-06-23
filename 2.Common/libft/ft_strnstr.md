@@ -6,8 +6,8 @@ Locates the first occurrence of the null-terminated string `needle` in the strin
 **File:** `ft_strnstr.c` / **Date:** 2024-06-22  
 **Author:** Diego N. Marcos <dnepomuc@student.42barcelona.com>
 
-**Library:**  
-* Standard C Library
+**Library/Header:**  
+* `string.h`
 
 **Description:**  
 This function finds the first occurrence of the null-terminated string `needle` in the string `haystack`, where not more than `len` characters are searched. Characters that appear after a `\0` character are not searched. Since the `strnstr()` function is a FreeBSD specific API, it should only be used when portability is not a concern.

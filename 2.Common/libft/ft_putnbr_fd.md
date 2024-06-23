@@ -6,8 +6,8 @@ Outputs the integer `n` to the given file descriptor.
 **File:** `ft_putnbr_fd.c` / **Date:** 2024-06-22  
 **Author:** Diego N. Marcos <dnepomuc@student.42barcelona.com>
 
-**Library:**  
-* libft
+**Library/Header:**  
+* `unistd.h`
 
 **Description:**
 This function outputs the integer `n` to the given file descriptor `fd`. It handles positive numbers, negative numbers, and zero.

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ft_toupper.md",
+                "file": "ft_atoi.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ft_toupper.md",
+                "file": "ft_atoi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ft_toupper.md",
+                "file": "ft_atoi.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ft_toupper.md"
+                "file": "ft_atoi.md"
               }
             }
           }
@@ -148,6 +148,9 @@
   },
   "active": "ff8162e897dc5d08",
   "lastOpenFiles": [
+    "ft_bzero.md",
+    "ft_atoi.md",
+    "ft_toupper.md",
     "ft_tolower.md",
     "ft_substr.md",
     "ft_strtrim.md",
@@ -171,9 +174,6 @@
     "ft_memmove.md",
     "ft_memcpy.md",
     "ft_memcmp.md",
-    "ft_memchr.md",
-    "ft_lstsize.md",
-    "ft_lstnew.md",
     "docs/html/tab_a.png"
   ]
 }

@@ -6,8 +6,8 @@ Fills the first `len` bytes of the memory area pointed to by `b` with the consta
 **File:** `ft_memset.c` / **Date:** 2024-06-22  
 **Author:** Diego N. Marcos <dnepomuc@student.42barcelona.com>
 
-**Library:**  
-* Standard C Library
+**Library/Header:**  
+* `string.h `
 
 **Description:**
 The `ft_memset()` function fills the first `len` bytes of the memory area pointed to by `b` with the constant byte `c`. It returns a pointer to the memory area `b`.

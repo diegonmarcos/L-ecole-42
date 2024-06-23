@@ -6,7 +6,7 @@ Splits a string into an array of strings based on a delimiter character.
 **File:** `ft_split.c` / **Date:** 2024-06-22  
 **Author:** Diego N. Marcos <dnepomuc@student.42barcelona.com>
 
-**Library:**
+**Library/Header:**
 
 
 

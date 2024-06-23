@@ -7,7 +7,7 @@ Checks if a character is a decimal digit (0 through 9).
 **Author:** Diego N. Marcos <dnepomuc@student.42barcelona.com>
 
 **Library:**
-
+- `ctype.h`
 
 
 **Description:**  

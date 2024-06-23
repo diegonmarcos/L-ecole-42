@@ -6,8 +6,8 @@ Allocates memory for an array of `count` elements, each of size `size` bytes, an
 **File:** `ft_calloc.c` / **Date:** 2024-06-22
 **Author:** Diego N. Marcos <dnepomuc@student.42barcelona.com>
 
-**Library:**
-* libft
+**Library/Header:**
+* `stdlib.h `
 
 **Description:**
 The `ft_calloc()` function contiguously allocates enough space for `count` objects that are `size` bytes of memory each and returns a pointer to the allocated memory. The allocated memory is filled with bytes of value zero.

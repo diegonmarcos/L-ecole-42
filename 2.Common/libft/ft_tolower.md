@@ -6,8 +6,8 @@ Converts an uppercase letter to its lowercase equivalent.
 **File:** `ft_tolower.c` / **Date:** 2024-06-22  
 **Author:** Diego N. Marcos <dnepomuc@student.42barcelona.com>
 
-**Library:**  
-* Standard C Library
+**Library/Header:**  
+* `ctype.h`
 
 **Description:**  
 This function converts an uppercase letter to its lowercase equivalent. If the argument is a lowercase letter or already lowercase, the argument is returned unchanged.

@@ -1,4 +1,4 @@
-# ft_atoi -  - `int ft_atoi(const char *str);`
+# ft_atoi - `int ft_atoi(const char *str);`
 
 **Brief:**
 Converts the initial portion of the string pointed to by `str` to an `int` representation.
@@ -6,8 +6,8 @@ Converts the initial portion of the string pointed to by `str` to an `int` repre
 **File:** `ft_atoi.c` / **Date:** 2024-06-22  
 **Author:** Diego N. Marcos <dnepomuc@student.42barcelona.com>
 
-**Library:**  
-* Standard C Library  
+**Library/Header:** 
+* `stdlib.h  pen_spark  ` 
 
 **Description:**  
 This function converts the initial portion of the string pointed to by `str` to an integer representation. It works by skipping any leading whitespace characters (spaces, tabs, newlines), then processing an optional sign character ('+' or '-'), and finally interpreting a sequence of digits as a decimal integer.

@@ -6,8 +6,7 @@ Creates a new string resulting from applying a function `f` to each character of
 **File:** `ft_strmapi.c` / **Date:** 2024-06-22  
 **Author:** Diego N. Marcos <dnepomuc@student.42barcelona.com>
 
-**Library:**
-
+**Library/Header:**
 
 
 **Description:**

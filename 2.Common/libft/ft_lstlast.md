@@ -6,7 +6,7 @@ Returns the last node of the linked list.
 **File:** `ft_lstlast.c` / **Date:** 2024-06-22  
 **Author:** Diego N. Marcos <dnepomuc@student.42barcelona.com>
 
-**Library:**
+**Library/Header:**
 
 
 

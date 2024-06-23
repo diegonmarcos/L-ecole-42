@@ -6,8 +6,8 @@ Copies `len` bytes from memory area `src` to memory area `dst`. The memory areas
 **File:** `ft_memmove.c` / **Date:** 2024-06-22  
 **Author:** Diego N. Marcos <dnepomuc@student.42barcelona.com>
 
-**Library:**  
-* Standard C Library
+**Library/Header:**  
+* `string.h `
 
 **Description:**  
 The `ft_memmove()` function copies `len` bytes from the memory area `src` to the memory area `dst`. Unlike `ft_memcpy()`, `ft_memmove()` is designed to handle situations where the source and destination memory areas overlap.

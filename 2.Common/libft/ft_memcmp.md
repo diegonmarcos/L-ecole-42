@@ -6,8 +6,8 @@ Compares the first `n` bytes of two memory areas.
 **File:** `ft_memcmp.c` / **Date:** 2024-06-22  
 **Author:** Diego N. Marcos <dnepomuc@student.42barcelona.com>
 
-**Library:**  
-* Standard C Library
+**Library/Header:**  
+- `string.h `
 
 **Description:**  
 This function compares the first `n` bytes (each interpreted as `unsigned char`) of the memory areas `s1` and `s2`.

@@ -6,8 +6,8 @@ Creates a duplicate of the string `s1`.
 **File:** `ft_strdup.c` / **Date:** 2024-06-22  
 **Author:** Diego N. Marcos <dnepomuc@student.42barcelona.com>
 
-**Library:**
-* Standard C Library
+**Library/Header:**
+* `string.h`
 
 **Description:**
 The `ft_strdup()` function returns a pointer to a new string which is a duplicate of the string `s1`.  Memory for the new string is obtained with `malloc(3)`, and can be freed with `free(3)`.

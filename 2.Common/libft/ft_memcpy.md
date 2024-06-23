@@ -6,8 +6,8 @@ Copies `n` bytes from memory area `src` to memory area `dst`.
 **File:** `ft_memcpy.c` / **Date:** 2024-06-22  
 **Author:** Diego N. Marcos <dnepomuc@student.42barcelona.com>
 
-**Library:**
-* Standard C Library
+**Library/Header:**
+* `string.h `
 
 **Description:**
 The `ft_memcpy()` function copies `n` bytes from memory area `src` to memory area `dst`. If `dst` and `src` overlap, behavior is undefined. Applications in which `dst` and `src` might overlap should use `memmove(3)` instead.

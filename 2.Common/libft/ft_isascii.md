@@ -7,8 +7,7 @@ Checks if a character is a 7-bit ASCII character (0 - 127).
 **Author:** Diego N. Marcos <dnepomuc@student.42barcelona.com>
 
 **Library:**
-
-
+- `ctype.h`
 
 **Description:**  
 This function determines if a character value falls within the 7-bit ASCII range (0 - 127).  It returns a non-zero value if the character is within this range, and zero if it is not.

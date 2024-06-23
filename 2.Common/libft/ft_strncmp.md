@@ -6,8 +6,8 @@ Compares the first (at most) `n` bytes of two strings `s1` and `s2`.
 **File:** `ft_strncmp.c` / **Date:** 2024-06-22  
 **Author:** Diego N. Marcos <dnepomuc@student.42barcelona.com>
 
-**Library:**  
-* Standard C Library
+**Library/Header:**  
+* `string.h`
 
 **Description:**
 The `ft_strncmp()` function compares not more than `n` characters (characters that follow a null character are not compared) from the array pointed to by `s1` to the array pointed to by `s2`. 

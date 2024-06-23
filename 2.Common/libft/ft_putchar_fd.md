@@ -6,8 +6,8 @@ Outputs the character `c` to the given file descriptor.
 **File:** `ft_putchar_fd.c` / **Date:** 2024-06-22  
 **Author:** Diego N. Marcos <dnepomuc@student.42barcelona.com>
 
-**Library:**  
-* libft
+**Library/Header:**  
+* `unistd.h`
 
 **Description:**  
 This function writes a single character `c` to the file descriptor `fd`. File descriptors are typically used to represent files, but can also be used to represent other input/output resources, like standard output (stdout) or standard error (stderr).

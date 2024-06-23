@@ -6,8 +6,8 @@ Appends the string `src` to the end of `dst`, up to `dstsize` - 1 total bytes.
 **File:** `ft_strlcat.c` / **Date:** 2024-06-22  
 **Author:** Diego N. Marcos <dnepomuc@student.42barcelona.com>
 
-**Library:**  
-* Standard C Library
+**Library/Header:**  
+* `string.h`
 
 **Description:**
 The `ft_strlcat()` function appends the null-terminated string `src` to the end of `dst`. It will append at most `dstsize` - `strlen(dst)` - 1 characters. It also ensures that the resulting string is null-terminated.
