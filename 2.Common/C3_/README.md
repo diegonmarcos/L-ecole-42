@@ -1,71 +1,34 @@
-Libft
+### 42 Common Core Curriculum: Circle 3
 
-My very own first library
+**Projects:**
 
-Summary:
+* **M.3:**
+    * Minishell
+    * Philosophers
 
-This project is about coding a C library.
+**Topics (Advanced System & Network Programming):**
 
-It will contain a lot of general purpose functions your programs will rely upon.
+1.  **Advanced Shell Features:**
+    *   Building a more complex shell with features like input/output redirection, pipes, and job control.
+    *   Parsing and executing command lines with multiple commands and arguments.
+    *   Handling environment variables and shell built-in commands.
 
+2.  **Concurrency and Synchronization:**
+    *   Understanding threads, processes, and their differences.
+    *   Using mutexes, semaphores, and condition variables for synchronization.
+    *   Solving classic synchronization problems like the dining philosophers problem.
 
-libft/  
-├── Makefile  
-├── libft.h              // Header file with function prototypes  
-├── ....  
-├── ft_isalpha.c  
-├── ft_isdigit.c  
-├── ft_isalnum.c  
-├── ...  
-├── ...                // All other ft_*.c files    
-└── README.md         // Project description and instructions  
+3.  **Network Programming (Advanced):**
+    *   Working with more complex network protocols (e.g., HTTP, FTP).
+    *   Building client-server applications with multiple clients.
+    *   Error handling and network security considerations.
 
+4.  **Unix System Programming (Advanced):**
+    *   Working with signals and signal handlers.
+    *   Interacting with the kernel using system calls.
+    *   Understanding memory management and virtual memory.
 
-Part I  
-ft_isalpha  
-ft_isdigit  
-ft_isalnum  
-ft_isascii  
-ft_isprint  
-ft_strlen  
-ft_memset  
-ft_bzero  
-ft_memcpy  
-ft_memmove   
-ft_strlcpy  
-ft_strlcat   
-ft_toupper  
-ft_tolower
-ft_strchr  
-ft_strrchr  
-ft_strncmp  
-ft_memchr  
-ft_memcmp  
-ft_strnstr  
-ft_atoi  
-ft_calloc  
-ft_strdup  
-  
-Part II  
-ft_substr  
-ft_strjoin  
-ft_strtrim  
-ft_split  
-ft_itoa  
-ft_strmapi  
-ft_striteri   
-ft_putchar_fd  
-ft_putstr_fd  
-ft_putendl_fd  
-ft_putnbr_fd  
- 
-Bonus  
-ft_lstnew  
-ft_lstadd_front  
-ft_lstsize  
-ft_lstlast  
-ft_lstadd_back  
-ft_lstdelone  
-ft_lstclear  
-ft_lstiter  
-ft_lstmap  
+5.  **Projects and Challenges:**
+    *   The Minishell project is the centerpiece of this circle, challenging you to create a functional shell similar to Bash or Zsh.
+    *   The Philosophers project explores concurrency and synchronization concepts in a practical scenario. 
+    *   You may also encounter other projects that delve deeper into network programming, system-level debugging, or performance optimization.
