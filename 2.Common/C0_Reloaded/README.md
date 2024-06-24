@@ -47,8 +47,11 @@ Hello World!
 | `<math.h>`        | ft_sqrt                                                  |
 | (None)            | ft_ft, ft_swap, ft_iterative_factorial, ft_recursive_factorial |
 
+  
+---  
 
----
+---  
+  
 
 | Standard C Header | Functions from "libft.h" | Macro/Function Definition      | @brief                                                           |
 |:-------------------|:------------------------|:-------------------------------|:----------------------------------------------------------------|
