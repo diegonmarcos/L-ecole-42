@@ -19,6 +19,7 @@ Automate repetitive tasks and streamline your workflow with personalized Bash sc
 	- [.vimrc_42header](p.vimrc_42header.md)
 - **Visual Studio Code:** A modern, user-friendly editor with a vast ecosystem of extensions for various languages and tools.
 	- [Tab indentation vs spaces](VSCode.md)
+	- [Extensions list](ExtList.md)
 
 ## [Code Quality Tools](CodeQuality.md)
 
