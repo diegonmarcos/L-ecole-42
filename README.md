@@ -100,8 +100,65 @@
   Launch your career with a final internship that solidifies your skills and builds your network.
 
 ---
+## Curricullum 
 
+| Subject         | Project                                  | Hours | Brief Description                                                             |
+| :-------------- | :----------------------------------------- | ----: | :------------------------------------------------------------------------------ |
+| Unix            | Piscine                                   |   31 | Introductory Unix course, covering basic commands, file management, and shell scripting. |
+| Library         | Piscine                                   |   73 | Project focused on building a library of basic C functions for string manipulation, memory allocation, and more. |
+| Library         | -                                          |  140 | Additional library projects, possibly involving more complex data structures or algorithms. |
+|                 | Reloaded                                 |   70 | Likely a continuation or extension of previous library projects, perhaps with a focus on optimization or new features. |
+|                 | Libft                                     |   70 | Core library of utility functions used throughout the course. |
+| Algorithms & AI | -                                          |  180 | Theoretical and practical exploration of algorithms and artificial intelligence concepts. |
+|                 | get_next_line                               |   70 | Project to implement a function for reading a file line by line efficiently.  |
+|                 | Born2BeRoot                                 |   40 | Project to set up and configure a virtual machine, emphasizing system administration skills. |
+|                 | ft_printf                                  |   70 | Project to recreate a simplified version of the standard C printf function. |
+| System & Network | -                                          |  173 |                                                                                |
+|                 | push_swap                                  |   60 | Project to sort data on a stack using a limited set of instructions. |
+|                 | pipex_or_minitalk                           |   50 | Project involving interprocess communication using pipes (pipex) or shared memory (minitalk). |
+|                 | fdf_or_so_long_or_fract-ol                  |   60 | Projects involving 3D wireframe rendering (fdf), basic graphical interface creation (so_long), or fractal generation (fract-ol). |
+|                 | Libft - Exam Rank 02                       |    3 | Exam assessing knowledge of the Libft library (achieved rank 2).       |
+| System & Network | -                                          |  283 |                                                                                |
+|                 | Minishell                                 |  210 | Project to build a simplified Unix shell, implementing basic commands and handling input/output. |
+|                 | Philosophers                               |   70 | Project simulating the dining philosophers problem, focusing on concurrency and synchronization. |
+|                 | get_next_line/Born2BeRoot/ft_printf - Exam Rank 03 |    3 | Exam assessing knowledge of multiple projects (achieved rank 3).  |
+| C++             | CPP 00-04                                  |  140 | Introductory C++ projects, covering OOP concepts, classes, and templates. |
+| Graphics        | Cub3D_or_MiniRT                            |  560 | Projects involving 3D raycasting (Cub3D) or creating a simplified ray tracer (MiniRT). |
+| System & Network | NetPractice                                 |  103 | Network programming exercises, focusing on sockets and client-server communication. |
+|                 | Minishell(pipex_or_minitalk)/Philosophers - Exam Rank 04 |    4 | Exam assessing knowledge of multiple projects (achieved rank 4). |
+| C++             | CPP 05-09                                  |  280 | Advanced C++ projects, possibly involving the Standard Template Library (STL) or more complex data structures. |
+| System & Network | Webserv_or_ft_IRC                          |  563 | Projects to build a web server or an IRC client, showcasing networking and web development skills. |
+|                 | Inception                                  |  210 | Complex project involving multiple components, potentially simulating a virtual machine or operating system. | 
+|                 | CPP00-04/Cub3D_or_MiniRT/NetPractice - Exam Rank 05 |    5 | Exam assessing knowledge of multiple projects (achieved rank 5). |
+| Graphics        | Transcendence                               |  493 | Advanced graphics project, likely involving complex 3D scenes and rendering techniques. |
+|                 | CPP05-09/Webserv_or_IRC/Inception - Exam Rank 06 |    3 | Exam assessing knowledge of multiple projects (achieved rank 6). |
+|**Totals**  |      |  **2729** |   |
 
+<br>
+
+---
+<br>
+  
+|   | Total                 | 2,729 |     |   |
+|---|-----------------------|-------|-----|---|
+|   |   Piscine             | 104   |     |   |
+|   |   Common              | 1,955 |     |   |
+|   |   Especialization     | 670   |     |   |
+|   |                       |       |     |   |
+|   |                       |       |     |   |
+|   | Unix                  | 31    | 1%  |   |
+|   | Library               | 140   | 5%  |   |
+|   | Algorithms_AI         | 180   | 7%  |   |
+|   | SystemNetwork         | 897   | 33% |   |
+|   | C++                   | 210   | 8%  |   |
+|   | Graphics              | 528   | 19% |   |
+|   |                       |       |     |   |
+|   | Hours Per day average | 5     |     |   |
+|   | Total Months complete | 13    |     |   |
+<br>
+
+---
+<br>
 Let's code!
 
 ```C

@@ -1,4 +1,4 @@
-### 42 Common Core Curriculum: Circle 3
+### 42 Common Core Curriculum: Circle 3 - -System & Network Programming 2
 
 **Projects:**
 
