@@ -13,18 +13,6 @@ Norminette, the code style checker used at 42 school, requires tabs for indentat
     
     - **Editor: Tab Size:** Set to your preferred tab width (e.g., 4).
     - **Editor: Insert Spaces:** Uncheck this option.
-    - **Editor: Detect Indentation:** Uncheck this option (optional).
-4. **Optional: Per-Language Settings:**
-    
-    - If you need different tab settings for specific languages, click "Configure per language" in the "Editor: Tab Size" setting and customize accordingly.
-5. **Save and Reload:**
-    
-    - Save your changes.
-    - Close and reopen your files for the changes to take effect.
+    - **Editor: Detect Indentation:** Uncheck this option.
 
-**Additional Tips:**
-
-- **Install C/C++ Extension:** For C/C++ code, install a relevant extension for enhanced syntax highlighting and formatting.
-- **Reformat Code:** Reformat existing code to replace spaces with tabs using the extension's formatting tools.
-
-By following these steps, VS Code will use tabs for indentation, helping your code comply with Norminette's style requirements.
+---

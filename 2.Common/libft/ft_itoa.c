@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_count_if.c                                      :+:      :+:    :+:   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dnepomuc <dnepomuc@student.42barcelon      +#+  +:+       +#+        */
+/*   By: dnepomuc <dnepomuc@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 03:12:22 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/06/09 03:22:41 by dnepomuc         ###   ########.fr       */
+/*   Updated: 2024/06/24 12:01:37 by dnepomuc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,7 +76,7 @@ char	*ft_itoa(int n)
 	copy = (long int)n;
 	exp = exp_counter(n);
 	i = 0;
-	if (!(str = malloc(digit_counter(n) + 1)))
+	if (!(str == malloc(digit_counter(n) + 1)))
 		return (NULL);
 	if (n < 0)
 	{
