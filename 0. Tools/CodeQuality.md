@@ -12,6 +12,7 @@ bash -c "$(curl -fsSL https://raw.github.com/xicodomingues/francinette/master/bi
 ```
 
 # Mini-Moulinette
+only for piscine  
 https://github.com/khairulhaaziq/mini-moulinette
 
 ```
