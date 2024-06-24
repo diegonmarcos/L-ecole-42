@@ -1,7 +1,7 @@
 Hello World!
 
 # 42_Reloaded
-
+## Curricullum
 
 **Table 1: Organized by Exercise Number**
 
