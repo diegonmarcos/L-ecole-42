@@ -3,17 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_abs.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dnepomuc <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: dnepomuc <dnepomuc@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/04/10 13:22:48 by dnepomuc          #+#    #+#             */
-/*   Updated: 2017/04/10 13:22:59 by dnepomuc         ###   ########.fr       */
+/*   Updated: 2024/06/24 12:28:57 by dnepomuc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_ABS_H
-# define FT_ABS_H
+#define FT_ABS_H
 
-# define ABS(x) x > 0 ? x : -x
+#define ABS(x) ((x) > 0 ? (x) : -(x))
 
 #endif
-
