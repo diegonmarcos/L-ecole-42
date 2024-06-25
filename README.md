@@ -193,8 +193,19 @@
 
 <br>
 
+---
+<details>
+<summary>📚 42 School projects</summary>
+
+- **[42-Subjects](https://github.com/rphlr/42-Subjects):** Your launchpad to the 42 School curriculum with project PDFs in English and French. 📚🌐🎒
+- **[42-Evals](https://github.com/rphlr/42-Evals):** A telescope to peer into the evaluation process with official 42 School evaluation sheets. 🔭✅📑
+- [42-school](https://github.com/rphlr/42-school) : Repository containing various 42 School projects and coursework. 🏫📚
+- [42-piscine](https://github.com/rphlr/42-Piscine) : Repository for the 42 Piscine, including coding challenges and tasks. 🏊‍♂️🚀
+
+</details>
 
 ---
+
 # Table of Content
 ```
 L'ecole42/
