@@ -1,4 +1,4 @@
-![](zimg/42.svg)L'eco 42![42](zimg/42.svg)L'ecole 42![42](zimg/42.svg)L'ecole 42![42](zimg/42.svg)L'ecole 42![42](zimg/42.svg)L'eco42![42](zimg/42.svg)  
+![](zimg/42.svg)L'ec 42![42](zimg/42.svg)L'ecole 42![42](zimg/42.svg)L'ecole 42![42](zimg/42.svg)L'ecole 42![42](zimg/42.svg)L'ec42![42](zimg/42.svg)  
 ---
 --- 
 ...................................... ![](zimg/peng.jpg).................................
@@ -157,6 +157,47 @@
 |   | Total Months complete | 13    |     |   |
 <br>
 
+
+---
+## NORMINETTE
+> At 42 School, it is expected that almost every project is written following the Norm, which is the coding standard of the school.
+
+```
+- No for, do...while, switch, case, goto, ternary operators, or variable-length arrays allowed;
+- Each function must be a maximum of 25 lines, not counting the function's curly brackets;
+- Each line must be at most 80 columns wide, with comments included;
+- A function can take 4 named parameters maximum;
+- No assigns and declarations in the same line (unless static);
+- You can't declare more than 5 variables per function;
+- ...
+```
+
+* [42 Norms](https://github.com/42School/norminette/blob/master/pdf/en.norm.pdf) - Information about 42 code norms. `PDF`
+* [Norminette](https://github.com/42School/norminette) - Tool to respect the code norm, made by 42. `GitHub`
+* [42 Header](https://github.com/42Paris/42header) - 42 header for Vim. `GitHub`
+
+---
+# Table of Content
+```
+L'ecole42/
+├── What
+│   ├── really
+│   │   └── no way
+│   ├── this?
+│   │   └── ...
+│   └── with this?
+│       └── ...
+├── Where?
+│   ├── this place
+│   ├── this things
+│   ├── oooh
+│   │   └── in it?
+│   └── ok
+└── Why?
+    ├── make sense?
+    └── why not?
+```
+
 ---
 <br>
 Let's code!
@@ -211,27 +252,3 @@ int main() {
 
     return 0;
 ```
-
-
----
-# Table of Content
-```
-L'ecole42/
-├── What
-│   ├── really
-│   │   └── no way
-│   ├── this?
-│   │   └── ...
-│   └── with this?
-│       └── ...
-├── Where?
-│   ├── this place
-│   ├── this things
-│   ├── oooh
-│   │   └── in it?
-│   └── ok
-└── Why?
-    ├── make sense?
-    └── why not?
-```
-
