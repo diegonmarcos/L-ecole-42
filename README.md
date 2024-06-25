@@ -1,4 +1,4 @@
-![](zimg/42.svg)L'eco 42![42](zimg/42.svg)L'ecole 42![42](zimg/42.svg)L'ecole 42![42](zimg/42.svg)L'ecole 42![42](zimg/42.svg)L'eco42![42](zimg/42.svg)  
+![](zimg/42.svg)L'ec 42![42](zimg/42.svg)L'ecole 42![42](zimg/42.svg)L'ecole 42![42](zimg/42.svg)L'ecole 42![42](zimg/42.svg)L'ec42![42](zimg/42.svg)  
 ---
 --- 
 ...................................... ![](zimg/peng.jpg).................................
