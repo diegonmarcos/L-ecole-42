@@ -1,15 +1,15 @@
 <p align="center">
-  <img src="https://github.com/jotavare/jotavare/blob/main/42/banners/piscine_and_common_core/github_piscine_and_common_core_banner_push_swap.png">
+  <img src="https://github.com/dnepomuc/dnepomuc/blob/main/42/banners/piscine_and_common_core/github_piscine_and_common_core_banner_push_swap.png">
 </p>
 
 <p align="center">
 	<img src="https://img.shields.io/badge/status-finished-success?color=%2312bab9&style=flat-square" />
 	<img src="https://img.shields.io/badge/evaluated-03%20%2F%2004%20%2F%202023-success?color=%2312bab9&style=flat-square" />
 	<img src="https://img.shields.io/badge/score-84%20%2F%20100-success?color=%2312bab9&style=flat-square" />
-	<img src="https://img.shields.io/github/languages/top/jotavare/libft?color=%2312bab9&style=flat-square" />
-	<img src="https://img.shields.io/github/last-commit/jotavare/libft?color=%2312bab9&style=flat-square" />
+	<img src="https://img.shields.io/github/languages/top/dnepomuc/libft?color=%2312bab9&style=flat-square" />
+	<img src="https://img.shields.io/github/last-commit/dnepomuc/libft?color=%2312bab9&style=flat-square" />
 	<a href='https://www.linkedin.com/in/joaoptoliveira' target="_blank"><img alt='Linkedin' src='https://img.shields.io/badge/LinkedIn-100000?style=flat-square&logo=Linkedin&logoColor=white&labelColor=0A66C2&color=0A66C2'/></a>
-	<a href='https://profile.intra.42.fr/users/jotavare' target="_blank"><img alt='42' src='https://img.shields.io/badge/Porto-100000?style=flat-square&logo=42&logoColor=white&labelColor=000000&color=000000'/></a>
+	<a href='https://profile.intra.42.fr/users/dnepomuc' target="_blank"><img alt='42' src='https://img.shields.io/badge/Porto-100000?style=flat-square&logo=42&logoColor=white&labelColor=000000&color=000000'/></a>
 </p>
 
 <p align="center">
@@ -24,13 +24,13 @@
 ## ABOUT
 In this project, I developed a sorting algorithm for a specific problem using two stacks. The goal of the project is to efficiently sort a stack of integers using a set of predefined operations.
 
-- [Subject](https://github.com/jotavare/push_swap/blob/master/subject/en_subject_push_swap.pdf) `PDF`
-- [References](https://github.com/jotavare/42-resources#02-push_swap) `GitHub`
+- [Subject](https://github.com/dnepomuc/push_swap/blob/master/subject/en_subject_push_swap.pdf) `PDF`
+- [References](https://github.com/dnepomuc/42-resources#02-push_swap) `GitHub`
 
 ## HOW TO USE
 #### 1º - Clone the repository
 ```bash
-git clone git@github.com:jotavare/push_swap.git
+git clone git@github.com:dnepomuc/push_swap.git
 ```
 #### 2º - Enter the project folder and run `make`
 ```bash
@@ -162,5 +162,5 @@ Possible actions:
 
 ### LICENSE
 <p>
-This work is published under the terms of <a href="https://github.com/jotavare/push_swap/blob/main/LICENSE">Unlicense</a>.
+This work is published under the terms of <a href="https://github.com/dnepomuc/push_swap/blob/main/LICENSE">Unlicense</a>.
 </p>

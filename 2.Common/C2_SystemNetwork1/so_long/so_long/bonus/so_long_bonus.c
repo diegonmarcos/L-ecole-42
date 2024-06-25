@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   so_long_bonus.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jotavare <jotavare@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dnepomuc <dnepomuc@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/17 02:49:28 by jotavare          #+#    #+#             */
-/*   Updated: 2023/01/21 03:02:24 by jotavare         ###   ########.fr       */
+/*   Created: 2023/01/17 02:49:28 by dnepomuc          #+#    #+#             */
+/*   Updated: 2024/06/25 11:27:35 by dnepomuc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

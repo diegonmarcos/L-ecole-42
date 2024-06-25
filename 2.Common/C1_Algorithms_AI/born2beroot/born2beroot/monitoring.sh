@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    monitoring.sh                                      :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: jotavare <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: dnepomuc <dnepomuc@student.42barcelona.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/12/30 21:15:01 by jotavare          #+#    #+#              #
-#    Updated: 2022/12/30 21:15:02 by jotavare         ###   ########.fr        #
+#    Created: 2022/12/30 21:15:01 by dnepomuc          #+#    #+#              #
+#    Updated: 2024/06/25 11:27:35 by dnepomuc         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
