@@ -176,6 +176,15 @@
 * [Norminette](https://github.com/42School/norminette) - Tool to respect the code norm, made by 42. `GitHub`
 * [42 Header](https://github.com/42Paris/42header) - 42 header for Vim. `GitHub`
 
+---  
+
+# About me
+<a href='https://profile.intra.42.fr/users/dnepomuc' target="_blank"><img alt='42 profile' height="22" src='https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/diegonmarcos'/></a>
+
+---  
+
+
+
 ---
 # Table of Content
 ```
