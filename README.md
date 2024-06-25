@@ -4,6 +4,8 @@
 ...................................... ![](zimg/peng.jpg).................................
 ---
 ---
+
+
 | Sprints  | Milestones  | Projects                                                   | Deadlines  | Day | Status |
 | -------- | ----------- | ---------------------------------------------------------- | ---------- | --- | ------ |
 | Circle 0 | M.-1        | Reloaded                                                   | 17/06/2024 | 0   | ✅      |
@@ -175,6 +177,13 @@
 * [42 Norms](https://github.com/42School/norminette/blob/master/pdf/en.norm.pdf) - Information about 42 code norms. `PDF`
 * [Norminette](https://github.com/42School/norminette) - Tool to respect the code norm, made by 42. `GitHub`
 * [42 Header](https://github.com/42Paris/42header) - 42 header for Vim. `GitHub`
+
+---
+## About me
+<a href='https://profile.intra.42.fr/users/dnepomuc' target="_blank"><img alt='42' src='https://img.shields.io/badge/Profile-100000?style=flat-square&logo=42&logoColor=white&labelColor=000000&color=000000'/></a>
+
+<br>
+
 
 ---
 # Table of Content
