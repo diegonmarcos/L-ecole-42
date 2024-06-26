@@ -1,9 +1,12 @@
 ![](zimg/42.svg)L'ec 42![42](zimg/42.svg)L'ecole 42![42](zimg/42.svg)L'ecole 42![42](zimg/42.svg)L'ecole 42![42](zimg/42.svg)L'ec42![42](zimg/42.svg)  
+
+
+<img src="zimg/peng.jpg" alt="Image Description" style="display: block; margin: 0 auto;">
+
+
 ---
---- 
-...................................... ![](zimg/peng.jpg).................................
----
----
+<details>
+<summary>📚 Projects Deadline</summary>
 
 
 | Sprints  | Milestones  | Projects                                                   | Deadlines  | Day | Status |
@@ -39,7 +42,10 @@
 | 8   | [minishell](../../../../bunyod16/minishell) | 🔒     |   | 18  | CPP Module 07                              | 🔒     |   |     |                                |         |
 | 9   | [Philosphers](../../../42-philosophers)     | 🔒     |   | 19  | CPP Module 08                              | 🔒     |   | 25  | [netwhat](../../../42-netwhat) | ✅      |
 ---     
+</details>
 
+<details>
+<summary>📚 42 School Curricullum Description</summary>
 
 - # ![](zimg/42.svg): The Code Odyssey 🚀
     Welcome to my 42 journey! This ain't your average school. We're diving deep into code, collaboration, and peer-driven learning.
@@ -102,6 +108,13 @@
   Launch your career with a final internship that solidifies your skills and builds your network.
 
 ---
+
+</details>
+
+
+<details>
+<summary>📚 Curricullum Table</summary>
+
 ## Curricullum 
 
 | Subject         | Project                                  | Hours | Brief Description                                                             |
@@ -159,6 +172,10 @@
 |   | Total Months complete | 13    |     |   |
 <br>
 
+</details>
+
+<details>
+<summary>📚 42 School Procedures</summary>
 
 ---
 ## NORMINETTE
@@ -178,7 +195,11 @@
 * [Norminette](https://github.com/42School/norminette) - Tool to respect the code norm, made by 42. `GitHub`
 * [42 Header](https://github.com/42Paris/42header) - 42 header for Vim. `GitHub`
 
----  
+---
+
+</details>
+
+<br>
 
 # About me
 <a href='https://profile.intra.42.fr/users/dnepomuc' target="_blank"><img alt='42' src='https://img.shields.io/badge/Profile-100000?style=flat-square&logo=42&logoColor=white&labelColor=000000&color=000000'/></a>  
@@ -187,19 +208,6 @@
 
 [![dnepomuc's 42 stats](https://badge.mediaplus.ma/darkblue/dnepomuc?1337Badge=off&UM6P=off)](https://profile.intra.42.fr/users/dnepomuc)
 
-
----  
-
----
-<details>
-<summary>📚 42 School projects</summary>
-
-- **[42-Subjects](https://github.com/rphlr/42-Subjects):** Your launchpad to the 42 School curriculum with project PDFs in English and French. 📚🌐🎒
-- **[42-Evals](https://github.com/rphlr/42-Evals):** A telescope to peer into the evaluation process with official 42 School evaluation sheets. 🔭✅📑
-- [42-school](https://github.com/rphlr/42-school) : Repository containing various 42 School projects and coursework. 🏫📚
-- [42-piscine](https://github.com/rphlr/42-Piscine) : Repository for the 42 Piscine, including coding challenges and tasks. 🏊‍♂️🚀
-
-</details>
 
 ---
 
