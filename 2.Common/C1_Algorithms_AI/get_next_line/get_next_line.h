@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aduquesn <AlexisDuquesne@outlook.com>      +#+  +:+       +#+        */
+/*   By: dnepomuc <dnepomuc@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2006/06/06 06:06:06 by aduquesn          #+#    #+#             */
-/*   Updated: 2006/06/06 06:06:06 by aduquesn         ###   ########.fr       */
+/*   Created: 2006/06/06 06:06:06 by dnepomuc          #+#    #+#             */
+/*   Updated: 2024/06/26 11:43:00 by dnepomuc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,6 @@
 
 # define BUFF_SIZE 2048
 
-int get_next_line(const int fd, char **line);
+int	get_next_line(const int fd, char **line);
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: dnepomuc <dnepomuc@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/12 15:57:28 by alexandre         #+#    #+#             */
-/*   Updated: 2024/06/25 11:27:35 by dnepomuc         ###   ########.fr       */
+/*   Updated: 2024/06/26 11:46:24 by dnepomuc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,7 @@ void	handle_interrupt(int sig)
 	}
 	g_value = 130;
 }
+
 void	handler_exec(int sig)
 {
 	if (sig == SIGQUIT)

@@ -6,13 +6,13 @@
 /*   By: dnepomuc <dnepomuc@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/24 01:30:53 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/06/25 11:27:35 by dnepomuc         ###   ########.fr       */
+/*   Updated: 2024/06/26 11:45:00 by dnepomuc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../includes/minishell.h"
 
-int		start_args(t_exec *args, t_attr *att)
+int	start_args(t_exec *args, t_attr *att)
 {
 	args->i = 0;
 	args->command = att->tok_arr[0];

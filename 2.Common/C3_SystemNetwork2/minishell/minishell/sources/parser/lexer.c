@@ -6,7 +6,7 @@
 /*   By: dnepomuc <dnepomuc@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/15 18:15:45 by lde-sous          #+#    #+#             */
-/*   Updated: 2024/06/25 11:27:35 by dnepomuc         ###   ########.fr       */
+/*   Updated: 2024/06/26 11:45:14 by dnepomuc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,4 +35,3 @@ void	command(t_attr *att, int index)
 	else
 		execute(att, index);
 }
-

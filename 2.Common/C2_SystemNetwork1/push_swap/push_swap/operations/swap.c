@@ -6,7 +6,7 @@
 /*   By: dnepomuc <dnepomuc@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/25 07:31:12 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/06/25 11:27:35 by dnepomuc         ###   ########.fr       */
+/*   Updated: 2024/06/26 11:43:30 by dnepomuc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,7 @@ int	sb(t_list **stack_b)
 	*/
 
 int	ss(t_list **stack_a, t_list **stack_b)
-{	
+{
 	if ((ft_lstsize(*stack_a) < 2) || (ft_lstsize(*stack_b) < 2))
 		return (-1);
 	swap(stack_a);

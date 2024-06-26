@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aduquesn <AlexisDuquesne@outlook.com>      +#+  +:+       +#+        */
+/*   By: dnepomuc <dnepomuc@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2006/06/06 06:06:06 by aduquesn          #+#    #+#             */
-/*   Updated: 2006/06/06 06:06:06 by aduquesn         ###   ########.fr       */
+/*   Created: 2006/06/06 06:06:06 by dnepomuc          #+#    #+#             */
+/*   Updated: 2024/06/26 11:42:17 by dnepomuc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ static	void	gnl_delete_listelem(t_list **store, int fd, char **line)
 	}
 }
 
-static	int		gnl_read_file(t_list *elem)
+static	int	gnl_read_file(t_list *elem)
 {
 	int		result;
 	char	buffer[BUFF_SIZE + 1];
@@ -46,7 +46,7 @@ static	int		gnl_read_file(t_list *elem)
 
 	buffer[BUFF_SIZE] = '\0';
 	while (!ft_strchr(elem->content, '\n') &&
-		(result = read((int)elem->content_size, buffer, BUFF_SIZE)) > 0)
+	(result = read((int)elem->content_size, buffer, BUFF_SIZE)) > 0)
 	{
 		temp = (char *)elem->content;
 		if (result < BUFF_SIZE)
