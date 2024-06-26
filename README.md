@@ -181,17 +181,14 @@
 ---  
 
 # About me
-<a href='https://github.com/diegonmarcos' target="_blank"><img alt='42 profile' height="22" src='https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/diegonmarcos'/></a>
+<a href='https://profile.intra.42.fr/users/dnepomuc' target="_blank"><img alt='42' src='https://img.shields.io/badge/Profile-100000?style=flat-square&logo=42&logoColor=white&labelColor=000000&color=000000'/></a>  
+
+<a href='https://github.com/diegonmarcos' target="_blank"><img alt='42 profile' height="22" src='https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/diegonmarcos'/></a>  
+
+[![dnepomuc's 42 stats](https://badge.mediaplus.ma/darkblue/dnepomuc?1337Badge=off&UM6P=off)](https://profile.intra.42.fr/users/dnepomuc)
+
 
 ---  
-
-
-
----
-## About me
-<a href='https://profile.intra.42.fr/users/dnepomuc' target="_blank"><img alt='42' src='https://img.shields.io/badge/Profile-100000?style=flat-square&logo=42&logoColor=white&labelColor=000000&color=000000'/></a>
-
-<br>
 
 ---
 <details>
