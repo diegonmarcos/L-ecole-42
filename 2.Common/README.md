@@ -1,7 +1,7 @@
 ![](../zimg/42.svg)L'eco 42![42](../zimg/42.svg)L'ecole 42![42](../zimg/42.svg)L'ecole 42![42](../zimg/42.svg)L'ecole 42![42](../zimg/42.svg)L'eco42![42](../zimg/42.svg)  
 ---
 --- 
-...................................... ![](zimg/peng.jpg).................................
+...................................... ![](../zimg/peng.jpg).................................
 ---
 ---
 | Sprints       | Milestones | Projects                                       | Deadlines   | Day  | Status |
