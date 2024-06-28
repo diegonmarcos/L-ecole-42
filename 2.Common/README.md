@@ -2,8 +2,9 @@
 ---
 --- 
 ...................................... ![](../zimg/peng.jpg).................................
----
----
+
+## Projects Progress1
+
 | Sprints       | Milestones | Projects                                       | Deadlines   | Day  | Status |
 |---------------|------------|------------------------------------------------|-----------|------|--------|
 | Circle 0      | M.-1       | Reloaded                                        | 17/06/2024  | 0    | ✅     |
@@ -22,8 +23,7 @@
 | Circle 8      | Exam Rank 7 | ??                                               | 25/07/2025  | 5    | 🔒     |
 
 
----
-## 42cursus Progress 💪🏻
+## Projects Progress1
 | No  | Project                                     | Status |   | No  | Project                                   | Status |   | No  | Project                        | Status |
 | :-: | :------------------------------------------ | :----: | - | :-: | :---------------------------------------- | :----: | - | :-: | :----------------------------- | :----: |
 | 1   | [Libft](../../../42-libft)                  | ✅     |   | 10A | cub3d                                      | 🔒     |   | 20  | NetPractice                    | 🔒      |
@@ -37,6 +37,72 @@
 | 7   | [push_swap](../../../42-push_swap)          | 🔒     |   | 17  | CPP Module 06                              | 🔒     |   |     |                                |         |
 | 8   | [minishell](../../../../bunyod16/minishell) | 🔒     |   | 18  | CPP Module 07                              | 🔒     |   |     |                                |         |
 | 9   | [Philosphers](../../../42-philosophers)     | 🔒     |   | 19  | CPP Module 08                              | 🔒     |   | 25  | [netwhat](../../../42-netwhat) | ✅      |
----     
 
+
+<br>
+<br>
+## Projects by Deadline
+
+- ### Circle 0 - Library
+  - Library
+  - Reloaded
+- ### Circle 1 - Algorithms_AI
+  - get_next_line
+  - Born2BeRoot
+  - ft_printf
+- ### Circle 2 - SystemNetwork
+  - push_swap
+  - pipex_or_minitalk
+  - fdf_or_so_long_or_fract-ol
+  - Exam Rank 02
+- ### Circle 3 - SystemNetwork
+  - Minishell
+  - Philosophers
+  - - Exam Rank 03 
+- ### Circle 4 - C++/Graphics/SystemNetwork
+  - CPP00-04
+  - Cub3D_or_MiniRT
+  - NetPractice
+  - Exam Rank 04
+- ### Circle 5 - C++/SystemNetwork
+  - CPP05-09
+  - Webserv_or_IRC
+  - Inception
+  - Exam Rank 05
+- ### Circle 6 - Graphics
+  - Transcendence
+  - Exam Rank 06
+- ### Circle 7 - ?
+
+<br>
+<br>
+
+## Projects by Topic
+
+### Unix
+* Libft
+* Reloaded
+
+### Algorithms & AI
+* get_next_line
+* Born2BeRoot
+* ft_printf
+
+### System & Network
+* push_swap
+* pipex_or_minitalk
+* fdf_or_so_long_or_fract-ol
+* Minishell
+* Philosophers
+* Webserv_or_ft_IRC
+* NetPractice
+* Inception
+
+### Graphics
+* Cub3D_or_MiniRT
+* Transcendence
+
+### C++
+* CPP 00-04
+* CPP 05-09
 
