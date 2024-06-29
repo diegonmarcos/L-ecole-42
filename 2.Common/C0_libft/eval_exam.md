@@ -27,7 +27,7 @@ Please respect the following rules:
 - If you haven't done the project you are about to evaluate, you must read the entire subject before starting the evaluation.
 
 - Use the available flags to report an empty submission, a non-functioning program, a Norm error, cheating... In these situations, the evaluation is over, and the grade is 0, or -42 in case of cheating. However, except in cases of cheating, you are encouraged to continue the discussion on the work submitted, even if it is incomplete. This is to identify errors not to be repeated in the future.
-
+premature
 - Throughout the evaluation, no segfaults or other unexpected, premature, or uncontrolled stops will be tolerated. In which case, the final grade will be 0. Use the appropriate flag.
 
 - You should never have to edit a file except for a configuration file if it exists. If you want to modify a file, you must clearly explain the reasons for the edit and be in agreement with the student being evaluated before doing anything.

@@ -2,6 +2,9 @@
 
 To excel in the 42 coding curriculum
 
+## General Tools
+- [General Tools](General.md)
+
 ## [Shell Enhancements](shell.md)
 
 - **Oh My Zsh:** A framework that supercharges your Zsh shell with themes, plugins, and customizations.
