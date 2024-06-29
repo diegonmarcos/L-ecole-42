@@ -1,4 +1,13 @@
 ### 42 Common Core Curriculum: Circle 0  - Libft  
+---
+<p align="center">
+	<a href="#---1">About</a> •
+	<a href="#---2">Mandatory Objects</a> •
+	<a href="#---3">Bonus</a> •
+	<a href="#---4">Resources</a> •
+	<a href="#---5">File Structure</a> •
+</p>
+
 ## ABOUT
 The first project at 42, libft, involves learning how the standard functions of C programming work by writing them from scratch and creating a personal library. This project is vital as the library will be used in future assignments at 42.
 
@@ -113,13 +122,33 @@ This project is about coding a C library.
 
 ## Others
 - Makefile
-- 
-<br>
----
----
----
+
+<br>  
 <br>
 
+# **Resources**
+
+| Resource                                                                                 | Source    |
+| :--------------------------------------------------------------------------------------- | :-------- |
+| [Libft - C Standard Library Rewrite](https://www.asidesigned.com/project-libft.html)     | `Website` |
+| [Easy Makefile](https://pulgamecanica.herokuapp.com/posts/makefiles)                     | `Website` |
+| [Master Memory Management](https://medium.com/p/b86fedd39b96)                            | `Medium`  |
+| [Make-A-Make: Clear the fog around Makefiles](https://github.com/Nuno-Jesus/Make-A-Make) | `GitHub`  |
+
+| Project                                                                                  | Source    | User |
+| :--------------------------------------------------------------------------------------- | :-------- | :--- |
+| [42's libft with comments](https://github.com/pbie42/libft42commented)                   | `GitHub`  | `pbie42` |
+
+| Tester                                                                 | Source    | User |
+| :--------------------------------------------------------------------- | :-------- | :--- |
+| [francinette](https://github.com/xicodomingues/francinette)            | `GitHub`  | `xicodomingues` |
+| [libftTester](https://github.com/Tripouille/libftTester)               | `GitHub`  | `Tripouille` |
+| [libft_file_checker](https://github.com/Nuno-Jesus/libft_file_checker) | `GitHub`  | `Nuno-Jesus` |
+| [libft-unit-test](https://github.com/alelievr/libft-unit-test)         | `GitHub`  | `alelievr` |
+| [Libftest](https://github.com/jtoty/Libftest)                          | `GitHub`  | `jtoty` |
+| [libft-war-machine](https://github.com/0x050f/libft-war-machine)       | `GitHub`  | `0x050f` |
+
+----
 # File Structure
 ```
 libft/  
