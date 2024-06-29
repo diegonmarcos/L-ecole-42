@@ -1,14 +1,14 @@
 ### 42 Common Core Curriculum: Circle 0  - Libft  
 ---
 <p align="center">
-	<a href="#---1">About</a> •
-	<a href="#---2">Mandatory Objects</a> •
-	<a href="#---3">Bonus</a> •
-	<a href="#---4">Resources</a> •
-	<a href="#---5">File Structure</a> •
+	<a href="#About">About</a> •
+	<a href="#Mandatory">Mandatory Objects</a> •
+	<a href="#Bonus">Bonus</a> •
+	<a href="#Resources">Resources</a> •
+	<a href="#File Structure">File Structure</a> •
 </p>
 
-## ABOUT
+# ABOUT
 The first project at 42, libft, involves learning how the standard functions of C programming work by writing them from scratch and creating a personal library. This project is vital as the library will be used in future assignments at 42.
 
 - [Subject](https://github.com/diegonmarcos/L-ecole-42/tree/main/2.Common/C0_libft/en.subject.pdf) `PDF`
@@ -16,7 +16,7 @@ The first project at 42, libft, involves learning how the standard functions of 
 - [Eval and Exams](https://github.com/diegonmarcos/L-ecole-42/tree/main/2.Common/C0_libft/eval_exam.md) `Eval`
 
 
-## MANDATORY
+# MANDATORY
 > The mandatory functions in libft include both functions from the standard C library and other functions that are useful for character, string, and memory manipulation. These **34 mandatory functions** are essential to achieving a **grade of 100**.
 
 #### Check and manipulate characters:
@@ -72,7 +72,7 @@ The first project at 42, libft, involves learning how the standard functions of 
 | `ft_putendl_fd` | Output string to given file with newline. |
 | `ft_putnbr_fd`  | Output integer to the given file. |
 
-## BONUS
+# BONUS
 #### List Manipulator:
 
 | Function | Description |
