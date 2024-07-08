@@ -69,11 +69,11 @@ To excel in the 42 coding curriculum
     - **zsh-autosuggestions:** Intelligently suggests commands as you type.
     - **zsh-syntax-highlighting:** Color-codes commands to easily spot errors.
     - **fzf:** A blazing-fast fuzzy finder for files, commands, and more.
+https://github.com/junegunn/fzf  
+
 ## **[Custom Shell Scripts ](Scripts.md)** 
 Automate repetitive tasks and streamline your workflow with personalized Bash scripts.
 
-## Search FZF
-https://github.com/junegunn/fzf
 
 ## Editors and IDEs
 
