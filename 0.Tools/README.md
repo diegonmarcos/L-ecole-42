@@ -72,6 +72,9 @@ To excel in the 42 coding curriculum
 ## **[Custom Shell Scripts ](Scripts.md)** 
 Automate repetitive tasks and streamline your workflow with personalized Bash scripts.
 
+## Search FZF
+https://github.com/junegunn/fzf
+
 ## Editors and IDEs
 
 - **Vim:** A highly configurable text editor renowned for its speed and efficiency.
