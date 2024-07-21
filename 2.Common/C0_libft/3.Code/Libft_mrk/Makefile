@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: matomas <matomas@student.42barcelona.      +#+  +:+       +#+         #
+#    By: dnepomuc <dnepomuc@student.42barcelona.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/06/22 19:43:58 by matomas           #+#    #+#              #
-#    Updated: 2024/07/13 20:58:32 by matomas          ###   ########.fr        #
+#    Updated: 2024/07/21 23:07:48 by dnepomuc         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -45,7 +45,7 @@ SRCS_MAND = ft_memset.c		\
 				ft_putstr_fd.c	\
 				ft_putendl_fd.c	\
 				ft_putnbr_fd.c	\
-				ft_striteri.c	\
+				ft_striteri.c
 
 OBJS_MAND = ${SRCS_MAND:.c=.o}
 CC = gcc

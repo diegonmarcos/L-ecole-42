@@ -6,7 +6,7 @@
 #    By: dnepomuc <dnepomuc@student.42barcelona.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/06/24 16:12:48 by dnepomuc          #+#    #+#              #
-#    Updated: 2024/07/21 21:41:46 by dnepomuc         ###   ########.fr        #
+#    Updated: 2024/07/21 22:40:16 by dnepomuc         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -61,7 +61,7 @@ SRCS_B	=	ft_lstadd_back.c		\
 
 OBJS	=	${SRCS:.c=.o}
 OBJS_B	=	${SRCS_B:.c=.o}
-DEPS	=	${SRCS:.c=.d} #${SRCS_B:.c=.d}
+DEPS	=	${SRCS:.c=.d} ${SRCS_B:.c=.d}
 
 # **************************************************************************** #
 #                                 VARIABLES                                    #
