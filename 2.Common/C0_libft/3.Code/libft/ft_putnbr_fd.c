@@ -3,20 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: matomas <matomas@student.42barcelona.      +#+  +:+       +#+        */
+/*   By: dnepomuc <dnepomuc@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/04 15:56:17 by matomas           #+#    #+#             */
-/*   Updated: 2024/07/12 20:41:39 by matomas          ###   ########.fr       */
+/*   Created: 2024/07/06 14:34:04 by diegonmarco       #+#    #+#             */
+/*   Updated: 2024/07/22 20:59:26 by dnepomuc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-/*
-** The ft_putnbr_fd() function outputs a number to the output specified by
-** the file descriptor. A file descriptor of 0, 1, or 2, refers to the standard
-** input, standard output, or standard error, respectively.
-*/
 
 void	ft_putnbr_fd(int n, int fd)
 {

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: matomas <matomas@student.42barcelona.      +#+  +:+       +#+        */
+/*   By: dnepomuc <dnepomuc@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/02 10:58:41 by matomas           #+#    #+#             */
-/*   Updated: 2024/07/02 11:00:50 by matomas          ###   ########.fr       */
+/*   Created: 2024/07/06 14:34:04 by diegonmarco       #+#    #+#             */
+/*   Updated: 2024/07/22 20:59:26 by dnepomuc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

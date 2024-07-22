@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: matomas <matomas@student.42barcelona.      +#+  +:+       +#+        */
+/*   By: dnepomuc <dnepomuc@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/01 15:20:06 by matomas           #+#    #+#             */
-/*   Updated: 2024/07/06 14:28:40 by matomas          ###   ########.fr       */
+/*   Created: 2024/07/06 14:34:04 by diegonmarco       #+#    #+#             */
+/*   Updated: 2024/07/22 20:59:26 by dnepomuc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
