@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dnepomuc <dnepomuc@student.42barcelon      +#+  +:+       +#+        */
+/*   By: alejhern <alejhern@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/11 21:42:38 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/06/19 00:25:14 by dnepomuc         ###   ########.fr       */
+/*   Created: 2024/06/11 21:42:38 by alejhern          #+#    #+#             */
+/*   Updated: 2024/06/19 00:25:14 by alejhern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

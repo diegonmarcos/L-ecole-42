@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_front_bonus.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dnepomuc <dnepomuc@student.42barcelon      +#+  +:+       +#+        */
+/*   By: alejhern <alejhern@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/24 17:30:04 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/06/24 17:30:15 by dnepomuc         ###   ########.fr       */
+/*   Created: 2024/06/24 17:30:04 by alejhern          #+#    #+#             */
+/*   Updated: 2024/06/24 17:30:15 by alejhern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

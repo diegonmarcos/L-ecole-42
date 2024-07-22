@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstsize_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dnepomuc <dnepomuc@student.42barcelon      +#+  +:+       +#+        */
+/*   By: alejhern <alejhern@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/24 17:31:16 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/06/24 17:31:19 by dnepomuc         ###   ########.fr       */
+/*   Created: 2024/06/24 17:31:16 by alejhern          #+#    #+#             */
+/*   Updated: 2024/06/24 17:31:19 by alejhern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

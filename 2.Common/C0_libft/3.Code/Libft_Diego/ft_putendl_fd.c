@@ -6,11 +6,12 @@
 /*   By: dnepomuc <dnepomuc@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 03:12:22 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/07/21 22:46:01 by dnepomuc         ###   ########.fr       */
+/*   Updated: 2024/07/22 15:41:16 by dnepomuc         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <unistd.h>
 
 void	ft_putendl_fd(char *str, int fd)
 {

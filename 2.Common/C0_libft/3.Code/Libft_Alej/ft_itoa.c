@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dnepomuc <dnepomuc@student.42barcelona.    +#+  +:+       +#+        */
+/*   By: alejhern <alejhern@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/20 19:27:55 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/07/21 20:55:37 by dnepomuc         ###   ########.fr       */
+/*   Created: 2024/06/20 19:27:55 by alejhern          #+#    #+#             */
+/*   Updated: 2024/06/26 13:47:14 by alejhern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

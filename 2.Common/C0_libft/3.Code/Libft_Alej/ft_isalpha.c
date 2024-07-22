@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dnepomuc <dnepomuc@student.42barcelon      +#+  +:+       +#+        */
+/*   By: alejhern <alejhern@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/11 21:50:08 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/06/16 22:31:04 by dnepomuc         ###   ########.fr       */
+/*   Created: 2024/06/11 21:50:08 by alejhern          #+#    #+#             */
+/*   Updated: 2024/06/16 22:31:04 by alejhern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

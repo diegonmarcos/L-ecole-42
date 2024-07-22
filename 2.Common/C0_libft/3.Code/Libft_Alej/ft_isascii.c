@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dnepomuc <dnepomuc@student.42barcelon      +#+  +:+       +#+        */
+/*   By: alejhern <alejhern@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/11 22:11:59 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/06/12 22:14:09 by dnepomuc         ###   ########.fr       */
+/*   Created: 2024/06/11 22:11:59 by alejhern          #+#    #+#             */
+/*   Updated: 2024/06/12 22:14:09 by alejhern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dnepomuc <dnepomuc@student.42barcelon      +#+  +:+       +#+        */
+/*   By: alejhern <alejhern@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/15 23:29:33 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/06/20 03:44:13 by dnepomuc         ###   ########.fr       */
+/*   Created: 2024/06/15 23:29:33 by alejhern          #+#    #+#             */
+/*   Updated: 2024/06/20 03:44:13 by alejhern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

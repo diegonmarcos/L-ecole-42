@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dnepomuc <dnepomuc@student.42barcelon      +#+  +:+       +#+        */
+/*   By: alejhern <alejhern@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/21 19:16:01 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/07/06 19:42:32 by dnepomuc         ###   ########.fr       */
+/*   Created: 2024/06/21 19:16:01 by alejhern          #+#    #+#             */
+/*   Updated: 2024/07/06 19:42:32 by alejhern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

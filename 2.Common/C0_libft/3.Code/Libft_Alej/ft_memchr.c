@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dnepomuc <dnepomuc@student.42barcelon      +#+  +:+       +#+        */
+/*   By: alejhern <alejhern@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/17 21:14:37 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/06/17 21:54:07 by dnepomuc         ###   ########.fr       */
+/*   Created: 2024/06/17 21:14:37 by alejhern          #+#    #+#             */
+/*   Updated: 2024/06/17 21:54:07 by alejhern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

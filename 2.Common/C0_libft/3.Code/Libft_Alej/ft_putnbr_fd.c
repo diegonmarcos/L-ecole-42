@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dnepomuc <dnepomuc@student.42barcelona.    +#+  +:+       +#+        */
+/*   By: alejhern <alejhern@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/22 20:57:16 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/07/21 19:27:28 by dnepomuc         ###   ########.fr       */
+/*   Created: 2024/06/22 20:57:16 by alejhern          #+#    #+#             */
+/*   Updated: 2024/06/26 09:50:02 by alejhern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,5 @@ void	ft_putnbr_fd(int nbr, int fd)
 	char	*nb;
 
 	nb = ft_itoa(nbr);
-	if (nb)
-	{
-		ft_putstr_fd(nb, fd);
-		free(nb);
-	}
+	ft_putstr_fd(nb, fd);
 }

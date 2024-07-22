@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dnepomuc <dnepomuc@student.42barcelona.co  +#+  +:+       +#+        */
+/*   By: alejhern <alejhern@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/07 19:46:34 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/07/07 19:46:47 by dnepomuc         ###   ########.fr       */
+/*   Created: 2024/07/07 19:46:34 by alejhern          #+#    #+#             */
+/*   Updated: 2024/07/07 19:46:47 by alejhern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

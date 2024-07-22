@@ -1,7 +1,7 @@
 .DEFAULT_GOAL	:= a
 UTILS			= $(addprefix utils/, sigsegv.cpp color.cpp check.cpp leaks.cpp)
-PARENT_DIR		= $(shell dirname $(shell pwd)) # /home/diego/Documents/L-ecole-42/2.Common/C1_Libft 
-LIBFT_PATH		= $(PARENT_DIR) #/home/diego/Documents/L-ecole-42/2.Common/C1_Libft
+PARENT_DIR		= $(shell dirname $(shell pwd))
+LIBFT_PATH		= $(PARENT_DIR)
 TESTS_PATH		= tests/
 MANDATORY		= memset bzero memcpy memmove memchr memcmp strlen isalpha isdigit isalnum \
 				isascii isprint toupper tolower strchr strrchr strncmp strlcpy strlcat strnstr \
@@ -9,8 +9,6 @@ MANDATORY		= memset bzero memcpy memmove memchr memcmp strlen isalpha isdigit is
 				putendl_fd putnbr_fd striteri
 BONUS			= lstnew lstadd_front lstsize lstlast lstadd_back lstdelone lstclear lstiter lstmap
 VSOPEN			= $(addprefix vs, $(MANDATORY)) $(addprefix vs, $(BONUS))
-
-# $(info LIBFT_PATH is $(LIBFT_PATH))
 
 CC		= clang++
 CFLAGS	= -g3 -ldl -gdwarf-4 -std=c++11 -I utils/ -I$(LIBFT_PATH) 

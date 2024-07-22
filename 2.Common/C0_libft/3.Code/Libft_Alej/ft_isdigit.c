@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dnepomuc <dnepomuc@student.42barcelon      +#+  +:+       +#+        */
+/*   By: alejhern <alejhern@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/11 21:58:49 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/06/12 22:16:04 by dnepomuc         ###   ########.fr       */
+/*   Created: 2024/06/11 21:58:49 by alejhern          #+#    #+#             */
+/*   Updated: 2024/06/12 22:16:04 by alejhern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

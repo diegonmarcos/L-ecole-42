@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dnepomuc <dnepomuc@student.42barcelon      +#+  +:+       +#+        */
+/*   By: alejhern <alejhern@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/12 22:23:23 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/06/20 03:20:31 by dnepomuc         ###   ########.fr       */
+/*   Created: 2024/06/12 22:23:23 by alejhern          #+#    #+#             */
+/*   Updated: 2024/06/20 03:20:31 by alejhern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

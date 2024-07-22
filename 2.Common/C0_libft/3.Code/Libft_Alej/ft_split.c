@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dnepomuc <dnepomuc@student.42barcelona.co  +#+  +:+       +#+        */
+/*   By: alejhern <alejhern@student.42barcelona.co  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/26 14:41:57 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/07/06 03:36:44 by dnepomuc         ###   ########.fr       */
+/*   Created: 2024/06/26 14:41:57 by alejhern          #+#    #+#             */
+/*   Updated: 2024/07/06 03:36:44 by alejhern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

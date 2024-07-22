@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dnepomuc <dnepomuc@student.42barcelon      +#+  +:+       +#+        */
+/*   By: alejhern <alejhern@student.42barcelon      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/16 22:46:30 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/07/05 23:56:56 by dnepomuc         ###   ########.fr       */
+/*   Created: 2024/06/16 22:46:30 by alejhern          #+#    #+#             */
+/*   Updated: 2024/07/05 23:56:56 by alejhern         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
