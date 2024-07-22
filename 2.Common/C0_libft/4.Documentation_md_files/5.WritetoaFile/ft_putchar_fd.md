@@ -1,5 +1,8 @@
 # ft_putchar_fd - `void ft_putchar_fd(char c, int fd);`
+<br>
+<br>
 
+# Manual
 **Brief:**  
 Outputs the character `c` to the given file descriptor.
 
@@ -31,3 +34,14 @@ This function writes a single character `c` to the file descriptor `fd`. File de
 ```c
 ft_putchar_fd('A', 1);   // Outputs 'A' to standard output (stdout)
 ft_putchar_fd('\n', 2);  // Outputs a newline character to standard error (stderr)
+```
+
+<br>
+<br>
+
+# Code Explanation
+**Source Code:**
+``` C
+
+
+```

@@ -1,5 +1,8 @@
 # ft_strtrim - `char *ft_strtrim(char const *s1, char const *set);`
+<br>
+<br>
 
+# Manual
 **Brief:**  
 Trims the characters in `set` from the beginning and end of `s1`.
 
@@ -34,3 +37,14 @@ char *trimmed = ft_strtrim(str, set);
 
 printf("%s\n", trimmed);  // Output: Hello, world!
 free(trimmed);            // Free the trimmed string
+```
+
+<br>
+<br>
+
+# Code Explanation
+**Source Code:**
+``` C
+
+
+```

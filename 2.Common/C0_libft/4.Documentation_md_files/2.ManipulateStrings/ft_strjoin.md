@@ -1,5 +1,8 @@
 # ft_strjoin - `char *ft_strjoin(char const *s1, char const *s2);`
+<br>
+<br>
 
+# Manual
 **Brief:**  
 Concatenates two strings (`s1` and `s2`) into a new string.
 
@@ -33,3 +36,14 @@ char *result = ft_strjoin(str1, str2);
 
 printf("%s\n", result); // Output: Hello, world!
 free(result);          // Free the allocated memory
+```
+
+<br>
+<br>
+
+# Code Explanation
+**Source Code:**
+``` C
+
+
+```

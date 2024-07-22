@@ -1,5 +1,8 @@
 # ft_strlcat - `size_t ft_strlcat(char *dst, const char *src, size_t dstsize);`
+<br>
+<br>
 
+# Manual
 **Brief:**  
 Appends the string `src` to the end of `dst`, up to `dstsize` - 1 total bytes.
 
@@ -34,3 +37,14 @@ size_t result = ft_strlcat(dst, src, 15);
 
 printf("%s\n", dst);   // Output: Hello world
 printf("%zu\n", result); // Output: 11
+```
+
+<br>
+<br>
+
+# Code Explanation
+**Source Code:**
+``` C
+
+
+```

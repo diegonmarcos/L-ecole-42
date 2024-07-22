@@ -1,5 +1,8 @@
 # ft_memset - `void *ft_memset(void *b, int c, size_t len);`
+<br>
+<br>
 
+# Manual
 **Brief:**  
 Fills the first `len` bytes of the memory area pointed to by `b` with the constant byte `c`.
 
@@ -29,3 +32,14 @@ The `ft_memset()` function fills the first `len` bytes of the memory area pointe
 char str[15] = "Hello"; 
 ft_memset(str + 6, '.', 5); // Fills the characters after "Hello" with dots.
 // str now contains "Hello....."
+```
+
+<br>
+<br>
+
+# Code Explanation
+**Source Code:**
+``` C
+
+
+```

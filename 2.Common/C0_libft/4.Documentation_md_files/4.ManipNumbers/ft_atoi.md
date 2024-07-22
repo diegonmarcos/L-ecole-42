@@ -1,5 +1,8 @@
 # [ft_atoi](ft_atoi.c) - `int ft_atoi(const char *str);`
+<br>
+<br>
 
+# Manual
 **Brief:**
 Converts the initial portion of the string pointed to by `str` to an `int` representation.
 
@@ -27,5 +30,15 @@ This function converts the initial portion of the string pointed to by `str` to 
 ```c
 int num = ft_atoi("   -42");  // num will be -42
 int num2 = ft_atoi("123abc"); // num2 will be 123
+```
+
+<br>
+<br>
+
+# Code Explanation
+**Source Code:**
+``` C
+
+
 ```
 

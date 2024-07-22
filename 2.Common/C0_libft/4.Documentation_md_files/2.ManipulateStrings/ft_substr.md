@@ -1,5 +1,8 @@
 # ft_substr - `char *ft_substr(char const *s, unsigned int start, size_t len);`
+<br>
+<br>
 
+# Manual
 **Brief:**  
 Returns a substring from the string `s`.
 
@@ -34,3 +37,14 @@ char *substr = ft_substr(str, 7, 5);
 
 printf("%s\n", substr); // Output: world
 free(substr);
+```
+
+<br>
+<br>
+
+# Code Explanation
+**Source Code:**
+``` C
+
+
+```

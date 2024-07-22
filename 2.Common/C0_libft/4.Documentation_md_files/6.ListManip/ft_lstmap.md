@@ -1,5 +1,8 @@
 # ft_lstmap - `t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));`
+<br>
+<br>
 
+# Manual
 **Brief:**
 Iterates a list applying the function ’f’ to each node’s content and creating a new list resulting of the successive applications of the function ’f’.
 
@@ -39,4 +42,14 @@ t_list *head = NULL;
 
 t_list *new_list = ft_lstmap(head, increment, free); 
 // new_list is a new list with each integer element incremented by 1.
+```
+
+<br>
+<br>
+
+# Code Explanation
+**Source Code:**
+``` C
+
+
 ```

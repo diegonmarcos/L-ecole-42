@@ -1,5 +1,8 @@
 # ft_tolower - `int ft_tolower(int c);`
+<br>
+<br>
 
+# Manual
 **Brief:**  
 Converts an uppercase letter to its lowercase equivalent.
 
@@ -23,10 +26,25 @@ This function converts an uppercase letter to its lowercase equivalent. If the a
 -  The behavior of this function is dependent on the current locale for non-ASCII characters.
 - In the default "C" locale, this function will only convert uppercase letters from the standard English alphabet (A-Z) to their lowercase equivalents.
 
-**Example:**  
+**Implementation:**  
 ```c
 char c = 'A';
 char lowercase_c = ft_tolower(c); // lowercase_c will be 'a'
 
 char d = 'd';
 char unchanged_d = ft_tolower(d); // unchanged_d will still be 'd'
+```
+
+<br>
+<br>
+
+# Code Explanation
+**Source Code:**
+``` C
+int	ft_tolower(int c)
+{
+	if (c >= 65 && c <= 90)
+		return (c + 32);
+	return (c);
+}
+```

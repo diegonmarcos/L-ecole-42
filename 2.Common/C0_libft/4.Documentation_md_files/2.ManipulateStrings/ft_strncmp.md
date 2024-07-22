@@ -1,5 +1,8 @@
 # ft_strncmp - `int ft_strncmp(const char *s1, const char *s2, size_t n);`
+<br>
+<br>
 
+# Manual
 **Brief:**  
 Compares the first (at most) `n` bytes of two strings `s1` and `s2`.
 
@@ -31,3 +34,14 @@ char str2[] = "Help";
 
 int result = ft_strncmp(str1, str2, 4); // result is 0 (first 4 chars match)
 result = ft_strncmp(str1, str2, 5); // result is less than 0 ('o' < 'p')
+```
+
+<br>
+<br>
+
+# Code Explanation
+**Source Code:**
+``` C
+
+
+```

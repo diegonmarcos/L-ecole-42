@@ -1,5 +1,8 @@
 # ft_putendl_fd - `void ft_putendl_fd(char *s, int fd);`
+<br>
+<br>
 
+# Manual
 **Brief:**
 Outputs the string `s` to the given file descriptor, followed by a newline.
 
@@ -31,3 +34,14 @@ The `ft_putendl_fd()` function writes the string `s` to the file descriptor `fd`
 ```c
 ft_putendl_fd("Hello, world!", 1);  
 // Outputs "Hello, world!" followed by a newline to standard output.
+```
+
+<br>
+<br>
+
+# Code Explanation
+**Source Code:**
+``` C
+
+
+```

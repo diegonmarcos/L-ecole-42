@@ -1,5 +1,8 @@
 # ft_itoa - `char *ft_itoa(int n);`
+<br>
+<br>
 
+# Manual
 **Brief:**
 Converts an integer to a string representation.
 
@@ -28,3 +31,14 @@ This function converts an integer `n` into its corresponding string representati
 char *str = ft_itoa(-12345);
 printf("%s\n", str); // Output: -12345
 free(str);
+```
+
+<br>
+<br>
+
+# Code Explanation
+**Source Code:**
+``` C
+
+
+```

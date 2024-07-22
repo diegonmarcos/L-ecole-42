@@ -1,5 +1,8 @@
 # ft_strchr - `char *ft_strchr(const char *s, int c);`
+<br>
+<br>
 
+# Manual
 **Brief:**
 Locates the first occurrence of character `c` (converted to a `char`) in the string pointed to by `s`.
 
@@ -26,3 +29,14 @@ The `ft_strchr()` function locates the first occurrence of the character `c` (co
 ```c
 char *str = "Hello, world!";
 char *ptr = ft_strchr(str, 'o'); // ptr points to the first 'o' in str
+```
+
+<br>
+<br>
+
+# Code Explanation
+**Source Code:**
+``` C
+
+
+```

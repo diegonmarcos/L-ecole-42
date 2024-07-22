@@ -1,5 +1,8 @@
 # ft_lstdelone - `void ft_lstdelone(t_list *lst, void (*del)(void*));`
+<br>
+<br>
 
+# Manual
 **Brief:**
 Takes as a parameter a node and frees the memory of the node’s content using the function ’del’ given as a parameter and free the node. The memory of ’next’ must not be freed.
 
@@ -28,4 +31,14 @@ This function takes a node as a parameter and frees the memory of the node's con
 ```c
 t_list *node = ft_lstnew("some content"); 
 ft_lstdelone(node, free); // Frees the content ("some content") and the node itself.
+```
+
+<br>
+<br>
+
+# Code Explanation
+**Source Code:**
+``` C
+
+
 ```

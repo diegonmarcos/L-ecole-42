@@ -1,10 +1,13 @@
 # ft_isalnum - `int ft_isalnum(int c);`
+<br>
+<br>
 
+# Manual
 **Brief:**
 Checks if a character is alphanumeric (either alphabetic or numeric).
 
-**File:** `ft_isalnum.c` / **Date:** 2024-06-22
-**Author:** Diego N. Marcos <dnepomuc@student.42barcelona.com>
+**File:** `ft_isalnum.c` / **Date:** 2024-06-22 / 
+**Author:** Diego N. Marcos <dnepomuc@student.42barcelona.com>  
 
 **Library/Header:**
 * ctype.h
@@ -23,11 +26,25 @@ The `ft_isalnum()` function checks if the character passed as an argument (`c`) 
 - The input character `c` is implicitly converted to an `unsigned char` before the check is performed.
 - This function is a part of the libft library, a custom library of utility functions for C programming.
 
-**Example:**
+**Implementation:**
 ```c
 if (ft_isalnum('A')) {
     printf("This is an alphanumeric character.\n");
 } else {
     printf("This is not an alphanumeric character.\n");
+}
+```
+
+<br>
+<br>
+
+# Code Explanation
+**Source Code:**
+``` C
+int	ft_isalnum(int c)
+{
+	if ((ft_isalpha(c) || ft_isdigit(c)))
+		return (c);
+	return (0);
 }
 ```

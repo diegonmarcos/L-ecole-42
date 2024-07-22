@@ -1,5 +1,8 @@
 # ft_lstiter - `void ft_lstiter(t_list *lst, void (*f)(void *));`
+<br>
+<br>
 
+# Manual
 **Brief:**
 Iterates the list `lst` and applies the function `f` to the content of each node.
 
@@ -35,3 +38,14 @@ t_list *head = NULL;
 // ... add elements to the list ...
 
 ft_lstiter(head, print_content); // Print the content of each node in the list
+```
+
+<br>
+<br>
+
+# Code Explanation
+**Source Code:**
+``` C
+
+
+```

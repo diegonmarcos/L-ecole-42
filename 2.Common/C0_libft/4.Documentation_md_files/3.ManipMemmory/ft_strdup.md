@@ -1,5 +1,8 @@
 # ft_strdup - `char *ft_strdup(const char *s1);`
+<br>
+<br>
 
+# Manual
 **Brief:**
 Creates a duplicate of the string `s1`.
 
@@ -35,3 +38,14 @@ printf("%s\n", copy);   // Output: Jello, world!
 printf("%s\n", original); // Output: Hello, world!
 
 free(copy); // Always free the allocated memory
+```
+
+<br>
+<br>
+
+# Code Explanation
+**Source Code:**
+``` C
+
+
+```

@@ -1,5 +1,8 @@
 # ft_isascii - `int ft_isascii(int c);`
+<br>
+<br>
 
+# Manual
 **Brief:**
 Checks if a character is a 7-bit ASCII character (0 - 127).
 
@@ -22,11 +25,25 @@ This function determines if a character value falls within the 7-bit ASCII range
 **Note:**  
 -  The function will evaluate characters regardless of their locale. 
 
-**Example:**  
+**Implementation:**  
 ```c
 if (ft_isascii('A')) {
     printf("This is a 7-bit ASCII character.\n");
 } else {
     printf("This is not a 7-bit ASCII character.\n");
+}
+```
+
+<br>
+<br>
+
+# Code Explanation
+**Source Code:**
+``` C
+int	ft_isascii(int c)
+{
+	if (c >= 0 && c <= 127)
+		return (1);
+	return (0);
 }
 ```

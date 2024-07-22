@@ -1,5 +1,8 @@
 # ft_memmove - `void *ft_memmove(void *dst, const void *src, size_t len);`
+<br>
+<br>
 
+# Manual
 **Brief:**  
 Copies `len` bytes from memory area `src` to memory area `dst`. The memory areas may overlap.
 
@@ -30,3 +33,14 @@ The `ft_memmove()` function copies `len` bytes from the memory area `src` to the
 char str[] = "Hello, world!";
 ft_memmove(str + 7, str, 6); // Overlapping move
 // str now contains "Hello, Hello
+```
+
+<br>
+<br>
+
+# Code Explanation
+**Source Code:**
+``` C
+
+
+```

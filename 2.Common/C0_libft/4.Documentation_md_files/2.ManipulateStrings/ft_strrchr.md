@@ -1,5 +1,8 @@
 # ft_strrchr - `char *ft_strrchr(const char *s, int c);`
+<br>
+<br>
 
+# Manual
 **Brief:**  
 Locates the last occurrence of character `c` (converted to a `char`) in the string pointed to by `s`.
 
@@ -26,3 +29,14 @@ The `ft_strrchr()` function locates the last occurrence of the character `c` (co
 ```c
 char *str = "Hello, world!";
 char *ptr = ft_strrchr(str, 'o'); // ptr points to the second 'o' in str
+```
+
+<br>
+<br>
+
+# Code Explanation
+**Source Code:**
+``` C
+
+
+```

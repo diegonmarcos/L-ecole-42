@@ -1,5 +1,8 @@
 # ft_striteri - `void ft_striteri(char *s, void (*f)(unsigned int, char *));`
+<br>
+<br>
 
+# Manual
 **Brief:**
 Applies the function `f` to each character of the string `s`, and passing its index as first argument.
 
@@ -33,3 +36,14 @@ void to_uppercase(unsigned int i, char *c) {
 
 char str[] = "hello world";
 ft_striteri(str, to_uppercase); // str is modified to "HELLO WORLD"
+```
+
+<br>
+<br>
+
+# Code Explanation
+**Source Code:**
+``` C
+
+
+```

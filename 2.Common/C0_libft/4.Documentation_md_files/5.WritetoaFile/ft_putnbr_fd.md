@@ -1,5 +1,8 @@
 # ft_putnbr_fd - `void ft_putnbr_fd(int n, int fd);`
+<br>
+<br>
 
+# Manual
 **Brief:**  
 Outputs the integer `n` to the given file descriptor.
 
@@ -27,3 +30,14 @@ This function outputs the integer `n` to the given file descriptor `fd`. It hand
 ```c
 ft_putnbr_fd(42, 1);      // Outputs "42" to standard output (stdout)
 ft_putnbr_fd(-123, 2);   // Outputs "-123" to standard error (stderr)
+```
+
+<br>
+<br>
+
+# Code Explanation
+**Source Code:**
+``` C
+
+
+```

@@ -1,5 +1,8 @@
 # ft_toupper - `int ft_toupper(int c);`
+<br>
+<br>
 
+# Manual
 **Brief:**  
 Converts a lowercase letter to its uppercase equivalent.
 
@@ -30,3 +33,19 @@ char uppercase_c = ft_toupper(c); // uppercase_c will be 'A'
 
 char d = 'D';
 char unchanged_d = ft_toupper(d); // unchanged_d will still be 'D'
+```
+
+<br>
+<br>
+
+# Code Explanation
+**Source Code:**
+``` C
+int	ft_toupper(int c)
+{
+	if (c >= 97 && c <= 122)
+		return (c - 32);
+	return (c);
+}
+
+```

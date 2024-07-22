@@ -1,5 +1,8 @@
 # ft_isdigit - `int ft_isdigit(int c);`
+<br>
+<br>
 
+# Manual
 **Brief:**
 Checks if a character is a decimal digit (0 through 9).
 
@@ -23,10 +26,25 @@ This function checks whether a character is a numeric character (0 through 9).
 **Note:**  
 -  The function will evaluate characters regardless of their locale.
 
-**Example:**  
+**Implementation:**  
 ```c
 if (ft_isdigit('8')) {
     printf("This is a digit.\n");
 } else {
     printf("This is not a digit.\n");
 }
+```
+
+<br>
+<br>
+
+# Code Explanation
+**Source Code:**
+``` C
+int	ft_isdigit(int c)
+{
+	if (c >= 48 && c <= 57)
+		return (c);
+	return (0);
+}
+```

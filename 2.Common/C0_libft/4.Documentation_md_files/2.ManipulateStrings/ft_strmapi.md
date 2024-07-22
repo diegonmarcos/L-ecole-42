@@ -1,5 +1,8 @@
 # ft_strmapi - `char *ft_strmapi(char const *s, char (*f)(unsigned int, char));`
+<br>
+<br>
 
+# Manual
 **Brief:**  
 Creates a new string resulting from applying a function `f` to each character of a string `s`.
 
@@ -39,3 +42,14 @@ char *new_str = ft_strmapi(str, &my_func);
 
 // new_str might contain "HeLlO, WoRlD!"
 free(new_str); // Free the allocated string.
+```
+
+<br>
+<br>
+
+# Code Explanation
+**Source Code:**
+``` C
+
+
+```

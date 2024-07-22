@@ -1,5 +1,8 @@
 # ft_calloc - `void *ft_calloc(size_t count, size_t size);`
+<br>
+<br>
 
+# Manual
 **Brief:**
 Allocates memory for an array of `count` elements, each of size `size` bytes, and initializes all bytes to zero.
 
@@ -27,4 +30,15 @@ The `ft_calloc()` function contiguously allocates enough space for `count` objec
 ```c
 int *arr = ft_calloc(5, sizeof(int)); 
 // arr now points to a block of memory big enough to hold 5 integers, all initialized to zero.
+```
+
+
+<br>
+<br>
+
+# Code Explanation
+**Source Code:**
+``` C
+
+
 ```

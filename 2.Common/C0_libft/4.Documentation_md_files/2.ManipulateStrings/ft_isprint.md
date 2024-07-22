@@ -1,5 +1,8 @@
 # ft_isprint - `int ft_isprint(int c);`
+<br>
+<br>
 
+# Manual
 **Brief:**
 Checks if a character is printable.
 
@@ -30,3 +33,20 @@ if (ft_isprint('A')) {
 } else {
     printf("This is not a printable character.\n");
 }
+```
+
+<br>
+<br>
+
+# Code Explanation
+**Source Code:**
+``` C
+
+int	ft_isprint(int c)
+{
+	if (c >= 32 && c <= 126)
+		return (c);
+	return (0);
+}
+
+```

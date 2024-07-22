@@ -1,5 +1,8 @@
 # ft_lstsize - `int	ft_lstsize(t_list *lst);`
+<br>
+<br>
 
+# Manual
 **Brief:**  
 Counts the number of nodes in a linked list.
 
@@ -30,3 +33,14 @@ t_list *head = NULL;
 
 int size = ft_lstsize(head);
 printf("The list has %d nodes.\n", size);
+```
+
+<br>
+<br>
+
+# Code Explanation
+**Source Code:**
+``` C
+
+
+```

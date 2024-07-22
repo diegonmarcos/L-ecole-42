@@ -1,5 +1,8 @@
 # ft_putstr_fd - `void ft_putstr_fd(char *s, int fd);`
+<br>
+<br>
 
+# Manual
 **Brief:**
 Outputs the string 's' to the given file descriptor.
 
@@ -31,3 +34,14 @@ The `ft_putstr_fd()` function writes the string `s` to the file descriptor `fd`.
 ```c
 char *message = "Hello from ft_putstr_fd!";
 ft_putstr_fd(message, 1);  // Outputs the message to standard output (stdout).
+```
+
+<br>
+<br>
+
+# Code Explanation
+**Source Code:**
+``` C
+
+
+```

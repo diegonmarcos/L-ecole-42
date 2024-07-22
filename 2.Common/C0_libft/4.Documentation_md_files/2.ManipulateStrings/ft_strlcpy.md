@@ -1,5 +1,8 @@
 # ft_strlcpy - `size_t ft_strlcpy(char *dst, const char *src, size_t dstsize);`
+<br>
+<br>
 
+# Manual
 **Brief:**  
 Copies up to `dstsize` - 1 characters from the string `src` to `dst`, NUL-terminating the result if `dstsize` is not 0.
 
@@ -32,3 +35,14 @@ char src[] = "Hello, world!";
 size_t result = ft_strlcpy(dst, src, 15); // Copies "Hello, world!" to dst (13 characters + '\0')
 printf("%s\n", dst);   // Output: Hello, world!
 printf("%zu\n", result); // Output: 13 (length of src)
+```
+
+<br>
+<br>
+
+# Code Explanation
+**Source Code:**
+``` C
+
+
+```

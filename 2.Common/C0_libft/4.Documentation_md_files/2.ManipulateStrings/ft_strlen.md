@@ -1,5 +1,8 @@
 # ft_strlen : String Length Calculation
+<br>
+<br>
 
+# Manual
 ### 1. Description
 
 `ft_strlen` is a function designed to determine the length of a null-terminated string in the C programming language. It iterates through the characters of the string until it encounters a null terminator ('\0'), then returns the count of characters before the null terminator.
@@ -80,3 +83,14 @@ This function iterates through the characters of the string `str`, incrementing 
 ```c
 char *str = "Hello, world!";
 size_t length = ft_strlen(str); // length will be 13
+```
+
+<br>
+<br>
+
+# Code Explanation
+**Source Code:**
+``` C
+
+
+```

@@ -1,5 +1,8 @@
 # ft_memchr - `void *ft_memchr(const void *s, int c, size_t n);`
+<br>
+<br>
 
+# Manual
 **Brief:**  
 Searches for the first occurrence of a byte (interpreted as unsigned char) in a block of memory.
 
@@ -29,3 +32,14 @@ The `ft_memchr()` function scans the initial `n` bytes of the memory area pointe
 char str[] = "Hello, world!";
 char *ptr = ft_memchr(str, 'w', 13); 
 // ptr now points to the first 'w' in str
+```
+
+<br>
+<br>
+
+# Code Explanation
+**Source Code:**
+``` C
+
+
+```

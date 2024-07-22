@@ -1,5 +1,8 @@
 # ft_strnstr - `char *ft_strnstr(const char *haystack, const char *needle, size_t len);`
+<br>
+<br>
 
+# Manual
 **Brief:**  
 Locates the first occurrence of the null-terminated string `needle` in the string `haystack`, where not more than `len` characters are searched.
 
@@ -32,3 +35,14 @@ This function finds the first occurrence of the null-terminated string `needle` 
 char *str = "Foo Bar Baz";
 char *ptr = ft_strnstr(str, "Bar", 10); // ptr points to "Bar" in str
 ptr = ft_strnstr(str, "Bar", 3); // ptr is NULL
+```
+
+<br>
+<br>
+
+# Code Explanation
+**Source Code:**
+``` C
+
+
+```

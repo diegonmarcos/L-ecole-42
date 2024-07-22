@@ -1,5 +1,8 @@
 # ft_lstlast - `t_list *ft_lstlast(t_list *lst);`
+<br>
+<br>
 
+# Manual
 **Brief:**
 Returns the last node of the linked list.
 
@@ -35,3 +38,14 @@ if (last_node) {
 } else {
     printf("The list is empty.\n");
 }
+```
+
+<br>
+<br>
+
+# Code Explanation
+**Source Code:**
+``` C
+
+
+```

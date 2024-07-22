@@ -1,5 +1,8 @@
 # ft_memcpy - `void *ft_memcpy(void *dst, const void *src, size_t n);`
+<br>
+<br>
 
+# Manual
 **Brief:**
 Copies `n` bytes from memory area `src` to memory area `dst`.
 
@@ -31,3 +34,14 @@ char src[] = "Hello, world!";
 char dst[50];
 ft_memcpy(dst, src, strlen(src) + 1); // Copy the string including the null terminator
 // dst now contains "Hello, world!"
+```
+
+<br>
+<br>
+
+# Code Explanation
+**Source Code:**
+``` C
+
+
+```

@@ -1,5 +1,8 @@
 # ft_lstclear - `void ft_lstclear(t_list **lst, void (*del)(void *));`
+<br>
+<br>
 
+# Manual
 **Brief:**
 Deletes and frees all elements of a linked list.
 
@@ -31,3 +34,14 @@ t_list *head = NULL;
 
 ft_lstclear(&head, free);  // Delete and free all nodes in the list
 // head is now NULL
+```
+
+<br>
+<br>
+
+# Code Explanation
+**Source Code:**
+``` C
+
+
+```

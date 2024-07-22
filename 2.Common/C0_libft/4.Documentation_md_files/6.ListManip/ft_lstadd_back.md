@@ -1,5 +1,8 @@
 # ft_lstadd_back - `void ft_lstadd_back(t_list **lst, t_list *new);`
+<br>
+<br>
 
+# Manual
 **Brief:**
 Adds a new node to the end of a linked list.
 
@@ -31,3 +34,14 @@ t_list *new_node = ft_lstnew("new node");
 ft_lstadd_back(&head, new_node); // Add new_node to the end (now head)
 t_list *another_node = ft_lstnew("another node");
 ft_lstadd_back(&head, another_node); // Add another_node to the end
+```
+
+<br>
+<br>
+
+# Code Explanation
+**Source Code:**
+``` C
+
+
+```

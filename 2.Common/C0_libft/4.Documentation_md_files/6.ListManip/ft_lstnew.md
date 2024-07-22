@@ -1,5 +1,8 @@
 # ft_lstnew - `t_list *ft_lstnew(void *content);`
+<br>
+<br>
 
+# Manual
 **Brief:**
 Creates a new node for a linked list.
 
@@ -28,3 +31,14 @@ This function allocates memory for a new node in a linked list and initializes i
 ```c
 t_list *new_node = ft_lstnew("Hello, world!"); 
 // Creates a new node with the string "Hello, world!" as its content.
+```
+
+<br>
+<br>
+
+# Code Explanation
+**Source Code:**
+``` C
+
+
+```

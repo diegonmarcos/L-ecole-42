@@ -1,5 +1,8 @@
 # ft_memcmp - `int ft_memcmp(const void *s1, const void *s2, size_t n);`
+<br>
+<br>
 
+# Manual
 **Brief:**  
 Compares the first `n` bytes of two memory areas.
 
@@ -31,4 +34,14 @@ char str2[] = "abcde";
 
 int result = ft_memcmp(str1, str2, 5); // result is 0 (first 5 bytes match)
 result = ft_memcmp(str1, str2, 6); // result is greater than 0 ('f' > '\0')
+```
+
+<br>
+<br>
+
+# Code Explanation
+**Source Code:**
+``` C
+
+
 ```

@@ -1,5 +1,8 @@
 # ft_isalpha - `int ft_isalpha(int c);`
+<br>
+<br>
 
+# Manual
 **Brief:**
 Checks if a character is alphabetic.
 
@@ -24,11 +27,26 @@ The `ft_isalpha()` function checks whether the passed character `c` is an alphab
 - The behavior of this function is dependent on the current locale for non-ASCII characters.
 - In the default "C" locale, this function will only recognize characters from the standard English alphabet (A-Z and a-z).
 
-**Example:**
+**Implementation:**
 ```c
 if (ft_isalpha('A')) {
     printf("This is an alphabetic character.\n");
 } else {
     printf("This is not an alphabetic character.\n");
+}
+```
+
+<br>
+<br>
+
+# Code Explanation
+**Source Code:**
+``` C
+int	ft_isalpha(int c)
+{
+	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
+		return (c);
+	else
+		return (0);
 }
 ```
