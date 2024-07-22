@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: matomas <matomas@student.42barcelona.      +#+  +:+       +#+         #
+#    By: dnepomuc <dnepomuc@student.42barcelona.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/06/22 19:43:58 by matomas           #+#    #+#              #
-#    Updated: 2024/07/13 20:58:32 by matomas          ###   ########.fr        #
+#    Updated: 2024/07/22 18:05:13 by dnepomuc         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 

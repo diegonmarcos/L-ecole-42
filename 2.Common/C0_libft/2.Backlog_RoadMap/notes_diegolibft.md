@@ -14,53 +14,48 @@
 ## libfttester
 	ft_substr 6. 8.
 
----
+<br>
+<br>
 
 
 # Despanad
 
 ## Paco
-	- Summary: 
 	Failed tests: memmove, libftTester, isalpha
 
 ## paco -s
-	- Summary: 
 	Failed tests: split, lstmap
 ## francinette --strict
-	- Summary: 
 	Failed tests: lstmap, split
 ## libfttester
 	ok
 
----
+<br>
+<br>
 
 # Alej
 
 ## Paco
-	Summary: 
 	Failed tests: memcmp, memcpy, putnbr_fd, ft_memcmp, memmove
 
 ## paco -s
-	Summary: 
 	Failed tests: putnbr_fd, split, memcmp
 	
 	
 ## francinette --strict
-	
-	Summary: 
 
 	Failed tests: memcmp, split, putnbr_fd
 
 ## libfttester
 
-----
+
+<br>
+<br>
 
 
 # Mark
 
 ## Paco
-	Summary: no bonus
-
 	Missing functions: striteri
 
 	Failed tests: memmove
@@ -69,6 +64,27 @@
 	Missing functions: striteri
 	
 ## francinette --strict
-	Missing functions: striteri
+	 Missing functions: striteri
 
+## libfttester
+
+
+<br>
+<br>
+
+
+# Anna
+
+## Paco
+	Failed tests: strchr, memmove, memcmp, strnstr
+
+
+## paco -s
+	Failed tests: strchr, split
+
+
+## francinette --strict
+	Failed tests: split, strchr
+
+	
 ## libfttester
