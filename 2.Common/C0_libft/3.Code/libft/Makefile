@@ -16,7 +16,6 @@ SRCS_MAND = ft_memset.c		\
 		  		ft_memchr.c		\
 		  		ft_memcmp.c		\
 		  		ft_memcpy.c		\
-		  		ft_memcpy.c		\
 		  		ft_bzero.c		\
 		  		ft_atoi.c		\
 		  		ft_strlen.c		\
