@@ -128,7 +128,7 @@ Function | Description | Difficulty
 
 
 ## Bonus
-#### List Manipulator:
+#### List Manipulators:
 
 | Function | Description |
 | :- | :- |
