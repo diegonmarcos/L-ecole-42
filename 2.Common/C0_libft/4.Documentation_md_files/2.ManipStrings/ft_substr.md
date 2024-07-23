@@ -45,6 +45,44 @@ free(substr);
 # Code Explanation
 **Source Code:**
 ``` C
+#include "libft.h"
+#include <stdlib.h> // For malloc and free
+
+char *ft_substr(char const *s, unsigned int start, size_t len) 
+{
+    size_t  i;
+    char    *str;  // Declare a pointer to store the resulting substring.
+
+    // 1. Check if the input string is NULL
+    if (!s)
+        return (NULL);  // Return NULL if the input string is invalid (NULL pointer).
+
+    // 2. Check if the start index is beyond the string's length
+    if (start > ft_strlen(s))
+        return (ft_strdup(""));  // If so, return an empty string ("").
+
+    // 3. Adjust the length if it exceeds the remaining characters in the string
+    if (len > ft_strlen(s + start))  // Calculate remaining length after 'start'
+        len = ft_strlen(s + start);  // Adjust len to fit remaining length if needed
+
+    // 4. Allocate memory for the substring
+    str = ft_calloc(len + 1, sizeof(char)); // Allocate space for substring + null terminator
+    if (!str)
+        return (NULL); // Return NULL if memory allocation fails.
+
+    // 5. Copy characters to the new substring
+    i = 0;  // Initialize the index for copying
+    while (i < len)
+    {
+        str[i] = s[start + i];  // Copy each character from the original string at the appropriate offset
+        i++;
+    }
+
+    // 6. Null-terminate the substring
+    str[i] = '\0';  // Ensure the substring is null-terminated
+
+    return (str);  // Return the pointer to the new substring
+}
 
 
 ```
