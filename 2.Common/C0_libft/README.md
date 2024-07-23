@@ -1,20 +1,125 @@
-> #### 42 Common Core Curriculum / Circle 0  / Libft
+
+
+> ## 42 Common Core Curriculum / Circle 0 /# Libft
 ---
 <p align="center">
-	• <a href="#Project Brief">Project Brief</a> •
-	<a href="#Delivers">Objectives/Deliverables</a> •
+	• <a href="#Project%20Description">Project Description</a> •
+	<a href="#Objectives%20and%20Deliverables">Objectives/Deliverables</a> •
 	<a href="#Resources">Resources</a> •
 	<a href="#Release">Release</a> •
 </p>
-<BR>
-<BR>
-<BR>
-<BR>
+<br>
 
-# PROJECT DESCRITION
-## Brief
+<br>
+<br>
 
-The first project at 42, libft, involves learning how the standard functions of C programming work by writing them from scratch and creating a personal library. This project is vital as the library will be used in future assignments at 42.
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+
+<br>
+
+<br>
+
+<br>
+
+
+<br>
+
+<br>
+
+<br>
+
+
+<br>
+
+<br>
+
+<br>
+
+
+<br>
+
+<br>
+
+<br>
+
+
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+
+# Project Description
+PROJECT DESCRIPTION
+
+>The first project at 42, libft, involves learning how the standard functions of C programming work by writing them from scratch and creating a personal library. This project is vital as the library will be used in future assignments at 42.
 
 - [Subject](https://github.com/diegonmarcos/L-ecole-42/tree/main/2.Common/C0_libft/en.subject.pdf) `PDF`
 
@@ -22,7 +127,7 @@ The first project at 42, libft, involves learning how the standard functions of 
 
 This project is about coding a C library.
 
-### Functions:
+#### Functions:
 - Character Classification
 - String Operations  
 - String Manipulation  
@@ -30,7 +135,7 @@ This project is about coding a C library.
 - Conversions  
 - I/O File Descriptors  
 - Linked List Operations
-### Others
+#### Others
 - Makefile
 
 <br>
@@ -40,7 +145,8 @@ This project is about coding a C library.
 <br>
 <br>
 
-# OBJECTIVES/DELIVERABLES
+# Objectives and Deliverables
+OBJECTIVES AND DELIVERABLES
 > The mandatory functions in libft include both functions from the standard C library and other functions that are useful for character, string, and memory manipulation. These **34 mandatory functions** are essential to achieving a **grade of 100**.
 <br>
 
