@@ -12,10 +12,6 @@
 	<a href="#Release">Release</a> •
 
 </p>
-<br>
-
-<br>
-<br>
 
 <br>
 
@@ -28,97 +24,6 @@
 <br>
 
 <br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-
-<br>
-
-<br>
-
-<br>
-
-
-<br>
-
-<br>
-
-<br>
-
-
-<br>
-
-<br>
-
-<br>
-
-
-<br>
-
-<br>
-
-<br>
-
-
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
 
 <h1 id="project-description">PROJECT DESCRIPTION</h1>
 
@@ -287,6 +192,11 @@ Resource                                                                        
 <br>
 
 # RELEASE
+
+## Source Code
+
+## Documentation (Manual and Explanation)
+
 ## File Structure
 ```
 libft/  
