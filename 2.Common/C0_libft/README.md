@@ -143,6 +143,44 @@ Function | Description | Difficulty
 | `ft_lstmap`       | Apply function to the content of all list elements into a new list. |
 
 <br>
+Absolutely! Here is your list of libft functions, organized alphabetically with their descriptions, and without the original section titles:
+
+* `ft_atoi`: Convert the ASCII string to an integer. 
+* `ft_bzero`: Write zeroes to a byte string.
+* `ft_calloc`: Memory allocation.
+* `ft_isalnum`: Alphanumeric character test.
+* `ft_isalpha`: Alphabetic character test.
+* `ft_isascii`: Test for ASCII character.
+* `ft_isdigit`: Decimal-digit character test.
+* `ft_isprint`: Test for printable character.
+* `ft_itoa`: Convert integer to ASCII string.
+* `ft_memchr`: Locate byte in byte string.
+* `ft_memcmp`: Compare byte string.
+* `ft_memcpy`: Copy memory area.
+* `ft_memmove`: Copy byte string.
+* `ft_memset`: Write a byte to a byte string.
+* `ft_putchar_fd`: Output a character to the given file.
+* `ft_putendl_fd`: Output string to given file with newline.
+* `ft_putnbr_fd`: Output integer to the given file.
+* `ft_putstr_fd`: Output string to the given file.
+* `ft_split`: Split string, with specified character as delimiter, into an array of strings.
+* `ft_strchr`: Locate the character in the string (first occurrence).
+* `ft_strdup`: Save a copy of a string (with malloc).
+* `ft_striteri`: Iterates through a string, enabling character and index manipulation.
+* `ft_strjoin`: Concatenate two strings into a new string (with malloc).
+* `ft_strlcat`: Size-bounded string concatenation.
+* `ft_strlcpy`: Size-bounded string copying.
+* `ft_strlen`: Find the length of the string.
+* `ft_strmapi`: Create a new string by modifying the string with a specified function.
+* `ft_strncmp`: Compare strings (size-bounded).
+* `ft_strnstr`: Locate a substring in a string (size-bounded)
+* `ft_strrchr`: Locate the character in the string (last occurrence).
+* `ft_strtrim`: Trim the beginning and end of the string with the specified characters.
+* `ft_substr`: Extract substring from a string.
+* `ft_tolower`: Upper case to lower case letter conversion.
+* `ft_toupper`: Lower case to upper case letter conversion.
+
+Let me know if you'd like any modifications to this list or want to explore specific functions in more detail!
 
 [Back to Top](#top)
 
