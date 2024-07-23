@@ -3,10 +3,11 @@
 > ## 42 Common Core Curriculum / Circle 0 /# Libft
 ---
 <p align="center">
-	• <a href="#Project%20Description">Project Description</a> •
-	<a href="#Objectives%20and%20Deliverables">Objectives/Deliverables</a> •
+	• <a href="#project-description">Project Description</a> •
+	<a href="#objectives-and-deliverables">Objectives/Deliverables</a> •
 	<a href="#Resources">Resources</a> •
 	<a href="#Release">Release</a> •
+
 </p>
 <br>
 
@@ -116,8 +117,7 @@
 <br>
 
 
-# Project Description
-PROJECT DESCRIPTION
+<h1 id="project-description">PROJECT DESCRIPTION</h1>
 
 >The first project at 42, libft, involves learning how the standard functions of C programming work by writing them from scratch and creating a personal library. This project is vital as the library will be used in future assignments at 42.
 
@@ -145,8 +145,8 @@ This project is about coding a C library.
 <br>
 <br>
 
-# Objectives and Deliverables
-OBJECTIVES AND DELIVERABLES
+<h1 id="objectives-and-deliverables">OBJECTIVES AND DELIVERABLES</h1>
+
 > The mandatory functions in libft include both functions from the standard C library and other functions that are useful for character, string, and memory manipulation. These **34 mandatory functions** are essential to achieving a **grade of 100**.
 <br>
 
