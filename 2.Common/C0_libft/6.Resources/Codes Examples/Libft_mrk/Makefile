@@ -6,7 +6,7 @@
 #    By: dnepomuc <dnepomuc@student.42barcelona.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/06/22 19:43:58 by matomas           #+#    #+#              #
-#    Updated: 2024/07/22 18:05:13 by dnepomuc         ###   ########.fr        #
+#    Updated: 2024/07/23 20:31:04 by dnepomuc         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,7 +15,6 @@ SRCS_MAND = ft_memset.c		\
 		  		ft_memmove.c	\
 		  		ft_memchr.c		\
 		  		ft_memcmp.c		\
-		  		ft_memcpy.c		\
 		  		ft_memcpy.c		\
 		  		ft_bzero.c		\
 		  		ft_atoi.c		\
@@ -61,7 +60,7 @@ $(NAME):	$(OBJS_MAND)
 	$(RANLIB) $(NAME)
 
 %.o: %.c
-	$(CC) -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 	rm -f $(OBJS_MAND)

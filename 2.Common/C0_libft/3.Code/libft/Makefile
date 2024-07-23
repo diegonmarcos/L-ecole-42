@@ -61,7 +61,7 @@ $(NAME):	$(OBJS_MAND)
 	$(RANLIB) $(NAME)
 
 %.o: %.c
-	$(CC) -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 	rm -f $(OBJS_MAND)
