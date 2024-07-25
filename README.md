@@ -81,7 +81,8 @@
 
 
 
-<h1 id="#2">Curriculum Table</h1>
+<h1 id="2">Curriculum Table</h1>
+
 ## Curricullum 
 
 | Subject         | Project                                  | Hours | Brief Description                                                             |
@@ -160,7 +161,7 @@
 
 </details>
 
-<h1 id="#2">School Procedures</h1>
+<h1 id="2">School Procedures</h1>
 
 ---
 ## NORMINETTE
