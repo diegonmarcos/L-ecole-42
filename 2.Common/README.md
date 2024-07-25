@@ -1,7 +1,8 @@
 ![](../zimg/42.svg)L'eco 42![42](../zimg/42.svg)L'ecole 42![42](../zimg/42.svg)L'ecole 42![42](../zimg/42.svg)L'ecole 42![42](../zimg/42.svg)L'eco42![42](../zimg/42.svg)  
 ---
 --- 
-...................................... ![](../zimg/peng.jpg).................................
+<p align="center"><img src="https://github.com/diegonmarcos/L-ecole-42/raw/main/zimg/peng.jpg" alt="" width="600"></p>
+
 <p align="center">
 	• <a href="#1">Projects by Deadline</a> •
 	<a href="#2">Projects by Topic</a> •
