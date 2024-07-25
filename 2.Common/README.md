@@ -2,6 +2,25 @@
 ---
 --- 
 ...................................... ![](../zimg/peng.jpg).................................
+<p align="center">
+	• <a href="#project-description">Project Description</a> •
+	<a href="#objectives-and-deliverables">Objectives/Deliverables</a> •
+	<a href="#Resources">Resources</a> •
+	<a href="#Release">Release</a> •
+
+</p>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
 
 ## Projects by Deadline
 
