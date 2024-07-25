@@ -11,15 +11,10 @@
 </p>
 
 <br>
-
 <br>
-
 <br>
-
 <br>
-
 <br>
-
 <br>
 
 <h1 id="1">Projects by Deadline</h1>
