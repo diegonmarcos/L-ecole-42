@@ -4,8 +4,8 @@
 ...................................... ![](../zimg/peng.jpg).................................
 <p align="center">
 	• <a href="#1">Projects by Deadline</a> •
-	<a href="2">Projects by Topic</a> •
-	<a href="3">Curriculum Hours</a> •
+	<a href="#2">Projects by Topic</a> •
+	<a href="#3">Curriculum Hours</a> •
 
 </p>
 
