@@ -39,6 +39,13 @@
 | Circle 6 | Exam Rank 6 // Transcendence                                          | 16/02/2025 | 32  | 17/06/2026     | 86  |
 <br>
 
+<details>
+<summary>📚 More info</summary>
+	
+[Back to Top](#top)  
+
+</details>
+
 [Back to Top](#top)
 <br>
 <br>
@@ -137,7 +144,13 @@
 
 *   **CPP 00-04** & **CPP 05-09:**  _A series of modules introducing C++ concepts like classes, inheritance, templates, and the Standard Template Library (STL)._
   <br>
-  
+<details>
+<summary>📚 More info</summary>
+	
+[Back to Top](#top)  
+
+</details>  
+
 [Back to Top](#top)
 <br>
 <br>
@@ -201,7 +214,13 @@
 
 |_Hours Per day average_  | 6 |  
 <br>
-  
+ <details>
+<summary>📚 More info</summary>
+	
+[Back to Top](#top)  
+
+</details> 
+
 [Back to Top](#top)
 
 <br>
