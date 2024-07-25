@@ -3,10 +3,9 @@
 --- 
 ...................................... ![](../zimg/peng.jpg).................................
 <p align="center">
-	• <a href="#project-description">Project Description</a> •
-	<a href="#objectives-and-deliverables">Objectives/Deliverables</a> •
-	<a href="#Resources">Resources</a> •
-	<a href="#Release">Release</a> •
+	• <a href="#1">Projects by Deadline</a> •
+	<a href="2">Projects by Topic</a> •
+	<a href="3">Curriculum Hours</a> •
 
 </p>
 
@@ -22,7 +21,7 @@
 
 <br>
 
-## Projects by Deadline
+<h1 id="1">Projects by Deadline</h1>
 
 | Sprints       | Milestones | Projects                                       | Blackhole   | Day  | Status |
 |---------------|------------|------------------------------------------------|-----------|------|--------|
@@ -47,7 +46,7 @@
 <br>
 <br>
 
-## Projects by Topic
+<h1 id="2">Projects by Topic</h1>
 ### Topics:
 - **Fundamental C Libraries & Tools**  
 - **System Administration & Networking**  
@@ -119,7 +118,7 @@
 <br>
 
 
-## Curriculum Hours
+<h1 id="3">Curriculum Hours</h1>
 
 | Topic                               | Hours | Months | Percentage |
 | ----------------------------------- | ----- | ------ | --------- |
