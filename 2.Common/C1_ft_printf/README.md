@@ -87,7 +87,27 @@ make
 * [Norminette](https://github.com/42School/norminette) - Tool to respect the code norm, made by 42. `GitHub`
 * [42 Header](https://github.com/42Paris/42header) - 42 header for Vim. `GitHub`
 
-## LICENSE
-<p>
-This work is published under the terms of <a href="https://github.com/dnepomuc/ft_printf/blob/main/LICENSE">Unlicense</a>.
-</p>
+
+
+**ft_printf:**
+
+* **Variadic Functions:**
+    * `va_start(ap, last)`: Initializes a `va_list` for accessing variable arguments.
+    * `va_arg(ap, type)`: Retrieves the next argument of a specified type.
+    * `va_end(ap)`: Cleans up the `va_list` when finished.
+* **Format Specifiers:**
+    * `%c`, `%s`, `%d`, `%i`, `%u`, `%x`, `%X`, `%p`, `%%`, etc.: Used to format different types of data (characters, strings, integers, unsigned integers, hexadecimal numbers, pointers, etc.).
+* **String Manipulation:**
+    * `ft_strlen`, `ft_strchr`, `ft_memcpy`, etc.: Functions from `libft` for working with strings.
+* **Integer to String Conversion:**
+    * Custom functions to convert integers to strings (e.g., `ft_itoa` or equivalent in `libft`).
+
+**General C Syntax:**
+
+* **Pointers:** Understanding how to use pointers is crucial for all these projects.
+* **Data Types:** Working with different data types (int, char, char*, etc.).
+* **Conditional Statements (if, else):** Used for decision-making and branching.
+* **Loops (while, for):** Used for repeated actions.
+* **Functions:** Defining and calling functions to organize your code.
+* **Structures:** For organizing data (more relevant in later circles).
+* **Bitwise Operators:** Useful for working with flags and permissions in some cases.

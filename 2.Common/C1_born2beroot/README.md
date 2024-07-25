@@ -63,3 +63,27 @@ This system administration project focuses on setting up a secure virtual machin
 <p>
 This work is published under the terms of <a href="https://github.com/dnepomuc/born2beroot/blob/master/LICENSE">Unlicense</a>.
 </p>
+
+**Born2BeRoot:**
+
+* **Shell Commands (Bash):**
+    * `sudo`: Execute commands with elevated privileges.
+    * `apt-get`: Package management for Debian-based systems.
+    * `useradd`, `usermod`: Manage user accounts.
+    * `ssh-keygen`: Generate SSH keys.
+    * `ufw`: Uncomplicated Firewall (for basic firewall configuration).
+* **Networking Commands:**
+    * `ping`, `traceroute`: Network troubleshooting tools.
+    * `netstat`: Display network connections and statistics.
+    * `ifconfig`: Configure network interfaces.
+
+
+**General C Syntax:**
+
+* **Pointers:** Understanding how to use pointers is crucial for all these projects.
+* **Data Types:** Working with different data types (int, char, char*, etc.).
+* **Conditional Statements (if, else):** Used for decision-making and branching.
+* **Loops (while, for):** Used for repeated actions.
+* **Functions:** Defining and calling functions to organize your code.
+* **Structures:** For organizing data (more relevant in later circles).
+* **Bitwise Operators:** Useful for working with flags and permissions in some cases.
