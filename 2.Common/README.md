@@ -7,7 +7,6 @@
 <p align="center">
 	• <a href="#1">Projects by Deadline</a> •
 	<a href="#2">Projects by Topic</a> •
-	<a href="#3">Curriculum Hours</a> •
 
 </p>
 
@@ -185,44 +184,6 @@
 <br>
 <br>
 <br>
-
-
-<h1 id="3">Curriculum Hours</h1>
-
-| Topic                               | Hours | Months | Percentage |
-| ----------------------------------- | ----- | ------ | --------- |
-| _Piscine_                              | 100   | 1     |           |
-| _Common Core_                          | 1,958 | 11    | 63%       |
-| _Specialization_                       | 1,029 | 6     | 33%       |
-| **Total**                            | **3,087** | **17** | **100%**   |
-|                                     |      |      |           |
-
-| Topic                               | Hours | Months | Percentage |
-| ----------------------------------- | ----- | ------ | --------- |
-| _Fundamental C Libraries & Tools_     | 38   | 3     | 12%       |
-| _Unix Processes & Communication_   | 260  | 1     | 8%        |
-| _System Administration & Networking_ | 55   | 1     | 3%        |
-| | | | |
-| _Algorithms & Data Structures_       | 630  | 0     | 2%        |
-| _Object-Oriented Programming (C++)_  | 210  | 1     | 7%        |
-| | | | |
-| _Game Development & AI_             | 25   | 1     | 1%        |
-| _Graphics & Visualization_           | 340  | 2     | 11%       |
-|                                     |      |      |           |
-| _Specialization_                       | 1,029 | 6     | 33%       |
-
-
-|_Hours Per day average_  | 6 |  
-<br>
- <details>
-<summary>📚 More info</summary>
-	
-[Back to Top](#top)  
-
-</details> 
-
-[Back to Top](#top)
-
 <br>
 <br>
 <br>
