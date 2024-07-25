@@ -29,7 +29,7 @@
 <br>
 
 ## Projects by Topic
-## Topics:
+### Topics:
 - **Fundamental C Libraries & Tools**  
 - **System Administration & Networking**  
 - **Algorithms & Data Structures**  
@@ -54,6 +54,10 @@
 *   **Born2BeRoot (B2BR):**  _Get hands-on experience setting up a virtual machine from scratch, configuring services, and hardening it for security._
 *   **NetPractice:**  _A series of exercises covering network protocols, sockets, and inter-process communication (IPC). Build simple clients and servers._
 *   **Inception:**  _A unique project involving virtual machines and system-level programming. It tests your understanding of memory management and processes._
+  *   **Philosophers:**  _Implement a classic synchronization problem with dining philosophers. Learn to avoid deadlocks and race conditions. Concurrency & Parallelism._
+*  _Choose a networking project to practice concurrent programming:_
+    *   **Webserv:** _Build a basic web server that handles multiple client requests._
+    *   **ft_IRC:** _Create your own Internet Relay Chat (IRC) server for real-time messaging._
 
 ### Algorithms & Data Structures
 
@@ -65,7 +69,7 @@
     *   **fdf:** _Visualize wireframe models in 3D using isometric projection._
     *   **so_long:** _Create a simple 2D game using a graphics library._
     *   **fract-ol:** _Generate beautiful fractal images (Mandelbrot, Julia sets, etc.)._
-*   _Dive into 3D graphics!_
+*   _Choos one to Dive into 3D graphics!_
     *   **Cub3D:** _Build a "Doom"-like first-person perspective engine with raycasting._
     *   **MiniRT:** _Create a ray tracer to render realistic 3D scenes with lighting effects._
 
@@ -76,12 +80,6 @@
     *   **minitalk:** _Explore signal handling and bitwise operations for basic communication between processes._
 *   **Minishell:**  _Craft your own simplified Unix shell. Handle commands, arguments, pipes, redirections, and environment variables._
 
-### Concurrency & Parallelism
-
-*   **Philosophers:**  _Implement a classic synchronization problem with dining philosophers. Learn to avoid deadlocks and race conditions._
-*  _Choose a networking project to practice concurrent programming:_
-    *   **Webserv:** _Build a basic web server that handles multiple client requests._
-    *   **ft_IRC:** _Create your own Internet Relay Chat (IRC) server for real-time messaging._
 
 ### Game Development & AI
 
@@ -91,6 +89,41 @@
 
 *   **CPP 00-04** & **CPP 05-09:**  _A series of modules introducing C++ concepts like classes, inheritance, templates, and the Standard Template Library (STL)._
 
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
 
 
+## Curriculum Hours
+
+| Topic                               | Hours | Months | Percentage |
+| ----------------------------------- | ----- | ------ | --------- |
+| _Piscine_                              | 100   | 1     |           |
+| _Common Core_                          | 1,958 | 11    | 63%       |
+| _Specialization_                       | 1,029 | 6     | 33%       |
+| **Total**                            | **3,087** | **17** | **100%**   |
+|                                     |      |      |           |
+
+| Topic                               | Hours | Months | Percentage |
+| ----------------------------------- | ----- | ------ | --------- |
+| _Fundamental C Libraries & Tools_     | 38   | 3     | 12%       |
+| _Unix Processes & Communication_   | 260  | 1     | 8%        |
+| _System Administration & Networking_ | 55   | 1     | 3%        |
+| | | | |
+| _Algorithms & Data Structures_       | 630  | 0     | 2%        |
+| _Object-Oriented Programming (C++)_  | 210  | 1     | 7%        |
+| | | | |
+| _Game Development & AI_             | 25   | 1     | 1%        |
+| _Graphics & Visualization_           | 340  | 2     | 11%       |
+|                                     |      |      |           |
+| _Specialization_                       | 1,029 | 6     | 33%       |
+
+
+|_Hours Per day average_  | 6 |
 
