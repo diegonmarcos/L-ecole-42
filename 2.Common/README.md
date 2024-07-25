@@ -2,7 +2,7 @@
 ---
 --- 
 <p align="center"><img src="https://github.com/diegonmarcos/L-ecole-42/raw/main/zimg/peng.jpg" alt="" width="600"></p>
-
+<a id="top"></a>
 <p align="center">
 	• <a href="#1">Projects by Deadline</a> •
 	<a href="#2">Projects by Topic</a> •
@@ -41,7 +41,19 @@
 | Circle 7      | Exam Rank 6 | CPP05-09 / Webserv OR IRC / Inception            | 20/07/2025  | 5    | 🔒     |
 | Circle 8      | Exam Rank 7 | ??                                               | 25/07/2025  | 5    | 🔒     |
 
-
+[Back to Top](#top)
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 <br>
@@ -107,7 +119,9 @@
 ### Object-Oriented Programming (C++)
 
 *   **CPP 00-04** & **CPP 05-09:**  _A series of modules introducing C++ concepts like classes, inheritance, templates, and the Standard Template Library (STL)._
-
+  <br>
+  
+[Back to Top](#top)
 <br>
 
 <br>
@@ -144,5 +158,7 @@
 | _Specialization_                       | 1,029 | 6     | 33%       |
 
 
-|_Hours Per day average_  | 6 |
-
+|_Hours Per day average_  | 6 |  
+<br>
+  
+[Back to Top](#top)
