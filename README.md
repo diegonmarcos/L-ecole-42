@@ -12,6 +12,38 @@
 
 </p>
 
+# Table of Content
+```
+42 School/
+├── About 42
+│  ├── Pedagogy
+│  │  └── Peer-to-Peer Learning
+│  ├── Curriculum Overview
+│  │  └── The Piscine
+│  └── Campuses Worldwide
+│    └── ...
+├── The Piscine
+│  ├── Admission Requirements
+│  ├── Piscine Timeline
+│  ├── Piscine Projects
+│  │  └── ...
+│  └── Evaluation Process
+├── Common Core Curriculum
+│  ├── Branches
+│  │  └── Algorithms
+│  │  └── Graphics
+│  │  └── ... 
+│  ├── Projects
+│  │  └── ...
+│  └── Exams
+└── Specializations
+  ├── Available Tracks
+  │  └── AI
+  │  └── Cybersecurity
+  │  └── ...
+  └── Choosing a Path
+```
+
 ---
 
 <h1 id="1">About the School</h1>
@@ -117,7 +149,9 @@ char	*ft_strdup(const char *s1)
 
 
 <h1 id="2">The Curricullum</h1>
+
 ## Projects by Topic
+
 ### Topics:
 
 - **Fundamental C Libraries & Tools**  
@@ -317,32 +351,44 @@ char	*ft_strdup(const char *s1)
 
 
 <br>
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
 
 ---
 
-# Table of Content
-```
-L'ecole42/
-├── Piscine
-│   ├── really
-│   │   └── no way
-│   ├── this?
-│   │   └── ...
-│   └── with this?
-│       └── ...
-├── Common Core
-│   ├── this place
-│   ├── this things
-│   ├── oooh
-│   │   └── in it?
-│   └── ok
-└── Why?
-    ├── make sense?
-    └── why not?
-```
+
 
 ---
 <br>
@@ -354,5 +400,38 @@ L'ecole42/
 <a href='https://profile.intra.42.fr/users/dnepomuc' target="_blank"><img alt='42' src='https://img.shields.io/badge/Profile-100000?style=flat-square&logo=42&logoColor=white&labelColor=000000&color=000000'/></a>  
 
 <a href='https://github.com/diegonmarcos' target="_blank"><img alt='42 profile' height="22" src='https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/diegonmarcos'/></a>  
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 [![dnepomuc's 42 stats](https://badge.mediaplus.ma/darkblue/dnepomuc?1337Badge=off&UM6P=off)](https://profile.intra.42.fr/users/dnepomuc)
