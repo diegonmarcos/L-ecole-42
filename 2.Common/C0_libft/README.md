@@ -261,20 +261,21 @@ libft/
 <br>
 
 
-Strlen
-Memset
-
-Strchr
-Atoi
-Strdup
-Calloc
-Strncmp
-
-Substr
-Strjoin
-
-Split
-
+Strlen  
+Memset  
+<br>
+Strchr  
+<br>
+Atoi  
+Strdup  
+Calloc  
+Strncmp  
+<br>
+Substr  
+Strjoin   
+<br>
+Split  
+<br>
 
 
 
