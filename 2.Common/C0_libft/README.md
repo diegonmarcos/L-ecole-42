@@ -260,3 +260,21 @@ libft/
 
 <br>
 
+
+Strlen
+Memset
+
+Strchr
+Atoi
+Strdup
+Calloc
+Strncmp
+
+Substr
+Strjoin
+
+Split
+
+
+
+
