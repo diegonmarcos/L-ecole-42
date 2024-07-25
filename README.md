@@ -113,6 +113,8 @@ char	*ft_strdup(const char *s1)
 }
 ```
 
+[Back to Top](#top)
+
 <br>
 <br>
 <br>
