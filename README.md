@@ -8,7 +8,9 @@
 <p align="center">
 	• <a href="#1">About the School</a> •
 	<a href="#2">The Curricullum</a> •
+	<a href="#3">Resources</a> •
 	<a href="#3">School Procedures</a> •
+ 	
 
 </p>
 
