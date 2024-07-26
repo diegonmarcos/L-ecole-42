@@ -80,6 +80,8 @@ Automate repetitive tasks and streamline your workflow with personalized Bash sc
 - **Vim:** A highly configurable text editor renowned for its speed and efficiency.
 	- [.vimrc](p.vimrc.md)
 	- [.vimrc_42header](p.vimrc_42header.md)
+   	- **NERDtree - Vim Folder Side bar**  
+ 		- [NERDtree](https://github.com/preservim/nerdtree) 	
 - **Visual Studio Code:** A modern, user-friendly editor with a vast ecosystem of extensions for various languages and tools.
 	- [Tab indentation vs spaces](VSCode.md)
 	- [Extensions list](ExtList.md)
