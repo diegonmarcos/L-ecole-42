@@ -388,8 +388,11 @@ char	*ft_strdup(const char *s1)
 * [42 Norms](https://github.com/42School/norminette/blob/master/pdf/en.norm.pdf) - Information about 42 code norms. `PDF`
 * [Norminette](https://github.com/42School/norminette) - Tool to respect the code norm, made by 42. `GitHub`
 * [42 Header](https://github.com/42Paris/42header) - 42 header for Vim. `GitHub`  
-  
+
+<br>
+
 [Back to Top](#top)
+
 ---
 
 
