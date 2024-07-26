@@ -9,7 +9,7 @@
 	• <a href="#1">About the School</a> •
 	<a href="#2">The Curricullum</a> •
 	<a href="#3">Resources</a> •
-	<a href="#3">School Procedures</a> •
+	<a href="#4">School Procedures</a> •
  	
 
 </p>
@@ -260,7 +260,7 @@ char	*ft_strdup(const char *s1)
 <br>
 
 
-<h1 id="3">Curriculum Hours</h1>
+<h1 id="2">Curriculum Hours</h1>
 
 | Topic                               | Hours | Months | Percentage |
 | ----------------------------------- | ----- | ------ | --------- |
@@ -330,7 +330,43 @@ char	*ft_strdup(const char *s1)
 <br>
 <br>
 
-<h1 id="3">School Procedures</h1>
+<h1 id="3">Resources</h1>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<h1 id="4">School Procedures</h1>
 
 ---
 ## NORMINETTE
