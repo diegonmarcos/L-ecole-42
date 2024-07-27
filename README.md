@@ -114,6 +114,56 @@
     42 is a global network of tuition-free coding schools.  Think of it as a coding bootcamp on steroids – intense, hands-on, and focused on real-world skills. There are no teachers, no lectures... just you, your peers, and a mountain of challenges.Learn more on the official [42 website](https://42.fr/en).
   - ### The Piscine: Sink or Swim 🏊‍♀️
      Admission starts with the "Piscine" (French for swimming pool). It's a month-long coding immersion experience designed to test your grit, problem-solving, and ability to learn independently.  It's tough, but those who make it through emerge as resilient coders.
+  - ### Origins
+ ``` C
+/*
+**42, The Answer to Life, the Universe, and Everything**
+
+- That's right, the school is FREE, originally funded and founded in Paris by generous philanthropist billionaire Xaviel Niel.
+I'm not unusual; it's the others who are strange ― Xavier Niel
+
+- The name of the school, "42", is a tribute to The Hitchhiker's Guide to the Galaxy, a comedy science fiction series created by Douglas Adams.
+42, or The Answer to the Ultimate Question of Life, The Universe, and Everything
+
+- The supercomputer had this function ready:
+ 
+ */
+
+#include <stdio.h> // Include the standard input/output library for printf
+
+#define true 1  // Define true as 1 for readability
+#define false 0 // Define false as 0 for readability
+
+int what_is_forty_two(void) { 
+    // Initialize n to 2 (binary 0b10)
+    int n = true << 1 | false; // This could be simplified to n = true << 1 (or n = 2)
+                               // Bitwise OR with 0 (false) is like "dividing by 1":
+                               // it doesn't change the result because ORing any bit with 0 yields the original bit
+
+    // Loop until n has exactly 3 bits set (which happens at 42 or 0b101010)
+    while (__builtin_popcount(n) != 3) { // __builtin_popcount counts the number of '1' bits in n
+        n |= n << 2; // Bitwise magic to cleverly reach 42:
+                      // 1. n << 2: Shift n's bits 2 places left (multiply by 4)
+                      // 2. n | ...: Combine original n with the shifted version using bitwise OR, doubling set bits
+    }
+
+    // Return 42, with a playful and unnecessary trick calculation
+    // Explanation:
+    // - ++n: increments n to 43
+    // - (n == '*') checks if n is equal to the ASCII value of '*' (which is 42). This is false after incrementing.
+    // - !!n * (n - 1): Converts n (43) to 1 using double negation (!!) and multiplies by (n - 1) = 42, resulting in 42
+    return (++n == '*') ? n : !!n * (n - 1); 
+
+    // Simplified and clearer version: return n - 1; // or even just return 42;
+}
+
+int main(void) {
+    char *question = "What is the answer to Life, the Universe and Everything?\n"; // The famous question
+    printf("%sDeep Thought: %d\n", question, what_is_forty_two()); // Print the question and the answer (42)
+    return 0; // Indicate successful program execution
+}
+
+```
 
 ![](up2u.png)
 ---
