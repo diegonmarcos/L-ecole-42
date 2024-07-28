@@ -2,6 +2,72 @@
 
 **Interconnection Overview:**
 
+Character Classification:
+```
+     ft_isalnum
+        |     \
+     ft_isalpha   ft_isdigit
+```
+
+Memory Manipulation:
+```
+     ft_calloc 
+       |    \
+    malloc   ft_bzero
+                  |
+                memset
+```
+```
+    ft_memmove <---- ft_memcpy
+       |
+    move_memory    
+```
+
+String Manipulation:
+```
+   ft_strjoin   ft_strtrim   ft_split
+          \      /         /
+           ft_substr      /
+                     ft_calloc
+                     ft_free
+```
+```
+   ft_strmapi
+       |
+    ft_strdup
+```
+```
+   ft_strnstr
+      |   \
+  ft_strlen  ft_strncmp
+```
+```
+   ft_strtrim
+     |    \
+ ft_strlen  ft_strchr
+```
+
+Integer-String Conversion:
+```
+      ft_itoa 
+    /   |   \
+ft_calloc ft_digit_count   comp
+                          |
+                       ft_putnbr_fd
+                          |
+                       ft_putstr_fd
+```
+File Descriptor Output:
+```
+  ft_putendl_fd     ft_putnbr_fd
+       | \             /
+       |  ft_putstr_fd
+       |       |
+       \-------ft_putchar_fd
+```
+
+
+
 1. **Character Classification:**
    - `ft_isalnum` depends on
       - `ft_isalpha` and `ft_isdigit`.
