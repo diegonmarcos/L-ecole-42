@@ -1,22 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstlast.c                                       :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dnepomuc <dnepomuc@student.42barcelona.    +#+  +:+       +#+        */
+/*   By: vcodrean <vcodrean@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/11/22 18:01:47 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/06/25 11:27:35 by dnepomuc         ###   ########.fr       */
+/*   Created: 2022/12/19 16:33:55 by vcodrean          #+#    #+#             */
+/*   Updated: 2023/01/19 11:26:08 by vcodrean         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "ft_printf.h"
 
-t_list	*ft_lstlast(t_list *lst)
+int	ft_putchar(int c)
 {
-	if (lst == NULL)
-		return (NULL);
-	while (lst -> next)
-		lst = lst -> next;
-	return (lst);
+	return (write (1, &c, 1));
 }

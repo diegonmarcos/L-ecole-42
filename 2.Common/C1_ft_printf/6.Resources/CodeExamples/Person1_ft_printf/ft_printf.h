@@ -3,26 +3,29 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dnepomuc <dnepomuc@student.42barcelona.    +#+  +:+       +#+        */
+/*   By: vcodrean <vcodrean@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/30 20:33:34 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/06/25 11:27:35 by dnepomuc         ###   ########.fr       */
+/*   Created: 2022/12/19 16:27:34 by vcodrean          #+#    #+#             */
+/*   Updated: 2023/01/19 11:25:42 by vcodrean         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
-# include <unistd.h>
 # include <stdarg.h>
-# include "libft/libft.h"
+# include <unistd.h>
+# include <stdio.h>
+# include <stdint.h>
 
-int		ft_printf(const char *format, ...);
-int		ft_putchar(char c);
+int		ft_printf(char const *format, ...);
+int		ft_putchar(int c);
 int		ft_putstr(char *str);
-int		ft_putnumb(int n);
-int		ft_putpointer(unsigned long long ptr);
-int		ft_putunsigned(unsigned int n);
-int		ft_puthexadecimal(unsigned int num, const char type);
+int		ft_strlen( const char *str);
+void	ft_putchar_fd(char c, int fd);
+int		ft_print_ptr(uintptr_t ptr);
+int		ft_putnbr(int n);
+int		ft_print_unsigned(unsigned int num);
+int		ft_print_hex(unsigned int nr, char *base);
 
 #endif
