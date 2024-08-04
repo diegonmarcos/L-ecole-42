@@ -73,8 +73,7 @@ int	ft_printf(const char *str, ...)
 
 static int	type_var(char c, va_list element)
 {
-
-		return (ft_putchar(va_arg(element, int)));
+	return (ft_putchar(va_arg(element, int)));
 	if (c == 's')
 		return (ft_putstr(va_arg(element, char *)));
 	if (c == 'd' || c == 'i')
@@ -89,5 +88,3 @@ static int	type_var(char c, va_list element)
 		return (ft_hexa_min(va_arg(element, int)));
 	return (0);
 }
-
-
