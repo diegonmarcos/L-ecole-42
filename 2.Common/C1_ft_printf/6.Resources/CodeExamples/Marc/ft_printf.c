@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_print.h"
+#include "ft_printf.h"
 
 static int	type_var(char c, va_list element);
 

@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_print.h"
+#include "ft_printf.h"
 
 static int	int_min(int n)
 {

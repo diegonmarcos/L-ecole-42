@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_print.h"
+#include "ft_printf.h"
 
 static int	puthexa_long(char *bstr, unsigned long long n, int c)
 {
