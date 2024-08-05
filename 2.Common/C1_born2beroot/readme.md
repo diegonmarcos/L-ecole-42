@@ -1,6 +1,6 @@
 <p align="center">
 	<a href="#1.RESOURCES">1.RESOURCES</a> •
-	<a href="#KNOWLODGE%%BASE">KNOWLODGE BASE</a> •
+	<a href="#REFERENCE">REFERENCE</a> •
 	<a href="#RESOURCES">RESOURCES</a> •
 	<a href="#BACKLOG%%DESIGNING">BACKLOG DESIGNING</a> •
 	<a href="#3.CODE">3.CODE</a> •
@@ -15,7 +15,7 @@
 
 `42 - Subject`
 
-- ## KNOWLODGE BASE
+- ## REFERENCE
   - GitHubs
     - https://github.com/gemartin99/Born2beroot-Tutorial 
   - Virtual Machine
