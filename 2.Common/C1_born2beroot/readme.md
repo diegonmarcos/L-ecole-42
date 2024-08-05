@@ -6,7 +6,7 @@
 
 - ## KNOWLODGE BASE
   - GitHubs
-   - https://github.com/gemartin99/Born2beroot-Tutorial 
+    - https://github.com/gemartin99/Born2beroot-Tutorial 
   - Virtual Machine
   - OS Configuration 
 
