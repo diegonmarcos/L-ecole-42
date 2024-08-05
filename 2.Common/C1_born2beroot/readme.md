@@ -1,4 +1,6 @@
 > # 42 Common Core Curriculum / Circle 1 / #Born2beRoot
+<p align="center"><img src="https://github.com/diegonmarcos/L-ecole-42/blob/main/zimg/born2broot.png" alt="" width="600"></p>
+
 > 
 <p align="center">
 	<a href="#1.RESOURCES">1.RESOURCES</a> •
