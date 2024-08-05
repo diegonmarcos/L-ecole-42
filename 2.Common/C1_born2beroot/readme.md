@@ -1,3 +1,14 @@
+<p align="center">
+	<a href="#1.RESOURCES">1.RESOURCES</a> •
+	<a href="#KNOWLODGE%%BASE">KNOWLODGE BASE</a> •
+	<a href="#RESOURCES">RESOURCES</a> •
+	<a href="#BACKLOG%%DESIGNING">BACKLOG DESIGNING</a> •
+	<a href="#3.CODE">3.CODE</a> •
+	<a href="#4.TESTER">4.TESTER"</a> •
+  <a href="#5.DOCUMENTATION">5.DOCUMENTATION</a> •
+  <a href="#6.EXAM">6.EXAM</a> •
+</p>
+
 # 1.RESOURCES
 - ## INSTRUCTIONS
 > Configurate a .iso with preset configurates estipulated by the Instructions file  
