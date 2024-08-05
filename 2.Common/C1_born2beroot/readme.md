@@ -1,3 +1,5 @@
+> # 42 Common Core Curriculum / Circle 1 / #Born2beRoot
+> 
 <p align="center">
 	<a href="#1.RESOURCES">1.RESOURCES</a> •
 	<a href="#REFERENCE">REFERENCE</a> •
@@ -8,6 +10,17 @@
   <a href="#5.DOCUMENTATION">5.DOCUMENTATION</a> •
   <a href="#6.EXAM">6.EXAM</a> •
 </p>
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
 
 # 1.RESOURCES
 - ## INSTRUCTIONS
