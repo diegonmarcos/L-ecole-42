@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dnepomuc <dnepomuc@student.42barcelona.      +#+  +:+       +#+        */
+/*   By: dnepomuc <dnepomuc@student.42barcelona.      +#+  +:+       +#+      */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/04 15:56:17 by dnepomuc           #+#    #+#             */
-/*   Updated: 2024/07/24 16:11:15 by dnepomuc          ###   ########.fr       */
+/*   Created: 2024/07/04 15:56:17 by dnepomuc           #+#    #+#            */
+/*   Updated: 2024/07/24 16:11:15 by dnepomuc          ###   ########.fr      */
 /*                                                                            */
 /* ************************************************************************** */
 

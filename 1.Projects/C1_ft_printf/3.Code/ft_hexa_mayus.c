@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_hexa_mayus.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dnepomuc <dnepomuc@student.42barcelona.      +#+  +:+       +#+        */
+/*   By: dnepomuc <dnepomuc@student.42barcelona.      +#+  +:+       +#+      */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/21 16:06:27 by dnepomuc           #+#    #+#             */
-/*   Updated: 2024/07/31 11:02:36 by dnepomuc          ###   ########.fr       */
+/*   Created: 2024/07/21 16:06:27 by dnepomuc           #+#    #+#            */
+/*   Updated: 2024/07/31 11:02:36 by dnepomuc          ###   ########.fr      */
 /*                                                                            */
 /* ************************************************************************** */
 

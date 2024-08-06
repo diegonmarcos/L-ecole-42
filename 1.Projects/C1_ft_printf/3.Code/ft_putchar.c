@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dnepomuc <dnepomuc@student.42barcelona.      +#+  +:+       +#+        */
+/*   By: dnepomuc <dnepomuc@student.42barcelona.      +#+  +:+       +#+      */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/04 15:53:18 by dnepomuc           #+#    #+#             */
-/*   Updated: 2024/07/24 16:09:21 by dnepomuc          ###   ########.fr       */
+/*   Created: 2024/07/04 15:53:18 by dnepomuc           #+#    #+#            */
+/*   Updated: 2024/07/24 16:09:21 by dnepomuc          ###   ########.fr      */
 /*                                                                            */
 /* ************************************************************************** */
 

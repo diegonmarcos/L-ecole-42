@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dnepomuc <dnepomuc@student.42barcelona.      +#+  +:+       +#+        */
+/*   By: dnepomuc <dnepomuc@student.42barcelona.      +#+  +:+       +#+      */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/17 17:23:43 by dnepomuc           #+#    #+#             */
-/*   Updated: 2024/08/02 17:01:53 by dnepomuc          ###   ########.fr       */
+/*   Created: 2024/07/17 17:23:43 by dnepomuc           #+#    #+#            */
+/*   Updated: 2024/08/02 17:01:53 by dnepomuc          ###   ########.fr      */
 /*                                                                            */
 /* ************************************************************************** */
 

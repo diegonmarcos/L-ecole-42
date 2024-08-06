@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_num_nosign.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dnepomuc <dnepomuc@student.42barcelona.      +#+  +:+       +#+        */
+/*   By: dnepomuc <dnepomuc@student.42barcelona.      +#+  +:+       +#+      */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/22 17:22:51 by dnepomuc           #+#    #+#             */
-/*   Updated: 2024/07/29 11:49:27 by dnepomuc          ###   ########.fr       */
+/*   Created: 2024/07/22 17:22:51 by dnepomuc           #+#    #+#            */
+/*   Updated: 2024/07/29 11:49:27 by dnepomuc          ###   ########.fr      */
 /*                                                                            */
 /* ************************************************************************** */
 

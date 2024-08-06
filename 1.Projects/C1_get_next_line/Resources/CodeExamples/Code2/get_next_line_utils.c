@@ -17,18 +17,22 @@
 *	Extracts the line (ending in either line break and `\0` or only `\0` in EOF)
 *	from static variable.
 *	PARAMETERS
-*	#1. The pointer to the cumulative static variable from previous runs of get_next_line.
+*	#1. The pointer to the cumulative static variable 
+from previous runs of get_next_line.
 *	RETURN VALUES
 *	The string with the full line ending in a line break (`\n`) + (`\0`).
 *	-------------
 *	NEW_LEFT_STR
 *	-------------
-*	Stores in the cumulative static variable the new updated variable with whatever
+*	Stores in the cumulative static variable 
+the new updated variable with whatever
 *	is left from the original, minus the line extracted.
 *	PARAMETERS
-*	#1. The pointer to the cumulative static variable from previous runs of get_next_line.
+*	#1. The pointer to the cumulative static variable 
+from previous runs of get_next_line.
 *	RETURN VALUES
-*	The new updated string with whatever is left from the original static, minus the
+*	The new updated string with whatever is left 
+from the original static, minus the
 *	line extracted.
 */
 

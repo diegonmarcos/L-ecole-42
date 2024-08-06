@@ -36,7 +36,8 @@
 *	#2. The pointer to the cumulative static variable from previous runs of
 *	get_next_line.
 *	RETURN VALUES
-*	The new static variable value with buffer joined for the persistence of the info,
+*	The new static variable value with buffer 
+joined for the persistence of the info,
 *	or NULL if error.
 */
 
