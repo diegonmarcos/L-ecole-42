@@ -32,6 +32,7 @@
 
 - ## REFERENCE
   - GitHubs
+    - https://github.com/pasqualerossi/Born2BeRoot-Guide
     - https://github.com/gemartin99/Born2beroot-Tutorial 
   - Virtual Machine
   - OS Configuration 
