@@ -59,6 +59,11 @@ To excel in the 42 coding curriculum
 </html>
 
 ---
+
+## Flowcharts
+- https://text-to-diagram.com/?b=mermaid&example=tables  
+- https://asciiflow.com/#/
+
 ## General Tools
 - [General Tools](General.md)
 
