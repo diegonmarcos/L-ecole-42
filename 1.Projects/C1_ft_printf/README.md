@@ -33,7 +33,7 @@ This project involved recreating the well-known C library function, printf. This
 
 # STRUCTURE
 
- ft_printf (main)
+ ft_printf (main)  
  ├── w_str  
  │   ├── w_str_percent  
  │   │   ├── type_var  
@@ -58,9 +58,9 @@ graph TD
     ft_printf(main) --> w_str
     w_str --> w_str_percent
     w_str_percent --> type_var
-    type_var --> ft_putchar["ft_putchar (standard library)"]
-    type_var --> ft_putstr["ft_putstr (standard library)"]
-    type_var --> ft_putnbr["ft_putnbr (standard library)"]
+    type_var --> ft_putchar["ft_putchar"]
+    type_var --> ft_putstr["ft_putstr"]
+    type_var --> ft_putnbr["ft_putnbr"]
     type_var --> ft_punt_hexa
     ft_punt_hexa --> hexa_pointer
     type_var --> ft_num_nosign
@@ -70,9 +70,11 @@ graph TD
     type_var --> ft_hexa_min
     ft_hexa_min --> puthexa_long
     ft_hexa_min --> puthexa_uns
-    w_str_percent --> write["write (standard library)"]
-    w_str --> write["write (standard library)"]
-    ft_printf(main) --> va_start_va_arg_va_end["va_start, va_arg, va_end (standard library)"]
+    w_str_percent --> write
+    w_str --> write
+    ft_printf(main) --> va_start_va_arg_va_end["va_start; 
+    va_arg; 
+    va_end"]
 ```
 
 
