@@ -45,6 +45,11 @@
 
 # 3.CODE
  - Source Code Folder
+ ### Passwords
+ - Disk Encryption Pass:   ```Hello42bcn```
+ - Root Pass:   ```Hola42bcn```
+ - Username: ```dnepomuc```
+ - Password: ```Hola42spain```
 
 # 4.TESTER
  - Source Code Folder
