@@ -64,6 +64,25 @@ To excel in the 42 coding curriculum
 - https://text-to-diagram.com/?b=mermaid&example=tables  
 - https://asciiflow.com/#/
 
+## [Code Quality Tools](CodeQuality.md)
+
+### Tester
+- AddressSanitizer (ASan)
+- Valgrind
+- 
+
+### Debugegrs / Segfault
+- GDB (GNU Debugger):
+- https://www.onlinegdb.com/online_c_compiler
+- https://pythontutor.com/c.html#mode=edit
+- 
+### Other
+- **Norminette:** The official 42 code style enforcer. Mastering it is crucial for adhering to the strict style guidelines.
+- **Francinette (Paco):** An alternative to Norminette with automatic fixing capabilities and smoother integration with editors.
+- **Grade.me**:
+- **cppcheck:** A static analysis tool for C/C++ code to detect potential bugs and errors early on.
+- **clang-format:** Automatically formats your code to maintain consistent style and readability.
+
 ## General Tools
 - [General Tools](General.md)
 
@@ -91,13 +110,7 @@ Automate repetitive tasks and streamline your workflow with personalized Bash sc
 	- [Tab indentation vs spaces](VSCode.md)
 	- [Extensions list](ExtList.md)
 
-## [Code Quality Tools](CodeQuality.md)
 
-- **Norminette:** The official 42 code style enforcer. Mastering it is crucial for adhering to the strict style guidelines.
-- **Francinette (Paco):** An alternative to Norminette with automatic fixing capabilities and smoother integration with editors.
-- **Grade.me**:
-- **cppcheck:** A static analysis tool for C/C++ code to detect potential bugs and errors early on.
-- **clang-format:** Automatically formats your code to maintain consistent style and readability.
 
 ## Version Control
 
