@@ -13,9 +13,25 @@
 <br>
 
 # TOOLS
+### Kernel and Drivers Compatibility
+  - Surface Linux Project
+### System Management & Utilities
+  - Firewall
+  - CPU overall perfomance and usage
+
+<br>
+
 ### Cloud Sync
+  - rclone
 ### Backup System
-### System Managemnt
+  - clonezilla
+<br>
+
 ### SandBoxing - Virtual Machine
+  - VirtualBox
 ### SandBoxing - Docker
-### Productivty
+<br>
+
+### Productivity
+  - VScode
+  - Obsidian
