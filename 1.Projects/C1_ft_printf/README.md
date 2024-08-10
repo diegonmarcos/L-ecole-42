@@ -31,10 +31,58 @@ This project involved recreating the well-known C library function, printf. This
 
 - [Subject](https://github.com/dnepomuc/ft_printf/blob/master/subject/en_subject_ft_printf.pdf) `PDF`
 - [References](https://github.com/dnepomuc/42-resources#01-ft_printf) `GitHub`
+<br>
 
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
 
 
 ## BACKLOG
+
+```mermaid
+gantt
+dateFormat  YYYY-MM-DD
+title Adding GANTT diagram to mermaid
+excludes weekdays 2014-01-10
+
+section A section
+Completed task            :done,    des1, 2014-01-06,2014-01-08
+Active task               :active,  des2, 2014-01-09, 3d
+Future task               :         des3, after des2, 5d
+Future task2               :         des4, after des3, 5d
+
+```
+
+
+
+
+
+# TESTER
+
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+
+# DOCUMENTATION
+- [ ] Manage any combination of the following flags: `-O` and the field minimum width under all conversions;
+- [ ] Manage all the following flags: `#` ` ` `+`;
 
 # STRUCTURE
 
@@ -82,56 +130,6 @@ graph TD
     va_end"]
 ```
 
-```mermaid
-gantt
-dateFormat  YYYY-MM-DD
-title Adding GANTT diagram to mermaid
-excludes weekdays 2014-01-10
-
-section A section
-Completed task            :done,    des1, 2014-01-06,2014-01-08
-Active task               :active,  des2, 2014-01-09, 3d
-Future task               :         des3, after des2, 5d
-Future task2               :         des4, after des3, 5d
-
-```
-
-## STUDY
-**ft_printf:**
-
-* **Variadic Functions:**
-    * `va_start(ap, last)`: Initializes a `va_list` for accessing variable arguments.
-    * `va_arg(ap, type)`: Retrieves the next argument of a specified type.
-    * `va_end(ap)`: Cleans up the `va_list` when finished.
-* **Format Specifiers:**
-    * `%c`, `%s`, `%d`, `%i`, `%u`, `%x`, `%X`, `%p`, `%%`, etc.: Used to format different types of data (characters, strings, integers, unsigned integers, hexadecimal numbers, pointers, etc.).
-* **String Manipulation:**
-    * `ft_strlen`, `ft_strchr`, `ft_memcpy`, etc.: Functions from `libft` for working with strings.
-* **Integer to String Conversion:**
-    * Custom functions to convert integers to strings (e.g., `ft_itoa` or equivalent in `libft`).
-
-**General C Syntax:**
-
-* **Pointers:** Understanding how to use pointers is crucial for all these projects.
-* **Data Types:** Working with different data types (int, char, char*, etc.).
-* **Conditional Statements (if, else):** Used for decision-making and branching.
-* **Loops (while, for):** Used for repeated actions.
-* **Functions:** Defining and calling functions to organize your code.
-* **Structures:** For organizing data (more relevant in later circles).
-* **Bitwise Operators:** Useful for working with flags and permissions in some cases.
-
-
-
-# TESTER
-
-
-
-
-
-# DOCUMENTATION
-- [ ] Manage any combination of the following flags: `-O` and the field minimum width under all conversions;
-- [ ] Manage all the following flags: `#` ` ` `+`;
-# ft_printf es un proyecto que imita la función printf real<hr>
 
 
 ### [ft_printf](/ft_printf.c) 
@@ -259,20 +257,32 @@ La función devuelve el número de caracteres escritos, que es igual a la longit
 [Variadic functions](https://en.cppreference.com/w/c/variadic) <br>
 
 
+## STUDY
+**ft_printf:**
+
+* **Variadic Functions:**
+    * `va_start(ap, last)`: Initializes a `va_list` for accessing variable arguments.
+    * `va_arg(ap, type)`: Retrieves the next argument of a specified type.
+    * `va_end(ap)`: Cleans up the `va_list` when finished.
+* **Format Specifiers:**
+    * `%c`, `%s`, `%d`, `%i`, `%u`, `%x`, `%X`, `%p`, `%%`, etc.: Used to format different types of data (characters, strings, integers, unsigned integers, hexadecimal numbers, pointers, etc.).
+* **String Manipulation:**
+    * `ft_strlen`, `ft_strchr`, `ft_memcpy`, etc.: Functions from `libft` for working with strings.
+* **Integer to String Conversion:**
+    * Custom functions to convert integers to strings (e.g., `ft_itoa` or equivalent in `libft`).
+
+**General C Syntax:**
+
+* **Pointers:** Understanding how to use pointers is crucial for all these projects.
+* **Data Types:** Working with different data types (int, char, char*, etc.).
+* **Conditional Statements (if, else):** Used for decision-making and branching.
+* **Loops (while, for):** Used for repeated actions.
+* **Functions:** Defining and calling functions to organize your code.
+* **Structures:** For organizing data (more relevant in later circles).
+* **Bitwise Operators:** Useful for working with flags and permissions in some cases.
 
 
-## RESOURCES
-> At 42 School, it is expected that almost every project is written following the Norm, which is the coding standard of the school.
 
-```
-- No for, do...while, switch, case, goto, ternary operators, or variable-length arrays allowed;
-- Each function must be a maximum of 25 lines, not counting the function's curly brackets;
-- Each line must be at most 80 columns wide, with comments included;
-- A function can take 4 named parameters maximum;
-- No assigns and declarations in the same line (unless static);
-- You can't declare more than 5 variables per function;
-- ...
-```
 
 
 
