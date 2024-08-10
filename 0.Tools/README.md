@@ -76,7 +76,6 @@ To excel in the 42 coding curriculum
 - VS Code Debugg
  
 ### [Code Quality Toolsa nd Others](CodeQuality.md)
-- **Grade.me**: exams
 - **Norminette:** The official 42 code style enforcer. Mastering it is crucial for adhering to the strict style guidelines.
 - **Francinette (Paco):** An alternative to Norminette with automatic fixing capabilities and smoother integration with editors.
 - **cppcheck:** A static analysis tool for C/C++ code to detect potential bugs and errors early on.
@@ -105,6 +104,7 @@ https://github.com/junegunn/fzf
    	- [NeoVim](https://github.com/neovim/neovim/blob/master/INSTALL.md)
    	- **NERDtree - Vim Folder Side bar**  
  		- [NERDtree](https://github.com/preservim/nerdtree)
+- **IDX GOOGLE and REPLIT:** Cloud IDE  
 - **JETBRAINS IDE:** A modern, user-friendly editor with a vast ecosystem of extensions for various languages and tools.
 - **Visual Studio Code:** A modern, user-friendly editor with a vast ecosystem of extensions for various languages and tools.
 	- [Tab indentation vs spaces](VSCode.md)
@@ -130,7 +130,7 @@ https://github.com/junegunn/fzf
 <br>
 
 
-## DESIGNING AND DOCUMENTATION
+# DESIGNING AND DOCUMENTATION
 - [General Tools](General.md)
 
 
@@ -150,6 +150,24 @@ https://github.com/junegunn/fzf
 - **Git GUIs (GitHub Desktop / GitKraken)**
 
 
+
+
+<br>
+
+<br>
+
+<br>
+
+
+# LEARNING TOOLS
+
+### Games
+- [CODIGN GAME](https://www.codingame.com/start/)
+- [CODE WARS](https://www.codewars.com/)
+- [SKYSCARPPER - RUSH 01](https://es.puzzle-skyscrapers.com/)
+
+### Exercises
+- [**Grade.me** ](https://grademe.fr/) exams
 
 
 
