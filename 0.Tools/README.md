@@ -60,31 +60,40 @@ To excel in the 42 coding curriculum
 
 ---
 
-## Flowcharts
-- https://text-to-diagram.com/?b=mermaid&example=tables  
-- https://asciiflow.com/#/
 
 ## [Code Quality Tools](CodeQuality.md)
 
-### Tester
+### Tester - Memorry Leak
 - AddressSanitizer (ASan)
 - Valgrind
 - 
 
-### Debugegrs / Segfault
-- GDB (GNU Debugger):
-- https://www.onlinegdb.com/online_c_compiler
-- https://pythontutor.com/c.html#mode=edit
-- 
+### [Debuggers ](debugger.md)
+
+- **GDB(GNU Debugger):** A robust debugger for dissecting your code's execution and hunting down those pesky bugs.
+- **LLDB:** A similar debugger to GDB, offering an alternative for those who prefer it.
+- **Valgrind:** An invaluable tool for detecting memory leaks and other memory-related issues.
+- OLINE GDB - https://www.onlinegdb.com/online_c_compiler
+- PYTHONTU - https://pythontutor.com/c.html#mode=edit
+- VS Code Debugg
+ 
 ### Other
 - **Norminette:** The official 42 code style enforcer. Mastering it is crucial for adhering to the strict style guidelines.
 - **Francinette (Paco):** An alternative to Norminette with automatic fixing capabilities and smoother integration with editors.
 - **Grade.me**:
 - **cppcheck:** A static analysis tool for C/C++ code to detect potential bugs and errors early on.
 - **clang-format:** Automatically formats your code to maintain consistent style and readability.
+<br>
+
+<br>
+
+<br>
 
 ## General Tools
 - [General Tools](General.md)
+### Flowcharts
+- https://text-to-diagram.com/?b=mermaid&example=tables  
+- https://asciiflow.com/#/
 
 ## [Shell Enhancements](shell.md)
 
@@ -104,6 +113,7 @@ Automate repetitive tasks and streamline your workflow with personalized Bash sc
 - **Vim:** A highly configurable text editor renowned for its speed and efficiency.
 	- [.vimrc](p.vimrc.md)
 	- [.vimrc_42header](p.vimrc_42header.md)
+   	- [NeoVim](https://github.com/neovim/neovim/blob/master/INSTALL.md)
    	- **NERDtree - Vim Folder Side bar**  
  		- [NERDtree](https://github.com/preservim/nerdtree) 	
 - **Visual Studio Code:** A modern, user-friendly editor with a vast ecosystem of extensions for various languages and tools.
@@ -123,11 +133,6 @@ Automate repetitive tasks and streamline your workflow with personalized Bash sc
 
 - **Doxygen:** Extract documentation directly from your code comments to create comprehensive guides and references.
 
-## [Debuggers ](debugger.md)
-
-- **GDB:** A robust debugger for dissecting your code's execution and hunting down those pesky bugs.
-- **LLDB:** A similar debugger to GDB, offering an alternative for those who prefer it.
-- **Valgrind:** An invaluable tool for detecting memory leaks and other memory-related issues.
 
 ## General Shell Scripts (Bash)
 
