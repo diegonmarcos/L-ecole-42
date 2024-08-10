@@ -35,22 +35,22 @@ This project involved recreating the well-known C library function, printf. This
 
  ft_printf (main)  
  ├── w_str  
- │   ├── w_str_percent  
- │   │   ├── type_var  
- │   │   │   ├── ft_putchar (standard library)  
- │   │   │   ├── ft_putstr (standard library)  
- │   │   │   ├── ft_putnbr (standard library)  
- │   │   │   ├── ft_punt_hexa  
- │   │   │   │   └── hexa_pointer  
- │   │   │   ├── ft_num_nosign  
- │   │   │   ├── ft_hexa_mayus  
- │   │   │   │   ├── puthexa_long  
- │   │   │   │   └── puthexa_uns  
- │   │   │   └── ft_hexa_min  
- │   │   │       ├── puthexa_long  
- │   │   │       └── puthexa_uns  
- │   │   └── write (standard library)  
- │   └── write (standard library)  
+ │...├── w_str_percent  
+ │...│...├── type_var  
+ │...│...│...├── ft_putchar (standard library)  
+ │...│...│...├── ft_putstr (standard library)  
+ │...│...│...├── ft_putnbr (standard library)  
+ │...│...│...├── ft_punt_hexa  
+ │...│...│...│...└── hexa_pointer  
+ │...│...│...├── ft_num_nosign  
+ │...│...│...├── ft_hexa_mayus  
+ │...│...│...│  ├── puthexa_long  
+ │...│...│...│...└── puthexa_uns  
+ │...│...│...└── ft_hexa_min  
+ │...│...│.......├── puthexa_long  
+ │...│...│.......└── puthexa_uns  
+ │...│...└── write (standard library)  
+ │...└── write (standard library)  
  └── va_start, va_arg, va_end (standard library)  
 
 ```mermaid
