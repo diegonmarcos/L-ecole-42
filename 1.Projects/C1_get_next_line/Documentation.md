@@ -6,7 +6,7 @@
 <br>
 <br>
 
-# ASCII map in a nested list format
+# 1. ASCII map in a nested list format
 
 get_next_line (main)  
 ├── ft_read_to_left_str   
@@ -20,7 +20,7 @@ get_next_line (main)
 ........├── ft_strlen  
 ........└── malloc   
 
-# FlowChart
+# 2. FlowChart
 
 
 
@@ -75,4 +75,19 @@ Remember: This representation assumes a basic understanding of C and linked list
 
 
 
-Feel free to ask if you need clarification on any specific step or function!
+<br>
+<br>
+<br>
+
+# 3. Code Commented
+
+<br>
+<br>
+<br>
+
+# 4. Manual
+
+<br>
+<br>
+<br>
+
