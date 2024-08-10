@@ -2,7 +2,7 @@
 ![](../zimg/42.svg)L'eco 42![42](../zimg/42.svg)L'ecole 42![42](../zimg/42.svg)L'ecole 42![42](../zimg/42.svg)L'ecole 42![42](../zimg/42.svg)L'eco42![42](../zimg/42.svg)  
 ---
 --- 
-<p align="center"><img src="https://github.com/diegonmarcos/L-ecole-42/raw/main/zimg/peng.jpg" alt="" width="600"></p>
+<p align="center"><img src="https://github.com/diegonmarcos/L-ecole-42/raw/main/zimg/tools.png" alt="" width="600"></p>
 
 <p align="center">
 	• <a href="#1">Coding Tools</a> •
