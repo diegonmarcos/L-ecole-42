@@ -68,7 +68,7 @@ To excel in the 42 coding curriculum
 - Valgrind
 - 
 
-### [Debuggers ](debugger.md)
+### [Debuggers ](Debugger.md)
 
 - **GDB(GNU Debugger):** A robust debugger for dissecting your code's execution and hunting down those pesky bugs.
 - **LLDB:** A similar debugger to GDB, offering an alternative for those who prefer it.
@@ -95,7 +95,7 @@ To excel in the 42 coding curriculum
 - https://text-to-diagram.com/?b=mermaid&example=tables  
 - https://asciiflow.com/#/
 
-## [Shell Enhancements](shell.md)
+## [Shell Enhancements](Shell.md)
 
 - **Oh My Zsh:** A framework that supercharges your Zsh shell with themes, plugins, and customizations.
 - **Zsh Plugins:**
