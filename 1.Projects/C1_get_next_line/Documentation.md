@@ -1,20 +1,26 @@
-# DOCUMENTATION
+<h1 align="center">DOCUMENTATION</h1>
 
-### ASCII map in a nested list format
+
+
+<br>
+<br>
+<br>
+
+# ASCII map in a nested list format
 
 get_next_line (main)  
 ├── ft_read_to_left_str   
-│....├── read   
-│....├── ft_strchr  
-│....└── ft_strjoin  
+│.....├── read   
+│.....├── ft_strchr  
+│.....└── ft_strjoin  
 ├── ft_get_line  
-│....├── ft_strlen  
-│....└── malloc   
+│.....├── ft_strlen  
+│.....└── malloc   
 └── ft_new_left_str  
-......├── ft_strlen  
-......└── malloc   
+........├── ft_strlen  
+........└── malloc   
 
-### FlowChart
+# FlowChart
 
 
 
