@@ -20,65 +20,192 @@
 <br>
 <br>
 
-# Essential Coding Tools for the 42 Curriculum
+#### Essential Coding Tools for the 42 Curriculum
 
-To excel in the 42 coding curriculum
+> To excel in the 42 coding curriculum
+<br>
+<br>
+<br>
 
----
 
 
-<h2>Tabel of Contents</h2>
+<h2>Table of Contents</h2>
 
 <details>
-  <summary>General 42 Information</summary>
+  <summary>Coding Tools</summary>
   <ul>
-    <li>Information and Facts</li>
-    <li>Trivia</li>
-    <li>Rewards</li>
-    <li>Network</li>
-    <li>Social</li>
+    <li>
+        <details>
+            <summary>Tester - Memory Leak</summary>
+            <ul>
+                <li>AddressSanitizer (ASan)</li>
+                <li>Valgrind</li>
+            </ul>
+        </details>
+    </li>
+    <li>
+        <details>
+            <summary>Debuggers</summary>
+            <ul>
+                <li>GDB (GNU Debugger)</li>
+                <li>LLDB</li>
+                <li>Valgrind</li>
+                <li>ONLINE GDB</li>
+                <li>PYTHONTU</li>
+                <li>VS Code Debugger</li>
+            </ul>
+        </details>
+    </li>
+    <li>
+        <details>
+            <summary>Code Quality Tools and Others</summary>
+            <ul>
+                <li>Norminette</li>
+                <li>Francinette (Paco)</li>
+                <li>cppcheck</li>
+                <li>clang-format</li>
+            </ul>
+        </details>
+    </li>
   </ul>
 </details>
 
 <details>
-  <summary>Curriculum & Learning</summary>
+  <summary>Workspace</summary>
   <ul>
-    <li>Piscine and Common Core</li>
-    <li>Exams</li>
-    <li>Peer-To-Peer</li>
+    <li>
+        <details>
+            <summary>Shell Enhancements</summary>
+            <ul>
+                <li>Oh My Zsh</li>
+                <li>Zsh Plugins
+                    <ul>
+                        <li>zsh-autosuggestions</li>
+                        <li>zsh-syntax-highlighting</li>
+                        <li>fzf</li>
+                    </ul>
+                </li>
+            </ul>
+        </details>
+    </li>
+    <li>
+        <details>
+            <summary>Editors and IDEs</summary>
+            <ul>
+                <li>Vim
+                    <ul>
+                        <li>.vimrc</li>
+                        <li>.vimrc_42header</li>
+                        <li>NeoVim</li>
+                        <li>NERDtree - Vim Folder Side bar</li>
+                    </ul>
+                </li>
+                <li>IDX GOOGLE and REPLIT</li>
+                <li>JETBRAINS IDE</li>
+                <li>Visual Studio Code
+                    <ul>
+                        <li>Tab indentation vs spaces</li>
+                        <li>Extensions list
+                            <ul>
+                                <li>JetBrains VS CODE Plugin</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </details>
+    </li>
+    <li>
+        <details>
+            <summary>Custom Shell Scripts (Bash)</summary>
+            <ul>
+                <li>gcp.sh</li>
+                <li>GCL</li>
+            </ul>
+        </details>
+    </li>
+    <li>
+        <details>
+            <summary>UNIX</summary>
+            <ul>
+                <li>find</li>
+                <li>sed & awk</li>
+                <li>grep</li>
+                <li>xargs</li>
+            </ul>
+        </details>
+    </li>
   </ul>
 </details>
 
 <details>
-  <summary>Tools & Resources</summary>
+  <summary>Designing and Documentation</summary>
   <ul>
-    <li>Websites & Guides</li>
-    <li>Extensions</li>
-    <li>Grammar</li>
-    <li>Browser</li>
-    <li>Apps</li>
-    <li>Readme</li>
-    <li>Productivity</li>
-    <li>Others</li>
+    <li>General Tools</li>
+    <li>
+        <details>
+            <summary>Flowcharts and Drawing</summary>
+            <ul>
+                <li>Excalidraw</li>
+                <li>Diagrams</li>
+                <li>Code Diagram</li>
+                <li>ASCII FLOW</li>
+            </ul>
+        </details>
+    </li>
+    <li>
+        <details>
+            <summary>Documentation</summary>
+            <ul>
+                <li>Doxygen</li>
+            </ul>
+        </details>
+    </li>
+    <li>
+        <details>
+            <summary>Version Control</summary>
+            <ul>
+                <li>Git
+                    <ul>
+                        <li>.gitignore</li>
+                        <li>.gitimodules</li>
+                    </ul>
+                </li>
+                <li>Git GUIs (GitHub Desktop / GitKraken)</li>
+            </ul>
+        </details>
+    </li>
   </ul>
 </details>
 
 <details>
-  <summary>Miscellaneous</summary>
+  <summary>Learning Tools</summary>
   <ul>
-    <li>Wikimedia Foundation</li>
-    <li>Campuses</li>
-    <li>Artificial Intelligence</li>
-    <li>Educational Resources</li>
-    <li>Design Tools</li>
-    <li>Entertainment</li>
-    <li>Development Tools</li>
-    <li>Others</li>
+    <li>
+        <details>
+            <summary>Games</summary>
+            <ul>
+                <li>CODINGAME</li>
+                <li>CODEWARS</li>
+                <li>SKYSCRAPPER - RUSH 01</li>
+            </ul>
+        </details>
+    </li>
+    <li>
+        <details>
+            <summary>Exercises</summary>
+            <ul>
+                <li>Grade.me</li>
+            </ul>
+        </details>
+    </li>
   </ul>
-</details>
+</details> 
 
-</body>
-</html>
+
+<br>
+<br>
+<br>
 
 ---
 
@@ -191,6 +318,57 @@ https://github.com/junegunn/fzf
 ### Exercises
 - [**Grade.me** ](https://grademe.fr/) exams
 
+
+
+<h2>OTHERS</h2>
+
+<details>
+  <summary>General 42 Information</summary>
+  <ul>
+    <li>Information and Facts</li>
+    <li>Trivia</li>
+    <li>Rewards</li>
+    <li>Network</li>
+    <li>Social</li>
+  </ul>
+</details>
+
+<details>
+  <summary>Curriculum & Learning</summary>
+  <ul>
+    <li>Piscine and Common Core</li>
+    <li>Exams</li>
+    <li>Peer-To-Peer</li>
+  </ul>
+</details>
+
+<details>
+  <summary>Tools & Resources</summary>
+  <ul>
+    <li>Websites & Guides</li>
+    <li>Extensions</li>
+    <li>Grammar</li>
+    <li>Browser</li>
+    <li>Apps</li>
+    <li>Readme</li>
+    <li>Productivity</li>
+    <li>Others</li>
+  </ul>
+</details>
+
+<details>
+  <summary>Miscellaneous</summary>
+  <ul>
+    <li>Wikimedia Foundation</li>
+    <li>Campuses</li>
+    <li>Artificial Intelligence</li>
+    <li>Educational Resources</li>
+    <li>Design Tools</li>
+    <li>Entertainment</li>
+    <li>Development Tools</li>
+    <li>Others</li>
+  </ul>
+</details>
 
 
 
