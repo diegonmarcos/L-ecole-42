@@ -15,6 +15,7 @@
 # TOOLS
 ### Kernel and Drivers Compatibility
   - Surface Linux Project
+  - Compilers ```sudo apt-get install build-essential ```
 ### System Management & Utilities
   - Firewall
   - CPU overall perfomance and usage
