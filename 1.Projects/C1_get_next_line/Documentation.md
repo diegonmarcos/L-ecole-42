@@ -1,5 +1,19 @@
 # DOCUMENTATION
 
+### ASCII map in a nested list format
+
+get_next_line (main)  
+├── ft_read_to_left_str   
+│....├── read   
+│....├── ft_strchr  
+│....└── ft_strjoin  
+├── ft_get_line  
+│....├── ft_strlen  
+│....└── malloc   
+└── ft_new_left_str  
+......├── ft_strlen  
+......└── malloc   
+
 ### FlowChart
 
 
@@ -52,5 +66,7 @@
 * `ft_new_left_str` prepares `left_str` for the next call by removing the extracted line.
 
 Remember: This representation assumes a basic understanding of C and linked list concepts. 
+
+
 
 Feel free to ask if you need clarification on any specific step or function!
