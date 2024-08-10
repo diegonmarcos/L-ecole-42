@@ -5,8 +5,11 @@
 <p align="center"><img src="https://github.com/diegonmarcos/L-ecole-42/raw/main/zimg/peng.jpg" alt="" width="600"></p>
 
 <p align="center">
-	• <a href="#1">Projects by Deadline</a> •
-	<a href="#2">Projects by Topic</a> •
+	• <a href="#1">Coding Tools</a> •
+	<a href="#2">Workspace</a> •
+	<a href="#1">Designing and Doc</a> •
+	<a href="#1">Learning</a> •
+
 
 </p>
 
