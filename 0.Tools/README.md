@@ -61,15 +61,13 @@ To excel in the 42 coding curriculum
 ---
 
 
-## [Code Quality Tools](CodeQuality.md)
+# CODING TOOLS
 
-### Tester - Memorry Leak
+### Tester - Memory Leak
 - AddressSanitizer (ASan)
 - Valgrind
-- 
-
+  
 ### [Debuggers ](Debugger.md)
-
 - **GDB(GNU Debugger):** A robust debugger for dissecting your code's execution and hunting down those pesky bugs.
 - **LLDB:** A similar debugger to GDB, offering an alternative for those who prefer it.
 - **Valgrind:** An invaluable tool for detecting memory leaks and other memory-related issues.
@@ -77,10 +75,10 @@ To excel in the 42 coding curriculum
 - PYTHONTU - https://pythontutor.com/c.html#mode=edit
 - VS Code Debugg
  
-### Other
+### [Code Quality Toolsa nd Others](CodeQuality.md)
+- **Grade.me**: exams
 - **Norminette:** The official 42 code style enforcer. Mastering it is crucial for adhering to the strict style guidelines.
 - **Francinette (Paco):** An alternative to Norminette with automatic fixing capabilities and smoother integration with editors.
-- **Grade.me**:
 - **cppcheck:** A static analysis tool for C/C++ code to detect potential bugs and errors early on.
 - **clang-format:** Automatically formats your code to maintain consistent style and readability.
 <br>
@@ -89,13 +87,8 @@ To excel in the 42 coding curriculum
 
 <br>
 
-## General Tools
-- [General Tools](General.md)
-### Flowcharts
-- https://text-to-diagram.com/?b=mermaid&example=tables  
-- https://asciiflow.com/#/
-
-## [Shell Enhancements](Shell.md)
+# WORKSPACE
+### [Shell Enhancements](Shell.md)
 
 - **Oh My Zsh:** A framework that supercharges your Zsh shell with themes, plugins, and customizations.
 - **Zsh Plugins:**
@@ -104,10 +97,6 @@ To excel in the 42 coding curriculum
     - **fzf:** A blazing-fast fuzzy finder for files, commands, and more.
 https://github.com/junegunn/fzf  
 
-## **[Custom Shell Scripts ](Scripts.md)** 
-Automate repetitive tasks and streamline your workflow with personalized Bash scripts.
-
-
 ## Editors and IDEs
 
 - **Vim:** A highly configurable text editor renowned for its speed and efficiency.
@@ -115,28 +104,57 @@ Automate repetitive tasks and streamline your workflow with personalized Bash sc
 	- [.vimrc_42header](p.vimrc_42header.md)
    	- [NeoVim](https://github.com/neovim/neovim/blob/master/INSTALL.md)
    	- **NERDtree - Vim Folder Side bar**  
- 		- [NERDtree](https://github.com/preservim/nerdtree) 	
+ 		- [NERDtree](https://github.com/preservim/nerdtree)
+- **JETBRAINS IDE:** A modern, user-friendly editor with a vast ecosystem of extensions for various languages and tools.
 - **Visual Studio Code:** A modern, user-friendly editor with a vast ecosystem of extensions for various languages and tools.
 	- [Tab indentation vs spaces](VSCode.md)
 	- [Extensions list](ExtList.md)
+ 		- [JetBrains VS COODE Plugin](https://www.jetbrains.com/help/qodana/vscode.html))  
+
+### **[Custom Shell Scripts (Bash) ](Scripts.md)** 
+
+- **gcp.sh:** gitt add . git commit -m ¨message" git push
+- **GCL:** Def Macro git clone = GCL
+
+### UNIX
+- **find:** A versatile command for locating files and directories based on various criteria.
+- **sed & awk:** Text processing powerhouses for manipulating and transforming file contents or command output.
+- **grep:** Quickly search through files for specific patterns or lines of text.
+- **xargs:** Converts standard input into arguments for other commands, enabling powerful chaining and automation.
 
 
+<br>
 
-## Version Control
+<br>
 
+<br>
+
+
+## DESIGNING AND DOCUMENTATION
+- [General Tools](General.md)
+
+
+### Flowcharts and Drawning
+- [Excalidraw](https://excalidraw.com/)
+- [Diragrams](https://app.diagrams.net/)
+- [Code Diagram](https://text-to-diagram.com/?b=mermaid&example=tables  )
+- [ASCII FLOW](https://asciiflow.com/#/)
+
+### Documentation
+- **Doxygen:** Extract documentation directly from your code comments to create comprehensive guides and references.
+
+### Version Control
 - **Git:** The indispensable version control system at 42. Learn it inside-out for managing project history and collaborating effectively.
 	- [.gitignore](p.gitignore.md)
 	- [.gitimodules](p.gitmodules.md)
 - **Git GUIs (GitHub Desktop / GitKraken)**
 
-## Documentation
-
-- **Doxygen:** Extract documentation directly from your code comments to create comprehensive guides and references.
 
 
-## General Shell Scripts (Bash)
 
-- **find:** A versatile command for locating files and directories based on various criteria.
-- **sed & awk:** Text processing powerhouses for manipulating and transforming file contents or command output.
-- **grep:** Quickly search through files for specific patterns or lines of text.
-- **xargs:** Converts standard input into arguments for other commands, enabling powerful chaining and automation.
+
+
+
+
+
+
