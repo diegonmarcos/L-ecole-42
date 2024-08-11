@@ -37,12 +37,12 @@ Dependency Mapping:
 Resource Planning:  
 
 # RESOURCES
-> Curricullum list
-Resource Hub
-Codes Examples
-Githubs sources / Webs
-YouTube
-pdf
+> Curricullum list  
+Resource Hub  
+Codes Examples  
+Githubs sources / Webs  
+YouTube  
+pdf  
 
 # DEVELOPMENT
 > Source Code
