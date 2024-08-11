@@ -13,6 +13,98 @@
  	
 
 </p>
+# 📚 Projects
+  
+## *[L'ecole42](https://github.com/diegonmarcos/L-ecole-42)*
+<table>
+  <tr>
+    <th> <h3><a href="https://github.com/diegonmarcos/L-ecole-42/tree/main/1.Projects/B0_Piscine">Piscine</a></h3></th>
+    <th> <h3><a href="https://github.com/diegonmarcos/L-ecole-42/tree/main/1.Projects">Common Core</a></h3></th>
+    <th> <h3><a href=""> </a></a></h3></th>
+    <th> <h3><a href="https://github.com/diegonmarcos/L-ecole-42/blob/main/0.Tools/README.md"> Tools & Resources</a></h3></th>
+  </tr>
+  <tr>
+    <td> 
+<details>
+<summary>Projects by Deadline</summary>
+
+* **[Sh00 - Introduction to Sehll commands](https://github.com/diegonmarcos/L-ecole-42/tree/main/1.Piscine)** 
+* **[Sh01 - Shell 2](https://github.com/diegonmarcos/L-ecole-42/tree/main/1.Piscine)**
+* **[C00 - Introduction to C](https://github.com/diegonmarcos/L-ecole-42/tree/main/1.Piscine)**
+* **[C01 - Pointers and If Statements](https://github.com/diegonmarcos/L-ecole-42/tree/main/1.Piscine)**
+* **[C02 - Introduction To Strings and Arrays](https://github.com/diegonmarcos/L-ecole-42/tree/main/1.Piscine)**
+* **[C03 - String Functions, Manipulation and Concatenation](https://github.com/diegonmarcos/L-ecole-42/tree/main/1.Piscine)**
+* **[C04 - Analyzing String Qualities and Manipulating Ints](https://github.com/diegonmarcos/L-ecole-42/tree/main/1.Piscine)**
+* **[C05 - Mathematical Concepts in C](https://github.com/diegonmarcos/L-ecole-42/tree/main/1.Piscine)**
+* **[C06 - Understanding Argc and Argv](https://github.com/diegonmarcos/L-ecole-42/tree/main/1.Piscine)**
+* **[C07 - Memory Allocation](https://github.com/diegonmarcos/L-ecole-42/tree/main/1.Piscine)**
+* **[C08 - Structures and Linked Lists](https://github.com/diegonmarcos/L-ecole-42/tree/main/1.Piscine)**
+* **[C09 - More Linked Lists and Function Pointers](https://github.com/diegonmarcos/L-ecole-42/tree/main/1.Piscine)**
+* **[C10 - Macros and Variadic Functions](https://github.com/diegonmarcos/L-ecole-42/tree/main/1.Piscine)**
+* **[C11 - Advanced String Manipulation](https://github.com/diegonmarcos/L-ecole-42/tree/main/1.Piscine)**
+* **[C12 - Binary Trees](https://github.com/diegonmarcos/L-ecole-42/tree/main/1.Piscine)**
+* **[C13 - Advanced Topics](https://github.com/diegonmarcos/L-ecole-42/tree/main/1.Piscine)**
+</details>
+
+
+
+
+</td>
+    <td>
+
+<details>
+<summary>Projects by Deadline</summary>
+
+- **Circle 0**
+  - **[Reloaded](https://github.com/diegonmarcos/L-ecole-42/tree/main/1.Projects/C0_Reloaded)**  
+  - **[Libft](https://github.com/diegonmarcos/L-ecole-42/tree/main/1.Projects/C0_libft)**    
+- **Circle 1**
+  - **[get_next_line](https://github.com/diegonmarcos/L-ecole-42/tree/main/1.Projects/C1_get_next_line)**
+  - **[Born2BeRoot](https://github.com/diegonmarcos/L-ecole-42/tree/main/1.Projects/C1_born2beroot)**
+  - **[ft_printf](https://github.com/diegonmarcos/L-ecole-42/tree/main/1.Projects/C1_ft_printf)**
+- **Circle 2**
+  - push_swap
+  - pipex_or_minitalk
+  - fdf_or_so_long_or_fract-ol
+  - Exam Rank 02
+- **Circle 3**
+  - Minishell
+  - Philosophers
+  - Exam Rank 03 
+- **Circle 4**
+  - CPP00-04
+  - Cub3D_or_MiniRT
+  - NetPractice
+  - Exam Rank 04
+- **Circle 5**
+  - CPP05-09
+  - Webserv_or_IRC
+  - Inception
+  - Exam Rank 05
+- **Circle 6**
+  - Transcendence
+  - Exam Rank 06
+</details> 
+
+
+
+
+<td>
+
+</td>
+
+<td>
+  Tools
+</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+
+<br>
+<br>
 
 # Table of Content
 ```
