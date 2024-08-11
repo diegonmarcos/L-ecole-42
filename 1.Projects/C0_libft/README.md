@@ -22,9 +22,10 @@
 <br>
 
 <br>
+
 # SUBJECT 
-> Project Overview
-> Deliverables
+> Project Overview  
+> Deliverables  
 
 # DESIGN
 > Workflow/Process Flowchart
