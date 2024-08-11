@@ -34,7 +34,7 @@ Dependency Mapping:
 Resource Planning:  
 
 # RESOURCES
->   
+>  Resources 
 Curricullum list  
 key takeaways
 Main Cheat Sheet 
