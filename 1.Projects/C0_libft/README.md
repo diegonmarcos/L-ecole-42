@@ -29,6 +29,14 @@
 
 # DESIGN
 > Workflow/Process Flowchart
+Workflow/Process Flowchart:
+System/Component Diagrams: 
+Data Flow Diagrams:
+User Interface Design:
+Milestone Identification:
+Dependency Mapping:
+Resource Planning:
+
 <br>
 
 <br>
