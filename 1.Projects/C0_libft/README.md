@@ -43,20 +43,24 @@ Main Book
  
 > Resource Hub   
 Codes Examples  
-Testers  
-Githubs sources / Webs  
+Githubs sources  
+Webs  
 YouTube  
 pdf  
 
-> evaluation 
+> Testers
+
+> Evaluation Tips
 
 # DEVELOPMENT
 > Source Code
 
 # DOCUMENTATION 
-> User Manual  
+> User Manual(syntax, brief, input, output)
 Codes usage example   
 line per line commented  
+function per function explained 
+
 
 
 <br>
