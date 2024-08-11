@@ -48,9 +48,9 @@ pdf
 > Source Code
 
 # DOCUMENTATION 
-> User Manual
-Codes usage example 
-line per line commented
+> User Manual  
+Codes usage example   
+line per line commented  
 
 
 <br>
