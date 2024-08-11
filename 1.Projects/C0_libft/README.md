@@ -10,6 +10,7 @@
 <p align="center">
 	<a href="#SUBJET">SUBJECT</a> •
 	<a href="#DESIGN">DESIGN</a> •
+	<a href="#RESOURCES">RESOURCES</a> •
 	<a href="#DEVELOPMENT">DEVELOPMENT</a> •
 	<a href="#DOCUMENTATION">DOCUMENTATION</a> •
 </p>
