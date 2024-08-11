@@ -29,7 +29,7 @@
 
 # DESIGN
 >
-Workflow/Process Flowchart:  
+> Workflow/Process Flowchart:  
 System/Component Diagrams:   
 Data Flow Diagrams:  
 User Interface Design:  
