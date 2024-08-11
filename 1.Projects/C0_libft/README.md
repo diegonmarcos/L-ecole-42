@@ -34,12 +34,11 @@ Dependency Mapping:
 Resource Planning:  
 
 # RESOURCES
->  Resources 
+>  Resources   
 Curricullum list  
 key takeaways
 Main Cheat Sheet 
-Main Book
-  
+Main Book 
 Resource Hub  
  Codes Examples  
  Testers  
