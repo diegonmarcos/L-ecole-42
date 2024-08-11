@@ -36,10 +36,10 @@ Resource Planning:
 # RESOURCES
 >  Resources   
  Curricullum list  
-key takeaways 
-Main Cheat Sheet 
-Main Book 
-Resource Hub  
+key takeaways   
+Main Cheat Sheet   
+Main Book   
+Resource Hub   
 Codes Examples  
 Testers  
 Githubs sources / Webs  
