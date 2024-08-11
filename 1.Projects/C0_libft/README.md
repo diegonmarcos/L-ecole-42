@@ -28,7 +28,6 @@
 > Deliverables  
 
 # DESIGN
->
 > Workflow/Process Flowchart:  
 System/Component Diagrams:   
 Data Flow Diagrams:  
@@ -36,6 +35,23 @@ User Interface Design:
 Milestone Identification:  
 Dependency Mapping:  
 Resource Planning:  
+
+# RESOURCES
+> Curricullum list
+Resource Hub
+Codes Examples
+Githubs sources / Webs
+YouTube
+pdf
+
+# DEVELOPMENT
+> Source Code
+
+# DOCUMENTATION 
+> User Manual
+Codes usage example 
+line per line commented
+
 
 <br>
 
