@@ -34,18 +34,21 @@ Dependency Mapping:
 Resource Planning:  
 
 # RESOURCES
->  Resources   
+>  Structure List  
  Curricullum list  
 key takeaways   
-Main Cheat Sheet   
-Main Book   
-Resource Hub   
+
+> Main Cheat Sheet   
+Main Book  
+ 
+> Resource Hub   
 Codes Examples  
 Testers  
 Githubs sources / Webs  
 YouTube  
 pdf  
-evaluation 
+
+> evaluation 
 
 # DEVELOPMENT
 > Source Code
