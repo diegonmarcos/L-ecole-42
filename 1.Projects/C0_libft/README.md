@@ -8,14 +8,10 @@
 
 > 
 <p align="center">
-	<a href="#1.RESOURCES">1.RESOURCES</a> •
-	<a href="#REFERENCE">REFERENCE</a> •
-	<a href="#RESOURCES">RESOURCES</a> •
-	<a href="#BACKLOG%%DESIGNING">BACKLOG DESIGNING</a> •
-	<a href="#3.CODE">3.CODE</a> •
-	<a href="#4.TESTER">4.TESTER</a> •
-  <a href="#5.DOCUMENTATION">5.DOCUMENTATION</a> •
-  <a href="#6.EXAM">6.EXAM</a> •
+	<a href="#SUBJET">SUBJECT</a> •
+	<a href="#DESIGN">DESIGN</a> •
+	<a href="#DEVELOPMENT">DEVELOPMENT</a> •
+	<a href="#DOCUMENTATION">DOCUMENTATION</a> •
 </p>
 <br>
 
@@ -43,6 +39,7 @@ Codes Examples
 Githubs sources / Webs  
 YouTube  
 pdf  
+evaluation 
 
 # DEVELOPMENT
 > Source Code
