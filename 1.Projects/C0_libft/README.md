@@ -35,17 +35,17 @@ Resource Planning:
 
 # RESOURCES
 >  Resources   
-Curricullum list  
-key takeaways
-Main Cheat Sheet 
-Main Book 
+- Curricullum list  
+- key takeaways 
+- Main Cheat Sheet 
+- Main Book 
 Resource Hub  
- Codes Examples  
- Testers  
- Githubs sources / Webs  
- YouTube  
- pdf  
- evaluation 
+ - Codes Examples  
+ - Testers  
+ - Githubs sources / Webs  
+ - YouTube  
+ - pdf  
+ - evaluation 
 
 # DEVELOPMENT
 > Source Code
