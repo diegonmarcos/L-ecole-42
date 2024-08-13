@@ -216,7 +216,10 @@
 - AddressSanitizer (ASan)
 - Valgrind : ```Flag = -g``` | ```valgrind ./a.out```
 
- <details> <summary>Valgrind Man</summary> Valgrind is a powerful tool for detecting memory errors and leaks in your programs. Here's a breakdown of how to use it:
+ <details> <summary>Valgrind Man</summary>
+
+ Valgrind is a powerful tool for detecting memory errors and leaks in your programs. Here's a breakdown of how to use it:
+
 **1. Compile Your Program with Debugging Information**
 
 * When you compile your program, include the `-g` flag to add debugging information. This will allow Valgrind to associate memory errors with specific lines in your code.
