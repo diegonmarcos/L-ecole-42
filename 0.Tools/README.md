@@ -216,6 +216,10 @@
 - AddressSanitizer (ASan) : ```Flag = -fsanitize=address```
 - Valgrind : ```Flag = -g``` | ```valgrind ./a.out```
 
+ <details> <summary>ASan Man</summary>
+aa
+</details>
+
  <details> <summary>Valgrind Man</summary>
 
  Valgrind is a powerful tool for detecting memory errors and leaks in your programs. Here's a breakdown of how to use it:
