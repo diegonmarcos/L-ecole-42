@@ -213,7 +213,7 @@
 # CODING TOOLS
 
 ### Tester - Memory Leak
-- AddressSanitizer (ASan)
+- AddressSanitizer (ASan) : ```Flag = -fsanitize=address```
 - Valgrind : ```Flag = -g``` | ```valgrind ./a.out```
 
  <details> <summary>Valgrind Man</summary>
