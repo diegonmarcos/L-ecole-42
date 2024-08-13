@@ -217,7 +217,69 @@
 - Valgrind : ```Flag = -g``` | ```valgrind ./a.out```
 
  <details> <summary>ASan Man</summary>
-aa
+
+**1. Compiling your code with AddressSanitizer:**
+
+* **GCC/Clang:** Add the following flags during compilation:
+   * `-fsanitize=address` enables ASan instrumentation.
+   * `-g` includes debugging information for more detailed error reports.
+   * For example: 
+     ```bash
+     gcc -g -fsanitize=address your_program.c -o your_program
+     ```
+
+**2. Running your program:**
+
+* Simply execute the compiled program. ASan will work in the background, monitoring memory access and allocations.
+
+**3. Interpreting ASan output:**
+
+* **Segmentation faults:**
+    * If your program encounters a segmentation fault, ASan will provide a detailed report including:
+        * The exact memory address that caused the fault.
+        * The type of illegal access (e.g., read, write).
+        * A stack trace leading to the point of the error.
+        * This information greatly aids in pinpointing the source of the problem.
+
+* **Memory leaks:**
+    * When your program terminates, ASan will perform a leak check. If any memory leaks are detected, it will output a report showing:
+        * The size and number of leaked bytes.
+        * A stack trace indicating where the leaked memory was allocated.
+        * This helps identify parts of your code that are not properly freeing memory.
+
+**Important points:**
+
+* **Overhead:** ASan introduces some runtime overhead, typically slowing down your program by a factor of 2-3. This is the trade-off for the detailed error detection it provides.
+* **False positives:** In some cases, ASan may report false positives, especially when interacting with libraries that use custom memory management.
+* **Suppressions:** ASan allows you to suppress certain error types or specific memory regions if needed. Refer to the ASan documentation for details.
+
+**Example ASan output (Segmentation fault):**
+
+```
+==31511==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000000 (pc 0x0000004018a9 bp 0x7ffd79f69670 sp 0x7ffd79f69660 T0)
+==31511==The signal is caused by a READ memory access.
+    #0 0x4018a8 in main /path/to/your_program.c:15
+    #1 0x7f0d36d870b2 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x270b2)
+    #2 0x40113d in _start (/path/to/your_program+0x40113d)
+
+Address 0x000000000000 is located 0 bytes inside of global variable 'uninitialized_pointer' defined in 'your_program.c:5:6' (0x604000) of size 8
+SUMMARY: AddressSanitizer: SEGV /path/to/your_program.c:15 in main
+```
+
+**Example ASan output (Memory leak):**
+
+```
+==31511==ERROR: LeakSanitizer: detected memory leaks
+
+Direct leak of 100 byte(s) in 1 object(s) allocated from:
+    #0 0x7f0d37716bc8 in malloc (/lib/x86_64-linux-gnu/libasan.so.5+0x106bc8)
+    #1 0x4017f4 in main /path/to/your_program.c:10
+    #2 0x7f0d36d870b2 in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x270b2)
+
+SUMMARY: AddressSanitizer: 100 byte(s) leaked in 1 allocation(s).
+```
+
+
 </details>
 
  <details> <summary>Valgrind Man</summary>
