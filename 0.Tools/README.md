@@ -215,8 +215,8 @@
 ### Tester - Memory Leak
 - AddressSanitizer (ASan)
 - Valgrind 
-- <details> <summary>More</summary>
-Valgrind is a powerful tool for detecting memory errors and leaks in your programs. Here's a breakdown of how to use it:
+  - Flag = -g | valgrind ./a.out
+  - <details> <summary>More</summary> Valgrind is a powerful tool for detecting memory errors and leaks in your programs. Here's a breakdown of how to use it:
 
 **1. Compile Your Program with Debugging Information**
 
