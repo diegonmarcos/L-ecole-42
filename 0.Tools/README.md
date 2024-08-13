@@ -215,6 +215,59 @@
 ### Tester - Memory Leak
 - AddressSanitizer (ASan)
 - Valgrind
+ <details>
+            <summary>More</summary>
+            <ul>
+                <li>AddressSanitizer (ASan)</li>
+                <li>Valgrind</li>
+            >
+More
+Valgrind is a powerful tool for detecting memory errors and leaks in your programs. Here's a breakdown of how to use it:
+
+**1. Compile Your Program with Debugging Information**
+
+* When you compile your program, include the `-g` flag to add debugging information. This will allow Valgrind to associate memory errors with specific lines in your code.
+
+**2. Run Your Program Under Valgrind**
+
+* Use Valgrind as a wrapper for your executable. The basic syntax is:
+   ```bash
+   valgrind [valgrind-options] your-program [program-arguments]
+   ```
+
+**3. Interpret Valgrind's Output**
+
+* Valgrind will provide a detailed report of any memory errors or leaks it detects. Pay attention to:
+    * **Error Messages:**  These will indicate the type of error (e.g., invalid read/write, use of uninitialized values), the memory address involved, and the stack trace leading to the error.
+    * **Leak Summaries:** At the end of your program's execution, Valgrind will provide a summary of any memory leaks it found, including the number of bytes leaked and the functions responsible for the allocations.
+
+**Important Valgrind Options**
+
+* `--leak-check=full`:  Enables detailed leak checking.
+* `--show-reachable=yes`:  Shows possibly lost memory (memory still reachable but potentially leaked).
+* `--track-origins=yes`:  Tracks the origin of uninitialized values (can be slower).
+* `--log-file=filename`:  Writes Valgrind's output to a specified file.
+
+**Example**
+
+```bash
+gcc -g my_program.c -o my_program
+valgrind --leak-check=full ./my_program
+```
+
+**Key Points**
+
+* Valgrind is most effective when used with programs compiled in debug mode (`-g`).
+* It can be helpful to run Valgrind with different options to get more detailed information about specific types of errors.
+* Valgrind can be a bit slower than running your program normally, but the benefits of finding and fixing memory issues usually outweigh the performance impact.
+
+**Additional Resources**
+
+* The Valgrind Quick Start Guide: [https://valgrind.org/docs/manual/quick-start.html](https://valgrind.org/docs/manual/quick-start.html)
+* The Valgrind User Manual: [https://valgrind.org/docs/manual/manual.html](https://valgrind.org/docs/manual/manual.html)
+
+</ul>
+</details
   
 ### [Debuggers ](Debugger.md)
 - **GDB(GNU Debugger):** A robust debugger for dissecting your code's execution and hunting down those pesky bugs.
