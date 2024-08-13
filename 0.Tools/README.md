@@ -216,12 +216,7 @@
 - AddressSanitizer (ASan)
 - Valgrind
  <details>
-            <summary>More</summary>
-            <ul>
-                <li>AddressSanitizer (ASan)</li>
-                <li>Valgrind</li>
-            >
-More
+<summary>More</summary>
 Valgrind is a powerful tool for detecting memory errors and leaks in your programs. Here's a breakdown of how to use it:
 
 **1. Compile Your Program with Debugging Information**
