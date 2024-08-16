@@ -245,7 +245,10 @@ Resource                                                                        
 | [Libft - C Standard Library Rewrite](https://www.asidesigned.com/project-libft.html)     | `Website` |
 | [Easy Makefile](https://pulgamecanica.herokuapp.com/posts/makefiles)                     | `Website` |
 | [Master Memory Management](https://medium.com/p/b86fedd39b96)                            | `Medium`  |
-| [Make-A-Make: Clear the fog around Makefiles](https://github.com/Nuno-Jesus/Make-A-Make) | `GitHub`  |
+| [Make-A-Make: Clear the fog around Makefiles](https://github.com/Nuno-Jesus/Make-A-Make) | `GitHub`  | 
+Libft_Full - https://github.com/kodokaii/libft_full
+
+
 
 | Project                                                                                  | Source    | User |
 | :--------------------------------------------------------------------------------------- | :-------- | :--- |
