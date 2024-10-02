@@ -353,7 +353,13 @@ valgrind --leak-check=full ./my_program
 # WORKSPACE
 ### [Shell Enhancements](Shell.md)
 
-- **Oh My Zsh:** A framework that supercharges your Zsh shell with themes, plugins, and customizations.
+- **Oh My Zsh:** A framework that supercharges your Zsh shell with themes, plugins, and customizations.  
+	- https://ohmyz.sh/   
+	```
+	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+	```
+ 	- git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+	 
 - **Zsh Plugins:**
     - **zsh-autosuggestions:** Intelligently suggests commands as you type.
     - **zsh-syntax-highlighting:** Color-codes commands to easily spot errors.
