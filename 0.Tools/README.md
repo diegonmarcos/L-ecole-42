@@ -379,6 +379,9 @@ https://github.com/junegunn/fzf
 
 - **gcp.sh:** gitt add . git commit -m ¨message" git push
 - **GCL:** Def Macro git clone = GCL
+	- ``~/.bashrc``
+ 	- ``alias GCL='git clone'``
+  	- ``source ~/.bashrc``
 
 ### UNIX
 - **find:** A versatile command for locating files and directories based on various criteria.
