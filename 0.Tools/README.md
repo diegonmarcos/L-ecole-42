@@ -369,7 +369,7 @@ https://github.com/junegunn/fzf
 ## Editors and IDEs
 
 - **Vim:** A highly configurable text editor renowned for its speed and efficiency.
-	- ```set:nu```
+	- `vim ~/.vimrc` && ```set:nu```
   	- [.vimrc](p.vimrc.md)
 	- [.vimrc_42header](p.vimrc_42header.md)
    	- [NeoVim](https://github.com/neovim/neovim/blob/master/INSTALL.md)
