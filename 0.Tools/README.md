@@ -369,7 +369,8 @@ https://github.com/junegunn/fzf
 ## Editors and IDEs
 
 - **Vim:** A highly configurable text editor renowned for its speed and efficiency.
-	- [.vimrc](p.vimrc.md)
+	- ```set:nu```
+  	- [.vimrc](p.vimrc.md)
 	- [.vimrc_42header](p.vimrc_42header.md)
    	- [NeoVim](https://github.com/neovim/neovim/blob/master/INSTALL.md)
    	- **NERDtree - Vim Folder Side bar**  
@@ -385,8 +386,11 @@ https://github.com/junegunn/fzf
 
 - **gcp.sh:** gitt add . git commit -m ¨message" git push
 - **GCL:** Def Macro git clone = GCL
-	- ``~/.bashrc``
- 	- ``alias GCL='git clone'``
+	- ``vim ~/.bashrc``
+ 	- ``	alias gcl='git clone'
+		alias ccc='cc -Wall -Wextra -Werror'
+		alias push='git add . && git commit -m "." && git push'
+	``
   	- ``source ~/.bashrc``
 
 ### UNIX
