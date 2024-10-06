@@ -387,11 +387,17 @@ https://github.com/junegunn/fzf
 - **gcp.sh:** gitt add . git commit -m ¨message" git push
 - **GCL:** Def Macro git clone = GCL
 	- ``vim ~/.bashrc``
- 	- ``	alias gcl='git clone'
-		alias ccc='cc -Wall -Wextra -Werror'
-		alias push='git add . && git commit -m "." && git push'
-	``
+ 	``` bash
+        alias gcl='git clone'
+        alias push='git add . && git commit -m "." && git push'
+		alias norm="norminette -R CheckForbiddenSourceHeader"
+        alias ccc='cc -Wall -Wextra -Werror'		
+	```
   	- ``source ~/.bashrc``
+    - `nano ~/.bash_profile`
+    ```bash
+    if [ -f ~/.bashrc ]; then source ~/.bashrc; fi
+    ```
 
 ### UNIX
 - **find:** A versatile command for locating files and directories based on various criteria.
