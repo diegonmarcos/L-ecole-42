@@ -1,18 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar.c                                       :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: elristow <elristow@student.42berlin.d      +#+  +:+       +#+        */
+/*   By: mregada- <mregada-@student.42barcel>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/05 13:29:46 by elristow          #+#    #+#             */
-/*   Updated: 2024/10/05 13:32:17 by elristow         ###   ########.fr       */
+/*   Created: 2024/03/23 16:52:57 by mregada-          #+#    #+#             */
+/*   Updated: 2024/03/23 21:28:08 by akreise          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+void	rush(int x, int y);
 
-void	ft_putchar(char ch)
+int	main(void)
 {
-	write(1, &ch, 1);
+	rush(5, 3);
+	return (0);
 }

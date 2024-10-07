@@ -1,13 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rush00.c                                           :+:      :+:    :+:   */
+/*   rush04.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: elristow <elristow@student.42berlin.d      +#+  +:+       +#+        */
+/*   By: akuzmin <akuzmin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/05 11:36:44 by elristow          #+#    #+#             */
-/*   Updated: 2024/10/05 13:44:04 by elristow         ###   ########.fr       */
-/*   Updated: 2024/10/05 12:46:15 by elristow         ###   ########.fr       */
+/*   Updated: 2024/10/06 15:02:31 by akuzmin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,11 +42,11 @@ void	rush(int x, int y)
 		while (i < x)
 		{
 			if (j == 0)
-				draw_row(i, 'o', '-', 'o');
+				draw_row(i, 'A', 'B', 'C');
 			else if (j == y - 1)
-				draw_row(i, 'o', '-', 'o');
+				draw_row(i, 'C', 'B', 'A');
 			else
-				draw_row(i, '|', ' ', '|');
+				draw_row(i, 'B', ' ', 'B');
 			i++;
 		}
 		ft_putchar('\n');

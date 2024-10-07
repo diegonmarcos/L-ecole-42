@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rush00.c                                           :+:      :+:    :+:   */
+/*   rush03.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: elristow <elristow@student.42berlin.d      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -43,11 +43,11 @@ void	rush(int x, int y)
 		while (i < x)
 		{
 			if (j == 0)
-				draw_row(i, 'o', '-', 'o');
+				draw_row(i, 'A', 'B', 'C');
 			else if (j == y - 1)
-				draw_row(i, 'o', '-', 'o');
+				draw_row(i, 'A', 'B', 'C');
 			else
-				draw_row(i, '|', ' ', '|');
+				draw_row(i, 'B', ' ', 'B');
 			i++;
 		}
 		ft_putchar('\n');

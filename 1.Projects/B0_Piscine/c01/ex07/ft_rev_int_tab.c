@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_comb.c                                    :+:      :+:    :+:   */
+/*   ft_rev_int_tab.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dnepomuc <dnepomuc@student.42barcel>       +#+  +:+       +#+        */
+/*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/22 20:53:37 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/03/22 23:34:10 by dnepomuc         ###   ########.fr       */
+/*   Updated: 2024/10/07 21:09:35 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@ void	ft_rev_int_tab(int *tab, int size)
 {
 	int		i;
 	int		numb;
-	char	numb2;
 
 	i = 0;
 	while (i < size / 2)
@@ -36,7 +35,10 @@ void	ft_rev_int_tab(int *tab, int size)
 
 }*/
 
-/*i = 0;
+/*
+	char	numb2;
+
+	i = 0;
 	while (i < size)
 	{
 		numb2 = tab[i] + '0';

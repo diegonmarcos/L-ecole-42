@@ -6,32 +6,57 @@
 /*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 16:12:48 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/10/07 16:23:24 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/10/07 20:23:02 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void print_coll(int n)
+#include <unistd.h>
 
-
-void ft_print_combn(int n)
+void	print_combn_recursive(char *comb, int n, int index, int start)
 {
-    int i;
-
-    i = 0;
-    while(i < n)
-    {
-        write(1, i, 1)
-        while(j < n)
-        {
-            write(1, j, 1)
-        }
-    }
+	if (index == n)
+	{
+		write(1, comb, n);
+		if (comb[0] != '9' - n + 1 || comb[n - 1] != '9')
+			write(1, ", ", 2);
+		return ;
+	}
+	while (start <= '9')
+	{
+		comb[index] = start;
+		print_combn_recursive(comb, n, index + 1, start + 1);
+		start++;
+	}
 }
 
+void	ft_print_combn(int n)
+{
+	char	comb[10];
+
+	if (n <= 0 || n >= 10)
+		return ;
+	comb[n] = '\0';
+	print_combn_recursive(comb, n, 0, '0');
+	write(1, "\n", 1);
+}
 /*
-int main (void)
+int	main(void)
 {
-    ft_print_combn(2);
-    return 0;
-}
-*/
+	ft_print_combn(1);
+	write(1, "\n", 1);
+	ft_print_combn(2);
+	write(1, "\n", 1);
+	ft_print_combn(3);
+	write(1, "\n", 1);
+	ft_print_combn(4);
+	write(1, "\n", 1);
+	ft_print_combn(5);
+	write(1, "\n", 1);
+	ft_print_combn(6);
+	write(1, "\n", 1);
+	ft_print_combn(7);
+	write(1, "\n", 1);
+	ft_print_combn(8);
+	write(1, "\n", 1);
+	ft_print_combn(9);
+}*/
