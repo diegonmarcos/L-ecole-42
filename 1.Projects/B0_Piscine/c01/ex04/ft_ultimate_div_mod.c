@@ -1,17 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_comb.c                                    :+:      :+:    :+:   */
+/*   ft_ultimate_div_mod.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dnepomuc <dnepomuc@student.42barcel>       +#+  +:+       +#+        */
+/*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/22 20:53:37 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/03/22 23:34:10 by dnepomuc         ###   ########.fr       */
+/*   Updated: 2024/10/08 18:47:04 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
+
 
 void	ft_ultimate_div_mod(int *a, int *b)
 {
@@ -23,7 +22,10 @@ void	ft_ultimate_div_mod(int *a, int *b)
 	*a = a1 / b1;
 	*b = a1 % b1;
 }
-/*int main()
+/*
+#include <unistd.h>
+#include <stdio.h>
+int main()
 {
 	int a;
 	int b;
