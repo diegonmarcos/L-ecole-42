@@ -366,8 +366,8 @@ valgrind --leak-check=full ./my_program
 	    - **fzf:** A blazing-fast fuzzy finder for files, commands, and more.
 	https://github.com/junegunn/fzf  
 
-- **Fish Shell**
-	-https://fishshell.com/
+- **Fish Shell**  
+  ```https://fishshell.com/```
 
 ## Editors and IDEs
 
