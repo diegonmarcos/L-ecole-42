@@ -1,4 +1,10 @@
 # .gitignore
+/*
+!*.c
+/**/*.c
+
+
+# .gitignore
 ```
 # Compiled source #
 *.com
