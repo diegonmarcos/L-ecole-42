@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/22 20:53:37 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/10/07 17:27:14 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/10/08 16:45:40 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,8 +51,6 @@ int	main(void)
 	ft_putnbr(2147483647);
 	ft_putchar('\n');
 	ft_putnbr(5);
-	ft_putchar('\n');
-//	ft_putnbr(2147483648);
 	ft_putchar('\n');
 	return (0);
 }

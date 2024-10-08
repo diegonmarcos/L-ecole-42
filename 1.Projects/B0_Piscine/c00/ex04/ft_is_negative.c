@@ -1,19 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   a.c                                                :+:      :+:    :+:   */
+/*   ft_is_negative.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dnepomuc <dnepomuc@student.42barcel>       +#+  +:+       +#+        */
+/*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/22 20:53:37 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/03/22 20:53:42 by dnepomuc         ###   ########.fr       */
+/*   Updated: 2024/10/08 16:41:53 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
 
 void	ft_putchar(char c)
 {
@@ -33,12 +30,15 @@ void	ft_is_negative(int n)
 	}
 }
 
-/*int	main(int argc, char *argv[])
+/*
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+int	main(int argc, char *argv[])
 {
-	if (argc > 1)
+	if (argc == 2)
 	{
-		int	argv2 = atoi(argv[1]);
-		ft_is_negative(argv2);
+		ft_is_negative(atoi(argv[1]));
 	}
 	return (0);
 }*/
