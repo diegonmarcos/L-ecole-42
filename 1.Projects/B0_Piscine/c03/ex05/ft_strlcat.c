@@ -1,17 +1,14 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   a.c                                                :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dnepomuc <dnepomuc@student.42barcel>       +#+  +:+       +#+        */
+/*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/24 18:58:41 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/03/24 19:02:08 by dnepomuc         ###   ########.fr       */
+/*   Updated: 2024/10/08 15:47:04 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
-#include <stdio.h>
 
 int	ft_strlen(char *str)
 {
@@ -51,11 +48,24 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 	dest[j] = '\0';
 	return (dlen + slen);
 }
-
-/*int main (void)
+/*
+#include <stdio.h>
+#include <bsd/string.h> 	// cc *.c -lbsd
+int main (void)
 {
-	char src[] = "Born to code";
-    char dest [] = "1337 42";
-    printf("%i \n", ft_strlcat(dest, src, 20));
-    printf("%s \n", dest);
-}*/	
+	char src[] = "5678";
+
+    char dest [100] = "1234";
+    printf("%u \n", ft_strlcat(dest, src, 7));
+	printf("%s \n", dest);
+    char dest1 [100] = "1234";
+	printf("%zu \n", strlcat(dest1, src, 7));
+    printf("%s \n", dest1);
+	
+    char dest3 [100] = "1234";
+    printf("%u \n", ft_strlcat(dest3, src, 3));
+	printf("%s \n", dest3);
+    char dest4 [100] = "1234";
+	printf("%zu \n", strlcat(dest4, src, 3));
+    printf("%s \n", dest4);
+}*/
