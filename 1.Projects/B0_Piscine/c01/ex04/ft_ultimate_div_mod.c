@@ -6,11 +6,9 @@
 /*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/22 20:53:37 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/10/08 18:47:04 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/10/08 18:52:51 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-
 
 void	ft_ultimate_div_mod(int *a, int *b)
 {
