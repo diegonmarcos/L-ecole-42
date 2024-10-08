@@ -360,11 +360,14 @@ valgrind --leak-check=full ./my_program
 	```
  	- git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 	 
-- **Zsh Plugins:**
-    - **zsh-autosuggestions:** Intelligently suggests commands as you type.
-    - **zsh-syntax-highlighting:** Color-codes commands to easily spot errors.
-    - **fzf:** A blazing-fast fuzzy finder for files, commands, and more.
-https://github.com/junegunn/fzf  
+	- **Zsh Plugins:**
+	    - **zsh-autosuggestions:** Intelligently suggests commands as you type.
+	    - **zsh-syntax-highlighting:** Color-codes commands to easily spot errors.
+	    - **fzf:** A blazing-fast fuzzy finder for files, commands, and more.
+	https://github.com/junegunn/fzf  
+
+-Fish Shell
+	-https://fishshell.com/
 
 ## Editors and IDEs
 
