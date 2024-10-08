@@ -1,8 +1,9 @@
 # .gitignore
+```bash
 /*
 !*.c
 /**/*.c
-
+```
 
 # .gitignore
 ```
