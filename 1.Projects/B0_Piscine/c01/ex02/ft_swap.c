@@ -6,12 +6,9 @@
 /*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/22 20:53:37 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/10/08 18:47:04 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/10/08 19:28:38 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <unistd.h>
-#include <stdio.h>
 
 void	ft_swap(int *a, int *b)
 {
@@ -21,8 +18,9 @@ void	ft_swap(int *a, int *b)
 	*a = *b;
 	*b = swap;
 }
-/*#include <stdio.h>
-
+/*
+#include <unistd.h>
+#include <stdio.h>
 int main(void)
 {
 	int		a;
