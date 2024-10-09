@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/24 18:58:41 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/10/08 18:47:04 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/10/09 21:25:51 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,12 +53,14 @@ void	ft_putstr_non_printable(char *str)
 		i++;
 	}
 }
-
-/*int main (void)
+/*
+int	main(void)
 {
 	ft_putstr_non_printable("Coucou\ntu vas bien");
 	ft_putchar('\n');
 	ft_putstr_non_printable("Coucou tu vas bie\t\v\0n");
 	ft_putchar('\n');
 	ft_putstr_non_printable("");
-}*/
+	return (0);
+}
+*/

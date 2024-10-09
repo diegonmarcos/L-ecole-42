@@ -6,11 +6,9 @@
 /*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/24 18:58:41 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/10/08 18:47:04 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/10/09 22:45:47 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <unistd.h>
 
 unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 {
@@ -31,18 +29,28 @@ unsigned int	ft_strlcpy(char *dest, char *src, unsigned int size)
 	dest[i] = '\0';
 	return (len);
 }
-
-/*int main(void)
+/*
+#include <stdio.h>
+#include <string.h>
+#include <bsd/string.h>
+int main(void)
 {
 	char a[] = "Born";
 	char b[] = "to Code";
-	ft_strlcpy(&a[0], &b[0], 5);
-	int i = 0;
+	printf("a=%s\nb=\%s\n", a, b);
+	printf("%u\n",ft_strlcpy(a, b, 5));
 
-	while (a[i])
+	char a1[] = "Born";
+	char b1[] = "to Code";
+	printf("a1=%s\nb=\%s\n", a1, b1);
+	printf("%zu\n",strlcpy(a1, b1, 5));
+
+	if(strcmp(a1, a) == 0)
+		printf("=)__OK__=)\n");
+	else
 	{
-		write(1, &a[i], 1);
-		i++;
+		printf("=(**NOT OK**=(\n");
+		printf("%d", strcmp(a1, a));
 	}
 	return (0);
 }*/
