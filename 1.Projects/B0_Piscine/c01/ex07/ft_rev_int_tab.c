@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/22 20:53:37 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/10/09 15:44:28 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/10/09 15:55:26 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ void	ft_rev_int_tab(int *tab, int size)
 	}
 }
 
-
+/*
 #include <unistd.h>
 #include <stdio.h>
 int main(void)
@@ -36,4 +36,4 @@ int main(void)
 		printf("%d", str[i]);
 	return 0;
 
-}
+}*/
