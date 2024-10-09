@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/24 18:58:41 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/10/09 22:42:07 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/10/09 22:48:01 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,6 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n)
 	}
 	return (dest);
 }
-
 
 /*
 #include <stdio.h>
