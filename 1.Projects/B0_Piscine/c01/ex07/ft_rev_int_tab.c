@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/22 20:53:37 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/10/08 19:28:38 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/10/09 15:44:28 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,23 +25,15 @@ void	ft_rev_int_tab(int *tab, int size)
 	}
 }
 
-/*
+
 #include <unistd.h>
 #include <stdio.h>
 int main(void)
 {
-	ft_rev_int_tab();
+	int str[] = {1, 2, 3, 4, 5};
+	ft_rev_int_tab(str, 5);
+	for(int i = 0; str[i]; i++)
+		printf("%d", str[i]);
 	return 0;
 
-}*/
-
-/*
-	char	numb2;
-
-	i = 0;
-	while (i < size)
-	{
-		numb2 = tab[i] + '0';
-		write(1, &numb2, 1);
-		i++;
-	}*/
+}

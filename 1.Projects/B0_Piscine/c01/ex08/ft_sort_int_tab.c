@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/22 20:53:37 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/10/08 19:24:32 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/10/09 15:46:31 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,14 +37,14 @@ void	ft_sort_int_tab(int *tab, int size)
 	}
 }
 
-/*
 #include <unistd.h>
 #include <stdio.h>
 int main(void)
 {
-	int input[] = {5, 2, 6, 7, 1, 4, 3};
-	int len = 7;
-
-	ft_sort_int_tab(&input[0], len);
+	int str[] = {6, 3, 1, 2, 5};
+	ft_sort_int_tab(str, 5);
+	for(int i = 0; str[i]; i++)
+		printf("%d", str[i]);
 	return 0;
-}*/
+
+}
