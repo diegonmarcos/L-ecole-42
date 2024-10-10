@@ -6,4 +6,3 @@ asalniko
 kyungkim
 xwang
 elristow
-ed
