@@ -1,2 +1,3 @@
 #!/bin/bash
-ifconfig | grep -w ether | cut -d " " -f 2
+ifconfig | grep -w ether | awk '{print $2}'| tr ' ' '\n'
+
