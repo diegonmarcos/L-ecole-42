@@ -10,9 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <stdio.h>
-
 int	checkerror(char *str)
 {
 	int	i;
@@ -23,7 +20,7 @@ int	checkerror(char *str)
 		return (0);
 	while (str[i])
 	{
-		if (str[i] <= ' ' || str[i] == 'DEL' || str[i] == '+' || str[i] == '-')
+		if (str[i] <= ' ' || str[i] == 127 || str[i] == '+' || str[i] == '-')
 			return (0);
 		j = i + 1;
 		while (str[j])
@@ -96,7 +93,10 @@ int	ft_atoi_base(char *str, char *base)
 	return (0);
 }
 
-/*int		main(void)
+/*
+#include <stdio.h>
+
+int		main(void)
 {
 	printf("%d\n", ft_atoi_base("	+++++--133742", "0123456789"));
 	printf("%d\n", ft_atoi_base("	     ---101010", "01"));

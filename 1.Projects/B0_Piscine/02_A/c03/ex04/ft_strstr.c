@@ -51,7 +51,7 @@ int	main()
 	char find4[] = "";
 	printf("%s\n", ft_strstr(str4, find4));
 	printf("%s\n", strstr(str4, find4));
-	char str5[] = "Duck 42 Piscine Duck 1p1iscine 2021 piscineBorntoCode 42 24 21 12";
+	char str5[] = "Duck 42 Piscine Duck 1p1iscine 2021 piscineBorntoCod 42";
 	char find5[] = "piscine";
 	printf("%s\n", ft_strstr(str5, find5));
 	printf("%s\n", strstr(str5, find5));

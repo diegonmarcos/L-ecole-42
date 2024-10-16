@@ -37,8 +37,7 @@ int	ft_atoi(char *str)
 	return (num * neg);
 }
 
-/*
-#include <stdio.h>
+/*#include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
 #include <limits.h>
@@ -56,4 +55,4 @@ int main(void)
 	printf("%d\n", ft_atoi(s));
 	printf("%d\n", atoi(s));
     return (0);
-}*
+}*/
