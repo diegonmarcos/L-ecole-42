@@ -1,42 +1,40 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: dinepomu <dinepomu@42.de>                  +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/24 18:58:41 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/10/16 17:57:29 by dinepomu         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
+#include <unistd.h>
+
+int	process_sign(char *str, int *idx)
+{
+	int	sign_factor;
+	int	j;
+
+	j = 0;
+	sign_factor = 1;
+	while ((str[j] >= 9 && str[j] <= 13) || str[j] == 32)
+		j++;
+	while (str[j] == '+' || str[j] == '-')
+	{
+		if (str[j] == '-')
+			sign_factor = -sign_factor;
+		j++;
+	}
+	*idx = j;
+	return (sign_factor);
+}
 
 int	ft_atoi(char *str)
 {
-	int	neg;
+	int	sign;
 	int	num;
-	int	i;
+	int	j;
 
-	i = 0;
-	neg = 1;
 	num = 0;
-	while (str[i] <= ' ' || str[i] >= '\t' || str[i] <= '\r')
-		i++;
-	if (str[i] == '-' || str[i] == '+')
+	j = 0;
+	sign = process_sign(str, &j);
+	while (str[j] && str[j] >= '0' && str[j] <= '9')
 	{
-		if (str[i] == '-')
-		{
-			neg *= -1;
-		}
-		i++;
+		num = num * 10 + (str[j] - '0');
+		j++;
 	}
-	while (str[i] >= '0' && str[i] <= '9')
-	{
-		num = num * 10 + (str[i] - '0');
-		i++;
-	}
-	return (num * neg);
+	return (num * sign);
 }
-
 /*
 #include <stdio.h>
 #include <unistd.h>
@@ -48,7 +46,7 @@ int main(void)
 //	char s[12];
 //	snprintf(s, sizeof(s), "%d", INT_MIN);
 
-//	char s[] = "---+--+01234506789ab567";
+	char s[] = "---+--+01234506789ab567"; //will be negative
 //	char s[] = "  	    01234506789ab567";
 //	char s[] = "01234506789ab567";
 //	char s[] = "-1\3245b6a12334";
@@ -58,4 +56,5 @@ int main(void)
 	printf("%d\n", ft_atoi(s));
 	printf("%d\n", atoi(s));
     return (0);
-}*/
+}
+*/
