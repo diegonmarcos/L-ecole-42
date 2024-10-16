@@ -31,7 +31,7 @@ int	ft_atoi(char *str)
 	}
 	while (str[i] >= '0' && str[i] <= '9')
 	{
-		num = num * 10 + (str[i] - 48);
+		num = num * 10 + (str[i] - '0');
 		i++;
 	}
 	return (num * neg);
@@ -41,12 +41,19 @@ int	ft_atoi(char *str)
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
+#include <limits.h>
+
 int main(void)
 {
-    char s[] = "   ---+--+01234506789ab567";
-	char s1[] = "-13245b6a";
-    printf("%s\n", s1);
-	printf("%d\n", ft_atoi(s1));
-	printf("%d\n", atoi(s1));
+//   char s[] = "   ---+--+01234506789ab567";
+
+//	char s[] = "-13245b6a";
+
+	char s[12];
+    snprintf(s, sizeof(s), "%d", INT_MIN);
+
+    printf("%s\n", s);
+	printf("%d\n", ft_atoi(s));
+	printf("%d\n", atoi(s));
     return (0);
-}*/
+}*
