@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/24 18:58:41 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/10/16 19:48:31 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/10/16 19:57:32 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 	slen = ft_strlen(src);
 	if (size == 0 || size <= dlen)
 		return (slen + size);
-	while (src [i] != '\0' && i < size - dlen - 1)
+	while (src [i] && i < size - dlen - 1)
 	{
 		dest[j] = src[i];
 		i++;

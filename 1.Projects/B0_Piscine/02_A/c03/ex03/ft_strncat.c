@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/24 18:58:41 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/10/16 19:48:31 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/10/16 19:48:47 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ char	*ft_strncat(char *dest, char *src, unsigned int nb)
 	{
 		i++;
 	}
-	while (j < nb && src[j] )
+	while (j < nb && src[j])
 	{
 		dest[i + j] = src [j];
 		j++;
