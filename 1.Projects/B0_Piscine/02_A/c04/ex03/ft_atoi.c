@@ -1,22 +1,32 @@
-#include <unistd.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/16 21:56:56 by dinepomu          #+#    #+#             */
+/*   Updated: 2024/10/16 21:58:20 by dinepomu         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-int	process_sign(char *str, int *idx)
+int	process_sign(char *str, int *index)
 {
-	int	sign_factor;
+	int	sign;
 	int	j;
 
 	j = 0;
-	sign_factor = 1;
+	sign = 1;
 	while ((str[j] >= 9 && str[j] <= 13) || str[j] == 32)
 		j++;
 	while (str[j] == '+' || str[j] == '-')
 	{
 		if (str[j] == '-')
-			sign_factor = -sign_factor;
+			sign = -sign;
 		j++;
 	}
-	*idx = j;
-	return (sign_factor);
+	*index = j;
+	return (sign);
 }
 
 int	ft_atoi(char *str)
