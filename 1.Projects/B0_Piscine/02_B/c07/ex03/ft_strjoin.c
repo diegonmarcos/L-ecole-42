@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@42.de>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 17:45:12 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/10/16 17:45:32 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/10/16 17:47:25 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,6 +48,6 @@ int	main(void)
 	tab[1] = " ";
 	tab[2] = " ";
 	tab[3] = " ";
-	printf("%s", ft_strjoin(4, tab, "Pasquale"));
+	printf("%s", ft_strjoin(4, tab, "Piscine"));
 	return (0);
 }*/
