@@ -1,0 +1,95 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_ten_queens_puzzle.                              :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dinepomu <dinepomu@42.de>                  +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/16 17:29:30 by dinepomu          #+#    #+#             */
+/*   Updated: 2024/10/16 17:39:57 by dinepomu         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+/*
+•Create a function that displays all possible placements of the ten queens on a
+chessboard which would contain ten columns and ten lines, without them being
+able to reach each other in a single move, and returns the number of possibilities.
+•Recursivity is required to solve this problem.
+•Here’s how it should be prototyped :
+int ft_ten_queens_puzzle(void);
+•Here’s how it’ll be displayed :
+$>./a.out | cat -e
+0257948136$
+0258693147$
+...
+4605713829$
+4609582731$
+...
+9742051863$
+$>
+•The sequence goes from left to right. The first digit represents the first Queen’s
+position in the first column (the index starting from 0). The Nth digit represents
+the Nth Queen’s position in the Nth column.
+•The return value must be the total number of displayed solutions.
+14
+*/
+
+int ft_ten_queens_puzzle(void)
+{
+	#include <unistd.h>
+
+	void	ft_putchar(char c)
+	{
+		write(1, &c, 1);
+	}
+
+	void	print_solution(int *board)
+	{
+		int i;
+
+		for (i = 0; i < 10; i++)
+			ft_putchar(board[i] + '0');
+		ft_putchar('\n');
+	}
+
+	int	is_safe(int *board, int row, int col)
+	{
+		int i;
+
+		for (i = 0; i < col; i++)
+		{
+			if (board[i] == row || board[i] - i == row - col || board[i] + i == row + col)
+				return (0);
+		}
+		return (1);
+	}
+
+	void	solve(int *board, int col, int *count)
+	{
+		int row;
+
+		if (col == 10)
+		{
+			print_solution(board);
+			(*count)++;
+			return ;
+		}
+		for (row = 0; row < 10; row++)
+		{
+			if (is_safe(board, row, col))
+			{
+				board[col] = row;
+				solve(board, col + 1, count);
+			}
+		}
+	}
+
+	int	ft_ten_queens_puzzle(void)
+	{
+		int board[10];
+		int count;
+
+		count = 0;
+		solve(board, 0, &count);
+		return (count);
+	}
