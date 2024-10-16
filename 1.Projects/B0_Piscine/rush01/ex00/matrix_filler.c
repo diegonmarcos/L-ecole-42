@@ -3,73 +3,89 @@
 /*                                                        :::      ::::::::   */
 /*   matrix_filler.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ofarina <ofarina@student.42barcelo>        +#+  +:+       +#+        */
+/*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/30 17:24:13 by ofarina           #+#    #+#             */
-/*   Updated: 2024/03/31 20:05:06 by ofarina          ###   ########.fr       */
+/*   Created: 2024/10/13 11:06:34 by ahugi             #+#    #+#             */
+/*   Updated: 2024/10/13 22:42:44 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_init_matrix(int matrix[3][4][4])
+/*
+Will receive a pointer to a matrix and fill it with the values 
+from the input string.
+Will receive as input a string of 16 char(numbers) 
+without spaces. "4321122243211222"
+It will creat a 2D array of integers and fill it with 
+the values from the input string.
+Each array will have 4 integers.
+*col up, row right, col down, row left - each line - clockwise*/
+
+#include <stdlib.h>
+
+void	matrix_initializer(int **matrix_solution);
+int		**matrix_allocate(int rows, int cols);
+
+void	ft_line_swap(int *tab)
 {
+	int	temp;
+	int	i;
+
+	i = 0;
+	while (i < 4 / 2)
+	{
+		temp = tab[4 - 1 - i];
+		tab[4 - 1 - i] = tab[i];
+		tab[i] = temp;
+		i++;
+	}
+}
+
+int	**ft_matrix_filler(int *str)
+{
+	int	**matrix;
 	int	i;
 	int	j;
 	int	k;
 
+	matrix = matrix_allocate(4, 4);
 	i = 0;
 	j = 0;
 	k = 0;
-	while (i < 2)
-	{
-		while (j < 4)
-		{
-			while (k < 4)
-			{
-				matrix[i][j][k] = 0;
-				k++;
-			}
-			k = 0;
-			j++;
-		}
-		j = 0;
-		i++;
-	}
-}
-
-void	ft_init_matrix_2d(int matrix[4][4])
-{
-	int	i;
-	int	j;
-
-	i = 0;
-	j = 0;
 	while (i < 4)
 	{
+		if (!matrix[i])
+			return (NULL);
+		j = 0;
 		while (j < 4)
 		{
-			matrix[i][j] = 0;
+			matrix[i][j] = str[k];
 			j++;
+			k++;
 		}
-		j = 0;
 		i++;
 	}
+	j = 0;
+	return (matrix);
 }
 
-void	ft_init_input(char **argv, int inpt[4][4])
+/*
+#include <stdio.h>
+int main()
 {
-	int	i;
-	int	j;
-
-	i = 0;
-	j = 0;
+	char *str = "4321122243211222";
+	int **matrix = matrix_filler(str);
+	int i = 0;
+	int j = 0;
 	while (i < 4)
 	{
+		j = 0;
 		while (j < 4)
 		{
-			inpt[i][j] = argv[1][((i * 4) + j) * 2] - 48;
+			printf("%d ", matrix[i][j]);
 			j++;
 		}
-		j = 0;
+		printf("\n");
 		i++;
 	}
-}
+	return 0;
+}*/

@@ -12,9 +12,9 @@
 
 int	ft_atoi(char *str)
 {
-	int neg;
-	int num;
-	int i;
+	int	neg;
+	int	num;
+	int	i;
 
 	i = 0;
 	neg = 1;
@@ -37,6 +37,7 @@ int	ft_atoi(char *str)
 	return (num * neg);
 }
 
+/*
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>
@@ -48,4 +49,4 @@ int main(void)
 	printf("%d\n", ft_atoi(s1));
 	printf("%d\n", atoi(s1));
     return (0);
-}
+}*/
