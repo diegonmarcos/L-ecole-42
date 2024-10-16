@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/24 18:58:41 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/10/08 18:47:04 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/10/16 19:48:31 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,13 +17,13 @@ char	*ft_strstr(char *str, char *to_find)
 
 	i = 0;
 	j = 0;
-	if (to_find[j] == '\0')
+	if (to_find[j])
 		return (str);
-	while (str[i] != '\0')
+	while (str[i])
 	{
-		while (str[i + j] == to_find[j] && str[i + j] != '\0')
+		while (str[i + j] == to_find[j] && str[i + j])
 			j++;
-		if (to_find[j] == '\0')
+		if (to_find[j])
 			return (str + i);
 		i++;
 		j = 0;
