@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@42.de>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 17:44:56 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/10/16 17:44:58 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/10/16 17:46:42 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ int	*ft_range(int min, int max)
 	int	*result;
 
 	if (min >= max)
-	{	
+	{
 		return (0);
 	}
 	i = max - min;
