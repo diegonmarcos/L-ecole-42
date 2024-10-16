@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/24 18:58:41 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/10/16 20:13:06 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/10/16 22:03:15 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,6 @@ int	check_base(char *base)
 
 void	print_base_nb(int nbr, char *base, int size)
 {
-	char			a;
 	unsigned int	n;
 	char			buffer[33];
 	int				i;
