@@ -10,8 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
 int	ft_strlen(char *str)
 {
 	unsigned int	i;
@@ -23,7 +21,9 @@ int	ft_strlen(char *str)
 	}
 	return (i);
 }
-/*int   main(void)
+/*
+#include <stdio.h>
+int   main(void)
 {
 	printf("%i", ft_strlen("Born to Code"));
 }*/

@@ -72,6 +72,7 @@ void	ft_putnbr_base(int nbr, char *base)
 	}
 }
 
+/*
 #include <limits.h>
 
 int	main(void)
@@ -94,3 +95,4 @@ int	main(void)
 	ft_putnbr_base(42, "duck");
 	write(1, "\n", 1);
 }
+*/

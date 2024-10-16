@@ -21,12 +21,12 @@ int	checkerror(char *str)
 	i = 0;
 	if (str[0] == '\0' || str[1] == '\0')
 		return (0);
-	while (str[i] != '\0')
+	while (str[i])
 	{
-		if (str[i] <= 32 || str[i] == 127 || str[i] == 43 || str[i] == 45)
+		if (str[i] <= ' ' || str[i] == 'DEL' || str[i] == '+' || str[i] == '-')
 			return (0);
 		j = i + 1;
-		while (str[j] != '\0')
+		while (str[j])
 		{
 			if (str[i] == str[j])
 				return (0);

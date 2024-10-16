@@ -10,7 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include <unistd.h>
 
 void	ft_putchar(char c)
@@ -42,6 +41,7 @@ void	ft_putnbr(int nb)
 	}
 }
 /*
+#include <stdio.h>
 int main (void)
 {
 	printf("This should be 2147483648\n");
