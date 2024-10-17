@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_fibonacci.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dinepomu <dinepomu@42.de>                  +#+  +:+       +#+        */
+/*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 17:12:35 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/10/16 17:24:07 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/10/17 11:40:25 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,3 +31,17 @@ int	ft_fibonacci(int index)
 		return (1);
 	return (ft_fibonacci(index - 1) + ft_fibonacci(index - 2));
 }
+/*
+#include <stdio.h>
+int main(void)
+{
+	printf("f(0):%d\n", ft_fibonacci(0));
+	printf("f(1):%d\n", ft_fibonacci(1));
+	printf("f(2):%d\n", ft_fibonacci(2));
+	printf("f(3):%d\n", ft_fibonacci(3));
+	printf("f(5):%d\n", ft_fibonacci(5));
+	printf("f(8):%d\n", ft_fibonacci(8));
+	printf("f(13):%d\n", ft_fibonacci(13));
+	return (0);
+}
+*/

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_is_prime.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dinepomu <dinepomu@42.de>                  +#+  +:+       +#+        */
+/*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 17:29:23 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/10/16 17:39:57 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/10/17 11:40:45 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,18 +18,34 @@ int ft_is_prime(int nb);
 0 and 1 are not prime numbers.
 */
 
+int	is_prime_recursive(int nb, int i)
+{
+	if (i * i > nb)
+		return (1);
+	if (nb % i == 0)
+		return (0);
+	return (is_prime_recursive(nb, i + 1));
+}
+
 int	ft_is_prime(int nb)
+{
+	if (nb < 2)
+		return (0);
+	return (is_prime_recursive(nb, 2));
+}
+
+/*
+#include <stdio.h>
+int	main(void)
 {
 	int	i;
 
-	if (nb < 2)
-		return (0);
-	i = 2;
-	while (i * i <= nb)
+	i = 0;
+	while (i < 20)
 	{
-		if (nb % i == 0)
-			return (0);
+		printf("is_prime(%d):%d\n", i, ft_is_prime(i));
 		i++;
 	}
-	return (1);
+	return (0);
 }
+*/
