@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   string_utils.c                                     :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/19 16:32:25 by sabozdem          #+#    #+#             */
+/*   Updated: 2024/10/19 16:38:07 by dinepomu         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdlib.h>
 
-int	ft_strlen(char *str) //Returning the length of a given string
+int	ft_strlen(char *str)
 {
 	int	index;
 
@@ -10,7 +22,7 @@ int	ft_strlen(char *str) //Returning the length of a given string
 	return (index);
 }
 
-void	ft_strcat_space(char *dest, char *src) //When appending the src array to the dest array, add a space character between them.
+void	ft_strcat_space(char *dest, char *src)
 {
 	int	src_index;
 	int	dest_index;
@@ -28,20 +40,23 @@ void	ft_strcat_space(char *dest, char *src) //When appending the src array to th
 	dest[dest_index] = 0;
 }
 
-char	*ft_strdup(char *src) //Creating a copy of a given string.
+char	*ft_strdup(char *src)
 {
-	char	*dup; //Pointer to the duplicate array
+	char	*dup;
 	int		index;
 
 	dup = (char *)malloc(ft_strlen(src) + 1);
 	index = 0;
 	while (src[index] != 0)
-		dup[index] = src[index], index++;
+	{
+		dup[index] = src[index];
+		index++;
+	}
 	dup[index] = 0;
 	return (dup);
 }
 
-int	ft_strcmp(char *s1, char *s2) //Comparing two character arrays (strings).
+int	ft_strcmp(char *s1, char *s2)
 {
 	int	index;
 
@@ -57,7 +72,7 @@ int	ft_strcmp(char *s1, char *s2) //Comparing two character arrays (strings).
 	return ((unsigned char)s1[index] - (unsigned char)s2[index]);
 }
 
-int	ft_atoi(char *str) //Converting a string to an integer
+int	ft_atoi(char *str)
 {
 	int	nb;
 	int	index;

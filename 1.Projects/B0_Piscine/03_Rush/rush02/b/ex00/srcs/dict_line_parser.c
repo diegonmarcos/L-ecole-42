@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   dict_line_parser.c                                 :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/19 16:34:02 by sabozdem          #+#    #+#             */
+/*   Updated: 2024/10/19 16:41:31 by dinepomu         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
@@ -5,7 +17,7 @@
 
 extern int	error_status;
 
-int	parse_number_and_colon(int *index, char *str, char **number) //Omit the number at the beginning of a line and skip the part of the line up to the : character.
+int	parse_number_and_colon(int *index, char *str, char **number)
 {
 	*index = 0;
 	if (extract_number(index, str, number) != 0)
@@ -20,7 +32,7 @@ int	parse_number_and_colon(int *index, char *str, char **number) //Omit the numb
 	return (0);
 }
 
-int	parse_value_from_line(char *str, char **number, char **value) //Extracting the number and its corresponding value in a given row. After extracting the number, it parses the value part.
+int	parse_value_from_line(char *str, char **number, char **value)
 {
 	int	index;
 	int	value_index;
@@ -44,7 +56,7 @@ int	parse_value_from_line(char *str, char **number, char **value) //Extracting t
 	return (0);
 }
 
-int	parse_dictionary_lines(char **strs, char ***nums, char ***vals) //Parse a given set of rows into numbers and values.
+int	parse_dictionary_lines(char **strs, char ***nums, char ***vals)
 {
 	int	index;
 

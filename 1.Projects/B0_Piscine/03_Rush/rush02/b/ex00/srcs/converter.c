@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   converter.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/19 16:34:13 by sabozdem          #+#    #+#             */
+/*   Updated: 2024/10/19 16:35:22 by dinepomu         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -9,7 +21,7 @@ char		**g_numbers;
 char		**g_values;
 extern int	error_status;
 
-int	print_num_inf100(char *str, int print_o, char *str_num) //Writing a given number (as a string) for numbers less than 100
+int	print_num_inf100(char *str, int print_o, char *str_num)
 {
 	char	*str_copy;
 	int		num;
@@ -35,7 +47,7 @@ int	print_num_inf100(char *str, int print_o, char *str_num) //Writing a given nu
 	return (0);
 }
 
-int	print_num_sup100(char *str, int print_o, char *str_num) //To write a given number for numbers greater than 100.
+int	print_num_sup100(char *str, int print_o, char *str_num)
 {
 	int		sum;
 	char	*magnitude_str;
@@ -52,7 +64,7 @@ int	print_num_sup100(char *str, int print_o, char *str_num) //To write a given n
 	return (sum);
 }
 
-int	print_num(char *str, int print_o, char *str_num) //A generic function to print a given number (as a string).
+int	print_num(char *str, int print_o, char *str_num)
 {
 	int		len;
 
@@ -68,7 +80,7 @@ int	print_num(char *str, int print_o, char *str_num) //A generic function to pri
 	return (0);
 }
 
-char	*get_converted_number(char *str, const char *dict_path) //Converting the given number (as a string) to its word equivalent.
+char	*get_converted_number(char *str, const char *dict_path)
 {
 	char	*str_num;
 	int		str_size;

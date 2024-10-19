@@ -4,7 +4,7 @@ OBJS = ${SCRS:.c=.o}
 
 NAME = rush-02
 
-CC = cc -Wall -Wextra -Werror -I includes -g
+CC = cc -Wall -Wextra -Werror -I includes
 
 %.o: %.c
 	$(CC) -c $< -o $@
@@ -20,4 +20,4 @@ clean:
 fclean: clean
 	rm -f $(NAME)
 
-.PHONY: all clean fcleanls
+.PHONY: all clean fclean

@@ -1,12 +1,24 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   converter_utils.c                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/19 16:34:22 by sabozdem          #+#    #+#             */
+/*   Updated: 2024/10/19 16:41:19 by dinepomu         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdlib.h>
 #include "rush02.h"
 
 extern int	error_status;
 
-char	*get_value_from_dict(char *key, char **numbers, char **values) //Used to find the value corresponding to a specific key.
+char	*get_value_from_dict(char *key, char **numbers, char **values)
 {
-	int	i;
-	char *empty_str;
+	int		i;
+	char	*empty_str;
 
 	i = 0;
 	while (numbers[i])
@@ -21,7 +33,7 @@ char	*get_value_from_dict(char *key, char **numbers, char **values) //Used to fi
 	return (empty_str);
 }
 
-char	*calculate_magnitude(char *str) //Used to determine the magnitude of a given number (e.g. 1,000, 10,000).
+char	*calculate_magnitude(char *str)
 {
 	int		n;
 	int		len;
@@ -42,7 +54,7 @@ char	*calculate_magnitude(char *str) //Used to determine the magnitude of a give
 	return (magnitude);
 }
 
-char	*extract_magnitude_number(char *str) //Creates an array to determine the magnitude of a given number.
+char	*extract_magnitude_number(char *str)
 {
 	int		n;
 	int		i;
@@ -71,7 +83,7 @@ char	*extract_magnitude_number(char *str) //Creates an array to determine the ma
 	return (number);
 }
 
-int	is_only_zeros(char *str) //Checks if a given string consists of only zeros.
+int	is_only_zeros(char *str)
 {
 	int	index;
 

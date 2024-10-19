@@ -1,8 +1,20 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   file_utils.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/19 16:33:24 by sabozdem          #+#    #+#             */
+/*   Updated: 2024/10/19 16:38:10 by dinepomu         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <unistd.h>
 #include <stdlib.h>
 #include <fcntl.h>
 
-int	*ft_get_line_lens_loop(int file, int *file_sizes) //Reading the file to determine the length of each line and storing it in the file_sizes array.
+int	*ft_get_line_lens_loop(int file, int *file_sizes)
 {
 	char	c;
 	int		i;
@@ -26,7 +38,7 @@ int	*ft_get_line_lens_loop(int file, int *file_sizes) //Reading the file to dete
 	return (file_sizes);
 }
 
-int	ft_get_lines_read_c(char c, int *index[2], int *file_sizes, char ***lines) //Filling the lines and making updates to the array according to the character read.
+int	ft_get_lines_read_c(char c, int *index[2], int *file_sizes, char ***lines)
 {
 	if (c == '\n')
 	{
@@ -48,7 +60,7 @@ int	ft_get_lines_read_c(char c, int *index[2], int *file_sizes, char ***lines) /
 	return (0);
 }
 
-int	ft_get_lines_loop(int file, int *file_sizes, char ***lines) //Reading the file character by character to get the lines and updating the line lengths with file_sizes.
+int	ft_get_lines_loop(int file, int *file_sizes, char ***lines)
 {
 	char	c;
 	int		i;

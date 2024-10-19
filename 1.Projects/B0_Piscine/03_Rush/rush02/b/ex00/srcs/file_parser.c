@@ -1,10 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   file_parser.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/19 16:33:36 by sabozdem          #+#    #+#             */
+/*   Updated: 2024/10/19 16:38:10 by dinepomu         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <unistd.h>
 #include <fcntl.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include "rush02.h"
 
-int	ft_get_line_number(const char *file_path) //Calculates the total number of lines in the specified file.
+int	ft_get_line_number(const char *file_path)
 {
 	int		file;
 	char	c;
@@ -29,7 +41,7 @@ int	ft_get_line_number(const char *file_path) //Calculates the total number of l
 	return (line_index);
 }
 
-int	*ft_get_line_lens(const char *file_path) //Creates an array holding the lengths of each line in the file.
+int	*ft_get_line_lens(const char *file_path)
 {
 	int		file;
 	int		*line_lengths;
@@ -47,7 +59,7 @@ int	*ft_get_line_lens(const char *file_path) //Creates an array holding the leng
 	return (line_lengths);
 }
 
-int	ft_get_lines(const char *file_path, char ***lines) //Reads the file and creates an array holding the lines.
+int	ft_get_lines(const char *file_path, char ***lines)
 {
 	int			file;
 	int			*line_lengths;

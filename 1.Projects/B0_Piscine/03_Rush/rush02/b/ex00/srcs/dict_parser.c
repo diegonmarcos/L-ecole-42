@@ -1,7 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   dict_parser.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/19 16:33:46 by sabozdem          #+#    #+#             */
+/*   Updated: 2024/10/19 17:02:09 by dinepomu         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdio.h>
 #include <stdlib.h>
 
-char	*duplicate_substring(char *str, int s_index, int e_index) //Used to copy characters from a specific position (start) to a specific position (end).
+char	*duplicate_substring(char *str, int s_index, int e_index)
 {
 	int		index;
 	char	*result;
@@ -18,7 +30,7 @@ char	*duplicate_substring(char *str, int s_index, int e_index) //Used to copy ch
 	return (result);
 }
 
-int	extract_number(int *index, char *str, char **number) //It is used to find the number in a given string and copy it.
+int	extract_number(int *index, char *str, char **number)
 {
 	int	start_index;
 
@@ -33,7 +45,7 @@ int	extract_number(int *index, char *str, char **number) //It is used to find th
 	return (0);
 }
 
-int	is_only_space(int index, char *str) //Checks whether the string consists only of spaces starting from a given position.
+int	is_only_space(int index, char *str)
 {
 	while (str[index] != 0)
 	{
@@ -44,7 +56,7 @@ int	is_only_space(int index, char *str) //Checks whether the string consists onl
 	return (1);
 }
 
-int	calculate_value_size(int index, char *str) //It is used to calculate the size required for the string value from the given position.
+int	calculate_value_size(int index, char *str)
 {
 	int	value_size;
 

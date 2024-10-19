@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   main.c                                             :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/10/19 16:31:47 by sabozdem          #+#    #+#             */
+/*   Updated: 2024/10/19 16:41:55 by dinepomu         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -8,12 +20,12 @@ int	error_status;
 void	ft_print_error(void)
 {
 	if (error_status == 1)
-		write(2, "Dict Error\n", 11); //2 is represent of stderr (standard output error)
+		write(2, "Dict Error\n", 11);
 	if (error_status == 2)
 		write(2, "Error\n", 6);
 }
 
-int	check_arg(char *arg) //Checking if the incoming argument consists of only numbers
+int	check_arg(char *arg)
 {
 	int	index;
 
@@ -27,7 +39,7 @@ int	check_arg(char *arg) //Checking if the incoming argument consists of only nu
 	return (0);
 }
 
-char	*determine_number_to_convert(int argc, char **argv, char **dict_path) //Analyzing the arguments to get the number and determine the dictionary path
+char	*determine_number_to_convert(int argc, char **argv, char **dict_path)
 {
 	if (argc == 2)
 	{
@@ -53,7 +65,6 @@ int	main(int argc, char **argv)
 	int		index;
 
 	error_status = 0;
-
 	input_number = determine_number_to_convert(argc, argv, &dict_path);
 	if (input_number != NULL)
 		converted_number = get_converted_number(input_number, dict_path);
@@ -70,7 +81,6 @@ int	main(int argc, char **argv)
 		index++;
 	}
 	write(1, "\n", 1);
-	
 	free(converted_number);
 	return (0);
 }
