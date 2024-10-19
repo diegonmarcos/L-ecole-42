@@ -6,13 +6,13 @@
 /*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 18:51:39 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/10/19 13:19:08 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/10/19 17:28:34 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-•Create a function that splits a string of character depending on another string of
-characters.
+•Create a function that splits a string of character depending on another string 
+of characters.
 •You’ll have to use each character from the string charset as a separator.
 •The function returns an array where each element of the array contains the address
 of a string wrapped between two separators. The last element of that array should
@@ -35,9 +35,6 @@ char **ft_split(char *str, char *charset);
 **	splitting ’s’ using the character ’c’ as a delimiter. The array must be
 **	ended by a NULL pointer.
 */
-
-#include "libft.h"
-
 
 static int	count_words(char *str, char c)
 {
@@ -98,4 +95,14 @@ char	**ft_split(char *str, char *charset)
 	}
 	split[j] = 0;
 	return (split);
+}
+
+#include <stdio.h>
+
+int main (int ac, char **av)
+{
+	char str[] = "Hola 42 How Estas You?";
+	char chr[] = " ";
+	printf("%s",ft_split(str, chr))
+	return 0;
 }
