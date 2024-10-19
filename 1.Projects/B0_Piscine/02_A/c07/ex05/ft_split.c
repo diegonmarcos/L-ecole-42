@@ -62,7 +62,6 @@ static int	is_delimiter(char c, char *charset)
 }
 
 static int	count_words(char *str, char *charset)
->>>>>>> 40333d1afe53834912e2386a1249be0c3f9ab6dc
 {
 	int	i;
 	int	trigger;
