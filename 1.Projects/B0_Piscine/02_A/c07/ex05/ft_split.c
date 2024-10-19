@@ -3,10 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dinepomu <dinepomu@42.de>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 18:51:39 by dinepomu          #+#    #+#             */
+<<<<<<< HEAD
 /*   Updated: 2024/10/19 17:28:34 by dinepomu         ###   ########.fr       */
+=======
+/*   Updated: 2024/10/19 17:35:56 by dinepomu         ###   ########.fr       */
+>>>>>>> 40333d1afe53834912e2386a1249be0c3f9ab6dc
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +40,25 @@ char **ft_split(char *str, char *charset);
 **	ended by a NULL pointer.
 */
 
+<<<<<<< HEAD
 static int	count_words(char *str, char c)
+=======
+#include <stdlib.h>
+#include <string.h>
+
+static int	is_delimiter(char c, char *charset)
+{
+	while (*charset)
+	{
+		if (c == *charset)
+			return (1);
+		charset++;
+	}
+	return (0);
+}
+
+static int	count_words(char *str, char *charset)
+>>>>>>> 40333d1afe53834912e2386a1249be0c3f9ab6dc
 {
 	int	i;
 	int	trigger;
@@ -45,12 +67,12 @@ static int	count_words(char *str, char c)
 	trigger = 0;
 	while (*str)
 	{
-		if (*str != c && trigger == 0)
+		if (!is_delimiter(*str, charset) && trigger == 0)
 		{
 			trigger = 1;
 			i++;
 		}
-		else if (*str == c)
+		else if (is_delimiter(*str, charset))
 			trigger = 0;
 		str++;
 	}
@@ -77,18 +99,18 @@ char	**ft_split(char *str, char *charset)
 	int		index;
 	char	**split;
 
-	if (!s || !(split = malloc((count_words(s, c) + 1) * sizeof(char *))))
+	if (!str || !(split = malloc((count_words(str, charset) + 1) * sizeof(char *))))
 		return (0);
 	i = 0;
 	j = 0;
 	index = -1;
-	while (i <= ft_strlen(s))
+	while (i <= strlen(str))
 	{
-		if (s[i] != c && index < 0)
+		if (!is_delimiter(str[i], charset) && index < 0)
 			index = i;
-		else if ((s[i] == c || i == ft_strlen(s)) && index >= 0)
+		else if ((is_delimiter(str[i], charset) || i == strlen(str)) && index >= 0)
 		{
-			split[j++] = word_dup(s, index, i);
+			split[j++] = word_dup(str, index, i);
 			index = -1;
 		}
 		i++;
