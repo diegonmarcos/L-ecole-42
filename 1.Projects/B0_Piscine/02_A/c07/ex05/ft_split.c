@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_split2.c                                        :+:      :+:    :+:   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dinepomu <dinepomu@42.de>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 18:51:39 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/10/19 18:00:54 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/10/19 18:03:42 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -115,7 +115,7 @@ char	**ft_split(char *str, char *charset)
 	split[j] = 0;
 	return (split);
 }
-
+/*
 int	main(void)
 {
 	char	*str = "Hello, world! This is a test split.";
@@ -131,3 +131,4 @@ int	main(void)
 	}
 	return 0;
 }
+*/
