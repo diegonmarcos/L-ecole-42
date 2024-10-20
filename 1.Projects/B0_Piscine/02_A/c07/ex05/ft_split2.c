@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_split.c                                         :+:      :+:    :+:   */
+/*   ft_split2.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 18:51:39 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/10/20 17:48:30 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/10/20 19:06:49 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,18 +23,18 @@ cordingly.
 •The string given as argument won’t be modifiable.
 •Here’s how it should be prototyped :
 char **ft_split(char *str, char *charset);
-
 */
 
 /*
-** LIBRARY: N/A
-** SYNOPSIS: split string, with specified character as delimiter, into an array
-**			of strings
-**
+** LIBRARY:
+** SYNOPSIS: 
+			split string, with specified character as delimiter, into an array
+			of strings
+
 ** DESCRIPTION:
-** 		Allocates (with malloc(3)) and returns an array of strings obtained by
-**	splitting ’s’ using the character ’c’ as a delimiter. The array must be
-**	ended by a NULL pointer.
+				Allocates (with malloc(3)) and returns an array of strings obtained by
+				splitting ’s’ using the character ’c’ as a delimiter. The array must be
+				ended by a NULL pointer.
 */
 
 #include <stdlib.h>
@@ -47,12 +47,12 @@ char	*ft_strchr(char *s, char c)
 			return (s);
 		s++;
 	}
-	if (c == '\0')
+	if ((char)c == '\0')
 		return (s);
 	return (0);
 }
 
-size_t	ft_strlen (char *str)
+size_t	ft_strlen(char *str)
 {
 	int	i;
 
@@ -80,21 +80,14 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n)
 	return (dest);
 }
 
-char	*word_dup(char *str, int start, int finish)
+char	*ft_strncpy_mall(char *str, int start, int finish)
 {
 	char	*word;
-	int		len;
 
-	len = finish - start;
-	word = malloc((len + 1) * sizeof(char));
-	ft_strncpy(word, str + start, len); 
-	word[len] = '\0';
+	word = malloc((finish - start + 1) * sizeof(char));
+	ft_strncpy(word, str + start, finish - start); 
+	word[finish - start] = '\0';
 	return (word);
-}
-
-int	is_delim(char c, char *charset)
-{
-	return (ft_strchr(charset, c) != NULL);
 }
 
 int	count_words(char *str, char *charset)
@@ -106,12 +99,12 @@ int	count_words(char *str, char *charset)
 	trigger = 0;
 	while (*str)
 	{
-		if (!is_delim(*str, charset) && !trigger)
+		if (ft_strchr(charset, str[i]) == NULL && !trigger)
 		{
 			trigger = 1;
 			i++;
 		}
-		else if (is_delim(*str, charset))
+		else if (ft_strchr(charset, str[i]) != NULL)
 			trigger = 0;
 		str++;
 	}
@@ -141,12 +134,12 @@ char	**ft_split(char *str, char *charset)
 	split = ft_malloc(str, charset);
 	while (str[i])
 	{
-		if (!is_delim(str[i], charset) && index < 0)
+		if (ft_strchr(charset, str[i]) == NULL && index < 0)
 			index = i;
-		else if ((is_delim(str[i], charset) || i == ft_strlen(str))
+		else if ((ft_strchr(charset, str[i]) != NULL || i == ft_strlen(str))
 			&& index >= 0)
 		{
-			split[j++] = word_dup(str, index, i);
+			split[j++] = ft_strncpy_mall(str, index, i);
 			index = -1;
 		}
 		i++;
@@ -168,6 +161,19 @@ void print (char **str)
 		i++;
 	}
 }
+
+void ft_free (char	**str)
+{
+	int	i;
+
+	i = 0;
+	while (str[i])
+	{
+		free(str[i]);
+		i++;
+	}
+	free(str);
+}
 int	main(void)
 {
 	char	*str = "Hello, world! This is a split test.";
@@ -175,6 +181,9 @@ int	main(void)
 //	char	*charset = " ,!.";
 	char	*charset = " ";
 
-	print(ft_split(str, charset));
-	return 0;
+	char **str2 = ft_split(str, charset);
+	print(str2);
+	ft_free(str2);
+
+	return (0);
 }
