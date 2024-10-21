@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 17:29:27 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/10/17 11:39:58 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/10/21 10:07:31 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,7 @@ int	ft_find_next_prime(int nb)
 		nb++;
 	return (nb);
 }
+
 /*
 #include <stdio.h>
 
@@ -48,7 +49,7 @@ int main(void)
 	int	i;
 
 	i = 0;
-	while (i < 20)
+	while (i < 25)
 	{
 		printf("next_prime(%d):%d\n", i, ft_find_next_prime(i));
 		i++;

@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 17:29:23 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/10/17 11:40:45 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/10/21 09:57:00 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,9 +41,9 @@ int	main(void)
 	int	i;
 
 	i = 0;
-	while (i < 20)
+	while (i < 25)
 	{
-		printf("is_prime(%d):%d\n", i, ft_is_prime(i));
+		printf("is_prime(%d) : %d\n", i, ft_is_prime(i));
 		i++;
 	}
 	return (0);
