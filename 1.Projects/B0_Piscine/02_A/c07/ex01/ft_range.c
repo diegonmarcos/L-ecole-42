@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_range.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dinepomu <dinepomu@42.de>                  +#+  +:+       +#+        */
+/*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 17:44:56 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/10/16 17:46:42 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/10/21 17:54:01 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,9 +24,7 @@ int	*ft_range(int min, int max)
 	i = max - min;
 	result = (int *)malloc(sizeof(int) * (i));
 	if (result == NULL)
-	{
 		return (NULL);
-	}
 	i = 0;
 	while (max > min)
 	{
@@ -36,7 +34,7 @@ int	*ft_range(int min, int max)
 	}
 	return (result);
 }
-/*
+
 #include <stdio.h>
 
 int main(void)
@@ -57,4 +55,4 @@ int main(void)
 		i++;
 	}
 }
-*/
+

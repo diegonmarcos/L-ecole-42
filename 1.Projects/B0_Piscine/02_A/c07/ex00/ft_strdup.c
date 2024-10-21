@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dinepomu <dinepomu@42.de>                  +#+  +:+       +#+        */
+/*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 17:43:36 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/10/16 17:45:54 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/10/21 17:49:02 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,14 +20,10 @@ char	*ft_strdup(char *src)
 
 	len = 0;
 	while (src[len])
-	{
 		len++;
-	}
 	dest = (char *)malloc(sizeof(char) * (len + 1));
 	if (dest == NULL)
-	{
 		return (NULL);
-	}
 	i = 0;
 	while (src[i])
 	{

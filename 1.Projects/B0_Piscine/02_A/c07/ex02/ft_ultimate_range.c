@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_ultimate_range.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dinepomu <dinepomu@42.de>                  +#+  +:+       +#+        */
+/*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 17:45:04 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/10/16 17:45:42 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/10/21 18:02:48 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ int	ft_ultimate_range(int **range, int min, int max)
 	}
 	return (i);
 }
-/*
+
 #include <stdio.h>
 
 int main(void)
@@ -49,7 +49,7 @@ int main(void)
 	int	*tab;
 	int	size;
 	int	i;
-	
+
 	i = 0;
 	min = 5;
 	max = 10;
@@ -60,4 +60,4 @@ int main(void)
 		i++;
 	}
 }
-*/
+
