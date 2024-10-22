@@ -6,11 +6,11 @@
 /*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/24 18:58:41 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/10/16 19:48:31 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/10/22 17:49:36 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+
 
 int	ft_strcmp(char *s1, char *s2)
 {
@@ -21,15 +21,29 @@ int	ft_strcmp(char *s1, char *s2)
 	{
 		i++;
 	}
-	return (s1[i] - s2[i]);
+	if (s1[i] > s2[i])
+		i = 1;
+	else if (s1[i] < s2[i])
+		i = -1;
+	else
+		i = 0;
+	return (i);
 }
 
-/*int	main(void)
+
+#include <stdio.h>
+#include <string.h>
+
+int	main(void)
 {
-	printf("%d", ft_strcmp("Hello", "Hello1"));
-	printf("\n%d", ft_strcmp("Hello", "He"));
-	printf("\n%d", ft_strcmp("He", "Hello"));
-	printf("\n%d", ft_strcmp("Hello", "Hello"));
+	printf("Mine:%d\n", ft_strcmp("A", "D"));
+	printf("Sys:%d\n", strcmp("A", "D"));
+
+	printf("Mine:%d\n", ft_strcmp("AAD", "AAA"));
+	printf("Sys:%d\n", strcmp("AAD", "AAA"));
+
+	printf("Mine:%d\n", ft_strcmp("AA", "AA"));
+	printf("Sys:%d\n", strcmp("AA", "AA"));
 
 	return 0;
-}*/
+}
