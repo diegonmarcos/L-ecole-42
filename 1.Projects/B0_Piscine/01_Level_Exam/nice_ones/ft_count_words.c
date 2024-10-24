@@ -1,5 +1,3 @@
-int trigger = 0
-
 int count_words(char *str)
 {
     int count = 0;
@@ -19,4 +17,12 @@ int count_words(char *str)
         str++;
     }
     return count;
+}
+
+#include <stdio.h>
+
+int main (void)
+{
+	char str[] = "  w1 w2 w3 w4";
+	printf("%d", count_words(str));
 }
