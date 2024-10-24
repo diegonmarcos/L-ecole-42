@@ -22,11 +22,11 @@ int main()
   } 
 
   printf("\n  42   42  \n"); 
-  printf(" 4  4 2  4 \n"); 
+  printf(" 4  2 2  4 \n"); 
   printf(" 2   4   2 \n"); 
   printf("  4     4  \n"); 
   printf("   2   2   \n"); 
-  printf("    4 2    \n"); 
+  printf("    2 2    \n"); 
   printf("     4     \n"); 
 
   return 0;
