@@ -11,7 +11,7 @@
 # **************************************************************************** #
 
 NAME = libft.a
-SRCS_MAND = ft_memset.c		\
+SRCS_MAND = 	ft_memset.c		\
 		  		ft_memmove.c	\
 		  		ft_memchr.c		\
 		  		ft_memcmp.c		\
