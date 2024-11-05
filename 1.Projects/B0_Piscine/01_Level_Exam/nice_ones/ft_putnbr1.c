@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_putnbr1.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/22 20:53:37 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/10/22 19:23:07 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/10/24 16:12:16 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,19 +39,20 @@ void	ft_putnbr(int nb)
 	else
 		ft_putchar(nb + 48);
 }
-/*
+
+#include <unistd.h>
+
 int	main(void)
 {
 	ft_putnbr(4563);
-	ft_putchar('\n');
+	write(1, "\n", 1);
 	ft_putnbr(-2147483648);
-	ft_putchar('\n');
+	write(1, "\n", 1);
 	ft_putnbr(42);
-	ft_putchar('\n');
+	write(1, "\n", 1);
 	ft_putnbr(2147483647);
-	ft_putchar('\n');
-	ft_putnbr(5);
-	ft_putchar('\n');
+	write(1, "\n", 1);
+	ft_putnbr(0);
+	write(1, "\n", 1);	
 	return (0);
 }
-*/
