@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 13:22:48 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/07 17:36:45 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/07 17:51:10 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int	ft_count_if(char **tab, int (*f)(char*))
 	}
 	return (count);
 }
-
+/*
 // tester
 #include <stdio.h>
 
@@ -59,3 +59,4 @@ int main() {
 
   return 0;
 }
+*/
