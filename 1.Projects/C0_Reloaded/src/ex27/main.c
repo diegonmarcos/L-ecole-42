@@ -6,13 +6,12 @@
 /*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 13:22:48 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/07 17:36:57 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/07 20:17:18 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <fcntl.h>
-#include <unistd.h>
 
 void	ft_putchar(char c, int std)
 {
@@ -59,7 +58,10 @@ int	main(int argc, char **argv)
 	else if (argc == 2)
 	{
 		if (show_char(argv) == 0)
+		{
+			ft_putstr("Cannot read file.\n", 2);
 			return (0);
+		}
 	}
 	else
 		ft_putstr("Too many arguments.\n", 2);
