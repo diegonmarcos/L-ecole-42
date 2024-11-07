@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 13:22:48 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/07 17:51:10 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/07 20:11:49 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int	ft_count_if(char **tab, int (*f)(char*))
 	}
 	return (count);
 }
-/*
+
 // tester
 #include <stdio.h>
 
@@ -39,7 +39,7 @@ void ft_print_arrays_of_strings(char **tab)
   }
 }
 
-// Example function to check if a string starts with 'a'
+
 int starts_with_a(char *str) 
 {
   if (str[0] == 'a') 
@@ -59,4 +59,3 @@ int main() {
 
   return 0;
 }
-*/
