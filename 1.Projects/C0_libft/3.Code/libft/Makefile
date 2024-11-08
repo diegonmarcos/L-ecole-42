@@ -45,6 +45,7 @@ SRCS_MAND = 	ft_memset.c		\
 				ft_putendl_fd.c	\
 				ft_putnbr_fd.c	\
 				ft_striteri.c	\
+
 OBJS_MAND = ${SRCS_MAND:.c=.o}
 SRC_BONUS = ft_lstnew.c 		\
 			ft_lstadd_front.c 	\
@@ -55,6 +56,7 @@ SRC_BONUS = ft_lstnew.c 		\
 			ft_lstclear.c 		\
 			ft_lstiter.c 		\
 			ft_lstmap.c			\
+
 OBJS_BONUS = ${SRC_BONUS:.c=.o}
 CC = gcc
 RM = rm -rf
