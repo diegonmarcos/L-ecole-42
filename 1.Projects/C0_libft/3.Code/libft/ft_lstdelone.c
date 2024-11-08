@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 16:25:52 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/08 16:32:50 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/08 17:11:07 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,14 @@ Description : Takes as a parameter a node and frees the memory of
 				’next’ must not be freed.
 Obs : 
 */
+
+#include "libft.h"
+
+void	ft_lstdelone(t_list *lst, void (*del)(void*))
+{
+	if (lst)
+	{
+		del(lst->content);
+		free(lst);
+	}
+}

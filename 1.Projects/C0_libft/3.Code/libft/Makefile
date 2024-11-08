@@ -45,8 +45,17 @@ SRCS_MAND = 	ft_memset.c		\
 				ft_putendl_fd.c	\
 				ft_putnbr_fd.c	\
 				ft_striteri.c	\
-
 OBJS_MAND = ${SRCS_MAND:.c=.o}
+SRC_BONUS = ft_lstnew.c 		\
+			ft_lstadd_front.c 	\
+			ft_lstsize.c 		\
+			ft_lstlast.c 		\
+			ft_lstadd_back.c 	\
+			ft_lstdelone.c 		\
+			ft_lstclear.c 		\
+			ft_lstiter.c 		\
+			ft_lstmap.c			\
+OBJS_BONUS = ${SRC_BONUS:.c=.o}
 CC = gcc
 RM = rm -rf
 AR = ar rcs
@@ -56,18 +65,22 @@ CFLAGS = -Wall -Wextra -Werror
 all: $(NAME)
 
 $(NAME):	$(OBJS_MAND)
-	$(AR) $(NAME) $(OBJS_MAND)
-	$(RANLIB) $(NAME)
+			$(AR) $(NAME) $(OBJS_MAND)
+			$(RANLIB) $(NAME)
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJS_MAND)
+	$(RM) $(OBJS_MAND) $(OBJS_BONUS)
 
-fclean: clean
-	rm -f $(NAME)
+fclean:	clean
+		rm -f $(NAME)
 
 re: fclean all
 
-.PHONY: all clean fclean re
+bonus:	$(NAME) $(OBJS_BONUS)
+		$(AR) $(NAME) $(OBJS_BONUS)
+		$(RANLIB) $(NAME)
+
+.PHONY: all clean fclean re bonus

@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 16:19:26 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/08 16:32:50 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/08 17:11:07 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,3 +21,14 @@ External functs : None
 Description : Adds the element ’new’ at the beginning of the list.
 
 */
+
+#include "libft.h"
+
+void	ft_lstadd_front(t_list **lst, t_list *new)
+{
+	if (lst && new)
+	{
+		new->next = *lst;
+		*lst = new;
+	}
+}

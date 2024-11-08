@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/06 14:34:04 by diegonmarco       #+#    #+#             */
-/*   Updated: 2024/11/05 19:55:10 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/08 16:55:34 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,12 @@ void	ft_bzero(void *s, size_t n)
 		*(tmp_ptr++) = 0;
 		n--;
 	}
-	//ft_memset(s, 0, n);
 }
 
 /*
+
+//ft_memset(s, 0, n);
+
 int main ()
 {
 	// Char Test

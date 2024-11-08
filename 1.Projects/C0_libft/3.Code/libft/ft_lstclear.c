@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 16:25:42 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/08 16:32:50 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/08 17:11:07 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,20 @@ Description : Deletes and frees the given node and every
 NULL.
 Obs : 
 */
+
+#include "libft.h"
+
+void	ft_lstclear(t_list **lst, void (*del)(void*))
+{
+	t_list	*tmp;
+
+	if (lst && *lst)
+	{
+		while (*lst)
+		{
+			tmp = (*lst)->next;
+			ft_lstdelone(*lst, del);
+			*lst = tmp;
+		}
+	}
+}
