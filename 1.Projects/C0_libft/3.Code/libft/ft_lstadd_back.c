@@ -1,0 +1,22 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/11/08 16:24:43 by dinepomu          #+#    #+#             */
+/*   Updated: 2024/11/08 16:32:50 by dinepomu         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+/*
+Function name : ft_lstadd_back
+Prototype : void ft_lstadd_back(t_list **lst, t_list *new);
+Parameters : lst: The address of a pointer to the first link of a list. 
+			new: The address of a pointer to the node to be added to the list
+Return value : -
+External functs : -
+Description : Adds the node ’new’ at the end of the list.
+Obs : -
+*/
