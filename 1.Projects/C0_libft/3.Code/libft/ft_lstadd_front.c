@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@42.de>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 16:19:26 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/10 08:59:50 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/10 09:02:12 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,4 +32,3 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 		*lst = new;
 	}
 }
-
