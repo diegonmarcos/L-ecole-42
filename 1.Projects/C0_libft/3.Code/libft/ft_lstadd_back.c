@@ -6,20 +6,25 @@
 /*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 10:56:23 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/10 11:01:16 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/10 11:50:12 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-Function name : ft_lstadd_back
-Prototype : void ft_lstadd_back(t_list **lst, t_list *new);
-Parameters : lst: The address of a pointer to the first link of a list. 
-			new: The address of a pointer to the node to be added to the list
-Return value : -
-External functs : -
-Description : Adds the node ’new’ at the end of the list.
-Obs : -
-*/
+ * ************************************************************************** *
+ * @syntax: void ft_lstadd_back(t_list **lst, t_list *new);
+ * @brief: Adds the element ’new’ at the end of the list.
+ * @param: #1. The address of a pointer to the first link of a list.
+ * @return: None.
+ * 
+ * @note:
+ * 
+ * @file: ft_lstadd_back.c
+ * @author: Diego <dinepomu@student.42>
+ * @created: 10/Nov/2024 08:57
+ * @updated: 10/Nov/2024 11:49
+ * ************************************************************************** *
+ */
 
 #include "libft.h"
 

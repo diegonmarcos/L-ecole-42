@@ -6,9 +6,25 @@
 /*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 11:00:36 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/10 11:01:16 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/10 12:04:10 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+ * ************************************************************************** *
+ * @syntax: char *ft_strtrim(char const *s1, char const *set);
+ * @brief: Allocates (with malloc(3)) and returns a copy of ’s1’ with the
+ * @param: #1. The string to be trimmed.
+ * @return: The trimmed string. NULL if the allocation fails.
+ * 
+ * @note:
+ * 
+ * @file: ft_strtrim.c
+ * @author: Diego <dinepomu@student.42>
+ * @created: 03/Aug/2024 12:07
+ * @updated: 10/Nov/2024 12:04
+ * ************************************************************************** *
+ */
 
 #include "libft.h"
 

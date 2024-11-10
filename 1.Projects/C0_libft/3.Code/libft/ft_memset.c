@@ -6,9 +6,25 @@
 /*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 10:58:33 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/10 11:01:16 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/10 11:56:29 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+ * ************************************************************************** *
+ * @syntax: void *ft_memset(void *b, int c, size_t len);
+ * @brief: fills the first len bytes of the memory area pointed to by b with
+ * @param: 1. b - pointer to the memory area to be filled.
+ * @return: pointer to the memory area b.
+ * 
+ * @note:
+ * 
+ * @file: ft_memset.c
+ * @author: Diego <dinepomu@student.42>
+ * @created: 10/Nov/2024 08:57
+ * @updated: 10/Nov/2024 11:56
+ * ************************************************************************** *
+ */
 
 #include "libft.h"
 

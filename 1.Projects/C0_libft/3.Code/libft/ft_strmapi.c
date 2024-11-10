@@ -6,9 +6,27 @@
 /*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 11:00:08 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/10 11:01:16 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/10 12:02:06 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+ * ************************************************************************** *
+ * @syntax: char *ft_strmapi(const char *s, char (*f)(unsigned int, char));
+ * @brief: Applies the function f to each character of the string passed as 
+ * 			argument by giving its index as first argument to create a new 
+ * 			string resulting from the successive applications of f.
+ * @param: 1. The string on which to iterate.
+ * @return: The string created from the successive applications of f.
+ * 
+ * @note:
+ * 
+ * @file: ft_strmapi.c
+ * @author: Diego <dinepomu@student.42>
+ * @created: 03/Aug/2024 12:07
+ * @updated: 10/Nov/2024 12:01
+ * ************************************************************************** *
+ */
 
 #include "libft.h"
 

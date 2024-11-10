@@ -6,9 +6,28 @@
 /*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 10:59:11 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/10 11:01:16 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/10 11:59:21 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+ * ************************************************************************** *
+ * @syntax: char **ft_split(char const *s, char c);
+ * @brief: Allocates (with malloc(3)) and returns an array of strings 
+ * 			obtained by splitting ’s’ using the character ’c’ as a delimiter.
+ * 			The array must be ended by a NULL pointer.
+ * @param: #1. The string to be split.
+ * @return: The array of new strings resulting from the split. NULL if the 
+ * 			allocation fails.
+ * 
+ * @note:
+ * 
+ * @file: ft_split.c
+ * @author: Diego <dinepomu@student.42>
+ * @created: 03/Aug/2024 12:07
+ * @updated: 10/Nov/2024 11:58
+ * ************************************************************************** *
+ */
 
 #include "libft.h"
 

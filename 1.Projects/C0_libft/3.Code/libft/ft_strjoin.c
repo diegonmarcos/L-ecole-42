@@ -6,9 +6,25 @@
 /*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 10:59:40 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/10 11:01:16 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/10 12:00:31 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+ * ************************************************************************** *
+ * @syntax: char *ft_strjoin(const char *s1, const char *s2);
+ * @brief: Concatenates two strings.
+ * @param: 1. s1 - The prefix string.
+ * @return:	The new string. NULL if the allocation fails.
+ * 
+ * @note:
+ * 
+ * @file: ft_strjoin.c
+ * @author: Diego <dinepomu@student.42>
+ * @created: 03/Aug/2024 12:07
+ * @updated: 10/Nov/2024 12:00
+ * ************************************************************************** *
+ */
 
 #include "libft.h"
 

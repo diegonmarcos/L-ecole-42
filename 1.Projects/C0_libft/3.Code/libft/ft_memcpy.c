@@ -6,9 +6,26 @@
 /*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 10:58:17 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/10 11:01:16 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/10 11:55:52 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+ * ************************************************************************** *
+ * @syntax: void *ft_memcpy(void *dst, const void *src, size_t n);
+ * @brief: copies n bytes from memory area src to memory area dst.
+ * @param: 1. dst - pointer to the destination array where the content is 
+ * 			to be copied.
+ * @return: pointer to the destination array.
+ * 
+ * @note:
+ * 
+ * @file: ft_memcpy.c
+ * @author: Diego <dinepomu@student.42>
+ * @created: 03/Aug/2024 12:07
+ * @updated: 10/Nov/2024 11:55
+ * ************************************************************************** *
+ */
 
 #include "libft.h"
 

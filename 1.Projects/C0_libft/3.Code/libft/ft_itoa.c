@@ -6,9 +6,25 @@
 /*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 10:56:15 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/10 11:01:16 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/10 11:49:35 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+ * ************************************************************************** *
+ * @syntax: char *ft_itoa(int n);
+ * @brief: convert an integer to a string
+ * @param: 1. n: the integer to be converted
+ * @return: the string representation of the integer
+ * 
+ * @note:
+ * 
+ * @file: ft_itoa.c
+ * @author: Diego <dinepomu@student.42>
+ * @created: 03/Aug/2024 12:07
+ * @updated: 10/Nov/2024 11:49
+ * ************************************************************************** *
+ */
 
 #include "libft.h"
 

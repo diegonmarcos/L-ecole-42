@@ -6,23 +6,25 @@
 /*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 10:57:45 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/10 11:01:16 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/10 11:54:03 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-
-Function name : ft_lstnew
-Prototype : t_list *ft_lstnew(void *content);
-Parameters : content: The content to create the node with. 
-Return value : The new node 
-External functs : malloc
-Description : Allocates (with malloc(3)) and returns a new node. 
-				The member variable ’content’ is initialized with the value 
-				of the parameter ’content’. The variable ’next’ is initialized 
-				to NULL.
-
-*/
+ * ************************************************************************** *
+ * @syntax: t_list *ft_lstnew(void *content);
+ * @brief: Allocates (with malloc(3)) and returns a new element. The variable
+ * @param: content The content to create the new element with.
+ * @return: The new element.
+ * 
+ * @note:
+ * 
+ * @file: ft_lstnew.c
+ * @author: Diego <dinepomu@student.42>
+ * @created: 10/Nov/2024 08:57
+ * @updated: 10/Nov/2024 11:53
+ * ************************************************************************** *
+ */
 
 #include "libft.h"
 

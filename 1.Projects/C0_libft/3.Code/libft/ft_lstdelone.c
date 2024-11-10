@@ -6,23 +6,26 @@
 /*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 10:57:07 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/10 11:01:16 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/10 11:52:10 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-Function name : ft_lstdelone
-Prototype : void ft_lstdelone(t_list *lst, void (*del)(void*));
-Parameters : lst: The node to free. del: The address of the function 
-				used to delete the content.
-Return value : 
-External functs : free
-Description : Takes as a parameter a node and frees the memory of
-				the node’s content using the function ’del’ given
-				as a parameter and free the node. The memory of
-				’next’ must not be freed.
-Obs : 
-*/
+ * ************************************************************************** *
+ * @syntax: void ft_lstdelone(t_list *lst, void (*del)(void*));
+ * @brief: Takes as a parameter an element and frees the memory of the 
+ * 			element’s
+ * @param: #1. The element to free.
+ * @return: None.
+ * 
+ * @note:
+ * 
+ * @file: ft_lstdelone.c
+ * @author: Diego <dinepomu@student.42>
+ * @created: 10/Nov/2024 08:57
+ * @updated: 10/Nov/2024 11:51
+ * ************************************************************************** *
+ */
 
 #include "libft.h"
 

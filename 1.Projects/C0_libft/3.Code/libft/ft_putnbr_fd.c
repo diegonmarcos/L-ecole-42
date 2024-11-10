@@ -6,9 +6,25 @@
 /*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 10:58:55 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/10 11:01:16 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/10 11:57:33 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+ * ************************************************************************** *
+ * @syntax: void ft_putnbr_fd(int n, int fd);
+ * @brief: Outputs the integer ’n’ to the given file descriptor.
+ * @param: n: The integer to output.
+ * @return: None.
+ * 
+ * @note:
+ * 
+ * @file: ft_putnbr_fd.c
+ * @author: Diego <dinepomu@student.42>
+ * @created: 03/Aug/2024 12:07
+ * @updated: 10/Nov/2024 11:57
+ * ************************************************************************** *
+ */
 
 #include "libft.h"
 
