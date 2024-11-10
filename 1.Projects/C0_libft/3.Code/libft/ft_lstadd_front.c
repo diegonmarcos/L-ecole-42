@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dinepomu <dinepomu@42.de>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/08 16:19:26 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/08 17:11:07 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/10 08:59:50 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,3 +32,4 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 		*lst = new;
 	}
 }
+
