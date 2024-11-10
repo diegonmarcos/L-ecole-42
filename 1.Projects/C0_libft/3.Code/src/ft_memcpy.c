@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 10:58:17 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/12 14:29:33 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/16 13:10:31 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	unsigned char	*tmp_dst;
 	unsigned char	*tmp_src;
 
-	if (dst == (void *)0 && src == (void *)0)
+	if (dst == (void *)0 && src == NULL)
 		return (dst);
 	tmp_dst = (unsigned char *) dst;
 	tmp_src = (unsigned char *) src;

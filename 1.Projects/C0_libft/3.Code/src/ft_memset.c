@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 10:58:33 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/10 11:56:29 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/10 20:56:25 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
  * ************************************************************************** *
  * @syntax: void *ft_memset(void *b, int c, size_t len);
  * @brief: fills the first len bytes of the memory area pointed to by b with
- * @param: 1. b - pointer to the memory area to be filled.
+ * @param: 1. b - pointer to the memory area to be filled. c int and len.
  * @return: pointer to the memory area b.
  * 
  * @note:
