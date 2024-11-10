@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dinepomu <dinepomu@42.de>                  +#+  +:+       +#+        */
+/*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/08 16:16:39 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/10 08:59:50 by dinepomu         ###   ########.fr       */
+/*   Created: 2024/11/10 10:57:45 by dinepomu          #+#    #+#             */
+/*   Updated: 2024/11/10 11:01:16 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,6 @@ t_list	*ft_lstnew(void *content)
 	if (!new_lst)
 		return (NULL);
 	new_lst->content = content;
-	new_lst->next = NULL;
+	(*new_lst).next = NULL;
 	return (new_lst);
 }

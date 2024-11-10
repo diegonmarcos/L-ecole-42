@@ -3,12 +3,29 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/06 14:34:04 by diegonmarco       #+#    #+#             */
-/*   Updated: 2024/11/08 16:55:34 by dinepomu         ###   ########.fr       */
+/*   Created: 2024/11/10 10:55:13 by dinepomu          #+#    #+#             */
+/*   Updated: 2024/11/10 11:44:31 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+ * ************************************************************************** *
+ * @syntax: void ft_bzero(void *s, size_t n);
+ * @brief:	The bzero() function writes n zeroed bytes to the string s.
+ * 			If n is zero, bzero() does nothing.
+ * @param: s: The pointer to the string to be zeroed.
+ * @return: None.
+ * 
+ * @note: 
+ * 
+ * @file: ft_bzero.c
+ * @author: Diego <dinepomu@student.42>
+ * @created: 10/Nov/2024 08:57
+ * @updated: 10/Nov/2024 11:43
+ * ************************************************************************** *
+ */
 
 #include "libft.h"
 

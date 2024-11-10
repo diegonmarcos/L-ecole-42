@@ -3,12 +3,29 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dnepomuc <dnepomuc@student.42barcelona.    +#+  +:+       +#+        */
+/*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/06 14:34:04 by diegonmarco       #+#    #+#             */
-/*   Updated: 2024/07/22 20:59:26 by dnepomuc         ###   ########.fr       */
+/*   Created: 2024/11/10 10:55:37 by dinepomu          #+#    #+#             */
+/*   Updated: 2024/11/10 11:45:49 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+ * ************************************************************************** *
+ * @syntax: int ft_isalnum(int c);
+ * @brief: The isalnum() function tests for any character for which isalpha() 
+ * 			or isdigit() is true.
+ * @param: c: The character to test.
+ * @return: zero if the character tests false
+ * 
+ * @note: 
+ * 
+ * @file: ft_isalnum.c
+ * @author: Diego <dinepomu@student.42>
+ * @created: 03/Aug/2024 12:07
+ * @updated: 10/Nov/2024 11:45
+ * ************************************************************************** *
+ */
 
 #include "libft.h"
 

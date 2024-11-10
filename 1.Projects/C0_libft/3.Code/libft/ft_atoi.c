@@ -3,12 +3,29 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dnepomuc <dnepomuc@student.42barcelona.    +#+  +:+       +#+        */
+/*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/06 14:34:04 by diegonmarco       #+#    #+#             */
-/*   Updated: 2024/07/23 21:01:10 by dnepomuc         ###   ########.fr       */
+/*   Created: 2024/11/10 10:54:23 by dinepomu          #+#    #+#             */
+/*   Updated: 2024/11/10 11:42:51 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+ * ************************************************************************** *
+ * @syntax: int ft_atoi(const char *ptr)
+ * @brief: This function converts the initial portion of the string pointed 
+ * 			to by ptr to int representation.
+ * @param: Takes a pointer to a string.
+ * @return: Returns the converted int representation of the string.
+ * 
+ * @note: 
+ * 
+ * @file: ft_atoi.c
+ * @author: Diego <dinepomu@student.42>
+ * @created: 03/Aug/2024 12:07
+ * @updated: 10/Nov/2024 11:41
+ * ************************************************************************** *
+ */
 
 #include "libft.h"
 

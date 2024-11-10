@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dnepomuc <dnepomuc@student.42barcelona.    +#+  +:+       +#+        */
+/*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/06 14:34:04 by diegonmarco       #+#    #+#             */
-/*   Updated: 2024/07/23 16:23:02 by dnepomuc         ###   ########.fr       */
+/*   Created: 2024/11/10 10:58:26 by dinepomu          #+#    #+#             */
+/*   Updated: 2024/11/10 11:01:16 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
