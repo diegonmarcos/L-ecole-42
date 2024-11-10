@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 11:00:36 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/10 12:04:10 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/10 18:19:20 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,7 @@
 
 #include "libft.h"
 
-static int
-	ft_char_in_set(char c, char const *set)
+static int	ft_char_in_set(char c, char const *set)
 {
 	size_t	i;
 
@@ -43,8 +42,7 @@ static int
 	return (0);
 }
 
-char
-	*ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
 	char	*str;
 	size_t	i;

@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 10:57:17 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/10 11:52:37 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/10 18:19:33 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,12 +31,11 @@
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	if (lst)
+	if (!lst)
+		return ;
+	while (lst)
 	{
-		while (lst)
-		{
-			f(lst->content);
-			lst = lst->next;
-		}
+		f(lst->content);
+		lst = lst->next;
 	}
 }

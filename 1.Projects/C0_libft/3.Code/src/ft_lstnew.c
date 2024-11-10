@@ -6,15 +6,15 @@
 /*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 10:57:45 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/10 14:41:26 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/10 17:25:23 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
  * ************************************************************************** *
  * @syntax: t_list *ft_lstnew(void *content);
- * @brief: Allocates (with malloc(3)) and returns a new element. The variable
- * @param: content The content to create the new element with.
+ * @brief: Allocates (with malloc(3)) and returns a new element.
+ * @param: #1. The content to create the new element with.
  * @return: The new element.
  * 
  * @note:
