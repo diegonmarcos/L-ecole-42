@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
+/*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 10:56:15 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/10 11:49:35 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/11 15:54:22 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,3 +81,17 @@ char	*ft_itoa(int n)
 	}
 	return (str);
 }
+
+/*
+#include "../../4.Tester/Tester/libdnm.h"
+
+int main (void)
+{
+	int n = 123456;
+	printf("Result: %s | Test: %s | Expected: 123456\n", g_r[!strcmp(ft_itoa(n), "123456")], ft_itoa(n));
+	n = 0;
+	printf("Result: %s | Test: %s | Expected: 0\n", g_r[!strcmp(ft_itoa(n), "0")], ft_itoa(n));
+	
+	return (0);
+}
+*/
