@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
+/*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 11:00:08 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/10 12:02:06 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/11 19:56:47 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,3 +47,13 @@ char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
 	res[i] = 0;
 	return (res);
 }
+/*
+int main()
+{
+	char *s = "Hello";
+	char *res = ft_strmapi(s, &ft_toupper);
+	printf("%s\n", res);
+	free(res);
+	return (0);
+}
+*/

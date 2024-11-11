@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
+/*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 11:00:36 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/10 18:19:20 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/11 19:58:55 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,3 +64,15 @@ char	*ft_strtrim(char const *s1, char const *set)
 	str[i] = 0;
 	return (str);
 }
+
+/*
+int main()
+{
+	char *s1 = " Hello World! ";
+	char *set = " ";
+	char *trimmed = ft_strtrim(s1, set);
+	printf("Original: %s\n", s1);
+	printf("Trimmed: %s\n", trimmed);
+	return 0;
+}
+*/

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
+/*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 10:59:33 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/10 12:00:12 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/11 19:57:05 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,3 +41,13 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 		i++;
 	}
 }
+
+/*
+int main()
+{
+	char s[] = "Hello";
+	ft_striteri(s, &ft_toupper);
+	printf("%s\n", s);
+	return (0);
+}
+*/
