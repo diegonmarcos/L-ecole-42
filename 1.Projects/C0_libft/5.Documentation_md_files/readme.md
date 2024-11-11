@@ -49,13 +49,13 @@ String Manipulation:
 
 Integer-String Conversion:
 ```
-      ft_itoa 
-    /   |   \
-ft_calloc ft_digit_count   comp
-                          |
-                       ft_putnbr_fd
-                          |
-                       ft_putstr_fd
+      			ft_itoa 
+   		 /		   |      	\
+ft_calloc 	ft_digit_count   comp
+                      		  |
+                        ft_putnbr_fd
+                              |
+                         ft_putstr_fd
 ```
 File Descriptor Output:
 ```

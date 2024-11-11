@@ -10,7 +10,9 @@
 #                                                                              #
 # **************************************************************************** #
 
-NAME = libft.a
+# **************************************************************************** #
+#                                DIRECTORIES                                   #
+# **************************************************************************** #
 SRCS_MAND = 	ft_memset.c		\
 		  		ft_memmove.c	\
 		  		ft_memchr.c		\
@@ -58,31 +60,44 @@ SRC_BONUS = ft_lstnew.c 		\
 			ft_lstmap.c			\
 
 OBJS_BONUS = ${SRC_BONUS:.c=.o}
+
+# **************************************************************************** #
+#                                 VARIABLES                                    #
+# **************************************************************************** #
+NAME = libft.a
 CC = gcc
 RM = rm -rf
 AR = ar rcs
-RANLIB = ranlib 
+RANLIB = ranlib
 CFLAGS = -Wall -Wextra -Werror
 
+# **************************************************************************** #
+#                                 RULES                                        #
+# **************************************************************************** #
 all: $(NAME)
+
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
+	@echo "(•̀ᴗ•́)و $@ OBJECTS GENERATED!"
 
 $(NAME):	$(OBJS_MAND)
 			$(AR) $(NAME) $(OBJS_MAND)
 			$(RANLIB) $(NAME)
-
-%.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
+			@echo	"	(•̀ᴗ•́)و FILE GENERATED!"
 
 clean:
 	$(RM) $(OBJS_MAND) $(OBJS_BONUS)
+	@echo	"	¯\_(ツ)_/¯ OBJECTS REMOVED!"
 
 fclean:	clean
 		rm -f $(NAME)
+		@echo	"	(╯°□°）╯︵ ┻━┻ FILE REMOVED!"
 
 re: fclean all
 
 bonus:	$(NAME) $(OBJS_BONUS)
 		$(AR) $(NAME) $(OBJS_BONUS)
 		$(RANLIB) $(NAME)
+		@echo	"	(•̀ᴗ•́)و BONUS GENERATED!"
 
 .PHONY: all clean fclean re bonus
