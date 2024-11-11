@@ -9,7 +9,7 @@
 # define RED     "\x1b[31m"
 # define RESET   "\x1b[0m"
 
-const static char	*g_r[] = {RED "✗" RESET, GREEN "✓" RESET}; 
-//const static char *results[] = {RED "FALSE" RESET, GREEN "TRUE" RESET};
+//const static char	*g_r[] = {RED "✗" RESET, GREEN "✓" RESET}; 
+const static char *g_r[] = {RED "FALSE" RESET, GREEN "TRUE" RESET};
 
 #endif

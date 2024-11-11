@@ -104,3 +104,48 @@ File Descriptor Output:
    - `ft_putendl_fd` and `ft_putnbr_fd` depend on
       -  `ft_putstr_fd` and `ft_putchar_fd`.
 
+#### LibC Functions #1
+- ft_strlen
+- ft_memcpy
+- ft_memset
+- ft_bzero
+- ft_memmove
+- ft_memcmp
+- ft_memchr
+
+#### LibC Functions #2
+- ft_isalpha
+- ft_isdigit
+- ft_isalnum
+- ft_isascii
+- ft_isprint
+
+#### LibC Functions #3
+- ft_toupper
+- ft_tolower
+- ft_strchr
+- ft_strrchr
+
+#### LibC Functions #4
+- ft_strlcat
+- ft_strlcpy
+- ft_atoi
+- ft_strnstr
+- ft_strncmp
+- ft_calloc
+- ft_strdup
+
+#### Additional Functions #1
+- ft_substr
+- ft_strjoin
+- ft_putchar_fd
+- ft_putstr_fd
+- ft_putendl_fd
+- ft_putnbr_fd
+
+#### Additional Functions #2
+- ft_strmapi
+- ft_striteri
+- ft_strtrim
+- ft_split
+- ft_itoa

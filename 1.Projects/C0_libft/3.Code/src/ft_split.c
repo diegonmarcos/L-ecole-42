@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
+/*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 10:59:11 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/10 11:59:21 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/11 16:50:29 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@
 
 #include "libft.h"
 
-static int	ft_count(char const *s, char c)
+static int	ft_countwords(char const *s, char c)
 {
 	int	counter;
 	int	i;
@@ -72,13 +72,13 @@ char	**ft_split(char const *s, char c)
 	int		i;
 	int		j;
 
-	array = (char **)ft_calloc(ft_count(s, c) + 1, sizeof(char *));
+	array = (char **)ft_calloc(ft_countwords(s, c) + 1, sizeof(char *));
 	if (!array)
 		return (NULL);
 	i = 0;
 	j = 0;
 	num_words = 0;
-	while (num_words < ft_count(s, c))
+	while (num_words < ft_countwords(s, c))
 	{
 		while (s[i] && s[i] == c)
 			i++;
@@ -92,3 +92,20 @@ char	**ft_split(char const *s, char c)
 	array[num_words] = NULL;
 	return (array);
 }
+/*
+#include "../../4.Tester/Tester/libdnm.h"
+
+int main()
+{
+	char *s = "   Born to Code in  42  ";
+	char c = ' ';
+	char **array = ft_split(s, c);
+	int i = 0;
+	while (array[i])
+	{
+		printf("%s\n", array[i]);
+		i++;
+	}
+	return 0;
+}
+*/

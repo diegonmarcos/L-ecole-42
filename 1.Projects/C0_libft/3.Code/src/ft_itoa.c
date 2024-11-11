@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 10:56:15 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/11 16:34:23 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/11 17:07:33 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,7 +82,7 @@ char	*ft_itoa(int n)
 	return (str);
 }
 
-/*
+
 #include "../../4.Tester/Tester/libdnm.h"
 
 int main (void)
@@ -96,4 +96,3 @@ int main (void)
 	
 	return (0);
 }
-*/
