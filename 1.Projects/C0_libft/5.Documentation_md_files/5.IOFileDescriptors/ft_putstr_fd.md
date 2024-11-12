@@ -42,6 +42,16 @@ ft_putstr_fd(message, 1);  // Outputs the message to standard output (stdout).
 # Code Explanation
 **Source Code:**
 ``` C
+void	ft_putstr_fd(char *str, int fd)
+{
+	int	i;
 
+	i = 0;
+	while (str[i])
+	{
+		write(fd, &str[i], 1);
+		i++;
+	}
+}
 
 ```

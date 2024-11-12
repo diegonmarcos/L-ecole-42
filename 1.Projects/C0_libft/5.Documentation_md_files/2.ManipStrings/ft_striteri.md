@@ -44,6 +44,16 @@ ft_striteri(str, to_uppercase); // str is modified to "HELLO WORLD"
 # Code Explanation
 **Source Code:**
 ``` C
+void	ft_striteri(char *s, void (*f)(unsigned int, char*))
+{
+	unsigned int	i;
 
+	i = 0;
+	while (s[i])
+	{
+		(*f)(i, &s[i]);
+		i++;
+	}
+}
 
 ```

@@ -91,6 +91,14 @@ size_t length = ft_strlen(str); // length will be 13
 # Code Explanation
 **Source Code:**
 ``` C
+size_t	ft_strlen(const char *s)
+{
+	size_t	i;
 
+	i = 0;
+	while (s[i])
+		i++;
+	return (i);
+}
 
 ```

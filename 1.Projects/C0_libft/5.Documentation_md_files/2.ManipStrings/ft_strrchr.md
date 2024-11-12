@@ -38,5 +38,22 @@ char *ptr = ft_strrchr(str, 'o'); // ptr points to the second 'o' in str
 **Source Code:**
 ``` C
 
+char	*ft_strrchr(const char *s, int c)
+{
+	char			*res;
+	char			cc;
+
+	cc = (char)c;
+	res = NULL;
+	while (*s)
+	{
+		if (*s == cc)
+			res = (char *)s;
+		s++;
+	}
+	if (*s == cc)
+		res = (char *)s;
+	return (res);
+}
 
 ```

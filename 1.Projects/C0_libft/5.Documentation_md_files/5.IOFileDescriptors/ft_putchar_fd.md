@@ -42,6 +42,9 @@ ft_putchar_fd('\n', 2);  // Outputs a newline character to standard error (stder
 # Code Explanation
 **Source Code:**
 ``` C
-
+void	ft_putchar_fd(char c, int fd)
+{
+	write(fd, &c, 1);
+}
 
 ```

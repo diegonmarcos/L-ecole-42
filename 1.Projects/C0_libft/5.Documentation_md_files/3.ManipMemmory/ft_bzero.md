@@ -37,6 +37,17 @@ ft_bzero(str, 5);  // The first 5 bytes of str are now zeroed out
 # Code Explanation
 **Source Code:**
 ``` C
+void	ft_bzero(void *s, size_t n)
+{
+	char	*tmp_ptr;
+
+	tmp_ptr = (char *) s;
+	while (n > 0)
+	{
+		*(tmp_ptr++) = 0;
+		n--;
+	}
+}
 
 
 ```

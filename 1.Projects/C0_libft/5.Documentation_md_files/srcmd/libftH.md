@@ -1,14 +1,4 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   libft.h                                            :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: dnepomuc <dnepomuc@student.42barcelona.    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/04 14:47:54 by matomas           #+#    #+#             */
-/*   Updated: 2024/07/22 18:05:19 by dnepomuc         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
+``` c
 
 #ifndef LIBFT_H
 # define LIBFT_H
@@ -67,3 +57,5 @@ void	ft_lstiter(t_list *lst, void (*f)(void *));
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 
 #endif
+
+```

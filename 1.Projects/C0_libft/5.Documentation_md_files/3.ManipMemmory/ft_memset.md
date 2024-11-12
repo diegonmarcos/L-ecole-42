@@ -41,5 +41,17 @@ ft_memset(str + 6, '.', 5); // Fills the characters after "Hello" with dots.
 **Source Code:**
 ``` C
 
+void	*ft_memset(void *b, int c, size_t len)
+{
+	unsigned char	*tmp_ptr;
+
+	tmp_ptr = (unsigned char *) b;
+	while (len > 0)
+	{
+		*(tmp_ptr++) = (unsigned char) c;
+		len--;
+	}
+	return (b);
+}
 
 ```

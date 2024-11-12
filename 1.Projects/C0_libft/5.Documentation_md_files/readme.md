@@ -2,7 +2,7 @@
 # LIBFT
 
 
-## Printers
+## I/O Printers
 - ft_putchar_fd
 - ft_putstr_fd
 - ft_putendl_fd
