@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 10:58:26 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/12 16:15:40 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/12 18:08:51 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,12 +62,28 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	return (dst);
 }
 /*
+#include <stdio.h>
+
 int main()
 {
+	// Teste1
 	char src[] = "Hello World!";
 	char dst[13];
 	ft_memmove(dst, src, 13);
 	printf("%s\n", dst);
+
+	// Teste2
+	char src2[] = "NULL"; //passing a array null terminated
+	char dst2[13];
+	ft_memmove(dst2, src2, 13);
+	printf("%s\n", dst2);
+
+	// Teste3
+	void *src3 = NULL; //passing a void pointer
+	char dst3[13];
+	ft_memmove(dst3, (char *)src3, 13);
+	printf("%s\n", dst2);
+
 	return (0);
 }
 */
