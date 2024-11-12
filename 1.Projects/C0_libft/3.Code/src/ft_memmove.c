@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 10:58:26 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/12 14:30:40 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/12 16:15:40 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,7 +61,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	move_memory((char *)dst, (const char *)src, len);
 	return (dst);
 }
-
+/*
 int main()
 {
 	char src[] = "Hello World!";
@@ -70,3 +70,4 @@ int main()
 	printf("%s\n", dst);
 	return (0);
 }
+*/
