@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
+/*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 10:58:17 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/10 11:55:52 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/12 14:29:33 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,10 @@
  * 			to be copied.
  * @return: pointer to the destination array.
  * 
- * @note:
+ * @note: Faster then memmove but less safe: memcpy simply copies data from 
+ * 			the source to the destination without considering potential 
+ * 			overlaps. This makes it faster but can lead to unexpected results
+ * 			if the source and destination memory blocks overlap.
  * 
  * @file: ft_memcpy.c
  * @author: Diego <dinepomu@student.42>
@@ -45,3 +48,14 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	}
 	return (dst);
 }
+
+/*
+int main()
+{
+	char src[] = "Hello World!";
+	char dst[13];
+	ft_memcpy(dst, src, 13);
+	printf("%s\n", dst);
+	return (0);
+}
+*/

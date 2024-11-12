@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
+/*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 10:55:13 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/10 11:44:31 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/12 14:25:46 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,19 +31,11 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	char	*tmp_ptr;
-
-	tmp_ptr = (char *) s;
-	while (n > 0)
-	{
-		*(tmp_ptr++) = 0;
-		n--;
-	}
+	ft_memset(s, 0, n);
 }
 
 /*
-
-//ft_memset(s, 0, n);
+#include "../../4.Tester/Tester/libdnm.h"
 
 int main ()
 {
@@ -67,5 +59,20 @@ int main ()
 	for (int i = 0; i < 10; i++)
 		printf("%d ", arr[i]);
 	return 0;
+}
+*/
+
+/*
+
+void	ft_bzero(void *s, size_t n)
+{
+	char	*tmp_ptr;
+
+	tmp_ptr = (char *) s;
+	while (n > 0)
+	{
+		*(tmp_ptr++) = 0;
+		n--;
+	}
 }
 */

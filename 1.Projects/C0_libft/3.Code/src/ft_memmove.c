@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
+/*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 10:58:26 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/10 11:56:12 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/12 14:30:40 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,11 @@
  * @param: 1. dst - pointer to the destination array where the content is
  * @return: pointer to the destination array.
  * 
- * @note:
+ * @note: Slower but safer then memcpy: memmove is designed to handle 
+ * 			overlapping memory regions correctly. It ensures that the data 
+ * 			is copied in a way that prevents data corruption, even if the 
+ * 			source and destination overlap. This often involves creating a 
+ * 			temporary copy of the data.
  * 
  * @file: ft_memmove.c
  * @author: Diego <dinepomu@student.42>
@@ -56,4 +60,13 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 		return (NULL);
 	move_memory((char *)dst, (const char *)src, len);
 	return (dst);
+}
+
+int main()
+{
+	char src[] = "Hello World!";
+	char dst[13];
+	ft_memmove(dst, src, 13);
+	printf("%s\n", dst);
+	return (0);
 }
