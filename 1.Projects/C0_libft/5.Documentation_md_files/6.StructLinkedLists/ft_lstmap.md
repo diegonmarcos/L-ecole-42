@@ -1,4 +1,7 @@
-# ft_lstmap - `t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));`
+# ft_lstmap
+``` c 
+t_list *ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+```
 <br>
 <br>
 

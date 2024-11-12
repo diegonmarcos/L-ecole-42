@@ -1,4 +1,7 @@
-# ft_lstlast - `t_list *ft_lstlast(t_list *lst);`
+# ft_lstlast
+``` c
+t_list *ft_lstlast(t_list *lst);
+```
 <br>
 <br>
 

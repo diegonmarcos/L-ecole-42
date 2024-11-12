@@ -1,4 +1,7 @@
-# ft_memchr - `void *ft_memchr(const void *s, int c, size_t n);`
+# ft_memchr 
+``` c 
+void *ft_memchr(const void *s, int c, size_t n);
+```
 <br>
 <br>
 

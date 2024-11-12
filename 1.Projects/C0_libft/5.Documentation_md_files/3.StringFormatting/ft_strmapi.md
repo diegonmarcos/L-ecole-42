@@ -1,4 +1,7 @@
-# ft_strmapi - `char *ft_strmapi(char const *s, char (*f)(unsigned int, char));`
+# ft_strmapi 
+``` c 
+char *ft_strmapi(char const *s, char (*f)(unsigned int, char));
+```
 <br>
 <br>
 

@@ -1,4 +1,7 @@
-# ft_itoa - `char *ft_itoa(int n);`
+# ft_itoa
+``` c 
+char *ft_itoa(int n);
+```
 <br>
 <br>
 

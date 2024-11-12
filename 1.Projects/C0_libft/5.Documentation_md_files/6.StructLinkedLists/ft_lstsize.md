@@ -1,4 +1,7 @@
-# ft_lstsize - `int	ft_lstsize(t_list *lst);`
+# ft_lstsize
+``` c 
+int	ft_lstsize(t_list *lst);
+```
 <br>
 <br>
 

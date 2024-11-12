@@ -1,4 +1,7 @@
-# ft_memcpy - `void *ft_memcpy(void *dst, const void *src, size_t n);`
+# ft_memcpy
+``` c 
+void *ft_memcpy(void *dst, const void *src, size_t n);
+```
 <br>
 <br>
 

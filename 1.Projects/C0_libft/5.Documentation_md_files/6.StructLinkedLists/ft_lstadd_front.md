@@ -1,4 +1,7 @@
-# ft_lstadd_front - `void ft_lstadd_front(t_list **lst, t_list *new);`
+# ft_lstadd_front
+``` c 
+void ft_lstadd_front(t_list **lst, t_list *new);
+```
 <br>
 <br>
 

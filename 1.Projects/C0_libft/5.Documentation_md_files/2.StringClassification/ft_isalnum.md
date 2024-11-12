@@ -1,4 +1,7 @@
-# ft_isalnum - `int ft_isalnum(int c);`
+# ft_isalnum 
+``` c 
+int ft_isalnum(int c);
+```
 <br>
 <br>
 

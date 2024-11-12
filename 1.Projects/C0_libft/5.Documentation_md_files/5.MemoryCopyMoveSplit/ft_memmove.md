@@ -1,4 +1,7 @@
-# ft_memmove - `void *ft_memmove(void *dst, const void *src, size_t len);`
+# ft_memmove
+``` c 
+void *ft_memmove(void *dst, const void *src, size_t len);
+```
 <br>
 <br>
 

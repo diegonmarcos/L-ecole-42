@@ -1,4 +1,7 @@
-# ft_strlcat - `size_t ft_strlcat(char *dst, const char *src, size_t dstsize);`
+# ft_strlcat - 
+``` c 
+size_t ft_strlcat(char *dst, const char *src, size_t dstsize);
+```
 <br>
 <br>
 

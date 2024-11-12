@@ -1,4 +1,7 @@
-# [ft_atoi](ft_atoi.c) - `int ft_atoi(const char *str);`
+# [ft_atoi](ft_atoi.c)
+``` c 
+int ft_atoi(const char *str);
+```
 <br>
 <br>
 

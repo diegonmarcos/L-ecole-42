@@ -1,4 +1,7 @@
-# ft_strnstr - `char *ft_strnstr(const char *haystack, const char *needle, size_t len);`
+# ft_strnstr 
+``` c 
+char *ft_strnstr(const char *haystack, const char *needle, size_t len);
+```
 <br>
 <br>
 

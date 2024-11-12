@@ -1,4 +1,7 @@
 # ft_strlen : String Length Calculation
+``` c
+size_t ft_strlen(const char *str) 
+```
 <br>
 <br>
 

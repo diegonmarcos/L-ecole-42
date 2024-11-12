@@ -1,4 +1,7 @@
-# ft_lstdelone - `void ft_lstdelone(t_list *lst, void (*del)(void*));`
+# ft_lstdelone 
+``` c 
+void ft_lstdelone(t_list *lst, void (*del)(void*));
+```
 <br>
 <br>
 

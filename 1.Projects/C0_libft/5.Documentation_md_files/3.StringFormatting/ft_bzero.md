@@ -1,4 +1,7 @@
-# ft_bzero - `void ft_bzero(void *s, size_t n);`
+# ft_bzero
+``` c 
+void ft_bzero(void *s, size_t n);
+```
 <br>
 <br>
 

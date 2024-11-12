@@ -1,4 +1,7 @@
-# ft_memcmp - `int ft_memcmp(const void *s1, const void *s2, size_t n);`
+# ft_memcmp
+``` c 
+int ft_memcmp(const void *s1, const void *s2, size_t n);
+```
 <br>
 <br>
 

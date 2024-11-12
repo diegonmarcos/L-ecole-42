@@ -1,4 +1,7 @@
-# ft_lstiter - `void ft_lstiter(t_list *lst, void (*f)(void *));`
+# ft_lstiter
+``` c 
+void ft_lstiter(t_list *lst, void (*f)(void *));
+```
 <br>
 <br>
 

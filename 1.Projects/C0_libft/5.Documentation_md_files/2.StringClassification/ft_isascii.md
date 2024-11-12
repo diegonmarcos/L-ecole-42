@@ -1,4 +1,7 @@
-# ft_isascii - `int ft_isascii(int c);`
+# ft_isascii 
+``` c 
+int ft_isascii(int c);
+```
 <br>
 <br>
 

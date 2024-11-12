@@ -1,4 +1,7 @@
-# ft_isprint - `int ft_isprint(int c);`
+# ft_isprint 
+``` c 
+int ft_isprint(int c);
+```
 <br>
 <br>
 

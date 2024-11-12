@@ -1,4 +1,7 @@
-# ft_memset - `void *ft_memset(void *b, int c, size_t len);`
+# ft_memset 
+``` c 
+void *ft_memset(void *b, int c, size_t len);
+```
 <br>
 <br>
 

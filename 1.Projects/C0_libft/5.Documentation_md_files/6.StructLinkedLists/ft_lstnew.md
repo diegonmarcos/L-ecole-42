@@ -1,4 +1,7 @@
-# ft_lstnew - `t_list *ft_lstnew(void *content);`
+# ft_lstnew
+``` c 
+t_list *ft_lstnew(void *content);
+```
 <br>
 <br>
 

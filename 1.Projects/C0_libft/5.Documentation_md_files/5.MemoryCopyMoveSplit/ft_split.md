@@ -1,4 +1,7 @@
-# ft_split - `char **ft_split(char const *s, char c);`
+# ft_split 
+``` c 
+char **ft_split(char const *s, char c);
+```
 <br>
 <br>
 

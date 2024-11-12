@@ -1,4 +1,7 @@
-# ft_striteri - `void ft_striteri(char *s, void (*f)(unsigned int, char *));`
+# ft_striteri 
+``` c 
+void ft_striteri(char *s, void (*f)(unsigned int, char *));
+```
 <br>
 <br>
 

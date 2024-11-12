@@ -1,4 +1,7 @@
-# ft_lstclear - `void ft_lstclear(t_list **lst, void (*del)(void *));`
+# ft_lstclear
+``` c 
+void ft_lstclear(t_list **lst, void (*del)(void *));
+```
 <br>
 <br>
 

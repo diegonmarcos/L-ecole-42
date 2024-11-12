@@ -1,4 +1,7 @@
-# ft_strlcpy - `size_t ft_strlcpy(char *dst, const char *src, size_t dstsize);`
+# ft_strlcpy 
+``` c 
+size_t ft_strlcpy(char *dst, const char *src, size_t dstsize);
+```
 <br>
 <br>
 

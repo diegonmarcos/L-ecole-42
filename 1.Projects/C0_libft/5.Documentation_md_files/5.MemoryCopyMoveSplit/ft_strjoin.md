@@ -1,4 +1,7 @@
-# ft_strjoin - `char *ft_strjoin(char const *s1, char const *s2);`
+# ft_strjoin 
+``` c 
+char *ft_strjoin(char const *s1, char const *s2);
+```
 <br>
 <br>
 

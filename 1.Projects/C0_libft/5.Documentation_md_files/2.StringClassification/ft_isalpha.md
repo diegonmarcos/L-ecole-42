@@ -1,4 +1,7 @@
-# ft_isalpha - `int ft_isalpha(int c);`
+# ft_isalpha 
+``` c
+int ft_isalpha(int c);
+```
 <br>
 <br>
 

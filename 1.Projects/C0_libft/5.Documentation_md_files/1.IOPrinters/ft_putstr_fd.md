@@ -1,4 +1,7 @@
-# ft_putstr_fd - `void ft_putstr_fd(char *s, int fd);`
+# ft_putstr_fd 
+``` c
+void ft_putstr_fd(char *s, int fd);
+```
 <br>
 <br>
 

@@ -1,4 +1,7 @@
-# ft_putnbr_fd - `void ft_putnbr_fd(int n, int fd);`
+# ft_putnbr_fd 
+``` c
+void ft_putnbr_fd(int n, int fd);
+```
 <br>
 <br>
 

@@ -1,4 +1,7 @@
-# ft_isdigit - `int ft_isdigit(int c);`
+# ft_isdigit 
+``` c 
+int ft_isdigit(int c);
+```
 <br>
 <br>
 

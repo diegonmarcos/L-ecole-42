@@ -1,4 +1,7 @@
-# ft_tolower - `int ft_tolower(int c);`
+# ft_tolower 
+``` c 
+int ft_tolower(int c);
+```
 <br>
 <br>
 

@@ -1,4 +1,7 @@
-# ft_strdup - `char *ft_strdup(const char *s1);`
+# ft_strdup 
+``` c 
+char *ft_strdup(const char *s1);
+```
 <br>
 <br>
 

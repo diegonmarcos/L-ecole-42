@@ -1,46 +1,200 @@
 
 # LIBFT
 
+## 1. I/O Printers
+- [ft_putchar_fd](1.IOPrinters/ft_putchar_fd): Writes a single character to a given file descriptor. 
+    ```C
+    void    ft_putchar_fd(char c, int fd)
+    ```
+- [ft_putstr_fd](): Writes a string to a given file descriptor.
+    ```C
+    void    ft_putstr_fd(char *s, int fd)
+    ```
+- [ft_putendl_fd](): Writes a string to a given file descriptor, followed by a newline.
+    ```C
+    void    ft_putendl_fd(char *s, int fd)
+    ```
+- [ft_putnbr_fd](): Writes an integer to a given file descriptor.
+    ```C
+    void    ft_putnbr_fd(int n, int fd)
+    ```
+
+## 2. String Classification
+- [ft_strlen](): Calculates the length of a string.
+    ```C
+    size_t  ft_strlen(const char *s)
+    ```
+- [ft_isalpha](): Checks if a character is alphabetic.
+    ```C
+    int     ft_isalpha(int c)
+    ```
+- [ft_isdigit](): Checks if a character is a digit.
+    ```C
+    int     ft_isdigit(int c)
+    ```
+- [ft_isalnum](): Checks if a character is alphanumeric.
+    ```C
+    int     ft_isalnum(int c)
+    ```
+- [ft_isascii](): Checks if a character is a valid ASCII character.
+    ```C
+    int     ft_isascii(int c)
+    ```
+- [ft_isprint](): Checks if a character is printable.
+    ```C
+    int     ft_isprint(int c)
+    ```
+
+## 3. String Formatting
+- [ft_memset](): Fills a block of memory with a specific byte.
+    ```C
+    void    *ft_memset(void *b, int c, size_t len)
+    ```
+- [ft_bzero](): Sets a block of memory to zero.
+    ```C
+    void    ft_bzero(void *s, size_t n)
+    ```
+- [ft_toupper](): Converts a character to uppercase.
+    ```C
+    int     ft_toupper(int c)
+    ```
+- [ft_tolower](): Converts a character to lowercase.
+    ```C
+    int     ft_tolower(int c)
+    ```
+- [ft_atoi](): Converts a string to an integer.
+    ```C
+    int     ft_atoi(const char *str)
+    ```
+- [ft_itoa](): Converts an integer to a string.
+    ```C
+    char    *ft_itoa(int n)
+    ```
+- [ft_strmapi](): Applies a function to each character of a string, passing the index as an argument.
+    ```C
+    char    *ft_strmapi(char const *s, char (*f)(unsigned int, char))
+    ```
+- [ft_striteri](): Applies a function to each character of a string, passing the index as an argument.
+    ```C
+    void    ft_striteri(char *s, void (*f)(unsigned int, char*))
+    ```
+
+## 4. String Search, Compare and Subs
+- [ft_memcmp](): Compares two blocks of memory.
+    ```C
+    int     ft_memcmp(const void *s1, const void *s2, size_t n)
+    ```
+- [ft_memchr](): Searches for a character in a block of memory.
+    ```C
+    void    *ft_memchr(const void *s, int c, size_t n)
+    ```
+- [ft_strchr](): Locates the first occurrence of a character in a string.
+    ```C
+    char    *ft_strchr(const char *s, int c)
+    ```
+- [ft_strrchr](): Locates the last occurrence of a character in a string.
+    ```C
+    char    *ft_strrchr(const char *s, int c)
+    ```
+- [ft_strnstr](): Locates a substring within a string.
+    ```C
+    char    *ft_strnstr(const char *haystack, const char *needle, size_t len)
+    ```
+- [ft_strncmp](): Compares two strings up to a specified length.
+    ```C
+    int     ft_strncmp(const char *s1, const char *s2, size_t n)
+    ```
+- [ft_substr](): Extracts a substring from a string.
+    ```C
+    char    *ft_substr(char const *s, unsigned int start, size_t len)
+    ```
+
+## 5. Memory Copy, Move and Split
+- [ft_memcpy](): Copies a block of memory from one location to another.
+    ```C
+    void    *ft_memcpy(void *dst, const void *src, size_t n)
+    ```
+- [ft_memmove](): Moves a block of memory from one location to another, handling overlapping regions.
+    ```C
+    void    *ft_memmove(void *dst, const void *src, size_t len)
+    ```
+- [ft_strlcpy](): Copies a string to another string, with size bounds.
+    ```C
+    size_t  ft_strlcpy(char *dst, const char *src, size_t dstsize)
+    ```
+- [ft_strlcat](): Concatenates two strings, with size bounds.
+    ```C
+    size_t  ft_strlcat(char *dst, const char *src, size_t dstsize)
+    ```
+- [ft_strjoin](): Joins two strings together.
+    ```C
+    char    *ft_strjoin(char const *s1, char const *s2)
+    ```
+- [ft_strdup](): Creates a duplicate of a string.
+    ```C
+    char    *ft_strdup(const char *s1)
+    ```
+- [ft_strtrim](): Removes leading and trailing whitespace from a string.
+    ```C
+    char    *ft_strtrim(char const *s1, char const *set)
+    ```
+- [ft_split](): Splits a string into an array of substrings based on a delimiter.
+    ```C
+    char    **ft_split(char const *s, char c)
+    ```
+- [ft_calloc](): Allocates memory and sets it to zero.
+    ```C
+    void    *ft_calloc(size_t count, size_t size)
+    ```
 
 ## 1. I/O Printers
-- ft_putchar_fd
-- ft_putstr_fd
-- ft_putendl_fd
-- ft_putnbr_fd
+- [ft_putchar_fd](): Writes a single character to a given file descriptor. 
+	```C
+	void	ft_putchar_fd(char c, int fd)
+	```
+- [ft_putstr_fd](): Writes a string to a given file descriptor.
+- [ft_putendl_fd](): Writes a string to a given file descriptor, followed by a newline.
+- [ft_putnbr_fd](): Writes an integer to a given file descriptor.
+
 ## 2. String Classification
-- ft_strlen
-- ft_isalpha
-- ft_isdigit
-- ft_isalnum
-- ft_isascii
-- ft_isprint
+- [ft_strlen](): Calculates the length of a string.
+- [ft_isalpha](): Checks if a character is alphabetic.
+- [ft_isdigit](): Checks if a character is a digit.
+- [ft_isalnum](): Checks if a character is alphanumeric.
+- [ft_isascii](): Checks if a character is a valid ASCII character.
+- [ft_isprint](): Checks if a character is printable.
+
 ## 3. String Formatting
-- ft_memset
-- ft_bzero
-- ft_toupper
-- ft_tolower
-- ft_atoi
-- ft_itoa
-- ft_strmapi
-- ft_striteri
+- [ft_memset](): Fills a block of memory with a specific byte.
+- [ft_bzero](): Sets a block of memory to zero.
+- [ft_toupper](): Converts a character to uppercase.
+- [ft_tolower](): Converts a character to lowercase.
+- [ft_atoi](): Converts a string to an integer.
+- [ft_itoa](): Converts an integer to a string.
+- [ft_strmapi](): Applies a function to each character of a string, passing the index as an argument.
+- [ft_striteri](): Applies a function to each character of a string, passing the index as an argument.
+
 ## 4. String Search, Compare and Subs
-- ft_memcmp
-- ft_memchr
-- ft_strchr : search first occurrence
-- ft_strrchr : search last occurrence
-- ft_strnstr
-- ft_strncmp
-- ft_substr
+- [ft_memcmp](): Compares two blocks of memory.
+- [ft_memchr](): Searches for a character in a block of memory.
+- [ft_strchr](): Locates the first occurrence of a character in a string.
+- [ft_strrchr](): Locates the last occurrence of a character in a string.
+- [ft_strnstr](): Locates a substring within a string.
+- [ft_strncmp](): Compares two strings up to a specified length.
+- [ft_substr](): Extracts a substring from a string.
+
 ## 5. Memory Copy, Move and Split
-- ft_memcpy
-- ft_memmove
-- ft_strlcpy
-- ft_strlcat
-- ft_strjoin
-- ft_strdup
-- ft_strtrim
-- ft_split
-- ft_calloc
+- [ft_memcpy](): Copies a block of memory from one location to another.
+- [ft_memmove](): Moves a block of memory from one location to another, handling overlapping regions.
+- [ft_strlcpy](): Copies a string to another string, with size bounds.
+- [ft_strlcat](): Concatenates two strings, with size bounds.
+- [ft_strjoin](): Joins two strings together.
+- [ft_strdup](): Creates a duplicate of a string.
+- [ft_strtrim](): Removes leading and trailing whitespace from a string.
+- [ft_split](): Splits a string into an array of substrings based on a delimiter.
+- [ft_calloc](): Allocates memory and sets it to zero.
+
+
 ## 6. Struct - Linked Lists
 ###### ft_lstnew
 ```C
@@ -68,13 +222,63 @@ void ft_lstadd_front(t_list **lst, t_list *new);
 ##
 ---
 ## Level 1
-- All others
+- **1. I/O Printers:**
+    - `ft_putchar_fd`
+    - `ft_putstr_fd`
+    - `ft_putendl_fd`
+    - `ft_putnbr_fd`
+- **2. String Classification:**
+    - `ft_isalpha`
+    - `ft_isdigit`
+    - `ft_isalnum`
+    - `ft_isascii`
+    - `ft_isprint`
+    - `ft_strlen  `
+- **3. String Formatting:**
+    - `ft_memset`
+    - `ft_bzero`
+    - `ft_toupper`
+    - `ft_tolower`
+- **4. String Search, Compare and Subs:**
+    - `ft_strchr` 
+    - `ft_strrchr` 
+    - `ft_strncmp` 
+- **5. Memory Copy, Move and Split:**
+    - `ft_memcpy`
+    - `ft_memmove`
+- **6. Struct - Linked Lists:**
+    - `ft_lstnew`
+    - `ft_lstadd_front`
+    - `ft_lstsize`
+    - `ft_lstlast`
+    - `ft_lstadd_back`
+    - `ft_lstdelone`
 ## Level 2
-- ft_itoa
-- ft_substr
+- **3. String Formatting:**
+    - `ft_atoi`
+    - `ft_itoa`
+    - `ft_strmapi`
+    - `ft_striteri`
+- **4. String Search, Compare and Subs:**
+    - `ft_memcmp`
+    - `ft_memchr`
+    - `ft_strnstr`
+    - `ft_substr`
+- **5. Memory Copy, Move and Split:**
+    - `ft_strlcpy`
+    - `ft_strlcat`
+    - `ft_strjoin`
+    - `ft_strdup`
+    - `ft_strtrim`
+- **6. Struct - Linked Lists:**
+    - `ft_lstclear`
+    - `ft_lstiter`
 ## Level 3
-- ft_split
-- ft_lstmap
+- **5. Memory Copy, Move and Split:**
+    - `ft_split` 
+    - `ft_calloc`
+- **6. Struct - Linked Lists:**
+    - `ft_lstmap` 
 
 ##
 ---

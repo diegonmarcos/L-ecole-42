@@ -164,6 +164,12 @@
   },
   "active": "e129d3584c965f33",
   "lastOpenFiles": [
+    "1.IOPrinters/ft_putchar_fd.md",
+    "readme.md",
+    "1.IOPrinters/Fft_putchar_fd.md",
+    "IOPrinters/Fft_putchar_fd.md",
+    "().md",
+    "IOPrinters",
     "0.Include/libftH.md",
     "0.Include/Makefile.md",
     "0.Include",
@@ -186,11 +192,6 @@
     "5.MemoryCopyMoveSplit/ft_memmove.md",
     "5.MemoryCopyMoveSplit/ft_memcpy.md",
     "5.MemoryCopyMoveSplit/ft_memcmp.md",
-    "5.MemoryCopyMoveSplit/ft_memchr.md",
-    "5.MemoryCopyMoveSplit/ft_calloc.md",
-    "3.StringFormatting/ft_bzero.md",
-    "3.StringFormatting/ft_itoa.md",
-    "3.StringFormatting/ft_atoi.md",
     "3.StringFormatting",
     "0.include",
     "0.srcmd",
@@ -198,7 +199,6 @@
     "5.MemoryCopyMoveSplit",
     "4.StringSearchCompareSubs",
     "3.StringClassification",
-    "2.StringClassification",
-    "a5.IOFileDescriptors"
+    "2.StringClassification"
   ]
 }

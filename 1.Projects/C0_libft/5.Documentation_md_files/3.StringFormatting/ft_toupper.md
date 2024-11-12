@@ -1,4 +1,7 @@
-# ft_toupper - `int ft_toupper(int c);`
+# ft_toupper 
+``` c 
+int ft_toupper(int c);
+```
 <br>
 <br>
 

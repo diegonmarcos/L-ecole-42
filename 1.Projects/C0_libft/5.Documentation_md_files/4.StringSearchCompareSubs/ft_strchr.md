@@ -1,4 +1,7 @@
-# ft_strchr - `char *ft_strchr(const char *s, int c);`
+# ft_strchr 
+``` c 
+char *ft_strchr(const char *s, int c);
+```
 <br>
 <br>
 

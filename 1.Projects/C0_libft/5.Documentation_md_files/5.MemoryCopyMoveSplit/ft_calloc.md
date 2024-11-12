@@ -1,4 +1,7 @@
-# ft_calloc - `void *ft_calloc(size_t count, size_t size);`
+# ft_calloc
+``` c 
+void *ft_calloc(size_t count, size_t size);
+```
 <br>
 <br>
 
