@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1.ManipulateChars/ft_isalnum.md",
+                "file": "readme.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ft_isalnum"
+              "title": "readme"
             }
           }
         ]
@@ -162,25 +162,43 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d19219c6f306bf3a",
+  "active": "e129d3584c965f33",
   "lastOpenFiles": [
-    "7.srcmd/libftH.md",
-    "7.srcmd/Makefile.md",
-    "7.srcmd",
-    "readme.md",
-    "5.IOFileDescriptors/ft_putendl_fd.md",
-    "2.ManipStrings/ft_isprint.c",
-    "1.ManipulateChars/ft_isalnum.md",
-    "1.ManipulateChars/ft_isalphas.md",
-    "1.ManipulateChars/ft_isalpha.md",
-    "libft/Makefile.md",
-    "srcmd/libftH.md",
-    "srcmd/Makefile.md",
-    "srcmd",
-    "libft/libftH.md",
-    "libft/Makefile",
-    "libft/libft copy.h",
-    "2.ManipStrings/ft_strmapi.md",
-    "1.ManipulateChars/HighL/ft_isalnum.md"
+    "3.StringFormatting/ft_strmapi.md",
+    "3.StringFormatting/ft_striteri.md",
+    "5.MemoryCopyMoveSplit/ft_strtrim.md",
+    "4.StringSearchCompareSubs/ft_strrchr.md",
+    "5.MemoryCopyMoveSplit/ft_strlcat.md",
+    "5.MemoryCopyMoveSplit/ft_strlcpy.md",
+    "2.StringClassification/ft_strlen.md",
+    "4.StringSearchCompareSubs/ft_strnstr.md",
+    "5.MemoryCopyMoveSplit/ft_strjoin.md",
+    "5.MemoryCopyMoveSplit/ft_strdup.md",
+    "5.MemoryCopyMoveSplit/ft_split.md",
+    "2.StringClassification/ft_isprint.md",
+    "4.StringSearchCompareSubs/ft_substr.md",
+    "4.StringSearchCompareSubs/ft_strchr.md",
+    "4.StringSearchCompareSubs/ft_strncmp.md",
+    "5.MemoryCopyMoveSplit/ft_memset.md",
+    "5.MemoryCopyMoveSplit/ft_memmove.md",
+    "5.MemoryCopyMoveSplit/ft_memcpy.md",
+    "5.MemoryCopyMoveSplit/ft_memcmp.md",
+    "5.MemoryCopyMoveSplit/ft_memchr.md",
+    "5.MemoryCopyMoveSplit/ft_calloc.md",
+    "3.StringFormatting/ft_bzero.md",
+    "3.StringFormatting/ft_itoa.md",
+    "3.StringFormatting/ft_atoi.md",
+    "6.StructLinkedLists/ft_lstsize.md",
+    "6.StructLinkedLists/ft_lstnew.md",
+    "3.StringFormatting",
+    "0.include",
+    "0.srcmd",
+    "6.StructLinkedLists",
+    "5.MemoryCopyMoveSplit",
+    "4.StringSearchCompareSubs",
+    "3.StringClassification",
+    "2.StringClassification",
+    "a5.IOFileDescriptors",
+    "a6.ListManip"
   ]
 }

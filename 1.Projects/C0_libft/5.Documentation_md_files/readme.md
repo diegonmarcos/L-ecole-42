@@ -2,12 +2,19 @@
 # LIBFT
 
 
-## I/O Printers
+## 1. I/O Printers
 - ft_putchar_fd
 - ft_putstr_fd
 - ft_putendl_fd
 - ft_putnbr_fd
-## String Formating
+## 2. String Classification
+- ft_strlen
+- ft_isalpha
+- ft_isdigit
+- ft_isalnum
+- ft_isascii
+- ft_isprint
+## 3. String Formatting
 - ft_memset
 - ft_bzero
 - ft_toupper
@@ -16,7 +23,15 @@
 - ft_itoa
 - ft_strmapi
 - ft_striteri
-## Copy, Move memory and Split
+## 4. String Search, Compare and Subs
+- ft_memcmp
+- ft_memchr
+- ft_strchr : search first occurrence
+- ft_strrchr : search last occurrence
+- ft_strnstr
+- ft_strncmp
+- ft_substr
+## 5. Memory Copy, Move and Split
 - ft_memcpy
 - ft_memmove
 - ft_strlcpy
@@ -25,28 +40,8 @@
 - ft_strdup
 - ft_strtrim
 - ft_split
-
-## Search, Compare and Subs
-- ft_memcmp
-- ft_memchr
-- ft_strchr : search first occurrence
-- ft_strrchr : search last occurrence
-- ft_strnstr
-- ft_strncmp
-- ft_substr
-
-## String Classification
-- ft_strlen
-- ft_isalpha
-- ft_isdigit
-- ft_isalnum
-- ft_isascii
-- ft_isprint
-
-## Memory Management
 - ft_calloc
-
-## Struct - Linked Lists
+## 6. Struct - Linked Lists
 ###### ft_lstnew
 ```C
 t_list *ft_lstnew(void *content);
