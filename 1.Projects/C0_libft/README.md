@@ -13,7 +13,7 @@
 	<a href="#RESOURCES">RESOURCES</a> •
 	<a href="#DEVELOPMENT">DEVELOPMENT</a> •
 	<a href="#DOCUMENTATION">DOCUMENTATION</a> •
-	<a href="/5.Documentation/readme.md">DOCUMENTATION2</a> •
+	<a href="1.Projects/C0_libft/5.Documentation/readme.md">DOCUMENTATION2</a> •
 </p>
 <br>
 
