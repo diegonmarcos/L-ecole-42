@@ -162,8 +162,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e129d3584c965f33",
+  "active": "d19219c6f306bf3a",
   "lastOpenFiles": [
+    "7.srcmd/libftH.md",
+    "7.srcmd/Makefile.md",
+    "7.srcmd",
     "readme.md",
     "5.IOFileDescriptors/ft_putendl_fd.md",
     "2.ManipStrings/ft_isprint.c",
