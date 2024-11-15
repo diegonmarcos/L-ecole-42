@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
+/*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 10:55:59 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/10 11:48:56 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/15 23:21:08 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,6 @@
 int	ft_isdigit(int c)
 {
 	if (c >= 48 && c <= 57)
-		return (c);
+		return (1);
 	return (0);
 }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
+/*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 10:56:09 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/10 11:49:18 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/15 23:24:41 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,6 @@
 int	ft_isprint(int c)
 {
 	if (c >= 32 && c <= 126)
-		return (c);
+		return (1);
 	return (0);
 }
