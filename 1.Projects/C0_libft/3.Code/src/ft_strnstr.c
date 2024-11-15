@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 11:00:22 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/15 22:14:48 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/15 23:13:11 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,10 +38,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	size_t	needle_len;
 
 	if (!haystack && len == 0)
-	{
 		return (NULL);
-	}
-
 	if (*needle == '\0')
 	{
 		return ((char *)haystack);

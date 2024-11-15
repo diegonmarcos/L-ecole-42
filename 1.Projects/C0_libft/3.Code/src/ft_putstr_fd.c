@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 10:59:04 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/15 22:25:38 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/15 23:13:19 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ void	ft_putstr_fd(char *str, int fd)
 {
 	int	i;
 
-	if(!str)
+	if (!str)
 		return ;
 	i = 0;
 	while (str[i])

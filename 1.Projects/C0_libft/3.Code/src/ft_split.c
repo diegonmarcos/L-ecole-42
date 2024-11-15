@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 10:59:11 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/15 22:24:14 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/15 23:11:58 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,7 @@ char	**ft_split(char const *s, char c)
 	int		i;
 	int		j;
 
-	if(!s)
+	if (!s)
 		return (NULL);
 	array = (char **)ft_calloc(ft_countwords(s, c) + 1, sizeof(char *));
 	if (!array)

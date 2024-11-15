@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 10:55:20 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/15 21:31:07 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/15 23:13:45 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,10 +36,10 @@ void	*ft_calloc(size_t count, size_t size)
 	size_t			i;
 
 	i = 0;
-	if (count == 0 || size == 0) 
-		return (malloc(0)); 
+	if (count == 0 || size == 0)
+		return (malloc(0));
 	if (SIZE_MAX / count < size)
-		return (NULL); 
+		return (NULL);
 	tmp = malloc(count * size);
 	if (!tmp)
 		return (NULL);
