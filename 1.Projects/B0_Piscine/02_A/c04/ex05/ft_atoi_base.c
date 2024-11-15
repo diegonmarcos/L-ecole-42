@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/24 18:58:41 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/10/08 18:47:04 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/15 14:56:00 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,7 +93,7 @@ int	ft_atoi_base(char *str, char *base)
 	return (0);
 }
 
-/*
+
 #include <stdio.h>
 
 int		main(void)
@@ -101,4 +101,4 @@ int		main(void)
 	printf("%d\n", ft_atoi_base("	+++++--133742", "0123456789"));
 	printf("%d\n", ft_atoi_base("	     ---101010", "01"));
 	printf("%d\n", ft_atoi_base(" 	+---539", "0123456789abcdef"));
-}*/
+}

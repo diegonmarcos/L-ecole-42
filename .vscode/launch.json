@@ -1,0 +1,20 @@
+// This file is used to configure the debugger for C++ in Visual Studio Code
+
+  {
+    "version": "0.2.0",
+    "configurations": [
+	  {
+		"name": "Launch",
+		"type": "lldb",
+		"request": "launch",
+		"program": "${fileDirname}/a.out",
+		//"args": ["-arg1", "-arg2"],
+		"reverseDebugging": true,
+		//"preLaunchTask": "build",
+		//"stopAtEntry": true,
+		"settings": {
+ 		   "lldb.var-display": "all-values" 
+		},
+	}
+    ]
+  }

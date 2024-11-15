@@ -4,6 +4,7 @@
 		"libft.h": "c",
 		"stdio.h": "c",
 		"string.h": "c",
-		"stdlib.h": "c"
+		"stdlib.h": "c",
+		"libdnm.h": "c"
 	}
 }
