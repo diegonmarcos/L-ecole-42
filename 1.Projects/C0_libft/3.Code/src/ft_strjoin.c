@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
+/*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 10:59:40 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/10 12:00:31 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/15 22:22:03 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,6 +34,8 @@ char	*ft_strjoin(const char *s1, const char *s2)
 	int		i;
 	int		j;
 
+	if(!s1 || !s2)
+		return (NULL);
 	i = 0;
 	j = 0;
 	res = (char *) malloc((ft_strlen(s1) + ft_strlen(s2) + 1) * sizeof(char));

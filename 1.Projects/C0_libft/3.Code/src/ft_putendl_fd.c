@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
+/*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 10:58:47 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/10 11:57:15 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/15 22:25:50 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,8 @@ void	ft_putendl_fd(char *str, int fd)
 {
 	int	i;
 
+	if(!str)
+		return ;
 	i = 0;
 	while (str[i])
 	{
