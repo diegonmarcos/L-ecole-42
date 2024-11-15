@@ -3,7 +3,7 @@ $> hostname; uname -msr
 c3a6c6.42berlin.de
 Linux 6.5.0-1027-oem x86_64
 $> date
-Fri Nov 15 09:13:32 PM CET 2024
+Fri Nov 15 10:56:14 PM CET 2024
 $> gcc --version
 gcc (Ubuntu 10.5.0-1ubuntu1~22.04) 10.5.0
 Copyright (C) 2020 Free Software Foundation, Inc.
@@ -192,7 +192,7 @@ ranlib libft.a
 	(•̀ᴗ•́)و BONUS GENERATED!
 
 $> ls -la libft.a
--rw-r--r-- 1 dinepomu 2024_berlin 66646 Nov 15 21:13 /home/dinepomu/MyFiles/lecole42/1.Projects/C0_libft/4.Tester/warmachine/dirlibft/libft.a
+-rw-r--r-- 1 dinepomu 2024_berlin 66958 Nov 15 22:56 /home/dinepomu/MyFiles/lecole42/1.Projects/C0_libft/4.Tester/warmachine/dirlibft/libft.a
 
 = Part1_functions ==============================================================
 
@@ -588,6 +588,9 @@ Diff OK :D
 
 = ft_strnstr.c =================================================================
 $> norminette ft_strnstr.c | grep -E '(Error|Warning)'
+../0_libft/ft_strnstr.c: Error!
+Error: EMPTY_LINE_FUNCTION  (line:  44, col:   1):	Empty line in function
+Norme check failed
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_strnstr.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -1090,6 +1093,10 @@ Diff OK :D
 
 = ft_strmapi.c =================================================================
 $> norminette ft_strmapi.c | grep -E '(Error|Warning)'
+../0_libft/ft_strmapi.c: Error!
+Error: SPACE_AFTER_KW       (line:  38, col:   5):	Missing space after keyword
+Error: SPC_BFR_PAR          (line:  38, col:   7):	Missing space before parenthesis (brace/bracket)
+Norme check failed
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_strmapi.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -1130,6 +1137,10 @@ Diff OK :D
 
 = ft_strjoin.c =================================================================
 $> norminette ft_strjoin.c | grep -E '(Error|Warning)'
+../0_libft/ft_strjoin.c: Error!
+Error: SPACE_AFTER_KW       (line:  37, col:   5):	Missing space after keyword
+Error: SPC_BFR_PAR          (line:  37, col:   7):	Missing space before parenthesis (brace/bracket)
+Norme check failed
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_strjoin.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -1155,6 +1166,10 @@ Diff OK :D
 
 = ft_strtrim.c =================================================================
 $> norminette ft_strtrim.c | grep -E '(Error|Warning)'
+../0_libft/ft_strtrim.c: Error!
+Error: SPACE_AFTER_KW       (line:  52, col:   5):	Missing space after keyword
+Error: SPC_BFR_PAR          (line:  52, col:   7):	Missing space before parenthesis (brace/bracket)
+Norme check failed
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_strtrim.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -1185,6 +1200,11 @@ Diff OK :D
 
 = ft_split.c ===================================================================
 $> norminette ft_split.c | grep -E '(Error|Warning)'
+../0_libft/ft_split.c: Error!
+Error: SPACE_AFTER_KW       (line:  75, col:   5):	Missing space after keyword
+Error: SPC_BFR_PAR          (line:  75, col:   7):	Missing space before parenthesis (brace/bracket)
+Error: TOO_MANY_LINES       (line:  96, col:   1):	Function has more than 25 lines
+Norme check failed
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_split.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -1275,6 +1295,10 @@ Diff OK :D
 
 = ft_striteri.c ================================================================
 $> norminette ft_striteri.c | grep -E '(Error|Warning)'
+../0_libft/ft_striteri.c: Error!
+Error: SPACE_AFTER_KW       (line:  37, col:   5):	Missing space after keyword
+Error: SPC_BFR_PAR          (line:  37, col:   7):	Missing space before parenthesis (brace/bracket)
+Norme check failed
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_striteri.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -1325,6 +1349,10 @@ Diff OK :D
 
 = ft_putstr_fd.c ===============================================================
 $> norminette ft_putstr_fd.c | grep -E '(Error|Warning)'
+../0_libft/ft_putstr_fd.c: Error!
+Error: SPACE_AFTER_KW       (line:  35, col:   5):	Missing space after keyword
+Error: SPC_BFR_PAR          (line:  35, col:   7):	Missing space before parenthesis (brace/bracket)
+Norme check failed
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_putstr_fd.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
@@ -1350,6 +1378,10 @@ Diff OK :D
 
 = ft_putendl_fd.c ==============================================================
 $> norminette ft_putendl_fd.c | grep -E '(Error|Warning)'
+../0_libft/ft_putendl_fd.c: Error!
+Error: SPACE_AFTER_KW       (line:  36, col:   5):	Missing space after keyword
+Error: SPC_BFR_PAR          (line:  36, col:   7):	Missing space before parenthesis (brace/bracket)
+Norme check failed
 $> clang -Wextra -Wall -Werror -g3 -fsanitize=address ft_putendl_fd.c main.c libft.a -o user_exe
 
 = Test 1 ===================================================
