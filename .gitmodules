@@ -1,9 +1,0 @@
-[submodule "2.Common/C1_ft_printf/6.Resources/CodeExamples/Link/ft_printf"]
-	path = 2.Common/C1_ft_printf/6.Resources/CodeExamples/Link/ft_printf
-	url = https://github.com/vittoric/ft_printf
-[submodule "2.Common/C1_ft_printf/6.Resources/CodeExamples/Link/link2/fullstack"]
-	path = 2.Common/C1_ft_printf/6.Resources/CodeExamples/Link/link2/fullstack
-	url = git@github.com:diegonmarcos/fullstack.git
-[submodule "2.Common/C1_ft_printf/6.Resources/CodeExamples/ft_printf"]
-	path = 2.Common/C1_ft_printf/6.Resources/CodeExamples/ft_printf
-	url = https://github.com/vittoric/ft_printf
