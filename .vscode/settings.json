@@ -5,6 +5,8 @@
 		"stdio.h": "c",
 		"string.h": "c",
 		"stdlib.h": "c",
-		"libdnm.h": "c"
+		"libdnm.h": "c",
+		"limits.h": "c",
+		"stdint.h": "c"
 	}
 }

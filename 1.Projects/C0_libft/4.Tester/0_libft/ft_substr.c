@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 11:00:43 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/11 19:59:35 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/16 13:10:31 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,12 +52,12 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 }
 
 /*
-int main()
+#include <stdio.h>
+
+int main ()
 {
-	char *s = "Hello World!";
-	char *sub = ft_substr(s, 6, 5);
-	printf("%s\n", sub);
-	free(sub);
+	char str[] = "Born to code 42";
+	printf("%s", ft_substr(str, 5, 7));
 	return 0;
 }
 */

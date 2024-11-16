@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 11:00:30 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/10 12:03:55 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/10 21:46:43 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,3 +47,13 @@ char	*ft_strrchr(const char *s, int c)
 		res = (char *)s;
 	return (res);
 }
+
+/*
+#include <stdio.h>
+
+int main ()
+{
+	char str[] = "Born to code";
+	printf("%s",ft_strrchr(str, 111));
+	return 0;
+}*/
