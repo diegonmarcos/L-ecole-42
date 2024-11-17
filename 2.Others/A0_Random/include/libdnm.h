@@ -10,6 +10,6 @@
 # define RESET   "\x1b[0m"
 
 //const static char	*g_r[] = {RED "✗" RESET, GREEN "✓" RESET}; 
-const static char *g_r[] = {RED "FALSE" RESET, GREEN "TRUE" RESET};
+static const char *g_r[] = {RED "FALSE" RESET, GREEN "TRUE" RESET};
 
 #endif
