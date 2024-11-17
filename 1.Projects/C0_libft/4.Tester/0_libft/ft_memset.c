@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 10:58:33 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/10 20:56:25 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/17 11:01:46 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,9 @@
  * ************************************************************************** *
  * @syntax: void *ft_memset(void *b, int c, size_t len);
  * @brief: fills the first len bytes of the memory area pointed to by b with
- * @param: 1. b - pointer to the memory area to be filled. c int and len.
+ * @param: 	b: pointer to the memory area to be filled. 
+ * 			c: the byte to be set. 
+ * 			len: the number of bytes to be set to the value.
  * @return: pointer to the memory area b.
  * 
  * @note:
@@ -30,12 +32,12 @@
 
 void	*ft_memset(void *b, int c, size_t len)
 {
-	unsigned char	*tmp_ptr;
+	unsigned char	*bb;
 
-	tmp_ptr = (unsigned char *) b;
+	bb = (unsigned char *) b;
 	while (len > 0)
 	{
-		*(tmp_ptr++) = (unsigned char) c;
+		*(bb++) = (unsigned char) c;
 		len--;
 	}
 	return (b);
