@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 11:00:43 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/17 16:19:55 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/17 17:12:29 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,9 +33,9 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 	char		*str;
 	size_t		s_len;
 
-	s_len = ft_strlen(s);
 	if (!s)
 		return (NULL);
+	s_len = ft_strlen(s);
 	if (start > s_len)
 		return (ft_strdup(""));
 	if (len > (s_len - (size_t)start))

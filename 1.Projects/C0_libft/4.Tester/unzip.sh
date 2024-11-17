@@ -1,9 +1,13 @@
 #!/bin/bash
-: '
-  -x: Extract files from tar
-  -r: delete files
-'
-while getopts "xr" opt || [ "$opt" = "?" ]; do
+
+if [ $# -eq 0 ]; then  # Check if no arguments are provided
+  echo "Usage: $0 [-x] [-r]"
+  echo "  -x: Extract files from tar"
+  echo "  -r: Delete files"
+  exit 1
+fi
+
+while getopts "xr" opt; do
   case $opt in
     x)
       tar -xvf libft-tester.tar
@@ -17,7 +21,7 @@ while getopts "xr" opt || [ "$opt" = "?" ]; do
       rm -rf libft-unit-test
       rm -rf Francinette
       ;;
-    \?)
+    *)
       echo "Invalid option: -$OPTARG" >&2
 	  echo "Usage: $0 [-x] [-r]"
       echo "  -x: Extract files from tar"

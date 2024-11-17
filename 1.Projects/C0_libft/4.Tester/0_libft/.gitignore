@@ -1,6 +1,7 @@
 # Object files
 *.o
 *.a
+*.so
 
 # Executable files (if you create test programs)
 a.out
