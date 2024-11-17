@@ -1,46 +1,45 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/10 10:55:20 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/17 11:39:53 by dinepomu         ###   ########.fr       */
+/*   Created: 2024/11/10 10:59:54 by dinepomu          #+#    #+#             */
+/*   Updated: 2024/11/10 12:01:24 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
  * ************************************************************************** *
- * @syntax: void *ft_calloc(size_t count, size_t size);
- * @brief: The calloc() function allocates memory for an array 
- * 			of nmemb elements
- * @param: count: The number of elements to allocate.
- * @return: The calloc() function returns a pointer to the allocated memory.
+ * @syntax: size_t ft_strlcpy(char *dst, const char *src, size_t dstsize);
+ * @brief: copies up to dstsize - 1 characters from the string src to dst, 
+ * 			NUL-terminating the result if dstsize is not 0.
+ * @param: 1. dst - the destination string.
+ * @return: the total length of the string it tried to create.
  * 
- * @note: 
+ * @note:
  * 
- * @file: ft_calloc.c
+ * @file: ft_strlcpy.c
  * @author: Diego <dinepomu@student.42>
  * @created: 03/Aug/2024 12:07
- * @updated: 10/Nov/2024 11:44
+ * @updated: 10/Nov/2024 12:01
  * ************************************************************************** *
  */
 
 #include "libft.h"
-#include <stdint.h>
 
-void	*ft_calloc(size_t count, size_t size)
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
-	unsigned char	*tmp;
+	size_t	src_len;
 
-	if (count == 0 || size == 0)
-		return (malloc(0));
-	if (SIZE_MAX / count < size)
-		return (NULL);
-	tmp = malloc(count * size);
-	if (!tmp)
-		return (NULL);
-	ft_bzero(tmp, count * size);
-	return (tmp);
+	src_len = ft_strlen(src);
+	if (src_len + 1 < dstsize)
+		ft_memcpy(dst, src, src_len + 1);
+	else if (dstsize != 0)
+	{
+		ft_memcpy(dst, src, dstsize - 1);
+		dst[dstsize - 1] = 0;
+	}
+	return (src_len);
 }

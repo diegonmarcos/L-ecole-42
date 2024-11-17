@@ -1,46 +1,43 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/10 10:55:20 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/17 11:39:53 by dinepomu         ###   ########.fr       */
+/*   Created: 2024/11/10 11:00:14 by dinepomu          #+#    #+#             */
+/*   Updated: 2024/11/10 12:02:21 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
  * ************************************************************************** *
- * @syntax: void *ft_calloc(size_t count, size_t size);
- * @brief: The calloc() function allocates memory for an array 
- * 			of nmemb elements
- * @param: count: The number of elements to allocate.
- * @return: The calloc() function returns a pointer to the allocated memory.
+ * @syntax: int ft_strncmp(const char *s1, const char *s2, size_t n);
+ * @brief: compares the first n bytes of s1 and s2.
+ * @param: 1. s1: string to be compared.
+ * @return: 2. s2: string to be compared.
  * 
- * @note: 
+ * @note:
  * 
- * @file: ft_calloc.c
+ * @file: ft_strncmp.c
  * @author: Diego <dinepomu@student.42>
  * @created: 03/Aug/2024 12:07
- * @updated: 10/Nov/2024 11:44
+ * @updated: 10/Nov/2024 12:02
  * ************************************************************************** *
  */
 
 #include "libft.h"
-#include <stdint.h>
 
-void	*ft_calloc(size_t count, size_t size)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	unsigned char	*tmp;
+	size_t	i;
 
-	if (count == 0 || size == 0)
-		return (malloc(0));
-	if (SIZE_MAX / count < size)
-		return (NULL);
-	tmp = malloc(count * size);
-	if (!tmp)
-		return (NULL);
-	ft_bzero(tmp, count * size);
-	return (tmp);
+	i = 0;
+	while ((s1[i] || s2[i]) && i < n)
+	{
+		if ((unsigned char) s1[i] != (unsigned char) s2[i])
+			return ((unsigned char) s1[i] - (unsigned char) s2[i]);
+		i++;
+	}
+	return (0);
 }

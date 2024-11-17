@@ -1,46 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/10 10:59:26 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/17 16:05:28 by dinepomu         ###   ########.fr       */
+/*   Created: 2024/11/10 10:57:17 by dinepomu          #+#    #+#             */
+/*   Updated: 2024/11/10 18:19:33 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
  * ************************************************************************** *
- * @syntax: char *ft_strdup(const char *s1);
- * @brief: returns a pointer to a new string which is a duplicate of the 
- * 			string s1.
- * @param: 1. s1: The string to duplicate.
- * @return: A pointer to the duplicated string. NULL if insufficient memory 
- * 			was available.
+ * @syntax: void ft_lstiter(t_list *lst, void (*f)(void *));
+ * @brief: Iterates the list 'lst' and applies the function 'f' to the 
+ * 			content of each element.
+ * @param: #1. The address of a pointer to an element.
+ * @return: None.
  * 
  * @note:
  * 
- * @file: ft_strdup.c
+ * @file: ft_lstiter.c
  * @author: Diego <dinepomu@student.42>
- * @created: 03/Aug/2024 12:07
- * @updated: 10/Nov/2024 11:59
+ * @created: 10/Nov/2024 08:57
+ * @updated: 10/Nov/2024 11:52
  * ************************************************************************** *
  */
 
 #include "libft.h"
 
-char	*ft_strdup(const char *s1)
+void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	char	*dest;
-	size_t	len;
-
-	if (!s1)
-		return (NULL);
-	len = ft_strlen(s1);
-	dest = (char *) malloc(len + 1);
-	if (!dest)
-		return (NULL);
-	ft_strlcpy(dest, s1, len + 1);
-	return (dest);
+	if (!lst)
+		return ;
+	while (lst)
+	{
+		f(lst->content);
+		lst = lst->next;
+	}
 }

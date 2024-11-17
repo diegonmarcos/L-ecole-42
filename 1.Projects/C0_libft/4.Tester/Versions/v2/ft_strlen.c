@@ -1,46 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/10 10:55:20 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/17 11:39:53 by dinepomu         ###   ########.fr       */
+/*   Created: 2024/11/10 11:00:01 by dinepomu          #+#    #+#             */
+/*   Updated: 2024/11/10 12:01:44 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
  * ************************************************************************** *
- * @syntax: void *ft_calloc(size_t count, size_t size);
- * @brief: The calloc() function allocates memory for an array 
- * 			of nmemb elements
- * @param: count: The number of elements to allocate.
- * @return: The calloc() function returns a pointer to the allocated memory.
+ * @syntax: size_t ft_strlen(const char *s);
+ * @brief: Calculates the length of the string pointed to by s, excluding the 
+ * 			terminating null byte ('\0').
+ * @param: s: The string whose length is to be found.
+ * @return: The number of characters in the string pointed to by s.
  * 
- * @note: 
+ * @note:
  * 
- * @file: ft_calloc.c
+ * @file: ft_strlen.c
  * @author: Diego <dinepomu@student.42>
  * @created: 03/Aug/2024 12:07
- * @updated: 10/Nov/2024 11:44
+ * @updated: 10/Nov/2024 12:01
  * ************************************************************************** *
  */
 
 #include "libft.h"
-#include <stdint.h>
 
-void	*ft_calloc(size_t count, size_t size)
+size_t	ft_strlen(const char *s)
 {
-	unsigned char	*tmp;
+	size_t	i;
 
-	if (count == 0 || size == 0)
-		return (malloc(0));
-	if (SIZE_MAX / count < size)
-		return (NULL);
-	tmp = malloc(count * size);
-	if (!tmp)
-		return (NULL);
-	ft_bzero(tmp, count * size);
-	return (tmp);
+	i = 0;
+	while (s[i])
+		i++;
+	return (i);
 }

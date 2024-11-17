@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
+/*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 10:55:20 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/17 11:39:53 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/15 23:13:45 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,9 @@
 void	*ft_calloc(size_t count, size_t size)
 {
 	unsigned char	*tmp;
+	size_t			i;
 
+	i = 0;
 	if (count == 0 || size == 0)
 		return (malloc(0));
 	if (SIZE_MAX / count < size)
@@ -41,6 +43,7 @@ void	*ft_calloc(size_t count, size_t size)
 	tmp = malloc(count * size);
 	if (!tmp)
 		return (NULL);
-	ft_bzero(tmp, count * size);
+	while (i < count * size)
+		tmp[i++] = 0;
 	return (tmp);
 }

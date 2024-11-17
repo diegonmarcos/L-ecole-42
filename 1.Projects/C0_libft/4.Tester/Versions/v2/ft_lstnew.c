@@ -1,46 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/10 10:55:20 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/17 11:39:53 by dinepomu         ###   ########.fr       */
+/*   Created: 2024/11/10 10:57:45 by dinepomu          #+#    #+#             */
+/*   Updated: 2024/11/10 17:25:23 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
  * ************************************************************************** *
- * @syntax: void *ft_calloc(size_t count, size_t size);
- * @brief: The calloc() function allocates memory for an array 
- * 			of nmemb elements
- * @param: count: The number of elements to allocate.
- * @return: The calloc() function returns a pointer to the allocated memory.
+ * @syntax: t_list *ft_lstnew(void *content);
+ * @brief: Allocates (with malloc(3)) and returns a new element.
+ * @param: #1. The content to create the new element with.
+ * @return: The new element.
  * 
- * @note: 
+ * @note:
  * 
- * @file: ft_calloc.c
+ * @file: ft_lstnew.c
  * @author: Diego <dinepomu@student.42>
- * @created: 03/Aug/2024 12:07
- * @updated: 10/Nov/2024 11:44
+ * @created: 10/Nov/2024 08:57
+ * @updated: 10/Nov/2024 11:53
  * ************************************************************************** *
  */
 
 #include "libft.h"
-#include <stdint.h>
 
-void	*ft_calloc(size_t count, size_t size)
+t_list	*ft_lstnew(void *content)
 {
-	unsigned char	*tmp;
+	t_list	*new_lst;
 
-	if (count == 0 || size == 0)
-		return (malloc(0));
-	if (SIZE_MAX / count < size)
+	new_lst = (t_list *)malloc(sizeof(t_list));
+	if (!new_lst)
 		return (NULL);
-	tmp = malloc(count * size);
-	if (!tmp)
-		return (NULL);
-	ft_bzero(tmp, count * size);
-	return (tmp);
+	new_lst->content = content;
+	(*new_lst).next = NULL;
+	return (new_lst);
 }

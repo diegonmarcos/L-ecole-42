@@ -1,46 +1,47 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_calloc.c                                        :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/10 10:55:20 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/17 11:39:53 by dinepomu         ###   ########.fr       */
+/*   Created: 2024/11/10 10:59:20 by dinepomu          #+#    #+#             */
+/*   Updated: 2024/11/10 11:59:16 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
  * ************************************************************************** *
- * @syntax: void *ft_calloc(size_t count, size_t size);
- * @brief: The calloc() function allocates memory for an array 
- * 			of nmemb elements
- * @param: count: The number of elements to allocate.
- * @return: The calloc() function returns a pointer to the allocated memory.
+ * @syntax: char *ft_strchr(const char *s, int c);
+ * @brief: Locates the first occurrence of ’c’ (converted to a char) in the
+ * @param: #1. The string to be scanned.
+ * @return: The pointer to the located character, or NULL if the character does
  * 
- * @note: 
+ * @note:
  * 
- * @file: ft_calloc.c
+ * @file: ft_strchr.c
  * @author: Diego <dinepomu@student.42>
  * @created: 03/Aug/2024 12:07
- * @updated: 10/Nov/2024 11:44
+ * @updated: 10/Nov/2024 11:58
  * ************************************************************************** *
  */
 
 #include "libft.h"
-#include <stdint.h>
 
-void	*ft_calloc(size_t count, size_t size)
+char	*ft_strchr(const char *s, int c)
 {
-	unsigned char	*tmp;
+	unsigned int	i;
+	char			cc;
 
-	if (count == 0 || size == 0)
-		return (malloc(0));
-	if (SIZE_MAX / count < size)
-		return (NULL);
-	tmp = malloc(count * size);
-	if (!tmp)
-		return (NULL);
-	ft_bzero(tmp, count * size);
-	return (tmp);
+	cc = (char)c;
+	i = 0;
+	while (s[i])
+	{
+		if (s[i] == cc)
+			return ((char *) &s[i]);
+		i++;
+	}
+	if (s[i] == cc)
+		return ((char *) &s[i]);
+	return (NULL);
 }

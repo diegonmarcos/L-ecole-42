@@ -1,46 +1,51 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
+/*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/10 10:59:26 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/17 16:05:28 by dinepomu         ###   ########.fr       */
+/*   Created: 2024/11/10 10:59:40 by dinepomu          #+#    #+#             */
+/*   Updated: 2024/11/15 23:12:38 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
  * ************************************************************************** *
- * @syntax: char *ft_strdup(const char *s1);
- * @brief: returns a pointer to a new string which is a duplicate of the 
- * 			string s1.
- * @param: 1. s1: The string to duplicate.
- * @return: A pointer to the duplicated string. NULL if insufficient memory 
- * 			was available.
+ * @syntax: char *ft_strjoin(const char *s1, const char *s2);
+ * @brief: Concatenates two strings.
+ * @param: 1. s1 - The prefix string.
+ * @return:	The new string. NULL if the allocation fails.
  * 
  * @note:
  * 
- * @file: ft_strdup.c
+ * @file: ft_strjoin.c
  * @author: Diego <dinepomu@student.42>
  * @created: 03/Aug/2024 12:07
- * @updated: 10/Nov/2024 11:59
+ * @updated: 10/Nov/2024 12:00
  * ************************************************************************** *
  */
 
 #include "libft.h"
 
-char	*ft_strdup(const char *s1)
+char	*ft_strjoin(const char *s1, const char *s2)
 {
-	char	*dest;
-	size_t	len;
+	char	*res;
+	int		i;
+	int		j;
 
-	if (!s1)
+	if (!s1 || !s2)
 		return (NULL);
-	len = ft_strlen(s1);
-	dest = (char *) malloc(len + 1);
-	if (!dest)
+	i = 0;
+	j = 0;
+	res = (char *) malloc((ft_strlen(s1) + ft_strlen(s2) + 1) * sizeof(char));
+	if (!res)
 		return (NULL);
-	ft_strlcpy(dest, s1, len + 1);
-	return (dest);
+	while (s1[i])
+		res[j++] = s1[i++];
+	i = 0;
+	while (s2[i])
+		res[j++] = s2[i++];
+	res[j] = 0;
+	return (res);
 }

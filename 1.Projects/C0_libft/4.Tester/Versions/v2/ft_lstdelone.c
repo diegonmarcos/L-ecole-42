@@ -1,46 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/10 10:59:26 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/17 16:05:28 by dinepomu         ###   ########.fr       */
+/*   Created: 2024/11/10 10:57:07 by dinepomu          #+#    #+#             */
+/*   Updated: 2024/11/10 14:10:13 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
  * ************************************************************************** *
- * @syntax: char *ft_strdup(const char *s1);
- * @brief: returns a pointer to a new string which is a duplicate of the 
- * 			string s1.
- * @param: 1. s1: The string to duplicate.
- * @return: A pointer to the duplicated string. NULL if insufficient memory 
- * 			was available.
+ * @syntax: void ft_lstdelone(t_list *lst, void (*del)(void*));
+ * @brief: Takes as a parameter an element and frees the memory of the 
+ * 			element’s
+ * @param: #1. The element to free.
+ * @return: None.
  * 
  * @note:
  * 
- * @file: ft_strdup.c
+ * @file: ft_lstdelone.c
  * @author: Diego <dinepomu@student.42>
- * @created: 03/Aug/2024 12:07
- * @updated: 10/Nov/2024 11:59
+ * @created: 10/Nov/2024 08:57
+ * @updated: 10/Nov/2024 11:51
  * ************************************************************************** *
  */
 
 #include "libft.h"
 
-char	*ft_strdup(const char *s1)
+void	ft_lstdelone(t_list *lst, void (*del)(void*))
 {
-	char	*dest;
-	size_t	len;
-
-	if (!s1)
-		return (NULL);
-	len = ft_strlen(s1);
-	dest = (char *) malloc(len + 1);
-	if (!dest)
-		return (NULL);
-	ft_strlcpy(dest, s1, len + 1);
-	return (dest);
+	if (!lst || !del)
+		return ;
+	del(lst->content);
+	free(lst);
 }

@@ -1,46 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/10 10:59:26 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/17 16:05:28 by dinepomu         ###   ########.fr       */
+/*   Created: 2024/11/10 10:57:26 by dinepomu          #+#    #+#             */
+/*   Updated: 2024/11/10 11:53:00 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
  * ************************************************************************** *
- * @syntax: char *ft_strdup(const char *s1);
- * @brief: returns a pointer to a new string which is a duplicate of the 
- * 			string s1.
- * @param: 1. s1: The string to duplicate.
- * @return: A pointer to the duplicated string. NULL if insufficient memory 
- * 			was available.
+ * @syntax: t_list *ft_lstlast(t_list *lst);
+ * @brief: Returns the last element of the list.
+ * @param: #1. The beginning of the list.
+ * @return: The last element of the list.
  * 
  * @note:
  * 
- * @file: ft_strdup.c
+ * @file: ft_lstlast.c
  * @author: Diego <dinepomu@student.42>
- * @created: 03/Aug/2024 12:07
- * @updated: 10/Nov/2024 11:59
+ * @created: 10/Nov/2024 08:57
+ * @updated: 10/Nov/2024 11:52
  * ************************************************************************** *
  */
 
 #include "libft.h"
 
-char	*ft_strdup(const char *s1)
+t_list	*ft_lstlast(t_list *lst)
 {
-	char	*dest;
-	size_t	len;
-
-	if (!s1)
-		return (NULL);
-	len = ft_strlen(s1);
-	dest = (char *) malloc(len + 1);
-	if (!dest)
-		return (NULL);
-	ft_strlcpy(dest, s1, len + 1);
-	return (dest);
+	if (lst)
+	{
+		while (lst->next)
+			lst = lst->next;
+	}
+	return (lst);
 }

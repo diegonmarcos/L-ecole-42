@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 11:00:43 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/17 17:12:29 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/16 13:10:31 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,20 +30,24 @@
 
 char	*ft_substr(const char *s, unsigned int start, size_t len)
 {
+	size_t		i;
 	char		*str;
-	size_t		s_len;
 
 	if (!s)
 		return (NULL);
-	s_len = ft_strlen(s);
-	if (start > s_len)
+	if (start > ft_strlen(s))
 		return (ft_strdup(""));
-	if (len > (s_len - (size_t)start))
-		len = (s_len - (size_t)start);
+	if (len > ft_strlen(s + start))
+		len = ft_strlen(s + start);
 	str = ft_calloc(len + 1, sizeof(char));
 	if (!str)
 		return (NULL);
-	ft_strlcpy(str, s + start, len + 1);
+	i = 0;
+	while (i < len)
+	{
+		str[i] = s[start + i];
+		i++;
+	}
 	return (str);
 }
 

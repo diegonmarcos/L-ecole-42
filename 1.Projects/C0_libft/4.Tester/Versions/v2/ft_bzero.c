@@ -1,70 +1,90 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/11/10 10:58:33 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/17 11:01:46 by dinepomu         ###   ########.fr       */
+/*   Created: 2024/11/10 10:55:13 by dinepomu          #+#    #+#             */
+/*   Updated: 2024/11/16 13:12:57 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
  * ************************************************************************** *
- * @syntax: void *ft_memset(void *b, int c, size_t len);
- * @brief: fills the first len bytes of the memory area pointed to by b with
- * @param: 	b: pointer to the memory area to be filled. 
- * 			c: the byte to be set. 
- * 			len: the number of bytes to be set to the value.
- * @return: pointer to the memory area b.
+ * @syntax: void ft_bzero(void *s, size_t n);
+ * @brief:	The bzero() function writes n zeroed bytes to the string s.
+ * 			If n is zero, bzero() does nothing.
+ * @param: s: The pointer to the string to be zeroed.
+ * @return: None.
  * 
- * @note:
+ * @note: 
  * 
- * @file: ft_memset.c
+ * @file: ft_bzero.c
  * @author: Diego <dinepomu@student.42>
  * @created: 10/Nov/2024 08:57
- * @updated: 10/Nov/2024 11:56
+ * @updated: 10/Nov/2024 11:43
  * ************************************************************************** *
  */
 
 #include "libft.h"
 
-void	*ft_memset(void *b, int c, size_t len)
+void	ft_bzero(void *s, size_t n)
 {
-	unsigned char	*bb;
-
-	bb = (unsigned char *) b;
-	while (len > 0)
-	{
-		*(bb++) = (unsigned char) c;
-		len--;
-	}
-	return (b);
+	ft_memset(s, 0, n);
 }
+
 /*
-#include <stdio.h>
+void	ft_bzero(void *s, size_t n)
+{
+
+	char	*tmp_ptr;
+
+	tmp_ptr = (char *) s;
+	while (n > 0)
+	{
+		*(tmp_ptr++) = 0;
+		n--;
+	}
+}
+*/
+/*
 int main ()
 {
 	// Char Test
 	char str[50] = "GeeksForGeeks is for programming geeks.";
-	printf("\nBefore memset(): %s\n", str);
-	ft_memset(str + 13, '.', 8 * sizeof(char));
-	printf("After memset():  %s\n", str);
+	printf("\nBefore bzero(): %s\n", str);
+	ft_bzero(str + 13, 8 * sizeof(char));
+	printf("After bzero():  %s\n", str);
 
 	//Int Test
 		
-		//before memset
+		//before bzero
 	int arr[10] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
-	printf("\nBefore memset(): ");
+	printf("\nBefore bzero(): ");
 	for (int i = 0; i < 10; i++)
 		printf("%d ", arr[i]);
 		
-		//after memset
-	ft_memset(arr, 0, 10 * sizeof(int));
-	printf("\nAfter memset():  ");
+		//after bzero
+	ft_bzero(arr, 10 * sizeof(int));
+	printf("\nAfter bzero():  ");
 	for (int i = 0; i < 10; i++)
 		printf("%d ", arr[i]);
 	return 0;
+}
+*/
+
+/*
+
+void	ft_bzero(void *s, size_t n)
+{
+	char	*tmp_ptr;
+
+	tmp_ptr = (char *) s;
+	while (n > 0)
+	{
+		*(tmp_ptr++) = 0;
+		n--;
+	}
 }
 */
