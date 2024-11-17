@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 10:59:11 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/15 23:35:21 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/17 17:50:46 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,7 +89,7 @@ char	**ft_split(char const *s, char c)
 			i++;
 		array[num_words] = ft_substr(s, j, i - j);
 		if (!array[num_words++])
-			return (ft_free(array, num_words), NULL);
+			return (ft_free(array, num_words - 1), NULL);
 	}
 	array[num_words] = NULL;
 	return (array);

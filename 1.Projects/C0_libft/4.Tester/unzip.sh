@@ -30,3 +30,22 @@ while getopts "xr" opt; do
       ;;
   esac
 done
+
+: '
+# ---TESTERS---
+
+# Run the following commands before extracting the files
+bash unzip.sh -x
+
+# Run the following commands after extracting the files
+bash libft-war-machine/grademe.sh
+make -C libft-tester
+make -C libft-unit-test fclean
+make -C libft-unit-test
+make -C libft-unit-test f
+bash ../Francinette/tester.sh
+make -C 0_libft fclean
+
+# Run the following commands for deleting the folders
+bash unzip.sh -r
+'
