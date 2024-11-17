@@ -3,19 +3,19 @@
   -x: Extract files from tar
   -r: delete files
 '
-while getopts ":xr" opt || [ "$opt" = "?" ]; do
+while getopts "xr" opt || [ "$opt" = "?" ]; do
   case $opt in
     x)
-      tar -xvf libft-tester.tar.gz
+      tar -xvf libft-tester.tar
       tar -xvf libft-war-machine.tar
-      tar -xvf libft-unit-test.tar
+      tar -xvf libft-unit-test.tar.gz
       tar -xvf Francinette.tar
       ;;
     r)
-      rm -rf libft-tests
+      rm -rf libft-tester
       rm -rf libft-war-machine
       rm -rf libft-unit-test
-      rm -rf Francine
+      rm -rf Francinette
       ;;
     \?)
       echo "Invalid option: -$OPTARG" >&2
