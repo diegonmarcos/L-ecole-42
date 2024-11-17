@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 10:59:26 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/10 11:59:46 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/17 16:05:28 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,17 +33,14 @@
 char	*ft_strdup(const char *s1)
 {
 	char	*dest;
-	size_t	i;
+	size_t	len;
 
-	dest = (char *) malloc(ft_strlen(s1) + 1);
+	if (!s1)
+		return (NULL);
+	len = ft_strlen(s1);
+	dest = (char *) malloc(len + 1);
 	if (!dest)
 		return (NULL);
-	i = 0;
-	while (s1[i])
-	{
-		dest[i] = s1 [i];
-		i++;
-	}
-	dest[i] = 0;
+	ft_strlcpy(dest, s1, len + 1);
 	return (dest);
 }
