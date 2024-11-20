@@ -59,49 +59,56 @@ This roadmap outlines the steps involved in developing the `ft_get_next_line.c` 
 #### Mandatory Part
 
 - Use Makefile with
-- Flags cc -Wall -Wextra -Werror -D BUFFER_SIZE=INPUT_VALUE
-- Rules $(NAME), all, clean, fclean and re. Extra rule for bonus to include extra libraries.
+	- Flags cc -Wall -Wextra -Werror -D BUFFER_SIZE=INPUT_VALUE
+	- Rules $(NAME), all, clean, fclean and re. Extra rule for bonus to include extra libraries.
 - Functions and Libraries that will be needed and will be placed inside `get_next_line_utils.c`:
-	- Function 1  
+	- `read`: Reads data from the file descriptor.  
+	- `malloc`: Dynamically allocates memory for the line buffer.  
+	- `free`: Releases allocated memory.  
+	- Helper functions for string manipulation (e.g., `ft_strchr`, `ft_strjoin`, `ft_strdup`, `ft_substr`, etc.).
+	  
 - File Strucure Expanded:
-	 - ....
+	- /main
+	    - .../get_next_line.c
+	    - .../get_next_line_utils.c
+	    - .../get_next_line.h
+	    - .../main.c
 #### Bonus Part
-- Functions and Libraries that will be needed and will be placed inside `get_next_line_utils.c`:  
-	- Function 1 ...
-	- Func2...
-	- ...
+- Functions and Libraries that will be needed and will be placed inside `get_next_line_utils.c`:
+    - A data structure (e.g., linked list) to store buffers and associated data for each file descriptor.
+    - Functions to manage the data structure (e.g., add a node, find a node, delete a node).
+    - Adaptations of the helper functions from the mandatory part to work with the chosen data structure.
 - File Strucure Expanded:
-	- ....
-	- ...
+    - /main_bonus
+        - .../get_next_line_bonus.c
+        - .../get_next_line_utils_bonus.c
+        - .../get_next_line_bonus.h
+        - .../main.c
 ### 4. Unit Tester
 
 * Write test cases to verify the function's behavior with different files, buffer sizes, and input scenarios. [cite: 17]
 
 - Input Scenarios:
-	- ...
-	- ...
-
+    - Empty file.
+    - File with a single line.
+    - File with multiple lines of varying lengths.
+    - Lines with the maximum length that can be stored in the buffer.
+    - Lines that are longer than the buffer size.
+    - Reading from standard input.
 - Inputs to be tested:
-	- ...
-	- ...
-
+    - Text files with different content.
+    - Standard input (simulated or using keyboard input).
 - Outputs Expected:
-	- ...
-	- ...
-
+    - Correctly read lines, including newline characters.
+    - `NULL` when reaching the end of the file.
+    - Proper handling of different buffer sizes.
+    - No memory leaks.
 - Files:
-	- ...
-	- ...
-
+    - Files with a variety of characters, including special characters and Unicode characters.
+    - Files with different line endings (e.g., `\n`, `\r\n`).
 - Buffers sizes:
-	- from 1 to 10,000,000
-
-  
+    - from 1 to 10,000,000
 
 ### 5. Submission
-
-  
-
 * Submit the completed code to the assigned Git repository. [cite: 20]
-
 * Double-check file names for correctness. [cite: 57]
