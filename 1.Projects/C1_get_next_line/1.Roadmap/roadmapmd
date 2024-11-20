@@ -47,14 +47,50 @@ This roadmap outlines the steps involved in developing the `ft_get_next_line.c` 
   
 ### 2. Designing the Solution
 * **Core Logic:** Implement a loop that reads a chunk of data from the file descriptor using the `read` system call. Search for a newline character within the buffer. [cite: 32, 33, 39]
-
 * **Buffer Management:** Utilize a static variable to store the buffer and manage leftover data between calls. [cite: 4]
-
 * **Line Assembly:** Concatenate the chunks of data read into a complete line. [cite: 40]
-
 * **Error Handling:** Incorporate checks for errors during file reading. [cite: 26]
-
 * **End-of-File:** Detect the end of the file and return `NULL` accordingly. [cite: 26]
+
+#### FlowChart High Level
+
+``` mermaid
+graph TD
+    A["get_next_line(int fd)"] --> B["Manage buffer"]
+    B --> C["Read data"]
+    C --> D{End of file?}
+    D -- Yes --> E["Return NULL"]
+    D -- No --> F{Newline found?}
+    F -- Yes --> G["Extract and return line"]
+    G --> A
+    F -- No --> C
+```
+### Flow Chart Low Level
+``` mermaid
+graph TD
+    A["get_next_line(int fd)"] --> B["Static buffer initialized?"]
+    B -- Yes --> C["read_and_buffer(fd, buffer, bytes_read)"]
+    C --> J["read() system call"]
+    J --> K{Bytes read > 0?}
+    K -- Yes --> L["Store data in buffer"]
+    L --> M["Check for errors"]
+    M --> C
+    K -- No --> E
+    B -- No --> D["Initialize static buffer"]
+    D --> C
+    E{End of file reached?}
+    E -- Yes --> F["Return NULL"]
+    E -- No --> G{Newline found in buffer?}
+    G -- Yes --> H["extract_line(buffer)"]
+    H --> N["find_newline(buffer)"]
+    N --> O["malloc(size_t size)"]
+    O --> P["Copy line from buffer  (using ft_strjoin, ft_strdup, etc.)"]
+    P --> Q["update_buffer(buffer)"] 
+    Q --> I
+    G -- No --> C
+    I["Return extracted line"]
+```
+
 ### 3. Coding Designing and File Structure
 #### Mandatory Part
 
@@ -90,6 +126,7 @@ This roadmap outlines the steps involved in developing the `ft_get_next_line.c` 
 
 - Input Scenarios:
     - Empty file.
+    - Corrupted file.
     - File with a single line.
     - File with multiple lines of varying lengths.
     - Lines with the maximum length that can be stored in the buffer.
@@ -106,6 +143,7 @@ This roadmap outlines the steps involved in developing the `ft_get_next_line.c` 
 - Files:
     - Files with a variety of characters, including special characters and Unicode characters.
     - Files with different line endings (e.g., `\n`, `\r\n`).
+    - Corrupted file.
 - Buffers sizes:
     - from 1 to 10,000,000
 
