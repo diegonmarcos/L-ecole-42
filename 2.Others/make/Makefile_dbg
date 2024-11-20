@@ -1,0 +1,94 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: dnepomuc <dnepomuc@student.42barcelona.    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2024/06/22 19:43:58 by dnepomuc           #+#    #+#              #
+#    Updated: 2024/07/22 18:05:13 by dnepomuc         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+# **************************************************************************** #
+#                                DIRECTORIES                                   #
+# **************************************************************************** #
+SRCS_1 = 	ft_memset.c		\
+		  		ft_memmove.c	\
+		  		
+
+OBJS_1 = ${SRCS_MAND:.c=.o}
+SRC_2 = ft_lstnew_bonus.c 		\
+			ft_lstadd_front_bonus.c \
+			ft_lstsize_bonus.c 		\
+			ft_lstlast_bonus.c 		\
+			ft_lstadd_back_bonus.c 	\
+			ft_lstdelone_bonus.c 	\
+			ft_lstclear_bonus.c 	\
+			ft_lstiter_bonus.c 		\
+			ft_lstmap_bonus.c		\
+
+OBJS_2 = ${SRC_BONUS:.c=.o}
+
+# **************************************************************************** #
+#                                 VARIABLES                                    #
+# **************************************************************************** #
+NAME = libft.a
+CC = gcc
+RM = rm -rf
+AR = ar rcs
+RANLIB = ranlib
+LIBTOOL = libtool --mode=link
+CFLAGS = -Wall -Wextra -Werror
+DBGFLAGS = -g3 -fsanitize=address
+
+# **************************************************************************** #
+#                                 RULES                                        #
+# **************************************************************************** #
+all: $(NAME)
+
+%.o: %.c
+	$(CC) $(CFLAGS) -c $<
+	@echo "(•̀ᴗ•́)و $@ OBJECTS GENERATED!"
+	@echo "\n$(GREEN) Created $(NAME) ✓ $(DEF_COLOR)\n"
+
+$(NAME):
+	$(LIBTOOL) $(CC) $(CFLAGS) $(OBJS_1) -o $(NAME)
+	@echo	"	(•̀ᴗ•́)و FILE GENERATED!"
+
+clean:
+	$(RM) $(OBJS_1) $(OBJS_2)
+	@echo	"	¯\_(ツ)_/¯ OBJECTS REMOVED!"
+
+fclean:	clean
+		rm -f $(NAME)
+		@echo	"	(╯°□°）╯︵ ┻━┻ FILE REMOVED!"
+
+re: fclean all
+
+bonus:	$(NAME) $(OBJS_2)
+		$(AR) $(NAME) $(OBJS_2)
+		$(RANLIB) $(NAME)
+		@echo	"	(•̀ᴗ•́)و BONUS GENERATED!"
+
+.PHONY: all clean fclean re bonus
+
+DEL_LINE =		\033[2K
+ITALIC =		\033[3m
+BOLD =			\033[1m
+DEF_COLOR =		\033[0;39m
+GRAY =			\033[0;90m
+RED =			\033[0;91m
+GREEN =			\033[0;92m
+YELLOW =		\033[0;93m
+BLUE =			\033[0;94m
+MAGENTA =		\033[0;95m
+CYAN =			\033[0;96m
+WHITE =			\033[0;97m
+BLACK =			\033[0;99m
+ORANGE =		\033[38;5;209m
+BROWN =			\033[38;2;184;143;29m
+DARK_GRAY =		\033[38;5;234m
+MID_GRAY =		\033[38;5;245m
+DARK_GREEN =	\033[38;2;75;179;82m
+DARK_YELLOW =	\033[38;5;143m

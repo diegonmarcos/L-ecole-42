@@ -8,5 +8,7 @@
 		"libdnm.h": "c",
 		"limits.h": "c",
 		"stdint.h": "c"
-	}
+	},
+	"42header.email": "dinepomu@student.42berlin.de",
+	"42header.username": "dinepomu"
 }

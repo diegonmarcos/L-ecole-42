@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_punt_hexa.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dnepomuc <dnepomuc@student.42barcelona.      +#+  +:+       +#+      */
+/*   By: dinepomu <dinepomu@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/22 17:59:35 by dnepomuc           #+#    #+#            */
-/*   Updated: 2024/08/01 17:54:29 by dnepomuc          ###   ########.fr      */
+/*   Created: 2024/07/22 17:59:35 by dnepomuc          #+#    #+#             */
+/*   Updated: 2024/11/20 18:55:03 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

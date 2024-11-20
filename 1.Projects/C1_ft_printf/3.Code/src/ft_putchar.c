@@ -1,34 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_num_nosign.c                                    :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dnepomuc <dnepomuc@student.42barcelona.      +#+  +:+       +#+      */
+/*   By: dinepomu <dinepomu@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/22 17:22:51 by dnepomuc           #+#    #+#            */
-/*   Updated: 2024/07/29 11:49:27 by dnepomuc          ###   ########.fr      */
+/*   Created: 2024/07/04 15:53:18 by dnepomuc          #+#    #+#             */
+/*   Updated: 2024/11/20 18:55:07 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-unsigned int	ft_num_nosign(unsigned int num)
+int	ft_putchar(int c)
 {
-	int	let;
-
-	let = 0;
-	if (num > 9)
-	{
-		let = ft_num_nosign(num / 10);
-		if (let == -1)
-			return (-1);
-		num = num % 10;
-	}
-	if (num <= 9)
-	{
-		if (ft_putchar (('0' + num)) == -1)
-			return (-1);
-		let++;
-	}
-	return (let);
+	if (write (1, &c, 1) != 1)
+		return (-1);
+	return (1);
 }

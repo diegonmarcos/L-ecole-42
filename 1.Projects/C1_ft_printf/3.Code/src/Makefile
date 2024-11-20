@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: dnepomuc <dnepomuc@student.42barcelona.      +#+  +:+       +#+         #
+#    By: dinepomu <dinepomu@student.42berlin.de>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/07/17 11:18:22 by dnepomuc           #+#    #+#              #
-#    Updated: 2024/07/29 11:33:30 by dnepomuc          ###   ########.fr        #
+#    Created: 2024/11/20 18:47:35 by dinepomu          #+#    #+#              #
+#    Updated: 2024/11/20 18:55:15 by dinepomu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 

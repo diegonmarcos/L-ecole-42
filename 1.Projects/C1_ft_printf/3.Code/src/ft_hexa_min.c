@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_hexa_mayus.c                                    :+:      :+:    :+:   */
+/*   ft_hexa_min.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dnepomuc <dnepomuc@student.42barcelona       +#+  +:+       +#+      */
+/*   By: dinepomu <dinepomu@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/21 16:06:27 by dnepomuc           #+#    #+#            */
-/*   Updated: 2024/07/31 11:02:36 by dnepomuc          ###   ########.fr      */
+/*   Created: 2024/07/22 17:05:18 by dnepomuc          #+#    #+#             */
+/*   Updated: 2024/11/20 18:55:16 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ static int	puthexa_uns(char *bstr, unsigned int n, int c)
 		c = puthexa_uns(bstr, n / b, c);
 		if (c == -1)
 			return (-1);
-		if (write(1, &bstr[n % b], 1) == -1)
+		if (write (1, &bstr[n % b], 1) == -1)
 			return (-1);
 		c++;
 	}
@@ -58,14 +58,14 @@ static int	puthexa_uns(char *bstr, unsigned int n, int c)
 	return (c);
 }
 
-int	ft_hexa_mayus(int n)
+int	ft_hexa_min(int n)
 {
 	int	let;
 
 	let = 0;
 	if (n >= 0)
-		let = puthexa_long("0123456789ABCDEF", n, let);
+		let = puthexa_long("0123456789abcdef", n, let);
 	else if (n < 0)
-		let = puthexa_uns("0123456789ABCDEF", n, let);
+		let = puthexa_uns("0123456789abcdef", n, let);
 	return (let);
 }

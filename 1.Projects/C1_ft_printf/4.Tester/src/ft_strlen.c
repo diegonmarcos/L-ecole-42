@@ -1,20 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dnepomuc <dnepomuc@student.42barcelona.      +#+  +:+       +#+      */
+/*   By: dinepomu <dinepomu@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/04 15:53:18 by dnepomuc           #+#    #+#            */
-/*   Updated: 2024/07/24 16:09:21 by dnepomuc          ###   ########.fr      */
+/*   Created: 2024/07/01 14:59:11 by dnepomuc          #+#    #+#             */
+/*   Updated: 2024/11/20 18:55:15 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_putchar(int c)
+size_t	ft_strlen(const char *s)
 {
-	if (write (1, &c, 1) != 1)
-		return (-1);
-	return (1);
+	size_t	i;
+
+	i = 0;
+	while (s[i])
+		i++;
+	return (i);
 }
