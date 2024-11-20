@@ -6,7 +6,7 @@ TESTS_PATH				= tests/
 SHELL					= bash
 
 
-MANDATORY_HEADER		= ../get_next_line.h
+MANDATORY_HEADER		= ../../3.Code/get_next_line.h
 MANDATORY_FILES			= ../get_next_line.c ../get_next_line_utils.c
 MANDATORY_OBJS			= $(MANDATORY_FILES:../%.c=%.o)
 
