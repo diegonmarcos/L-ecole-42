@@ -26,6 +26,20 @@ This system administration project focuses on setting up a secure virtual machin
 - [Subject](https://github.com/dnepomuc/born2beroot/blob/master/subject/en_subject_born2beroot.pdf) `PDF`
 - [References](https://github.com/dnepomuc/42-resources#01-born2beroot) `GitHub`
 
+## Test
+### Commands
+#### Checks
+Os Runing  
+`head -n 2 /etc/os-release`  
+Doors Connection  
+`ss -tunlp`  
+Firewal rules  
+`sudo /usr/sbin/ufw status`  
+#### Do
+Create a User and add to a group  
+`sudo adduser newuser2` 
+`sudo addgroup user42`  
+
 ## MANDATORY
 > During the evaluation, I was asked questions about the topics below;
 - [x] Choose between two Linux-based operating systems: `Rocky` or `Debian`;
@@ -42,27 +56,6 @@ This system administration project focuses on setting up a secure virtual machin
 - [x] Set up a functional `WordPress` website with the following services: `lighttpd`, `MariaDB` and `PHP`;
 - [x] Set up a service of my own choice that I think is useful (justify that choice);
 
-## NORMINETTE
-> At 42 School, it is expected that almost every project is written following the Norm, which is the coding standard of the school.
-
-```
-- No for, do...while, switch, case, goto, ternary operators, or variable-length arrays allowed;
-- Each function must be a maximum of 25 lines, not counting the function's curly brackets;
-- Each line must be at most 80 columns wide, with comments included;
-- A function can take 4 named parameters maximum;
-- No assigns and declarations in the same line (unless static);
-- You can't declare more than 5 variables per function;
-- ...
-```
-
-* [42 Norms](https://github.com/42School/norminette/blob/master/pdf/en.norm.pdf) - Information about 42 code norms. `PDF`
-* [Norminette](https://github.com/42School/norminette) - Tool to respect the code norm, made by 42. `GitHub`
-* [42 Header](https://github.com/42Paris/42header) - 42 header for Vim. `GitHub`
-
-## LICENSE
-<p>
-This work is published under the terms of <a href="https://github.com/dnepomuc/born2beroot/blob/master/LICENSE">Unlicense</a>.
-</p>
 
 **Born2BeRoot:**
 
