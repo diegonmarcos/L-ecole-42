@@ -6,9 +6,35 @@
 /*   By: dinepomu <dinepomu@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/16 10:12:58 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/11/22 21:00:18 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/22 20:50:53 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+*	---------
+*	GET_LINE
+*	---------
+*	Extracts the line (ending in either line break and `\0` or only `\0` in EOF)
+*	from static variable.
+*	PARAMETERS
+*	#1. The pointer to the cumulative static variable 
+from previous runs of get_next_line.
+*	RETURN VALUES
+*	The string with the full line ending in a line break (`\n`) + (`\0`).
+*	-------------
+*	NEW_LEFT_STR
+*	-------------
+*	Stores in the cumulative static variable 
+the new updated variable with whatever
+*	is left from the original, minus the line extracted.
+*	PARAMETERS
+*	#1. The pointer to the cumulative static variable 
+from previous runs of get_next_line.
+*	RETURN VALUES
+*	The new updated string with whatever is left 
+from the original static, minus the
+*	line extracted.
+*/
 
 #include "get_next_line.h"
 
@@ -122,4 +148,29 @@ char	*ft_new_left_str(char *left_str)
 	str[j] = '\0';
 	free(left_str);
 	return (str);
+}
+
+char	*ft_read_to_left_str(int fd, char *left_str)
+{
+	char	*buff;
+	int		rd_bytes;
+
+	buff = malloc((BUFFER_SIZE + 1) * sizeof(char));
+	if (!buff)
+		return (NULL);
+	rd_bytes = 1;
+	while (!ft_strchr(left_str, '\n') && rd_bytes != 0)
+	{
+		rd_bytes = read(fd, buff, BUFFER_SIZE);
+		if (rd_bytes == -1)
+		{
+			free(buff);
+			free(left_str);
+			return (NULL);
+		}
+		buff[rd_bytes] = '\0';
+		left_str = ft_strjoin(left_str, buff);
+	}
+	free(buff);
+	return (left_str);
 }

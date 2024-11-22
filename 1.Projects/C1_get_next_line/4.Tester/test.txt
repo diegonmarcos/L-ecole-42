@@ -1,0 +1,25 @@
+----------Star First file-----------  
+This is a text file tester for Get Next Line function.
+Here is supposed to be added all edge cases.
+
+
+This is the first line.\n
+This is the second line.\n\n
+This is the fourth line.\n
+\n
+This is the sixth line.\n
+
+
+This is the eighth line.\n
+This is the ninth line. No newline at the end of this line.
+This is the tenth line, continuing immediately after the ninth line.
+And this is the eleventh line, with a newline at the end.\n
+This is the twelfth line.
+
+
+This is the fourteenth line.\tThis line contains a tab.\n
+This is the fifteenth line. It has some spaces at the beginning.     \n
+This is the sixteenth line.\r\nThis line has a carriage return before the newline.
+This is the seventeenth line.\n
+
+-----------EOF------------

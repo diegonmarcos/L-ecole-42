@@ -1,7 +1,10 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 #include <stdarg.h>
 #include <unistd.h>
+#include <limits.h>
+#include <stdint.h>
 
 int ft_printf(const char *format, ...) {
   va_list args;
@@ -13,10 +16,12 @@ int ft_printf(const char *format, ...) {
       i++;
       switch (format[i]) {
         case 'd':;{
-          int num = va_arg(args, int);
-          char buffer[20]; // Assuming int won't exceed 20 digits
-          int len = snprintf(buffer, 20, "%d", num);
-          write(1, buffer, len);
+  			int num = va_arg(args, int);
+ 			char buffer[20]; // Assuming int won't exceed 20 digits
+ 			int len = snprintf(buffer, 20, "%d", num);
+			puts();
+//			putstr(itoa(va_arg(args, int)));
+//			write(1, buffer, len);
           count += len;
           break;
         }

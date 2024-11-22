@@ -7,7 +7,20 @@
 		"stdlib.h": "c",
 		"libdnm.h": "c",
 		"limits.h": "c",
-		"stdint.h": "c"
+		"stdint.h": "c",
+		"array": "cpp",
+		"chrono": "cpp",
+		"compare": "cpp",
+		"functional": "cpp",
+		"istream": "cpp",
+		"ostream": "cpp",
+		"ranges": "cpp",
+		"ratio": "cpp",
+		"tuple": "cpp",
+		"type_traits": "cpp",
+		"utility": "cpp",
+		"memory_resource": "c",
+		"fcntl.h": "c"
 	},
 	"42header.email": "dinepomu@student.42berlin.de",
 	"42header.username": "dinepomu"

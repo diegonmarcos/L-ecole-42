@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dnepomuc <dnepomuc@student.42urduliz.com>  +#+  +:+       +#+        */
+/*   By: dinepomu <dinepomu@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/16 10:12:35 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/08/20 00:19:06 by dnepomuc         ###   ########.fr       */
+/*   Updated: 2024/11/22 20:51:26 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,23 @@
 #  define BUFFER_SIZE 1000
 # endif
 
-char	*get_next_line(int fd);
-char	*ft_read_to_left_str(int fd, char *left_str);
+size_t	ft_strlen(char *s);
 char	*ft_strchr(char *s, int c);
 char	*ft_strjoin(char *left_str, char *buff);
-size_t	ft_strlen(char *s);
-char	*ft_get_line(char *left_str);
+
+char	*ft_read_to_left_str(int fd, char *left_str);
 char	*ft_new_left_str(char *left_str);
+char	*ft_get_line(char *left_str);
+
+char	*get_next_line(int fd);
 
 #endif
+
+/*
+size_t	ft_strlen(char *s)
+char	*ft_strchr(char *s, int c)
+char	*ft_strjoin(char *left_str, char *buff)
+char	*ft_get_line(char *left_str)
+char	*ft_new_left_str(char *left_str)
+
+*/
