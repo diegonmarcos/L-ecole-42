@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/16 10:12:14 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/11/25 17:02:24 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/25 15:22:51 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,6 +55,7 @@ char	*get_next_line(int fd)
 /*
 #include <stdio.h>
 #include <fcntl.h>
+
 int	main(void)
 {
 	char	*line;
@@ -94,4 +95,5 @@ int	main(void)
 	close(fd2);
 	close(fd3);
 	return (0);
-}*/
+}
+*/
