@@ -1,0 +1,10 @@
+2024/11/26 16:44:10 ERROR : Error reading tag file at /home/dinepomu/.cache/rclone/webgui/tag 
+2024/11/26 16:44:10 INFO  : A release (v2.0.5) for gui is present at https://github.com/rclone/rclone-webui-react/releases/download/v2.0.5/currentbuild.zip. Use --rc-web-gui-update to update. Your current version is ()
+2024/11/26 16:44:10 NOTICE: A new release for gui (v2.0.5) is present at https://github.com/rclone/rclone-webui-react/releases/download/v2.0.5/currentbuild.zip
+2024/11/26 16:44:10 NOTICE: Downloading webgui binary. Please wait. [Size: 4763452, Path :  /home/dinepomu/.cache/rclone/webgui/v2.0.5.zip]
+2024/11/26 16:44:11 NOTICE: Unzipping webgui binary
+2024/11/26 16:44:11 INFO  : No username specified. Using default username: gui 
+2024/11/26 16:44:11 INFO  : No password specified. Using random password: NKKTtHtLEVgi_91YmCtYlQ 
+2024/11/26 16:44:11 NOTICE: Serving Web GUI
+2024/11/26 16:44:11 INFO  : Using --user gui --pass XXXX as authenticated user
+2024/11/26 16:44:11 CRITICAL: Failed to start remote control: failed to init server: listen tcp 127.0.0.1:5572: bind: address already in use
