@@ -20,7 +20,8 @@
 		"type_traits": "cpp",
 		"utility": "cpp",
 		"memory_resource": "c",
-		"fcntl.h": "c"
+		"fcntl.h": "c",
+		"stdarg.h": "c"
 	},
 	"42header.email": "dinepomu@student.42berlin.de",
 	"42header.username": "dinepomu"
