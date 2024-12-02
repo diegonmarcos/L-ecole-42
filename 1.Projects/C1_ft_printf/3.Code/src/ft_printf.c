@@ -6,13 +6,30 @@
 /*   By: dinepomu <dinepomu@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/17 17:23:43 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/12/02 20:33:14 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/12/02 20:49:04 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static int	type_var(char c, va_list element);
+static int	type_var(char c, va_list element)
+{
+	if (c == 'c')
+		return (ft_putchar(va_arg(element, int)));
+	if (c == 's')
+		return (ft_putstr(va_arg(element, char *)));
+	if (c == 'd' || c == 'i')
+		return (ft_putnbr(va_arg(element, int)));
+	if (c == 'p')
+		return (ft_punt_hexa(va_arg(element, void *)));
+	if (c == 'u')
+		return (ft_num_nosign(va_arg(element, unsigned int)));
+	if (c == 'X')
+		return (ft_hexa_mayus(va_arg(element, int)));
+	if (c == 'x')
+		return (ft_hexa_min(va_arg(element, int)));
+	return (0);
+}
 
 static int	w_str_percent(char c, va_list element)
 {
@@ -71,24 +88,6 @@ int	ft_printf(const char *str, ...)
 	return (let);
 }
 
-static int	type_var(char c, va_list element)
-{
-	if (c == 'c')
-		return (ft_putchar(va_arg(element, int)));
-	if (c == 's')
-		return (ft_putstr(va_arg(element, char *)));
-	if (c == 'd' || c == 'i')
-		return (ft_putnbr(va_arg(element, int)));
-	if (c == 'p')
-		return (ft_punt_hexa(va_arg(element, void *)));
-	if (c == 'u')
-		return (ft_num_nosign(va_arg(element, unsigned int)));
-	if (c == 'X')
-		return (ft_hexa_mayus(va_arg(element, int)));
-	if (c == 'x')
-		return (ft_hexa_min(va_arg(element, int)));
-	return (0);
-}
 /*
 c: This specifier is for printing a single character.
 s: This specifier is for printing a string of characters.
