@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/17 17:23:43 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/11/20 18:55:15 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/12/02 20:33:14 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,3 +89,12 @@ static int	type_var(char c, va_list element)
 		return (ft_hexa_min(va_arg(element, int)));
 	return (0);
 }
+/*
+c: This specifier is for printing a single character.
+s: This specifier is for printing a string of characters.
+d/i: This specifier is for printing a decimal number/integer.
+p: This specifier is for printing a pointer.
+u: This specifier is for printing an unsigned integer.
+X: This specifier is for printing a hexadecimal number in uppercase.
+x: This specifier is for printing a hexadecimal number in lowercase.
+*/
