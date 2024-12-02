@@ -6,7 +6,7 @@
 #    By: dinepomu <dinepomu@student.42berlin.de>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/20 18:47:35 by dinepomu          #+#    #+#              #
-#    Updated: 2024/11/20 18:55:15 by dinepomu         ###   ########.fr        #
+#    Updated: 2024/12/02 21:01:30 by dinepomu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,8 +32,8 @@ MID_GRAY =		\033[38;5;245m
 DARK_GREEN =	\033[38;2;75;179;82m
 DARK_YELLOW =	\033[38;5;143m
 
-SRCS = ft_printf.c ft_putchar.c ft_putnbr.c ft_num_nosign.c ft_punt_hexa.c \
-				ft_putstr.c ft_strlen.c ft_hexa_min.c ft_hexa_mayus.c
+SRCS = ft_printf.c ft_putchar.c ft_putnbr.c ft_num_unsign.c ft_pointer_hexa.c \
+				ft_putstr.c ft_strlen.c ft_hexa_minusc.c ft_hexa_mayusc.c
 
 INCLUDE = ft_printf.h
 

@@ -1,26 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_num_nosign.c                                    :+:      :+:    :+:   */
+/*   ft_num_unsign.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dinepomu <dinepomu@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/22 17:22:51 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/11/20 18:55:16 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/12/02 21:05:38 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-unsigned int	ft_num_nosign(unsigned int num)
+unsigned int	ft_num_unsign(unsigned int num)
 {
-	int	let;
+	int	char_count;
 
-	let = 0;
+	char_count = 0;
 	if (num > 9)
 	{
-		let = ft_num_nosign(num / 10);
-		if (let == -1)
+		char_count = ft_num_unsign(num / 10);
+		if (char_count == -1)
 			return (-1);
 		num = num % 10;
 	}
@@ -28,7 +28,7 @@ unsigned int	ft_num_nosign(unsigned int num)
 	{
 		if (ft_putchar (('0' + num)) == -1)
 			return (-1);
-		let++;
+		char_count++;
 	}
-	return (let);
+	return (char_count);
 }
