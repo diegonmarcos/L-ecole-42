@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 10:59:47 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/15 22:14:52 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/19 15:31:31 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,8 +37,6 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 
 	if (!dst && dstsize == 0)
 		return (ft_strlen(src));
-	if (!dst || !src)
-		return (0);
 	src_len = ft_strlen(src);
 	dst_len = ft_strlen(dst);
 	if (dst_len >= dstsize)

@@ -1,0 +1,22 @@
+# Object files
+*.o
+*.a
+*.so
+
+# Executable files (if you create test programs)
+a.out
+*.out
+
+# Compiled library
+libft.a
+libft.h.gch
+
+# Files generated during compilation (if you use a build directory)
+build/
+
+# Test files directory
+test_files/
+*.log
+
+
+

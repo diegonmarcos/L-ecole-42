@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dinepomu <dinepomu@student.42.fr>          +#+  +:+       +#+        */
+/*   By: dinepomu <dinepomu@student.42>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/10 11:00:22 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/11/15 22:14:48 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/11/16 13:10:31 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,10 +38,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	size_t	needle_len;
 
 	if (!haystack && len == 0)
-	{
 		return (NULL);
-	}
-
 	if (*needle == '\0')
 	{
 		return ((char *)haystack);
@@ -49,7 +46,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	needle_len = ft_strlen(needle);
 	while (*haystack && len >= needle_len)
 	{
-		if (ft_strncmp(haystack, needle, needle_len) == 0)
+		if (!ft_strncmp(haystack, needle, needle_len))
 		{
 			return ((char *)haystack);
 		}
@@ -58,3 +55,21 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	}
 	return (NULL);
 }
+
+/*
+#include <stdio.h>
+
+int main(void)
+{
+	const char *haystack = "Hello, world!";
+	const char *needle = "world";
+	char *result;
+
+	result = ft_strnstr(haystack, needle, 13);
+	if (result)
+		printf("Found: %s\n", result);
+	else
+		printf("Not found\n");
+	return 0;
+}
+*/
