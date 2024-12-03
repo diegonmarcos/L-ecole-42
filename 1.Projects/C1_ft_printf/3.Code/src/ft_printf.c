@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/17 17:23:43 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/12/03 15:13:55 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/12/03 15:18:29 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,11 +89,11 @@ int	ft_printf(const char *str, ...)
 }
 
 /*
-c: This specifier is for printing a single character.
-s: This specifier is for printing a string of characters.
-d/i: This specifier is for printing a decimal number/integer.
-p: This specifier is for printing a pointer.
-u: This specifier is for printing an unsigned integer.
-X: This specifier is for printing a hexadecimal number in uppercase.
-x: This specifier is for printing a hexadecimal number in lowercase.
+c:		This specifier is for printing a single character.
+s:		This specifier is for printing a string of characters.
+d/i:	This specifier is for printing a decimal number/integer.
+p: 		This specifier is for printing a pointer.
+u: 		This specifier is for printing an unsigned integer.
+X: 		This specifier is for printing a hexadecimal number in uppercase.
+x: 		This specifier is for printing a hexadecimal number in lowercase.
 */
