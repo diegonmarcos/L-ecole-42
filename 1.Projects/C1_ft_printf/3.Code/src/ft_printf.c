@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/17 17:23:43 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/12/03 15:18:29 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/12/03 15:19:50 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ static int	w_str_percent(char c, va_list item)
 	}
 }
 
-static int	w_str(const char *str, va_list item, int let)
+static int	w_str(const char *str, va_list item, int char_count)
 {
 	int	i;
 
@@ -60,8 +60,8 @@ static int	w_str(const char *str, va_list item, int let)
 	{
 		if (str[i] == '%')
 		{
-			let = let + w_str_percent(str[i + 1], item);
-			if (let == -1)
+			char_count = char_count + w_str_percent(str[i + 1], item);
+			if (char_count == -1)
 				return (-1);
 			i++;
 		}
@@ -69,11 +69,11 @@ static int	w_str(const char *str, va_list item, int let)
 		{
 			if (write(1, &str[i], 1) != 1)
 				return (-1);
-			let++;
+			char_count++;
 		}
 		i++;
 	}
-	return (let);
+	return (char_count);
 }
 
 int	ft_printf(const char *str, ...)
