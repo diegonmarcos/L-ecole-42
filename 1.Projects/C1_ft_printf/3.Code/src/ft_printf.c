@@ -6,46 +6,46 @@
 /*   By: dinepomu <dinepomu@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/17 17:23:43 by dinepomu          #+#    #+#             */
-/*   Updated: 2024/12/03 15:19:50 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/12/03 15:25:13 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static int	type_var(char c, va_list item)
+static int	type_var(char formatSpecifier, va_list item)
 {
-	if (c == 'c')
+	if (formatSpecifier == 'c')
 		return (ft_putchar(va_arg(item, int)));
-	if (c == 's')
+	if (formatSpecifier == 's')
 		return (ft_putstr(va_arg(item, char *)));
-	if (c == 'd' || c == 'i')
+	if (formatSpecifier == 'd' || formatSpecifier == 'i')
 		return (ft_putnbr(va_arg(item, int)));
-	if (c == 'p')
+	if (formatSpecifier == 'p')
 		return (ft_pointer_hexa(va_arg(item, void *)));
-	if (c == 'u')
+	if (formatSpecifier == 'u')
 		return (ft_num_unsign(va_arg(item, unsigned int)));
-	if (c == 'X')
+	if (formatSpecifier == 'X')
 		return (ft_hexa_mayusc(va_arg(item, int)));
-	if (c == 'x')
+	if (formatSpecifier == 'x')
 		return (ft_hexa_minusc(va_arg(item, int)));
 	return (0);
 }
 
-static int	w_str_percent(char c, va_list item)
+static int	w_str_percent(char formatSpecifier, va_list item)
 {
-	int	let;
+	int	char_count;
 
-	let = 0;
-	if (c != '%')
+	char_count = 0;
+	if (formatSpecifier != '%')
 	{
-		let = type_var(c, item);
-		if (let == -1)
+		char_count = type_var(formatSpecifier, item);
+		if (char_count == -1)
 			return (-1);
-		return (let);
+		return (char_count);
 	}
 	else
 	{
-		if (write (1, &c, 1) != 1)
+		if (write (1, &formatSpecifier, 1) != 1)
 			return (-1);
 		return (1);
 	}
