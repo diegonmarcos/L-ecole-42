@@ -6,7 +6,7 @@
 #    By: dinepomu <dinepomu@student.42berlin.de>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/20 18:47:35 by dinepomu          #+#    #+#              #
-#    Updated: 2024/11/20 18:55:15 by dinepomu         ###   ########.fr        #
+#    Updated: 2024/12/03 15:09:44 by dinepomu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,8 +32,8 @@ MID_GRAY =		\033[38;5;245m
 DARK_GREEN =	\033[38;2;75;179;82m
 DARK_YELLOW =	\033[38;5;143m
 
-SRCS = ft_printf.c ft_putchar.c ft_putnbr.c ft_num_nosign.c ft_punt_hexa.c \
-				ft_putstr.c ft_strlen.c ft_hexa_min.c ft_hexa_mayus.c
+SRCS = ft_printf.c ft_putchar.c ft_putnbr.c ft_num_unsign.c ft_pointer_hexa.c \
+				ft_putstr.c ft_strlen.c ft_hexa_minusc.c ft_hexa_mayusc.c
 
 INCLUDE = ft_printf.h
 
@@ -43,7 +43,7 @@ AR = ar rcs
 CFLAGS = -Wall -Wextra -Werror
 
 %.o: %.c ${INCLUDE}
-			@echo "${BLUE} ◎ $(BROWN)Compiling   ${MAGENTA}→   $(CYAN)$< $(DEF_COLOR)"
+			@echo "${BLUE} > $(BROWN)Compiling   ${MAGENTA}→   $(CYAN)$< $(DEF_COLOR)"
 			@${CC} ${CFLAGS} -c $< -o $@
 
 OBJS = ${SRCS:.c=.o}
@@ -52,16 +52,17 @@ all:	${NAME}
 
 ${NAME}: ${OBJS}
 		@${AR} ${NAME} ${OBJS}
-		@echo "\n$(GREEN) Created $(NAME) ✓ $(DEF_COLOR)\n"
+		@echo "\n$(GREEN) Created Objects: *.o ✓ $(DEF_COLOR)"
+		@echo "$(GREEN) Created Executable: $(NAME) ✓ $(DEF_COLOR)\n"
 
 clean:
 		@${RM} ${OBJS}
-		@echo "\n${BLUE} ◎ $(RED)All objects cleaned successfully ${BLUE}◎$(DEF_COLOR)\n"
+		@echo "\n${BLUE} --- $(RED)Objects deleted  ${BLUE}---$(DEF_COLOR)\n"
 
 fclean:
 		@${RM} ${OBJS}
 		@${RM} ${NAME}
-		@echo "\n${BLUE} ◎ $(RED)All objects and executable cleaned successfully${BLUE} ◎$(DEF_COLOR)\n"
+		@echo "\n${BLUE} --- $(RED)Objects and executable deleted ${BLUE} ---$(DEF_COLOR)\n"
 
 re: fclean all
 

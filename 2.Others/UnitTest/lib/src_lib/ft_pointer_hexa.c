@@ -1,46 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_punt_hexa.c                                     :+:      :+:    :+:   */
+/*   ft_pointer_hexa.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dinepomu <dinepomu@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/22 17:59:35 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/11/20 18:55:03 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/12/02 21:08:51 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static int	hexa_pointer(char *bstr, unsigned long long n, int c)
+static int	hexa_pointer(char *base, unsigned long long n, int c)
 {
 	unsigned long long	b;
 
-	b = ft_strlen(bstr);
+	b = ft_strlen(base);
 	if (n >= b)
 	{
-		c = hexa_pointer(bstr, n / b, c);
+		c = hexa_pointer(base, n / b, c);
 		if (c == -1)
 			return (-1);
-		if (write (1, &bstr[n % b], 1) == -1)
+		if (write (1, &base[n % b], 1) == -1)
 			return (-1);
 		c++;
 	}
 	else if (n < b)
 	{
-		if (write (1, &bstr[n], 1) == -1)
+		if (write (1, &base[n], 1) == -1)
 			return (-1);
 		c++;
 	}
 	return (c);
 }
 
-int	ft_punt_hexa(void *p)
+int	ft_pointer_hexa(void *p)
 {
 	unsigned long long	pointer;
-	int					let;
+	int					char_count;
 
-	let = 0;
+	char_count = 0;
 	pointer = (unsigned long long)p;
 	if (!p)
 	{
@@ -49,9 +49,9 @@ int	ft_punt_hexa(void *p)
 	}
 	if (write(1, "0x", 2) != 2)
 		return (-1);
-	let = hexa_pointer("0123456789abcdef", pointer, let);
-	if (let == (-1))
+	char_count = hexa_pointer("0123456789abcdef", pointer, char_count);
+	if (char_count == (-1))
 		return (-1);
-	let += 2;
-	return (let);
+	char_count += 2;
+	return (char_count);
 }

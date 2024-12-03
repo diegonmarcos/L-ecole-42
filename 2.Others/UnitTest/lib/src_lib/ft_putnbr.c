@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/04 15:56:17 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/11/20 18:55:15 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/12/02 21:05:39 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,12 +22,12 @@ static int	int_min(int n)
 
 int	ft_putnbr(int n)
 {
-	int	let;
+	int	char_count;
 
-	let = 0;
+	char_count = 0;
 	if (n == -2147483648)
 		return (int_min(n));
-	if (n < 0 && ++let)
+	if (n < 0 && ++char_count)
 	{
 		if (write(1, "-", 1) != 1)
 			return (-1);
@@ -35,8 +35,8 @@ int	ft_putnbr(int n)
 	}
 	if (n > 9)
 	{
-		let += ft_putnbr(n / 10);
-		if (let == -1)
+		char_count += ft_putnbr(n / 10);
+		if (char_count == -1)
 			return (-1);
 		n = n % 10;
 	}
@@ -44,7 +44,7 @@ int	ft_putnbr(int n)
 	{
 		if (ft_putchar (('0' + n)) == -1)
 			return (-1);
-		let++;
+		char_count++;
 	}
-	return (let);
+	return (char_count);
 }
