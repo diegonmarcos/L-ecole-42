@@ -6,7 +6,7 @@
 #    By: dinepomu <dinepomu@student.42berlin.de>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/20 18:47:35 by dinepomu          #+#    #+#              #
-#    Updated: 2024/12/02 21:01:30 by dinepomu         ###   ########.fr        #
+#    Updated: 2024/12/03 15:09:44 by dinepomu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,7 +43,7 @@ AR = ar rcs
 CFLAGS = -Wall -Wextra -Werror
 
 %.o: %.c ${INCLUDE}
-			@echo "${BLUE} ◎ $(BROWN)Compiling   ${MAGENTA}→   $(CYAN)$< $(DEF_COLOR)"
+			@echo "${BLUE} > $(BROWN)Compiling   ${MAGENTA}→   $(CYAN)$< $(DEF_COLOR)"
 			@${CC} ${CFLAGS} -c $< -o $@
 
 OBJS = ${SRCS:.c=.o}
@@ -52,16 +52,17 @@ all:	${NAME}
 
 ${NAME}: ${OBJS}
 		@${AR} ${NAME} ${OBJS}
-		@echo "\n$(GREEN) Created $(NAME) ✓ $(DEF_COLOR)\n"
+		@echo "\n$(GREEN) Created Objects: *.o ✓ $(DEF_COLOR)"
+		@echo "$(GREEN) Created Executable: $(NAME) ✓ $(DEF_COLOR)\n"
 
 clean:
 		@${RM} ${OBJS}
-		@echo "\n${BLUE} ◎ $(RED)All objects cleaned successfully ${BLUE}◎$(DEF_COLOR)\n"
+		@echo "\n${BLUE} --- $(RED)Objects deleted  ${BLUE}---$(DEF_COLOR)\n"
 
 fclean:
 		@${RM} ${OBJS}
 		@${RM} ${NAME}
-		@echo "\n${BLUE} ◎ $(RED)All objects and executable cleaned successfully${BLUE} ◎$(DEF_COLOR)\n"
+		@echo "\n${BLUE} --- $(RED)Objects and executable deleted ${BLUE} ---$(DEF_COLOR)\n"
 
 re: fclean all
 
