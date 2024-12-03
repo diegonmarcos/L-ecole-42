@@ -6,11 +6,12 @@
 /*   By: dinepomu <dinepomu@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/22 17:59:35 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/12/02 21:08:51 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/12/03 22:05:56 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+//#include "ft_printf.h"
+#include "../incl_lib/ft_printf.h"
 
 static int	hexa_pointer(char *base, unsigned long long n, int c)
 {
