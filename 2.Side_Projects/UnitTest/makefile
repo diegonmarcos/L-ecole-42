@@ -6,7 +6,7 @@
 #    By: dinepomu <dinepomu@student.42berlin.de>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/20 18:47:35 by dinepomu          #+#    #+#              #
-#    Updated: 2024/12/04 16:54:22 by dinepomu         ###   ########.fr        #
+#    Updated: 2024/12/04 17:31:44 by dinepomu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -70,7 +70,7 @@ MAIN_INCL = $(wildcard incl/*.h)
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 AR = ar rcs
-DEBUG = -g -fsanitize=address
+DEBUG = -g -fsanitize=address -lasan
 MAKEFLAGS += --no-print-directory
 
 # **************************************************************************** #
@@ -115,10 +115,17 @@ $(EXEC):	$(MAIN_OBJ) $(LIBS)
 run:
 		@./$(EXEC)
 
-dbg:	$(MAIN_OBJ) $(NAME)
-		@mkdir -p $(MAIN_OBJ_DIR)
+dbg:	$(MAIN_OBJ) $(LIBS)
 		@mkdir -p $(BIN_DIR)
-		$(CC) $(CFLAGS) $(DEBUG) $(MAIN_OBJ) $(NAME) -o $(EXEC) 
+		@echo "\n$(GREEN) Created Objects: *.o ✓ $(DEF_COLOR)"
+		@$(CC) $(CFLAGS) $(DEBUG) $(MAIN_OBJ) $(LIBS) -o $(EXEC)
+		@echo "$(GREEN) Created Executable: $(EXEC) ✓ $(DEF_COLOR)\n"
+		@$(MAKE) incl_main
+		@echo "--------------------------------"
+		@echo "$(BROWN)Running Valgrind with $(EXEC)$(DEF_COLOR)"
+		@echo "--------------------------------"
+		valgrind $(EXEC) || true
+		@./$(EXEC)
 
 incl_lib:
 	@mkdir -p lib/incl_lib

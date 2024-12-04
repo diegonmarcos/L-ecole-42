@@ -8,7 +8,7 @@ This a tester for the implementation of printf
 
 int main (void)
 {
-	printf(" ------------------------\n");
+	printf("\n ------------------------\n");
 	printf(" --- TESTS FOR PRINTF ---\n");
 	printf(" ------------------------\n");
 
@@ -21,6 +21,10 @@ int main (void)
 	//TEST 1
 	char str2[] = " ";
 	printf("(%d) | ", printf("Expected:%s",str2) - 9) == ft_printf("(%d) | ",ft_printf("Test:%s",str2) - 5) ? printf("OK\n") : printf("KO\n");
-
+	//TEST 1
+	char *ptr;
+	ptr = (char *) malloc(10 * sizeof(char));
+	strcpy(ptr, "Hello");
+	printf("%s\n", ptr);
 	return 0;
 }
