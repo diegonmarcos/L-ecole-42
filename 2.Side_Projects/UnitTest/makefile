@@ -6,7 +6,7 @@
 #    By: dinepomu <dinepomu@student.42berlin.de>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/20 18:47:35 by dinepomu          #+#    #+#              #
-#    Updated: 2024/12/04 14:18:17 by dinepomu         ###   ########.fr        #
+#    Updated: 2024/12/04 14:30:00 by dinepomu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -48,6 +48,7 @@ LIB_SRC_DIR = $(LIB_DIR)/src_lib
 LIB_OBJ_DIR = $(LIB_DIR)/obj_lib
 LIB_SRC = $(wildcard $(LIB_SRC_DIR)/*.c)
 LIB_OBJ = $(patsubst $(LIB_SRC_DIR)/%.c,$(LIB_OBJ_DIR)/%.o,$(LIB_SRC))
+LIB_INCL = $(wildcard lib/incl_lib/*.h)
 
 LIBS = $(wildcard $(LIB_DIR)/*.a)
 
@@ -60,7 +61,7 @@ MAIN_SRC_DIR = src_tester
 MAIN_OBJ_DIR = obj
 MAIN_SRC = $(wildcard $(MAIN_SRC_DIR)/*.c)
 MAIN_OBJ = $(patsubst $(MAIN_SRC_DIR)/%.c,$(MAIN_OBJ_DIR)/%.o,$(MAIN_SRC))
-
+MAIN_INCL = $(wildcard incl/*.h)
 
 # **************************************************************************** #
 #                                 VARIABLES                                    #
@@ -84,7 +85,7 @@ $(NAME):	lib main run
 
 lib: $(LIB)
 
-$(LIB_OBJ_DIR)/%.o:	$(LIB_SRC_DIR)/%.c
+$(LIB_OBJ_DIR)/%.o:	$(LIB_SRC_DIR)/%.c $(LIB_INCL)
 					@mkdir -p $(LIB_OBJ_DIR)
 					@echo "${BLUE} > $(BROWN)Compiling   ${MAGENTA}→   $(CYAN)$< $(DEF_COLOR)"
 					@$(CC) $(CFLAGS) -c $< -o $@
@@ -96,7 +97,7 @@ $(LIB):	$(LIB_OBJ)
 
 main: $(EXEC)
 
-$(MAIN_OBJ_DIR)/%.o:	$(MAIN_SRC_DIR)/%.c
+$(MAIN_OBJ_DIR)/%.o:	$(MAIN_SRC_DIR)/%.c $(MAIN_INCL)
 						@mkdir -p $(MAIN_OBJ_DIR)
 						@echo "${BLUE} > $(BROWN)Compiling   ${MAGENTA}→   $(CYAN)$< $(DEF_COLOR)"
 						@$(CC) $(CFLAGS) -c $< -o $@

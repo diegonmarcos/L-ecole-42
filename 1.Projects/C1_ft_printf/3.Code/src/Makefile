@@ -6,7 +6,7 @@
 #    By: dinepomu <dinepomu@student.42berlin.de>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/20 18:47:35 by dinepomu          #+#    #+#              #
-#    Updated: 2024/12/03 15:09:44 by dinepomu         ###   ########.fr        #
+#    Updated: 2024/12/04 14:23:00 by dinepomu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -42,7 +42,7 @@ RM = rm -f
 AR = ar rcs
 CFLAGS = -Wall -Wextra -Werror
 
-%.o: %.c ${INCLUDE}
+%.o: %.c	${INCLUDE}
 			@echo "${BLUE} > $(BROWN)Compiling   ${MAGENTA}→   $(CYAN)$< $(DEF_COLOR)"
 			@${CC} ${CFLAGS} -c $< -o $@
 
