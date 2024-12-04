@@ -6,12 +6,11 @@
 /*   By: dinepomu <dinepomu@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/04 15:56:17 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/12/03 22:05:56 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/12/02 21:05:39 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include "ft_printf.h"
-#include "../incl_lib/ft_printf.h"
+#include "ft_printf.h"
 
 static int	int_min(int n)
 {

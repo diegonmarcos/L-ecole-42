@@ -6,28 +6,27 @@
 /*   By: dinepomu <dinepomu@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/21 16:06:27 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/12/03 22:05:56 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/12/03 21:20:28 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include "ft_printf.h"
-#include "../incl_lib/ft_printf.h"
+#include "ft_printf.h"
 
 static int	puthexa_long(char *base, unsigned long long n, int c)
 {
-	unsigned long long	b;
+	unsigned long long	baselenght;
 
-	b = ft_strlen(base);
-	if (n >= b)
+	baselenght = ft_strlen(base);
+	if (n >= baselenght)
 	{
-		c = puthexa_long(base, n / b, c);
+		c = puthexa_long(base, n / baselenght, c);
 		if (c == -1)
 			return (-1);
-		if (write (1, &base[n % b], 1) == -1)
+		if (write (1, &base[n % baselenght], 1) == -1)
 			return (-1);
 		c++;
 	}
-	else if (n < b)
+	else if (n < baselenght)
 	{
 		if (write (1, &base[n], 1) == -1)
 			return (-1);

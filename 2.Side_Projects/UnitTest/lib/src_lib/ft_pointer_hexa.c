@@ -6,28 +6,27 @@
 /*   By: dinepomu <dinepomu@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/22 17:59:35 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/12/03 22:05:56 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/12/03 21:17:36 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include "ft_printf.h"
-#include "../incl_lib/ft_printf.h"
+#include "ft_printf.h"
 
 static int	hexa_pointer(char *base, unsigned long long n, int c)
 {
-	unsigned long long	b;
+	unsigned long long	baselength;
 
-	b = ft_strlen(base);
-	if (n >= b)
+	baselength = ft_strlen(base);
+	if (n >= baselength)
 	{
-		c = hexa_pointer(base, n / b, c);
+		c = hexa_pointer(base, n / baselength, c);
 		if (c == -1)
 			return (-1);
-		if (write (1, &base[n % b], 1) == -1)
+		if (write (1, &base[n % baselength], 1) == -1)
 			return (-1);
 		c++;
 	}
-	else if (n < b)
+	else if (n < baselength)
 	{
 		if (write (1, &base[n], 1) == -1)
 			return (-1);

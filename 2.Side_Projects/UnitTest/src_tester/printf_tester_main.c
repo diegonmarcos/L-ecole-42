@@ -2,12 +2,16 @@
 This a tester for the implementation of printf
 */
 
-#include "../incl/my_headers.h"
+#include "my_headers.h"
 #include <stdio.h>
 #include <string.h>
 
 int main (void)
 {
+	printf(" ------------------------\n");
+	printf(" --- TESTS FOR PRINTF ---\n");
+	printf(" ------------------------\n");
+
 	//TEST 1
 	char str[] = "Hello";
 	printf("(%d) | ", printf("Expected:%s",str) - 9) == ft_printf("(%d) | ",ft_printf("Test:%s",str) - 5) ? printf("OK\n") : printf("KO\n");

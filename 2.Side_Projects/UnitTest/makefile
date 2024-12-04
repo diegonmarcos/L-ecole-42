@@ -6,13 +6,13 @@
 #    By: dinepomu <dinepomu@student.42berlin.de>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/20 18:47:35 by dinepomu          #+#    #+#              #
-#    Updated: 2024/12/04 14:30:00 by dinepomu         ###   ########.fr        #
+#    Updated: 2024/12/04 16:54:22 by dinepomu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 
 # **************************************************************************** #
-#                                COLLORS                                   	   #
+#                                COLORS                                   	   #
 # **************************************************************************** #
 
 DEL_LINE =		\033[2K
@@ -48,7 +48,7 @@ LIB_SRC_DIR = $(LIB_DIR)/src_lib
 LIB_OBJ_DIR = $(LIB_DIR)/obj_lib
 LIB_SRC = $(wildcard $(LIB_SRC_DIR)/*.c)
 LIB_OBJ = $(patsubst $(LIB_SRC_DIR)/%.c,$(LIB_OBJ_DIR)/%.o,$(LIB_SRC))
-LIB_INCL = $(wildcard lib/incl_lib/*.h)
+LIB_INCL = $(wildcard lib/incl_lib*.h)
 
 LIBS = $(wildcard $(LIB_DIR)/*.a)
 
@@ -71,6 +71,7 @@ CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 AR = ar rcs
 DEBUG = -g -fsanitize=address
+MAKEFLAGS += --no-print-directory
 
 # **************************************************************************** #
 #                                 RULES                                        #
@@ -78,10 +79,11 @@ DEBUG = -g -fsanitize=address
 
 all: $(NAME)
 
-$(NAME):	lib main run
+$(NAME):	
+		@$(MAKE) lib 
+		@$(MAKE) main 
+		@$(MAKE) run
 
-#pause:
-#	@sleep 3
 
 lib: $(LIB)
 
@@ -94,6 +96,7 @@ $(LIB):	$(LIB_OBJ)
 		@echo "\n$(GREEN) Created Objects: *.o ✓ $(DEF_COLOR)"
 		@$(AR) $(LIB) $(LIB_OBJ)
 		@echo "$(GREEN) Created Executable: $(LIB) ✓ $(DEF_COLOR)\n"
+		@$(MAKE) incl_lib
 
 main: $(EXEC)
 
@@ -107,6 +110,7 @@ $(EXEC):	$(MAIN_OBJ) $(LIBS)
 			@echo "\n$(GREEN) Created Objects: *.o ✓ $(DEF_COLOR)"
 			@$(CC) $(CFLAGS) $(MAIN_OBJ) $(LIBS) -o $(EXEC)
 			@echo "$(GREEN) Created Executable: $(EXEC) ✓ $(DEF_COLOR)\n"
+			@$(MAKE) incl_main
 
 run:
 		@./$(EXEC)
@@ -116,6 +120,18 @@ dbg:	$(MAIN_OBJ) $(NAME)
 		@mkdir -p $(BIN_DIR)
 		$(CC) $(CFLAGS) $(DEBUG) $(MAIN_OBJ) $(NAME) -o $(EXEC) 
 
+incl_lib:
+	@mkdir -p lib/incl_lib
+	@for file in lib/src_lib/*.h; do \
+		ln -sf "../../$(basename $$file)" "lib/incl_lib/"; \
+	done
+
+incl_main:
+	@mkdir -p incl
+	@for file in $(MAIN_SRC_DIR)/*.h; do \
+		ln -sf "../$(basename $$file)" "incl/"; \
+	done
+
 clean:
 		@rm -rf $(LIB_OBJ_DIR) $(MAIN_OBJ_DIR)
 		@echo "\n${BLUE} --- $(RED)Objects deleted  ${BLUE}---$(DEF_COLOR)\n"
@@ -123,7 +139,8 @@ clean:
 fclean:	clean
 		@rm -f $(LIB) $(EXEC)
 		@rm -rf $(BIN_DIR)
-		@echo "\n${BLUE} --- $(RED)Objects and executable deleted ${BLUE} ---$(DEF_COLOR)\n"
+		@rm -rf lib/incl_lib incl
+		@echo "\n${BLUE} --- $(RED)Objects, SymHeaders and executable deleted ${BLUE} ---$(DEF_COLOR)\n"
 
 re:	fclean all
 
