@@ -6,7 +6,7 @@
 #    By: dinepomu <dinepomu@student.42berlin.de>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/20 18:47:35 by dinepomu          #+#    #+#              #
-#    Updated: 2024/12/04 13:18:19 by dinepomu         ###   ########.fr        #
+#    Updated: 2024/12/04 14:07:00 by dinepomu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -40,9 +40,9 @@ DARK_YELLOW =	\033[38;5;143m
 # **************************************************************************** #
 
 ## Library
-NAME = lib_name
+LIB_NAME = lib_name
 LIB_DIR = lib
-LIB = $(LIB_DIR)/$(NAME).a
+LIB = $(LIB_DIR)/$(LIB_NAME).a
 LIBS = $(wildcard $(LIB_DIR)/*.a)
 
 LIB_SRC_DIR = $(LIB_DIR)/src_lib
@@ -51,9 +51,9 @@ LIB_SRC = $(wildcard $(LIB_SRC_DIR)/*.c)
 LIB_OBJ = $(patsubst $(LIB_SRC_DIR)/%.c,$(LIB_OBJ_DIR)/%.o,$(LIB_SRC))
 
 ## Executable
-EXECNAME = a.out
+NAME = a.out
 BIN_DIR = bin
-EXEC = $(BIN_DIR)/$(EXECNAME)
+EXEC = $(BIN_DIR)/$(NAME)
 
 MAIN_SRC_DIR = src_tester
 MAIN_OBJ_DIR = obj
@@ -68,7 +68,7 @@ MAIN_OBJ = $(patsubst $(MAIN_SRC_DIR)/%.c,$(MAIN_OBJ_DIR)/%.o,$(MAIN_SRC))
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 AR = ar rcs
-DEBBUG = -g -fsanitize=address
+DEBUG = -g -fsanitize=address
 
 # **************************************************************************** #
 #                                 RULES                                        #
@@ -76,49 +76,53 @@ DEBBUG = -g -fsanitize=address
 
 all: $(NAME)
 
-$(NAME):	$(LIB)
-			$(EXEC)
+$(NAME):	lib main run
+
+#pause:
+#	@sleep 3
 
 lib: $(LIB)
 
-$(LIB_OBJ_DIR)/%.o: $(LIB_SRC_DIR)/%.c
-	@mkdir -p $(LIB_OBJ_DIR)
-	@echo "${BLUE} > $(BROWN)Compiling   ${MAGENTA}→   $(CYAN)$< $(DEF_COLOR)"
-	@$(CC) $(CFLAGS) -c $< -o $@
+$(LIB_OBJ_DIR)/%.o:	$(LIB_SRC_DIR)/%.c
+					@mkdir -p $(LIB_OBJ_DIR)
+					@echo "${BLUE} > $(BROWN)Compiling   ${MAGENTA}→   $(CYAN)$< $(DEF_COLOR)"
+					@$(CC) $(CFLAGS) -c $< -o $@
 
-$(LIB): $(LIB_OBJ)
-	@echo "\n$(GREEN) Created Objects: *.o ✓ $(DEF_COLOR)"
-	@$(AR) $(LIB) $(LIB_OBJ)
-	@echo "$(GREEN) Created Executable: $(LIB) ✓ $(DEF_COLOR)\n"
+$(LIB):	$(LIB_OBJ)
+		@echo "\n$(GREEN) Created Objects: *.o ✓ $(DEF_COLOR)"
+		@$(AR) $(LIB) $(LIB_OBJ)
+		@echo "$(GREEN) Created Executable: $(LIB) ✓ $(DEF_COLOR)\n"
 
 main: $(EXEC)
 
-$(MAIN_OBJ_DIR)/%.o: $(MAIN_SRC_DIR)/%.c
-	@mkdir -p $(MAIN_OBJ_DIR)
-	@echo "${BLUE} > $(BROWN)Compiling   ${MAGENTA}→   $(CYAN)$< $(DEF_COLOR)"
-	@$(CC) $(CFLAGS) -c $< -o $@
+$(MAIN_OBJ_DIR)/%.o:	$(MAIN_SRC_DIR)/%.c
+						@mkdir -p $(MAIN_OBJ_DIR)
+						@echo "${BLUE} > $(BROWN)Compiling   ${MAGENTA}→   $(CYAN)$< $(DEF_COLOR)"
+						@$(CC) $(CFLAGS) -c $< -o $@
 
-$(EXEC): $(MAIN_OBJ) $(LIBS)
-	@mkdir -p $(BIN_DIR)
-	@echo "\n$(GREEN) Created Objects: *.o ✓ $(DEF_COLOR)"
-	@$(CC) $(CFLAGS) $(MAIN_OBJ) $(LIBS) -o $(EXEC)
-	@echo "$(GREEN) Created Executable: $(EXEC) ✓ $(DEF_COLOR)\n"
+$(EXEC):	$(MAIN_OBJ) $(LIBS)
+			@mkdir -p $(BIN_DIR)
+			@echo "\n$(GREEN) Created Objects: *.o ✓ $(DEF_COLOR)"
+			@$(CC) $(CFLAGS) $(MAIN_OBJ) $(LIBS) -o $(EXEC)
+			@echo "$(GREEN) Created Executable: $(EXEC) ✓ $(DEF_COLOR)\n"
 
+run:
+		@./$(EXEC)
 
-dbg: $(MAIN_OBJ) $(NAME)
-	@mkdir -p $(MAIN_OBJ_DIR)
-	@mkdir -p $(BIN_DIR)
-	$(CC) $(CFLAGS) $(DEBBUG) $(MAIN_OBJ) $(NAME) -o $(EXEC) 
+dbg:	$(MAIN_OBJ) $(NAME)
+		@mkdir -p $(MAIN_OBJ_DIR)
+		@mkdir -p $(BIN_DIR)
+		$(CC) $(CFLAGS) $(DEBUG) $(MAIN_OBJ) $(NAME) -o $(EXEC) 
 
 clean:
-	@rm -rf $(LIB_OBJ_DIR) $(MAIN_OBJ_DIR)
-	@echo "\n${BLUE} --- $(RED)Objects deleted  ${BLUE}---$(DEF_COLOR)\n"
+		@rm -rf $(LIB_OBJ_DIR) $(MAIN_OBJ_DIR)
+		@echo "\n${BLUE} --- $(RED)Objects deleted  ${BLUE}---$(DEF_COLOR)\n"
 
-fclean: clean
-	@rm -f $(LIB) $(EXEC)
-	@rm -rf $(BIN_DIR)
-	@echo "\n${BLUE} --- $(RED)Objects and executable deleted ${BLUE} ---$(DEF_COLOR)\n"
+fclean:	clean
+		@rm -f $(LIB) $(EXEC)
+		@rm -rf $(BIN_DIR)
+		@echo "\n${BLUE} --- $(RED)Objects and executable deleted ${BLUE} ---$(DEF_COLOR)\n"
 
-re: fclean all
+re:	fclean all
 
 .PHONY: all lib main clean fclean re dbg
