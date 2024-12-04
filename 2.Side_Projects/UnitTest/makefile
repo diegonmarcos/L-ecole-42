@@ -6,7 +6,7 @@
 #    By: dinepomu <dinepomu@student.42berlin.de>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/20 18:47:35 by dinepomu          #+#    #+#              #
-#    Updated: 2024/12/03 22:32:52 by dinepomu         ###   ########.fr        #
+#    Updated: 2024/12/04 13:18:19 by dinepomu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,6 +43,7 @@ DARK_YELLOW =	\033[38;5;143m
 NAME = lib_name
 LIB_DIR = lib
 LIB = $(LIB_DIR)/$(NAME).a
+LIBS = $(wildcard $(LIB_DIR)/*.a)
 
 LIB_SRC_DIR = $(LIB_DIR)/src_lib
 LIB_OBJ_DIR = $(LIB_DIR)/obj_lib
@@ -59,7 +60,6 @@ MAIN_OBJ_DIR = obj
 MAIN_SRC = $(wildcard $(MAIN_SRC_DIR)/*.c)
 MAIN_OBJ = $(patsubst $(MAIN_SRC_DIR)/%.c,$(MAIN_OBJ_DIR)/%.o,$(MAIN_SRC))
 
-LIBS = $(wildcard $(LIB_DIR)/*.a)
 
 # **************************************************************************** #
 #                                 VARIABLES                                    #
@@ -74,18 +74,19 @@ DEBBUG = -g -fsanitize=address
 #                                 RULES                                        #
 # **************************************************************************** #
 
-all: main
+all: $(NAME)
 
+$(NAME):	$(LIB)
+			$(EXEC)
 
 lib: $(LIB)
 
 $(LIB_OBJ_DIR)/%.o: $(LIB_SRC_DIR)/%.c
-	@mkdir -p $(@D)
+	@mkdir -p $(LIB_OBJ_DIR)
 	@echo "${BLUE} > $(BROWN)Compiling   ${MAGENTA}→   $(CYAN)$< $(DEF_COLOR)"
 	@$(CC) $(CFLAGS) -c $< -o $@
 
 $(LIB): $(LIB_OBJ)
-	@mkdir -p $(LIB_OBJ_DIR)
 	@echo "\n$(GREEN) Created Objects: *.o ✓ $(DEF_COLOR)"
 	@$(AR) $(LIB) $(LIB_OBJ)
 	@echo "$(GREEN) Created Executable: $(LIB) ✓ $(DEF_COLOR)\n"
@@ -93,12 +94,11 @@ $(LIB): $(LIB_OBJ)
 main: $(EXEC)
 
 $(MAIN_OBJ_DIR)/%.o: $(MAIN_SRC_DIR)/%.c
-	@mkdir -p $(@D)
+	@mkdir -p $(MAIN_OBJ_DIR)
 	@echo "${BLUE} > $(BROWN)Compiling   ${MAGENTA}→   $(CYAN)$< $(DEF_COLOR)"
 	@$(CC) $(CFLAGS) -c $< -o $@
 
 $(EXEC): $(MAIN_OBJ) $(LIBS)
-	@mkdir -p $(MAIN_OBJ_DIR)
 	@mkdir -p $(BIN_DIR)
 	@echo "\n$(GREEN) Created Objects: *.o ✓ $(DEF_COLOR)"
 	@$(CC) $(CFLAGS) $(MAIN_OBJ) $(LIBS) -o $(EXEC)
