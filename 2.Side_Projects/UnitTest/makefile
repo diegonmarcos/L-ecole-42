@@ -6,7 +6,7 @@
 #    By: dinepomu <dinepomu@student.42berlin.de>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/20 18:47:35 by dinepomu          #+#    #+#              #
-#    Updated: 2024/12/04 14:07:00 by dinepomu         ###   ########.fr        #
+#    Updated: 2024/12/04 14:18:17 by dinepomu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,12 +43,13 @@ DARK_YELLOW =	\033[38;5;143m
 LIB_NAME = lib_name
 LIB_DIR = lib
 LIB = $(LIB_DIR)/$(LIB_NAME).a
-LIBS = $(wildcard $(LIB_DIR)/*.a)
 
 LIB_SRC_DIR = $(LIB_DIR)/src_lib
 LIB_OBJ_DIR = $(LIB_DIR)/obj_lib
 LIB_SRC = $(wildcard $(LIB_SRC_DIR)/*.c)
 LIB_OBJ = $(patsubst $(LIB_SRC_DIR)/%.c,$(LIB_OBJ_DIR)/%.o,$(LIB_SRC))
+
+LIBS = $(wildcard $(LIB_DIR)/*.a)
 
 ## Executable
 NAME = a.out
@@ -125,4 +126,4 @@ fclean:	clean
 
 re:	fclean all
 
-.PHONY: all lib main clean fclean re dbg
+.PHONY: all lib main run clean fclean re dbg
