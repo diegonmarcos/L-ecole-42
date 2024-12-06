@@ -16,7 +16,7 @@ while getopts "c1234xr" opt; do
   case $opt in
     c)
     rm -rf 0_libft
-    mkdir 0_libft
+    mkdir 0_libft	
     cp ../3.Code/src/* 0_libft/
       ;;
     x)

@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/16 10:12:58 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/11/22 21:00:18 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/12/06 18:47:22 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,6 +70,32 @@ char	*ft_strjoin(char *left_str, char *buff)
 	return (str);
 }
 
+char	*ft_new_left_str(char *left_str)
+{
+	int		i;
+	int		j;
+	char	*str;
+
+	i = 0;
+	while (left_str[i] && left_str[i] != '\n')
+		i++;
+	if (!left_str[i])
+	{
+		free(left_str);
+		return (NULL);
+	}
+	str = (char *)malloc(sizeof(char) * (ft_strlen(left_str) - i + 1));
+	if (!str)
+		return (NULL);
+	i++;
+	j = 0;
+	while (left_str[i])
+		str[j++] = left_str[i++];
+	str[j] = '\0';
+	free(left_str);
+	return (str);
+}
+
 char	*ft_get_line(char *left_str)
 {
 	int		i;
@@ -95,31 +121,5 @@ char	*ft_get_line(char *left_str)
 		i++;
 	}
 	str[i] = '\0';
-	return (str);
-}
-
-char	*ft_new_left_str(char *left_str)
-{
-	int		i;
-	int		j;
-	char	*str;
-
-	i = 0;
-	while (left_str[i] && left_str[i] != '\n')
-		i++;
-	if (!left_str[i])
-	{
-		free(left_str);
-		return (NULL);
-	}
-	str = (char *)malloc(sizeof(char) * (ft_strlen(left_str) - i + 1));
-	if (!str)
-		return (NULL);
-	i++;
-	j = 0;
-	while (left_str[i])
-		str[j++] = left_str[i++];
-	str[j] = '\0';
-	free(left_str);
 	return (str);
 }
