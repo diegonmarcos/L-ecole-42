@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/16 10:12:14 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/12/09 19:03:57 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/12/09 19:53:12 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_read_to_left_str(int fd, char *left_str)
 	char	*buff;
 	int		rd_bytes;
 
-	buff = (char*) malloc((BUFFER_SIZE + 1) * sizeof(char));
+	buff = (char *) malloc((BUFFER_SIZE + 1) * sizeof(char));
 	if (!buff)
 		return (NULL);
 	rd_bytes = 1;
@@ -52,7 +52,7 @@ char	*get_next_line(int fd)
 	left_str = ft_new_left_str(left_str);
 	return (line);
 }
-
+/*
 #include <stdio.h>
 #include <fcntl.h>
 int	main(void)
@@ -95,3 +95,4 @@ int	main(void)
 	close(fd3);
 	return (0);
 }
+*/

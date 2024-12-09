@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_utils.c                                   :+:      :+:    :+:   */
+/*   get_next_line_utils.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dinepomu <dinepomu@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/16 10:12:58 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/12/09 19:02:45 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/12/09 19:54:53 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,7 +55,8 @@ char	*ft_strjoin(char *left_str, char *buff, int c)
 	}
 	if (!left_str || !buff)
 		return (NULL);
-	str = (char *) malloc(sizeof(char) * ((ft_strlen(left_str, '\0') + ft_strlen(buff, c)) + 2));
+	str = (char *) malloc(sizeof(char) * ((ft_strlen(left_str, '\0') + 
+					ft_strlen(buff, c)) + 2));
 	if (str == NULL)
 		return (NULL);
 	i = -1;
@@ -65,8 +66,8 @@ char	*ft_strjoin(char *left_str, char *buff, int c)
 			str[i] = left_str[i];
 	while (buff[j] && buff[j] != c)
 		str[i++] = buff[j++];
-	if(buff[j] == c)
-		str[i] = c;
+	if (buff[j] == c)
+		str[i++] = c;
 	return (str[i] = '\0', free(left_str), str);
 }
 
@@ -95,27 +96,10 @@ char	*ft_new_left_str(char *left_str)
 
 char	*ft_get_line(char *left_str)
 {
-	//int		i;
 	char	*str;
 
-	//i = 0;
 	if (!*left_str)
 		return (NULL);
-	/* i = ft_strlen(left_str, '\n');
-	str = (char *)malloc(sizeof(char) * (i + 2));
-	if (!str)
-		return (NULL);
-	i = 0;
-	while (left_str[i] && left_str[i] != '\n')
-	{
-		str[i] = left_str[i];
-		i++;
-	} */
 	str = ft_strjoin(NULL, left_str, '\n');
-	/* if (left_str[i] == '\n')
-	{
-		str[i] = left_str[i];
-		i++;
-	} */
-	return (str); //str[ft_strlen(lef_str, '\0')] = '\0' removed
+	return (str);
 }
