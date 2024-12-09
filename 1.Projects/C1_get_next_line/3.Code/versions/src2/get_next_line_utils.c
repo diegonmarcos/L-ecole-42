@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/16 10:12:58 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/12/09 19:54:53 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/12/09 20:05:48 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,8 +55,8 @@ char	*ft_strjoin(char *left_str, char *buff, int c)
 	}
 	if (!left_str || !buff)
 		return (NULL);
-	str = (char *) malloc(sizeof(char) * ((ft_strlen(left_str, '\0') + 
-					ft_strlen(buff, c)) + 2));
+	str = (char *) malloc(sizeof(char) * ((ft_strlen(left_str, '\0')
+					+ ft_strlen(buff, c)) + 2));
 	if (str == NULL)
 		return (NULL);
 	i = -1;
