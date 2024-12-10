@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/08/16 10:12:14 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/12/10 15:05:18 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/12/10 15:06:48 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ char	*get_next_line(int fd)
 	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (0);
 	left_str[fd] = ft_read_to_left_str(fd, left_str[fd]);
-	if (!left_str)
+	if (!left_str[fd])
 		return (NULL);
 	line = ft_get_line(left_str[fd]);
 	left_str[fd] = ft_new_left_str(left_str[fd]);
