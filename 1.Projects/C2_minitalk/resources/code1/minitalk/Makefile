@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: dnepomuc <dnepomuc@student.42barcelona.    +#+  +:+       +#+         #
+#    By: dinepomu <dinepomu@student.42berlin.de>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/29 03:50:25 by dnepomuc          #+#    #+#              #
-#    Updated: 2024/06/25 11:27:34 by dnepomuc         ###   ########.fr        #
+#    Updated: 2024/12/13 15:54:41 by dinepomu         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,8 +15,8 @@ LIBFT = libft/libft.a
 CC = cc
 CCFLAGS = cc -Wall -Werror -Wextra
 
-SERVER = server
-CLIENT = client
+SERVER = server.out
+CLIENT = client.out
 SRCS_SERVER = server.c
 SRCS_CLIENT = client.c
 SRCS_SERVER_BONUS = server_bonus.c
