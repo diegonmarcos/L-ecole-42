@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/04 14:47:54 by dnepomuc          #+#    #+#             */
-/*   Updated: 2024/12/14 23:20:17 by dinepomu         ###   ########.fr       */
+/*   Updated: 2024/12/14 23:24:47 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -169,7 +169,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void*), void (*del)(void*));
 //       Assert
 #define MY_ASSERT(condition) do { \
     if (!(condition)) { \
-        fprintf(stderr, "Assertion failed: %s (%s:%d)\n", \
+        printf("Assertion failed: %s (%s:%d)\n", \
 		#condition, __FILE__, __LINE__); \
         abort(); \
     } \
