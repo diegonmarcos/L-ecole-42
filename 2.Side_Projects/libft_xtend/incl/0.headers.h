@@ -1,8 +1,0 @@
-#include "ft_1.Memory.h"
-#include "ft_2.string.h"
-#include "ft_3.checkconvemeth.h"
-#include "ft_4.IO.h"
-#include "ft_5.linkedlists.h"
-#include "ft_printf.h"
-//#include "ft_get_next_line.h"
-//#include "libft.h"
