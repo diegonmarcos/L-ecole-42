@@ -16,7 +16,7 @@
 	- `ft_strspn.c` - Calculates the length of the initial segment of a string containing only characters from another string.
 	- L3
 	- `ft_atoi_base.c` - Converts a string to an integer in a given base.
-## Algorothims
+## Algorithims
 - **algos_string_manip:** 
 	- L1
     - `first_word.c` - Finds the first word in a string.
