@@ -1,6 +1,6 @@
 # Exam Rank 02
 ---
-#### string_manip
+## String Manip
 - **string_manip** -  String manipulation functions.
 	- L1
 	- `ft_putstr.c` - Prints a string to the standard output.
@@ -16,7 +16,7 @@
 	- `ft_strspn.c` - Calculates the length of the initial segment of a string containing only characters from another string.
 	- L3
 	- `ft_atoi_base.c` - Converts a string to an integer in a given base.
-#### algos
+## Algorothims
 - **algos_string_manip:** 
 	- L1
     - `first_word.c` - Finds the first word in a string.
@@ -64,7 +64,7 @@
     - `ft_rrange.c` - Creates an array of integers within a given range in reverse order.
     - `paramsum.c` - Prints the number of arguments passed to the program.
     - `flood_fill.c` -  Change color of the neighbor if same color.
-#### bit_manip
+## Bitwise Operations
 - **L2_bitwise** -  Bit manipulation functions.
 	- `bitwise.c` - Performs bitwise operations on numbers.
 	- `graycode.c` - Generates a Gray code sequence.
@@ -72,7 +72,7 @@
 	- `reverse_bits.c` - Reverses the bits of a number.
 	- `swap_bits.c` - Swaps two bits in a number.
 
-#### linked_list
+## Linked List
 - **L3_ft_list_remove_if** - Functions for manipulating linked lists.
 	- `ft_list_remove_if.c` - Removes elements from a linked list based on a condition.
 	- `ft_list_size.c` - Calculates the size of a linked list.
