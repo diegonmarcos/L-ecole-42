@@ -24,11 +24,11 @@ typedef struct s_list {
 #########################
 // # SRC
 
-//   ##UTILS
+//   ## UTILS
 void print_bits(unsigned char octet){
 }
 
-//   ##MAIN 
+//   ## MAIN 
 
 // One way S1o
  int ft_list_size(t_list *node){
