@@ -119,7 +119,7 @@ int main (){
 	
 	printf("##The Array\n");
 	printf("Size:%d\n", stack_a_size);
-	for(int i = 0; i < 20; i++){
+	for(int i = 0; i < 100; i++){
 		printf("%d,", stack_a[i]);
 	}
 	printf("\n");
@@ -127,7 +127,7 @@ int main (){
 	radix_sort(stack_a, stack_b, stack_a_size, 0);
 	
 	printf("\n##The Sorted\n");
-	for(int i = 0; i < 20; i++){
+	for(int i = 0; i < 100; i++){
 		printf("%d,", stack_a[i]);
 	}
 	return 0;

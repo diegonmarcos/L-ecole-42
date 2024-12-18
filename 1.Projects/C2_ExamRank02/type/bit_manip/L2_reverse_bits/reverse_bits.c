@@ -20,8 +20,8 @@ unsigned char	reverse_bits(unsigned char octet)
 
 	while (i--)
 	{
-		res = (res << 1) + (octet & 1); // res * 2 == res << 1 // es |= (octet & 1) << i;
-		octet = octet >> 1; // octet /2 == octet >> 1 // octet >>= 1;
+		res = (res << 1) + (octet & 1); 					// res * 2 == res << 1 // es |= (octet & 1) << i;
+		octet = octet >> 1; 								// octet /2 == octet >> 1 // octet >>= 1;
 	}
 	return (res);
 }
