@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/02 20:00:33 by dinepomu          #+#    #+#             */
-/*   Updated: 2025/01/02 20:02:03 by dinepomu         ###   ########.fr       */
+/*   Updated: 2025/01/02 20:16:17 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,8 @@ Explanation:
 How Merge Sort Works:
 	Divide: If the array has more than one element, it is divided into two halves.
 	Conquer: Each half is recursively sorted.
-	Combine: The two sorted halves are merged together to produce a single sorted array.
+	Combine: The two sorted halves are merged together to produce a 
+		single sorted array.
 	Time Complexity: O(n log n) in all cases (best, average, worst).
 	Space Complexity: O(n) (due to the auxiliary space used for merging).
 */

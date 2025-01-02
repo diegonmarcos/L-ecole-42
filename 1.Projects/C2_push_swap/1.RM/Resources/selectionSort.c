@@ -6,10 +6,11 @@
 /*   By: dinepomu <dinepomu@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/02 19:57:06 by dinepomu          #+#    #+#             */
-/*   Updated: 2025/01/02 19:58:26 by dinepomu         ###   ########.fr       */
+/*   Updated: 2025/01/02 20:03:32 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+//#############################################################################
 /*
 Explanation:
 	swap(xp, yp): This is a helper function to swap two elements.
@@ -32,6 +33,7 @@ How Selection Sort Works:
 	Selection sort is not very efficient for large datasets, but it can be useful
 	for small datasets or when memory writes are expensive.
 */
+//#############################################################################
 
 #include <stdio.h>
 

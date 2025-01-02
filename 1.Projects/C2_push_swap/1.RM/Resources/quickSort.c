@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/02 19:58:55 by dinepomu          #+#    #+#             */
-/*   Updated: 2025/01/02 20:02:57 by dinepomu         ###   ########.fr       */
+/*   Updated: 2025/01/02 20:04:34 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,30 @@
 /*
 Explanation:
 	swap(a, b): This is a helper function to swap two elements.
-	partition(arr, low, high): This function selects a pivot element (in this case, the last element) and partitions the array such that all elements smaller than the pivot are placed before it, and all greater elements are placed after it. It returns the index of the pivot element after partitioning.
-	quickSort(arr, low, high): This function implements the quicksort algorithm. It first partitions the array using the partition() function, and then recursively sorts the subarrays before and after the pivot element.
-	printArray(arr, size): This is a helper function to print the contents of an array.
+	partition(arr, low, high): This function selects a pivot element 
+		(in this case, the last element) and partitions the array such that
+		all elements smaller than the pivot are placed before it, and all 
+		greater elements are placed after it. It returns the index of the 
+		pivot element after partitioning.
+	quickSort(arr, low, high): This function implements the quicksort 
+		algorithm. It first partitions the array using the partition() 
+		function, and then recursively sorts the subarrays before and after 
+		the pivot element.
+	printArray(arr, size): This is a helper function to print the contents 
+		of an array.
 
 How Quicksort Works:
 	Choose a pivot: A pivot element is selected from the array.
-	Partition: The array is partitioned around the pivot. Elements smaller than the pivot are moved to its left, and elements greater than the pivot are moved to its right.   
-	Recursively sort: The subarrays to the left and right of the pivot are recursively sorted.
+	Partition: The array is partitioned around the pivot. Elements smaller
+	than the pivot are moved to its left, and elements greater than the 
+		pivot are moved to its right.   
+	Recursively sort: The subarrays to the left and right of the pivot are 
+		recursively sorted.
 	Time Complexity:
 		Best and Average Case: O(n log n)
-		Worst Case: O(n^2) (occurs when the pivot selection repeatedly results in highly unbalanced partitions, like when the array is already sorted)
+		Worst Case: O(n^2) (occurs when the pivot selection repeatedly 
+			results in highly unbalanced partitions, like when the array 
+			is already sorted)
 		Space Complexity: O(log n) (average case, due to the recursion depth)
 */
 //#############################################################################

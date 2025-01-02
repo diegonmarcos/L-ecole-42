@@ -6,29 +6,40 @@
 /*   By: dinepomu <dinepomu@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/02 19:56:14 by dinepomu          #+#    #+#             */
-/*   Updated: 2025/01/02 19:56:45 by dinepomu         ###   ########.fr       */
+/*   Updated: 2025/01/02 20:16:10 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#############################################################################
 /*
 Explanation:
+	heapify(arr, n, i): This function takes an array (arr), its size (n), and 
+		an index (i). It assumes that the binary trees rooted at the left and 
+		right children of i are max heaps, but that arr[i] might be smaller 
+		than its children, thus violating the max heap property. This function
+		"heapifies" the subtree rooted at i to restore the max heap property.
+	swap(xp, yp): This is a helper function to swap two elements.
+	heapSort(arr, n): This function implements the heap sort algorithm.
+	Build Max Heap: It first builds a max heap from the input array.
+	Extract Max: Then, it repeatedly extracts the maximum element 
+		(root of the heap) and places it at the end of the array.
+	Heapify: After each extraction, it reduces the heap size and calls
+	heapify() to maintain the max heap property.
+	printArray(arr, size): This is a helper function to print the 
+	contents of an array.
 
-heapify(arr, n, i): This function takes an array (arr), its size (n), and an index (i). It assumes that the binary trees rooted at the left and right children of i are max heaps, but that arr[i] might be smaller than its children, thus violating the max heap property. This function "heapifies" the subtree rooted at i to restore the max heap property.
-swap(xp, yp): This is a helper function to swap two elements.
-heapSort(arr, n): This function implements the heap sort algorithm.
-Build Max Heap: It first builds a max heap from the input array.
-Extract Max: Then, it repeatedly extracts the maximum element (root of the heap) and places it at the end of the array.
-Heapify: After each extraction, it reduces the heap size and calls heapify() to maintain the max heap property.
-printArray(arr, size): This is a helper function to print the contents of an array.
 How Heapsort Works:
-
-Build a Max Heap: The input array is transformed into a max heap (a binary tree where the value of each node is greater than or equal to the value of its children).
-Extract the Max: The root of the heap (which is the maximum element) is swapped with the last element of the array. The size of the heap is reduced by 1.
-Heapify: The heapify() function is called on the root of the heap to restore the max heap property.
-Repeat: Steps 2 and 3 are repeated until the entire array is sorted.
-Time Complexity: O(n log n) for all cases (best, average, worst).
-Space Complexity: O(1) (in-place sorting).
+	Build a Max Heap: The input array is transformed into a 
+		max heap (a binary tree where the value of each node is greater 
+		than or equal to the value of its children).
+	Extract the Max: The root of the heap (which is the maximum element)
+		is swapped with the last element of the array. The size of 
+		the heap is reduced by 1.
+	Heapify: The heapify() function is called on the root of the heap 
+		to restore the max heap property.
+	Repeat: Steps 2 and 3 are repeated until the entire array is sorted.
+	Time Complexity: O(n log n) for all cases (best, average, worst).
+	Space Complexity: O(1) (in-place sorting).
 */
 //#############################################################################
 

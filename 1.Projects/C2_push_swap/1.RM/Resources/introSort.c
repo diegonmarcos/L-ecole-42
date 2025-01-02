@@ -6,26 +6,28 @@
 /*   By: dinepomu <dinepomu@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/02 19:04:28 by dinepomu          #+#    #+#             */
-/*   Updated: 2025/01/02 19:50:36 by dinepomu         ###   ########.fr       */
+/*   Updated: 2025/01/02 20:16:15 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-
+/*
 // Function prototypes
-	//swap(): A helper function to swap two elements in the array.
-	//partition(): This function partitions the array around a pivot (last element in this case) for Quicksort.
-	//quicksort(): The standard recursive Quicksort implementation.
-	//heapify(): Restores the max heap property for a subtree in Heapsort.
-	//heapsort(): The complete Heapsort implementation.
-	//introsort():
-		//Takes the array, lower and upper bounds, and depthLimit as input.
-		//If the subarray is small, you could use insertion sort (optional, not implemented here).
-		//If depthLimit reaches 0, it switches to heapsort().
-		//Otherwise, it performs Quicksort partitioning and recursively calls introsort() with a decremented depthLimit.
-
+	swap(): A helper function to swap two elements in the array.
+	partition(): This function partitions the array around a 
+		pivot (last element in this case) for Quicksort.
+	quicksort(): The standard recursive Quicksort implementation.
+	heapify(): Restores the max heap property for a subtree in Heapsort.
+	heapsort(): The complete Heapsort implementation.
+	introsort():
+		Takes the array, lower and upper bounds, and depthLimit as input.
+		If the subarray is small, you could use insertion sort
+		If depthLimit reaches 0, it switches to heapsort().
+		Otherwise, it performs Quicksort partitioning and recursively
+		calls introsort() with a decremented depthLimit.
+*/
 void swap(int *a, int *b);
 int partition(int arr[], int low, int high);
 void quicksort(int arr[], int low, int high);
