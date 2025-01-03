@@ -6,13 +6,13 @@
 /*   By: dinepomu <dinepomu@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/02 19:58:55 by dinepomu          #+#    #+#             */
-/*   Updated: 2025/01/03 12:14:44 by dinepomu         ###   ########.fr       */
+/*   Updated: 2025/01/03 12:46:07 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#############################################################################
 /*
-Explanation:
+Header:
 	swap(a, b): This is a helper function to swap two elements.
 	partition(arr, low, high): This function selects a pivot element 
 		(in this case, the last element) and partitions the array such that
@@ -26,7 +26,7 @@ Explanation:
 	printArray(arr, size): This is a helper function to print the contents 
 		of an array.
 
-How Quicksort Works:
+Explanation:
 	Choose a pivot: A pivot element is selected from the array.
 	Partition: The array is partitioned around the pivot. Elements smaller
 	than the pivot are moved to its left, and elements greater than the 
@@ -45,7 +45,8 @@ How Quicksort Works:
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
+//#############################################################################
+// UTILS
 //#############################################################################
 // Function to measure the execution time of another function
 double measure_execution_time(void (*func)(void)) { 
@@ -66,16 +67,25 @@ double measure_execution_time(void (*func)(void)) {
 // Function to generate random numbers(given array, 
 //								amount of number, max lenght of the numbers)
 void generate_random_numbers(int *arr, int amount, int max_length) {
-    srand(time(NULL)); 
+    srand(time(NULL));
 
     int max_value = 1;
     for (int i = 0; i < max_length; i++) {
         max_value *= 10;
     }
-    max_value--; // Adjust to get the correct upper bound
+    max_value--;
 
     for (int i = 0; i < amount; i++) {
-        arr[i] = rand() % (max_value + 1); 
+        // Generate random number from 0 to max_value
+        int random_positive = rand() % (max_value + 1); 
+
+        // Randomly decide whether to make it negative
+        int random_sign = rand() % 2;  
+        if (random_sign == 1) {
+            arr[i] = -random_positive;
+        } else {
+            arr[i] = random_positive;
+        }
     }
 }
 
@@ -95,6 +105,8 @@ void swap(int *a, int *b) {
   *b = t;
 }
 
+//#############################################################################
+// MAIN
 //#############################################################################
 // Function to partition the array around a pivot element
 int partition(int arr[], int low, int high) {
@@ -141,20 +153,22 @@ void quickSort(int arr[], int low, int high) {
 }
 
 //#############################################################################
-// Driver program to test above functions
 int main() {
 	clock_t start_time = clock();
 	
   	printf("\n# QUICK SORT ALGO \n");
 	
-	int arr[1000];
-  	int amount = sizeof(arr) / sizeof(arr[0]);
+	int arr[100];
 	int max_length = 5;
-  	generate_random_numbers(arr, amount, max_length);
-	printf("\n## unSorted array: \n");
+
+	printf("\n## initializedArray: \n");
+	int amount = sizeof(arr) / sizeof(arr[0]);
+	printArray(arr, amount);
+	printf("\n## unSortedArray: \n");
+	generate_random_numbers(arr, amount, max_length);
   	printArray(arr, amount);
 	quickSort(arr, 0, amount - 1);
-  	printf("\n## Sorted array: \n");
+  	printf("\n## SortedArray: \n");
   	printArray(arr, amount);
 
 	clock_t end_time = clock();
