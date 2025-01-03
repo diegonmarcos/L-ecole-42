@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/02 19:58:55 by dinepomu          #+#    #+#             */
-/*   Updated: 2025/01/02 20:04:34 by dinepomu         ###   ########.fr       */
+/*   Updated: 2025/01/03 11:48:47 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,33 @@ How Quicksort Works:
 //#############################################################################
 
 #include <stdio.h>
+#include <time.h>
 
+//#############################################################################
+// Function to measure the execution time of another function
+double measure_execution_time(void (*func)(void)) { 
+    clock_t start_time, end_time;
+    double cpu_time_used;
+
+    start_time = clock();
+
+    // Call the function passed as an argument
+    func(); 
+
+    end_time = clock();
+    cpu_time_used = ((double) (end_time - start_time)) / CLOCKS_PER_SEC;
+    return cpu_time_used;
+}
+
+//#############################################################################
+// Function to print an array
+void printArray(int arr[], int size) {
+  for (int i = 0; i < size; i++)
+    printf("%d ", arr[i]);
+  printf("\n");
+}
+
+//#############################################################################
 // Function to swap two elements
 void swap(int *a, int *b) {
   int t = *a;
@@ -51,6 +77,7 @@ void swap(int *a, int *b) {
   *b = t;
 }
 
+//#############################################################################
 // Function to partition the array around a pivot element
 int partition(int arr[], int low, int high) {
   // Select the rightmost element as the pivot
@@ -95,19 +122,22 @@ void quickSort(int arr[], int low, int high) {
   }
 }
 
-// Function to print an array
-void printArray(int arr[], int size) {
-  for (int i = 0; i < size; i++)
-    printf("%d ", arr[i]);
-  printf("\n");
-}
-
+//#############################################################################
 // Driver program to test above functions
 int main() {
-  int arr[] = {10, 7, 8, 9, 1, 5};
-  int n = sizeof(arr) / sizeof(arr[0]);
-  quickSort(arr, 0, n - 1);
-  printf("Sorted array: \n");
-  printArray(arr, n);
+	clock_t start_time = clock();
+	
+  	printf("\n# QUICK SORT ALGO \n");
+	int arr[] = {10, 7, 8, 9, 1, 5};
+  	int n = sizeof(arr) / sizeof(arr[0]);
+  	printf("\n## unSorted array: \n");
+  	printArray(arr, n);
+	quickSort(arr, 0, n - 1);
+  	printf("\n## Sorted array: \n");
+  	printArray(arr, n);
+
+	clock_t end_time = clock();
+	double time_taken = ((double) (end_time - start_time)) / CLOCKS_PER_SEC;
+	printf("\n## Function took %f seconds to execute\n", time_taken);
   return 0;
 }
