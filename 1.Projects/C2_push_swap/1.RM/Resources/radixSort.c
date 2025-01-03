@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/02 19:52:32 by dinepomu          #+#    #+#             */
-/*   Updated: 2025/01/03 20:22:05 by dinepomu         ###   ########.fr       */
+/*   Updated: 2025/01/03 20:36:50 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,8 +43,9 @@ for integers or strings with a fixed length or a limited range.
 //#############################################################################
 // A utility function to print an array
 void printArray(int *arr, int n) {
-  for (int i = 0; i < n; i++)
-    printf("%d ", arr[i]);
+	for (int i = 0; i < n; i++)
+		printf("%d ", arr[i]);
+	printf("\n");
 }
 //#############################################################################
 // Function to generate random numbers(given array, 
@@ -65,7 +66,7 @@ void generate_random_numbers(int *arr, int amount, int max_length) {
         // Randomly decide whether to make it negative
         int random_sign = rand() % 2;  
         if (random_sign == 1) {
-            arr[i] = -random_positive;
+            arr[i] = - random_positive;
         } else {
             arr[i] = random_positive;
         }
@@ -86,32 +87,32 @@ int getMax(int *arr, int n) {
 // A function to do counting sort of arr according to// the digit 
 //represented by exp.
 void countSort(int *arr, int n, int exp) {
-  int output[n]; // output array
-  int i, count[10] = {0};
+  int output[n]; 
+  int i, count[19] = {0}; // Increased size to accommodate negative digits
 
-  // Store count of occurrences in count
-  for (i = 0; i < n; i++)
-    count[(arr[i] / exp) % 10]++;
-
-  // Change count[i] so that count[i] now contains actual
-  // position of this digit in output
-  for (i = 1; i < 10; i++)
-    count[i] += count[i - 1];
-
-  // Build the output array
-  for (i = n - 1; i >= 0; i--) {
-    output[count[(arr[i] / exp) % 10] - 1] = arr[i];
-    count[(arr[i] / exp) % 10]--;
+  // Store count of occurrences in count (adjusting for negative numbers)
+  for (i = 0; i < n; i++) {
+    int digit = (arr[i] / exp) % 10;
+    count[digit + 9]++;  // Shift index by 9 to handle -9 to 9
   }
 
-  // Copy the output array to arr, so that arr now
-  // contains sorted numbers according to current digit
+  // Change count[i] so that count[i] now contains actual position
+  for (i = 1; i < 19; i++)
+    count[i] += count[i - 1];
+
+  // Build the output array (adjusting for negative numbers)
+  for (i = n - 1; i >= 0; i--) {
+    int digit = (arr[i] / exp) % 10;
+    output[count[digit + 9] - 1] = arr[i];
+    count[digit + 9]--;
+  }
+
+  // Copy the output array to arr
   for (i = 0; i < n; i++)
     arr[i] = output[i];
 }
 
-// The main function to that sorts arr of size n using
-// Radix Sort
+//#############################################################################
 void radixsort(int *arr, int n) {
   // Find the maximum number to know number of digits
   int m = getMax(arr, n);
@@ -137,8 +138,8 @@ int main() {
 	printf("\n## unSortedArray: \n");
 	generate_random_numbers(arr, amount, max_length);
   	printArray(arr, amount);
-	radixsort(arr, amount);
 	printf("\n## SortedArray: \n");
+	radixsort(arr, amount);
   	printArray(arr, amount);
 
 	clock_t end_time = clock();
