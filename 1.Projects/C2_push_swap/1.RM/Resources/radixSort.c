@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/02 19:52:32 by dinepomu          #+#    #+#             */
-/*   Updated: 2025/01/02 19:54:48 by dinepomu         ###   ########.fr       */
+/*   Updated: 2025/01/03 20:22:05 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,18 +37,55 @@ for integers or strings with a fixed length or a limited range.
 //#############################################################################
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+// 
+//#############################################################################
+// A utility function to print an array
+void printArray(int *arr, int n) {
+  for (int i = 0; i < n; i++)
+    printf("%d ", arr[i]);
+}
+//#############################################################################
+// Function to generate random numbers(given array, 
+//								amount of number, max lenght of the numbers)
+void generate_random_numbers(int *arr, int amount, int max_length) {
+    srand(time(NULL));
 
+    int max_value = 1;
+    for (int i = 0; i < max_length; i++) {
+        max_value *= 10;
+    }
+    max_value--;
+
+    for (int i = 0; i < amount; i++) {
+        // Generate random number from 0 to max_value
+        int random_positive = rand() % (max_value + 1); 
+
+        // Randomly decide whether to make it negative
+        int random_sign = rand() % 2;  
+        if (random_sign == 1) {
+            arr[i] = -random_positive;
+        } else {
+            arr[i] = random_positive;
+        }
+    }
+}
+
+//#############################################################################
 // A utility function to get maximum value in arr
-int getMax(int arr, int n) {
+int getMax(int *arr, int n) {
   int mx = arr[0];
   for (int i = 1; i < n; i++)
     if (arr[i] > mx)
       mx = arr[i];
   return mx;
 }
-
-// A function to do counting sort of arr according to// the digit represented by exp.
-void countSort(int arr, int n, int exp) {
+// MAIN FUNCTION
+//#############################################################################
+// A function to do counting sort of arr according to// the digit 
+//represented by exp.
+void countSort(int *arr, int n, int exp) {
   int output[n]; // output array
   int i, count[10] = {0};
 
@@ -75,7 +112,7 @@ void countSort(int arr, int n, int exp) {
 
 // The main function to that sorts arr of size n using
 // Radix Sort
-void radixsort(int arr, int n) {
+void radixsort(int *arr, int n) {
   // Find the maximum number to know number of digits
   int m = getMax(arr, n);
 
@@ -86,17 +123,26 @@ void radixsort(int arr, int n) {
     countSort(arr, n, exp);
 }
 
-// A utility function to print an array
-void print(int arr, int n) {
-  for (int i = 0; i < n; i++)
-    printf("%d ", arr[i]);
-}
-
-// Driver program to test above functions
+//#############################################################################
 int main() {
-  int arr[] = {170, 45, 75, 90, 802, 24, 2, 66};
-  int n = sizeof(arr) / sizeof(arr[0]);
-  radixsort(arr, n);
-  print(arr, n);
+	clock_t start_time = clock();
+	
+	printf("\n# RADIX SORT ALGO \n");
+	
+	int arr[100];
+	int max_length = 5;
+	printf("\n## initializedArray: \n");
+	int amount = sizeof(arr) / sizeof(arr[0]);
+	printArray(arr, amount);
+	printf("\n## unSortedArray: \n");
+	generate_random_numbers(arr, amount, max_length);
+  	printArray(arr, amount);
+	radixsort(arr, amount);
+	printf("\n## SortedArray: \n");
+  	printArray(arr, amount);
+
+	clock_t end_time = clock();
+	double time_taken = ((double) (end_time - start_time)) / CLOCKS_PER_SEC;
+	printf("\n## Function took %f seconds to execute\n", time_taken);
   return 0;
 }

@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/02 19:58:55 by dinepomu          #+#    #+#             */
-/*   Updated: 2025/01/03 12:46:07 by dinepomu         ###   ########.fr       */
+/*   Updated: 2025/01/03 20:10:26 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,7 @@ Explanation:
 #include <stdlib.h>
 #include <time.h>
 //#############################################################################
+
 // UTILS
 //#############################################################################
 // Function to measure the execution time of another function
@@ -106,6 +107,7 @@ void swap(int *a, int *b) {
 }
 
 //#############################################################################
+
 // MAIN
 //#############################################################################
 // Function to partition the array around a pivot element
@@ -174,5 +176,6 @@ int main() {
 	clock_t end_time = clock();
 	double time_taken = ((double) (end_time - start_time)) / CLOCKS_PER_SEC;
 	printf("\n## Function took %f seconds to execute\n", time_taken);
+	
   return 0;
 }
