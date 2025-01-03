@@ -6,7 +6,7 @@
 /*   By: dinepomu <dinepomu@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/02 19:58:55 by dinepomu          #+#    #+#             */
-/*   Updated: 2025/01/03 11:48:47 by dinepomu         ###   ########.fr       */
+/*   Updated: 2025/01/03 12:14:44 by dinepomu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,7 @@ How Quicksort Works:
 //#############################################################################
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <time.h>
 
 //#############################################################################
@@ -59,6 +60,23 @@ double measure_execution_time(void (*func)(void)) {
     end_time = clock();
     cpu_time_used = ((double) (end_time - start_time)) / CLOCKS_PER_SEC;
     return cpu_time_used;
+}
+
+//#############################################################################
+// Function to generate random numbers(given array, 
+//								amount of number, max lenght of the numbers)
+void generate_random_numbers(int *arr, int amount, int max_length) {
+    srand(time(NULL)); 
+
+    int max_value = 1;
+    for (int i = 0; i < max_length; i++) {
+        max_value *= 10;
+    }
+    max_value--; // Adjust to get the correct upper bound
+
+    for (int i = 0; i < amount; i++) {
+        arr[i] = rand() % (max_value + 1); 
+    }
 }
 
 //#############################################################################
@@ -128,13 +146,16 @@ int main() {
 	clock_t start_time = clock();
 	
   	printf("\n# QUICK SORT ALGO \n");
-	int arr[] = {10, 7, 8, 9, 1, 5};
-  	int n = sizeof(arr) / sizeof(arr[0]);
-  	printf("\n## unSorted array: \n");
-  	printArray(arr, n);
-	quickSort(arr, 0, n - 1);
+	
+	int arr[1000];
+  	int amount = sizeof(arr) / sizeof(arr[0]);
+	int max_length = 5;
+  	generate_random_numbers(arr, amount, max_length);
+	printf("\n## unSorted array: \n");
+  	printArray(arr, amount);
+	quickSort(arr, 0, amount - 1);
   	printf("\n## Sorted array: \n");
-  	printArray(arr, n);
+  	printArray(arr, amount);
 
 	clock_t end_time = clock();
 	double time_taken = ((double) (end_time - start_time)) / CLOCKS_PER_SEC;
