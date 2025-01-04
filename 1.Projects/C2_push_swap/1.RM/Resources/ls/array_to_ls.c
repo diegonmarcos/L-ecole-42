@@ -1,3 +1,59 @@
+/*
+Meta Data:
+
+	name:DOUBLY LINKED LIST FROM ARRAY
+	date: 2021-10-07
+	function: arrayToDoublyLinkedList(arr, n);
+	input: An array of integers and its size.
+	output: A doubly linked list containing the elements of the input array.
+	functions:
+		- Node* createNode(int data, int index);
+		- DLLst* arrayToDoublyLinkedList(int arr[], int n);
+		- void printList(DLLst* list);
+		- void freeList(DLLst* list);
+
+Explanation:
+
+	1. Node Structure:
+	data: Stores the integer value from the array.
+	index: Stores the index of the element in the original array.
+	prev: Pointer to the previous node in the list.
+	next: Pointer to the next node in the list.
+
+	2. DoublyLinkedList Structure:
+	head: Pointer to the first node (head) of the list.
+	tail: Pointer to the last node (tail) of the list.
+
+	3. createNode(int data, int index):
+	Allocates memory for a new Node.
+	Initializes the data, index, prev, and next fields.
+	Returns a pointer to the newly created node.
+	Includes error handling for memory allocation failure.
+
+	4. arrayToDoublyLinkedList(int arr[], int n):
+	Allocates memory for a DoublyLinkedList structure.
+	Initializes head and tail to NULL (empty list).
+	Iterates through the input array arr:
+	Creates a new node using createNode() with the current element's data and index.
+	If the list is empty (head is NULL):
+	Sets both head and tail to the new node.
+	Otherwise:
+	Connects the current tail's next to the new node.
+	Sets the new node's prev to the current tail.
+	Updates the tail to the new node.
+	Returns a pointer to the DoublyLinkedList.
+	Includes error handling to free allocated memory if createNode() fails.
+
+	5. printList(DoublyLinkedList* list):
+	Iterates through the list from head to tail using the next pointers.
+	Prints the data and index of each node.
+	Prints the data and index of the head and tail nodes separately for easy verification.
+
+	6. freeList(DoublyLinkedList* list):
+	Iterates through the list, freeing each Node.
+	Frees the DoublyLinkedList structure itself.
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -10,10 +66,10 @@ typedef struct Node {
 } Node;
 
 // Structure for the doubly linked list
-typedef struct DoublyLinkedList {
+typedef struct DLLst {
     Node* head;
     Node* tail;
-} DoublyLinkedList;
+} DLLst;
 
 // Function to create a new node
 Node* createNode(int data, int index) {
@@ -30,8 +86,8 @@ Node* createNode(int data, int index) {
 }
 
 // Function to convert an array to a doubly linked list
-DoublyLinkedList* arrayToDoublyLinkedList(int arr[], int n) {
-    DoublyLinkedList* list = (DoublyLinkedList*)malloc(sizeof(DoublyLinkedList));
+DLLst* arrayToDoublyLinkedList(int arr[], int n) {
+    DLLst* list = (DLLst*)malloc(sizeof(DLLst));
     if (list == NULL) {
         printf("Memory allocation failed!\n");
         return NULL;
@@ -71,7 +127,7 @@ DoublyLinkedList* arrayToDoublyLinkedList(int arr[], int n) {
 }
 
 // Function to print the doubly linked list
-void printList(DoublyLinkedList* list) {
+void printList(DLLst* list) {
     Node* current = list->head;
     printf("Doubly Linked List: ");
     while (current != NULL) {
@@ -89,7 +145,7 @@ void printList(DoublyLinkedList* list) {
     }
 }
 // Function to free the memory allocated for the doubly linked list
-void freeList(DoublyLinkedList* list) {
+void freeList(DLLst* list) {
     Node* current = list->head;
     while (current != NULL) {
         Node* next = current->next;
@@ -103,7 +159,7 @@ int main() {
     int arr[] = {10, 20, 30, 40, 50};
     int n = sizeof(arr) / sizeof(arr[0]);
 
-    DoublyLinkedList* list = arrayToDoublyLinkedList(arr, n);
+    DLLst* list = arrayToDoublyLinkedList(arr, n);
 
     if (list != NULL) {
         printList(list);
@@ -112,3 +168,4 @@ int main() {
 
     return 0;
 }
+
