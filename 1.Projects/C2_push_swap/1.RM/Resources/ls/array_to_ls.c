@@ -86,7 +86,7 @@ Node* createNode(int data, int index) {
 }
 
 // Function to convert an array to a doubly linked list
-DLLst* arrayToDoublyLinkedList(int arr[], int n) {
+DLLst* arrayToDLinkedList(int arr[], int n) {
     DLLst* list = (DLLst*)malloc(sizeof(DLLst));
     if (list == NULL) {
         printf("Memory allocation failed!\n");
@@ -157,9 +157,10 @@ void freeList(DLLst* list) {
 
 int main() {
     int arr[] = {10, 20, 30, 40, 50};
+	
     int n = sizeof(arr) / sizeof(arr[0]);
 
-    DLLst* list = arrayToDoublyLinkedList(arr, n);
+    DLLst* list = arrayToDLinkedList(arr, n);
 
     if (list != NULL) {
         printList(list);
