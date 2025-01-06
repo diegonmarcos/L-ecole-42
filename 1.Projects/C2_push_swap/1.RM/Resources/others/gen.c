@@ -40,6 +40,8 @@ int main() {
 
     generate_random_numbers(arr, amount, max_length);
     print_array(arr, amount);
+	printf("\xf0\x9f\x98\x8a\n"); // Using hex escape sequences
+
 
     return 0;
 }
